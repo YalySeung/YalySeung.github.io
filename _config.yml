@@ -218,7 +218,7 @@ paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
-Plugins (previously gems:)
+# Plugins (previously gems:)
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -226,7 +226,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-mimic GitHub Pages with --safe
+# mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
