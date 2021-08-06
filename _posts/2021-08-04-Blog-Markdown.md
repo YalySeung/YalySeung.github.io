@@ -3,7 +3,7 @@ title: "Markdown Syntax"
 excerpt: "Markdown" 
 
 categories:
-  - Git
+  - GitHub
   - Blog
 
 tags:
