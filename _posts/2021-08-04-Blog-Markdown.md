@@ -14,17 +14,19 @@ last_modified_at: 2021-08-04T08:06:00-05:00
 
 ### 마크다운 문법 표기
   - 마크다운 Syntax 앞에 "\\"를 붙인다.
-  - **markdown ex)**
+  - **markdown ex)**  
   \\\<br/>
-  - **result)**
+  - **result)**  
   \<br/>
+
 ---
+
 ### 중첩 구조 표현
   - \- 내용
-  - **markdown ex)** 
-  \- 대분류
-  \- 중분류
-  \- 소분류
+  - **markdown ex)**  
+  \- 대분류  
+  \- 중분류  
+  \- 소분류  
   - **result)**
     - 대분류
       - 중분류
@@ -32,79 +34,80 @@ last_modified_at: 2021-08-04T08:06:00-05:00
 
 ### 헤더
   - \# 사용
-  - **markdown ex)**
-  \# h1
-  \## h2
-  \### h3
-  \#### h4
-  \##### h5
-  \###### h6
-  - **result)**
-  # h1
-  ## h2
-  ### h3
-  #### h4
-  ##### h5
-  ###### h6
+  - **markdown ex)**  
+  \# h1  
+  \## h2  
+  \### h3  
+  \#### h4  
+  \##### h5  
+  \###### h6  
+  - **result)**  
+# h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
 
 ---
 ### 텍스트 강조
-  - **markdown ex)**
+  - **markdown ex)**  
   \*\*텍스트\*\*
-  - **result)**
+  - **result)**  
   **텍스트**
 
 ### 텍스트 기울임
-- **markdown ex)**
+- **markdown ex)**  
 \*텍스트\*
-- **result)**
+- **result)**  
 *텍스트*
 
 ### 텍스트 굵고 기울임
-- **markdown ex)**
+- **markdown ex)**  
 \*\*\*텍스트\*\*\*
-- **result)**
+- **result)**  
 ***텍스트***
 
 ### 텍스트 강조
-- **markdown ex)**
+- **markdown ex)**  
 \*\*텍스트\*\*
-- **result)**
+- **result)**  
 **텍스트**
 
 ### 텍스트 가로줄
-- **markdown ex)**
+- **markdown ex)**  
 \~\~텍스트\~\~
-- **result)**
+- **result)**  
 ~~텍스트~~
 
 ### 텍스트 밑줄
-- **markdown ex)**
+- **markdown ex)**  
 \<u>텍스트\</u>
-- **result)**
+- **result)**  
 <u>텍스트</u>
 
 ### 텍스트 글자색
-- **markdown ex)**
+- **markdown ex)**  
 \<span style="color:red">텍스트\</span>
-- **result)**
+- **result)**  
 <span style="color:red">텍스트</span>
+
 ---
 
 ### Inline 코드블럭
   - \```언어이름
   코드
   \```
-  - **markdown ex)**
+  - **markdown ex)**  
   \```c#
-  using system;
-  class Sample{
-    public Sample(){
-
-    }
+  using system;  
+  class Sample{  
+    public Sample(){  
+  
+    }  
   }
   \```
-  - **result)**
+  - **result)**  
   ```c#
   using system;
   class Sample{
@@ -119,15 +122,15 @@ last_modified_at: 2021-08-04T08:06:00-05:00
 ---
 
 ### 링크
-- **markdown ex)**
+- **markdown ex)**  
 \<https://www.google.com>
-- **result)**
+- **result)**  
 <https://www.google.com>
 
 ### 텍스트 링크
-- **markdown ex)**
+- **markdown ex)**  
 [구글페이지]\(https://www.google.com)
-- **result)**
+- **result)**  
 [구글페이지](https://www.google.com)
 
 
@@ -138,48 +141,48 @@ last_modified_at: 2021-08-04T08:06:00-05:00
   3. 공백을 -로 변경
   4. 대문자를 소문자로 변경
 
-  - **markdown ex)**
+  - **markdown ex)**  
   [Inline 코드블럭]\(#inline-코드블럭)
-  - **result)**
+  - **result)**  
   [Inline 코드블럭](#inline-코드블럭)
 
 ---
 ### 그림 삽입
-  - **markdown ex)**
+  - **markdown ex)**  
   ![image]\(이미지주소)
-  - **result)**
+  - **result)**  
   ![image](/assets/images/LinkImage.jpg)
 
 ### 그림 링크 삽입
-  - **markdown ex)**
+  - **markdown ex)**  
   \[![image]\(이미지 경로)](링크주소)
-  - **result)**
+  - **result)**  
   [![image](/assets/images/LinkImage.jpg)](#inline-코드블럭)
 
   ---
 ### 인용문
-  - **markdown ex)**
+  - **markdown ex)**  
   \>인용문
     \>>중첩 인용문
-  - **result)**
+  - **result)**  
   > 인용문
     >> 중첩인용문
 
 ### 주석
-  - **markdown ex)**
+  - **markdown ex)**  
   \<cite>google\</cite> --- google-forum' Conference, 1997
-  - **result)**
+  - **result)**  
   <cite>google</cite> --- google-forum' Conference, 1997
 
   ---
 ### 순서 없는 리스트
-  - **markdown ex)**
-  \- depth1
-    \* depth2
-      \+ depth3
-    \* depth2
-  \- depth1
-  - **result)**
+  - **markdown ex)**  
+  \- depth1  
+    \* depth2  
+      \+ depth3  
+    \* depth2  
+  \- depth1  
+  - **result)**  
   - depth1
     * depth2
       + depth3
@@ -187,52 +190,52 @@ last_modified_at: 2021-08-04T08:06:00-05:00
   - depth1
 
 ### 순서 있는 리스트
-- **markdown ex)**
+- **markdown ex)**  
 1. depth1_1
 2. dqpth1_2
-   1. depth2_1
-      \- depth3_1
+   1. depth2_1  
+      \- depth3_1  
       \- depth3_2
-   1. depth2_2
-      \- depth3_3
+   1. depth2_2  
+      \- depth3_3  
       \- depth3_4
-- **result)**
+- **result)**  
 1. depth1_1
-2. dqpth1_2
-   1. depth2_1
-      - depth3_1
+2. dqpth1_2  
+   1. depth2_1  
+      - depth3_1  
       - depth3_2
-   1. depth2_2
-      - depth3_3
+   1. depth2_2  
+      - depth3_3  
       - depth3_4
 
 
 ### 체크리스트
-  - **markdown ex)**
+  - **markdown ex)**  
   \- [ ] 체크 안됨
   \- [x] 체크 됨
-  - **result)**
+  - **result)**  
   - [ ] 체크 안됨
   - [x] 체크 됨
 
 ### 구분선
-  - **markdown ex)**
+  - **markdown ex)**  
   \---
   \***
-  - **result)**
+  - **result)**  
   ---
   ***
 
 ---
 ### 테이블
-  - **markdown ex)**
+  - **markdown ex)**  
   |제목|내용|설명|
   |:---|---: |:---: |
   |좌측정렬|우측정렬|가운데정렬|
   |좌측정렬|**우측정렬 진하게**|가운데정렬|
   |좌측정렬|<span style="color:red">우측정렬Red</span>|가운데정렬|
 
-  - **result)**
+  - **result)**  
 
   |제목|내용|설명|
   |:---|---:|:---:|
@@ -244,14 +247,14 @@ last_modified_at: 2021-08-04T08:06:00-05:00
 ---
 
 ### 접기 펼치기
-  - **markdown ex)**
+  - **markdown ex)**  
   \<details>
   \<summary>클릭!\</summary>
   \<div markdown="1">
   까꿍
   \</div>
   \</details>
-  - **result)**
+  - **result)**  
   <details>
   <summary>클릭!</summary>
   <div markdown="1">
@@ -262,9 +265,9 @@ last_modified_at: 2021-08-04T08:06:00-05:00
 ---
 
 ### 버튼
-  - **markdown ex)**
+  - **markdown ex)**  
   \<a href="#" class="click_button">Button\</a>
-  - **result)**
+  - **result)**  
   <a href="#" class="click_button">Button</a>
   
   
