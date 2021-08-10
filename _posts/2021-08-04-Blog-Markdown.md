@@ -92,6 +92,14 @@ last_modified_at: 2021-08-04T08:06:00-05:00
 - **result)**  
 <span style="color:red">텍스트</span>
 
+### 텍스트 개행
+- **markdown ex)**  
+첫줄[공백][공백][개행문자]
+둘째줄
+- **result)**  
+첫줄  
+둘째줄
+
 ---
 
 ### Inline 코드블럭
