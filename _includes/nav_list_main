@@ -16,10 +16,11 @@
             {% for category in site.categories %}
             {% if category[0] == "Design Pattern" %}
                 <li><a href="/categories/DesignPattern" class="">Design Pattern ({{category[1].size}})</a></li>
+            {% else if category[0] == "TDD" %}
+                <li><a href="/categories/TDD" class="">TDD ({{category[1].size}})</a></li>
             {% endif %}
             {% endfor %}
         </ul>
-
 
     <span class="nav__sub-title">깃 허브</span>
         <ul>
@@ -30,6 +31,14 @@
             {% endfor %}
         </ul>
     
+    <span class="nav__sub-title">게임개발</span>
+        <ul>
+            {% for category in site.categories %}
+            {% if category[0] == "Unity" %}
+                <li><a href="/categories/Unity" class="">Unity ({{category[1].size}})</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
     </li>
 
   </ul>
