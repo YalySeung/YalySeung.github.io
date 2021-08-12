@@ -16,7 +16,12 @@
             {% for category in site.categories %}
             {% if category[0] == "Design Pattern" %}
                 <li><a href="/categories/DesignPattern" class="">Design Pattern ({{category[1].size}})</a></li>
-            {% else if category[0] == "TDD" %}
+            {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+            {% if category[0] == "TDD" %}
                 <li><a href="/categories/TDD" class="">TDD ({{category[1].size}})</a></li>
             {% endif %}
             {% endfor %}
