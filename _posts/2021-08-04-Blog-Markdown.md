@@ -9,7 +9,7 @@ categories:
 tags:
   - [jekyll, Minimal Mistake]
 
-last_modified_at: 2021-08-04T08:06:00-05:00
+last_modified_at: 2021-08-12T08:06:00-05:00
 ---
 
 ### 마크다운 문법 표기
@@ -100,6 +100,13 @@ last_modified_at: 2021-08-04T08:06:00-05:00
 첫줄  
 둘째줄
 
+### 텍스트 공백, 들여쓰기
+- **markdown ex)**  
+전각 문자 사용! ==> (　)
+- **result)**  
+　　들여쓰기
+
+
 ---
 
 ### Inline 코드블럭
@@ -157,9 +164,9 @@ last_modified_at: 2021-08-04T08:06:00-05:00
 ---
 ### 그림 삽입
   - **markdown ex)**  
-  ![image]\(이미지주소)
+  ![image]\(이미지주소){: width="20%" height="20%"}
   - **result)**  
-  ![image](/assets/images/LinkImage.jpg)
+  ![image](/assets/images/LinkImage.jpg){: width="20%" height="20%"}
 
 ### 그림 링크 삽입
   - **markdown ex)**  
