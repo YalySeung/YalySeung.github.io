@@ -19,6 +19,7 @@ last_modified_at: 2021-08-06T08:06:00-05:00
 ---
 
 ### 구성도
+![image](/assets/images/Unity/DesignPattern/ObserverPattern.png){: width="70%" height="70%"}  
 
 ---
 ### 구현방법
