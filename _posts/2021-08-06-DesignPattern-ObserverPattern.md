@@ -21,6 +21,21 @@ last_modified_at: 2021-08-06T08:06:00-05:00
 ### 구성도
 ![image](/assets/images/Unity/DesignPattern/ObserverPattern.png){: width="70%" height="70%"}  
 
+ - #### Explain
+   - Subject : 변경 될 주체
+   - List<Observer> Observers : 등록된 구독자들
+   - AddObserver() : 구독자 추가
+   - RemoveObserver() : 구독자 구독 취소
+   - NotifyToOservers() : 변경 알림  
+     
+   - Observer : 구독자 Abstract Class
+   - Update() : 주체 변경시, 구독자의 행위  
+  
+   - Observer1, Observer2 : 구독자들...
+
+
+  
+
 ---
 ### 구현방법
  - Subject(변경되는 주체)와 Ovserver(주체의 변경을 감시하는 개체)로 구성
