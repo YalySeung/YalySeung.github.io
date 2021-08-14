@@ -19,19 +19,19 @@ last_modified_at: 2021-08-06T08:06:00-05:00
 ---
 
 ### 구성도
-![image](/assets/images/Unity/DesignPattern/ObserverPattern.png){: width="70%" height="70%"}  
+　　![image](/assets/images/Unity/DesignPattern/ObserverPattern.png){: width="70%" height="70%"}  
 
  - #### Explain
-   - Subject : 변경 될 주체
+   - <span style="color:red">Subject</span> : 변경 될 주체
    - List<Observer> Observers : 등록된 구독자들
    - AddObserver() : 구독자 추가
    - RemoveObserver() : 구독자 구독 취소
    - NotifyToOservers() : 변경 알림  
      
-   - Observer : 구독자 Abstract Class
+   - <span style="color:red">Observer</span> : 구독자 Abstract Class
    - Update() : 주체 변경시, 구독자의 행위  
   
-   - Observer1, Observer2 : 구독자들...
+   - <span style="color:red">Observer1, Observer2</span> : 구독자들...
 
 
   
@@ -42,5 +42,3 @@ last_modified_at: 2021-08-06T08:06:00-05:00
  - Subject는 Observer들을 등록, 삭제 하는 메서드와 변경을 통보하는 메서드 필요
  - Observer 인터페이스를 상속한 객체들은 update(subject가 변경되면 수행할 행동) 메서드 구현 
 
----
-### 용어설명

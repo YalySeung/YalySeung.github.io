@@ -8,7 +8,7 @@ categories:
 tags:
   - [Design Pattern]
 
-last_modified_at: 2021-08-1-T08:06:00-05:00
+last_modified_at: 2021-08-11-T08:06:00-05:00
 ---
 
 
@@ -20,6 +20,18 @@ last_modified_at: 2021-08-1-T08:06:00-05:00
 ---
 
 ### 구성도
+　　![image](/assets/images/Unity/DesignPattern/DecoratorPattern.png){: width="70%" height="70%"}  
+
+ - #### Explain
+   - <span style="color:red">SuperClass</span> : 최상위 Class
+   - MethodA() : 확장할 기능
+     
+   - <span style="color:red">ChildClass</span> : SuperClass의 자식 Class
+  
+   - <span style="color:red">AbstractDecorator</span> : Decorator Class  
+  
+   - <span style="color:red">ChildDecorator</span> : 생성자에서 ChildClass를 위임받아 MethodA() 를 확장 하는 실질적인 Decorator 구현 Class
+
 
 ---
 ### 구현방법

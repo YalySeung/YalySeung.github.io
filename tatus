@@ -1,0 +1,32 @@
+[1mdiff --git a/_posts/2021-08-10-DesignPattern-DecoratorPattern.md b/_posts/2021-08-10-DesignPattern-DecoratorPattern.md[m
+[1mindex 6f31468..e0c99d0 100644[m
+[1m--- a/_posts/2021-08-10-DesignPattern-DecoratorPattern.md[m
+[1m+++ b/_posts/2021-08-10-DesignPattern-DecoratorPattern.md[m
+[36m@@ -8,7 +8,7 @@[m [mcategories:[m
+ tags:[m
+   - [Design Pattern][m
+ [m
+[31m-last_modified_at: 2021-08-1-T08:06:00-05:00[m
+[32m+[m[32mlast_modified_at: 2021-08-11-T08:06:00-05:00[m
+ ---[m
+ [m
+ [m
+[36m@@ -20,6 +20,18 @@[m [mlast_modified_at: 2021-08-1-T08:06:00-05:00[m
+ ---[m
+ [m
+ ### 구성도[m
+[32m+[m[32m　　![image](/assets/images/Unity/DesignPattern/DecoratorPattern.png){: width="70%" height="70%"}[m[41m  [m
+[32m+[m
+[32m+[m[32m - #### Explain[m
+[32m+[m[32m   - <span style="color:red">SuperClass</span> : 최상위 Class[m
+[32m+[m[32m   - MethodA() : 확장할 기능[m
+[32m+[m[41m     [m
+[32m+[m[32m   - <span style="color:red">ChildClass</span> : SuperClass의 자식 Class[m
+[32m+[m[41m  [m
+[32m+[m[32m   - <span style="color:red">AbstractDecorator</span> : Decorator Class[m[41m  [m
+[32m+[m[41m  [m
+[32m+[m[32m   - <span style="color:red">ChildDecorator</span> : 생성자에서 ChildClass를 위임받아 MethodA() 를 확장 하는 실질적인 Decorator 구현 Class[m
+[32m+[m
+ [m
+ ---[m
+ ### 구현방법[m

@@ -21,6 +21,18 @@ last_modified_at: 2021-08-06T08:06:00-05:00
 ---
 
 ### 구성도
+　　![image](/assets/images/Unity/DesignPattern/StrategyPattern.png){: width="70%" height="70%"}  
+
+ - #### Explain
+   - <span style="color:red">SuperClass</span> : 내가 구현할 Class
+   - SetVariance() : 변경되는 기능 인터페이스를 SuperClass에 위임
+   - DoVariance() : 변경되는 기능의 DoSomething() 메서드를 호출  
+     
+   - <span style="color:red">VarianceInterface</span> : 변경되는 기능에 대한 정의 Interface
+   - DoSomething() : 수행할 동작  
+  
+   - <span style="color:red">VarianceImpl</span> : 변경되는 기능을 구체화한 Implement Class
+
 
 ---
 ### 구현방법
