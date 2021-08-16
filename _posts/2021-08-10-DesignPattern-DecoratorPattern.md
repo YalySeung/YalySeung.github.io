@@ -20,7 +20,7 @@ last_modified_at: 2021-08-11-T08:06:00-05:00
 ---
 
 ### 구성도
-　　![image](/assets/images/Unity/DesignPattern/DecoratorPattern.png){: width="70%" height="70%"}  
+　　![image](/assets/images/DesignPattern/DecoratorPattern.png){: width="70%" height="70%"}  
 
  - #### Explain
    - <span style="color:red">SuperClass</span> : 최상위 Class
