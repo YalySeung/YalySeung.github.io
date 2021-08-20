@@ -23,13 +23,13 @@ last_modified_at: 2021-08-06T08:06:00-05:00
 
  - #### Explain
    - <span style="color:red">Subject</span> : 변경 될 주체
-   - List<Observer> Observers : 등록된 구독자들
-   - AddObserver() : 구독자 추가
-   - RemoveObserver() : 구독자 구독 취소
-   - NotifyToOservers() : 변경 알림  
+     - List<Observer> Observers : 등록된 구독자들
+     - AddObserver() : 구독자 추가
+     - RemoveObserver() : 구독자 구독 취소
+     - NotifyToOservers() : 변경 알림  
      
    - <span style="color:red">Observer</span> : 구독자 Abstract Class
-   - Update() : 주체 변경시, 구독자의 행위  
+     - Update() : 주체 변경시, 구독자의 행위  
   
    - <span style="color:red">Observer1, Observer2</span> : 구독자들...
 

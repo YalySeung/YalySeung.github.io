@@ -25,8 +25,8 @@ last_modified_at: 2021-08-16T08:06:00-05:00
 
  - #### Explain
    - <span style="color:red">Singleton</span> : Singleton Class
-   - intance : 하나만 존재하는 객체 instance
-   - static Singleton GetInstance() : Singleton 객체에 대한 전역 접근 Method
+     - intance : 하나만 존재하는 객체 instance
+     - static Singleton GetInstance() : Singleton 객체에 대한 전역 접근 Method
 
 ---
 ### 구현방법

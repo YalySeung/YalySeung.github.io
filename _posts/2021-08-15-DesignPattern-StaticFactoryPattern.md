@@ -24,7 +24,7 @@ last_modified_at: 2021-08-15T08:06:00-05:00
 
  - #### Explain
    - <span style="color:red">ItemFactory</span> : Item 객체를 생성하는 Class
-   - static Item Create() : type에 따른 객체 생성 Method
+     - static Item Create() : type에 따른 객체 생성 Method
      
    - <span style="color:red">Item</span> : 생성할 객체의 최상위 Interface
   
