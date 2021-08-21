@@ -1,7 +1,7 @@
 ---
 
 title: "TemplateMethod Pattern"
-excerpt: "TemplateMethod" 
+excerpt: "클래스 기본 틀 만들기" 
 
 categories:
   - Design Pattern

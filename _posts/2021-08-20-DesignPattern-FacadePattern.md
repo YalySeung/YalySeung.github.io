@@ -1,7 +1,7 @@
 ---
 
 title: "Facade Pattern"
-excerpt: "Facade" 
+excerpt: "인터페이스 군을 아우르기" 
 
 categories:
   - Design Pattern

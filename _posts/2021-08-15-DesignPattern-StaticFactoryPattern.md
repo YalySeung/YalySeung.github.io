@@ -1,7 +1,7 @@
 ---
 
 title: "StaticFactory Pattern"
-excerpt: "StaticFactory" 
+excerpt: "객체를 생성하는 공장" 
 
 categories:
   - Design Pattern

@@ -1,6 +1,6 @@
 ---
 title: "Markdown Syntax"
-excerpt: "Markdown" 
+excerpt: "Markdown 작성요령" 
 
 categories:
   - GitHub

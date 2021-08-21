@@ -1,6 +1,6 @@
 ---
 title: "Strategy Pattern"
-excerpt: "Strategy" 
+excerpt: "변경되는 부분을 캡슐화" 
 
 categories:
   - Design Pattern

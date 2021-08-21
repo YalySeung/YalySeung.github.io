@@ -1,7 +1,7 @@
 ---
 
 title: "Adapter Pattern"
-excerpt: "Adapter" 
+excerpt: "기존 인터페이스에 적응시키기" 
 
 categories:
   - Design Pattern

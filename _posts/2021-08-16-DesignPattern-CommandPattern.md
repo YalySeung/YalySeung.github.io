@@ -1,6 +1,6 @@
 ---
 title: "Command Pattern"
-excerpt: "Command" 
+excerpt: "명령 부분은 캡슐화" 
 
 categories:
   - Design Pattern

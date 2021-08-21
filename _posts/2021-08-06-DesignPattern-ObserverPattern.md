@@ -1,6 +1,6 @@
 ---
 title: "Observer Pattern"
-excerpt: "Observer" 
+excerpt: "Subject의 변경을 구독!" 
 
 categories:
   - Design Pattern

@@ -1,7 +1,7 @@
 ---
 
 title: "Singleton Pattern"
-excerpt: "Singleton" 
+excerpt: "프로세스 내에서 한개만 존재하는 객체" 
 
 categories:
   - Design Pattern
