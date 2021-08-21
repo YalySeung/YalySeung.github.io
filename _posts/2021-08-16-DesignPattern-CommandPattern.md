@@ -26,20 +26,20 @@ last_modified_at: 2021-08-16T08:06:00-05:00
    - <span style="color:red">Client</span> : Invoker에 커맨드 실행을 요청하는 Class
 
    - <span style="color:red">Invoker</span> : 요청을 캡슐화한 Class
-   - commands : 명령들을 담고 있는 리스트
-   - SetCommand() : Command 객체를 추가하는 Method
-   - ExecuteCommand() : Command를 실행 하는 Method
+     - commands : 명령들을 담고 있는 리스트
+     - SetCommand() : Command 객체를 추가하는 Method
+     - ExecuteCommand() : Command를 실행 하는 Method
      
    - <span style="color:red">Command</span> : 커맨드를 캡슐화한 인터페이스
-   - Excute() : 수행
-   - Undo() : 수행 되돌리기
+     - Excute() : 수행
+     - Undo() : 수행 되돌리기
   
    - <span style="color:red">ConcreteCommand</span> : 커맨드를 구체화한 Class
-   - Excute() : 수행
-   - Undo() : 수행 되돌리기
+     - Excute() : 수행
+     - Undo() : 수행 되돌리기
   
    - <span style="color:red">Receiver</span> : 실제로 수행을 하는 Class
-   - Action() : 실제로 수행하는 Method
+     - Action() : 실제로 수행하는 Method
 
 ---
 ### 구현방법

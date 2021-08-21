@@ -24,7 +24,7 @@ last_modified_at: 2021-08-11-T08:06:00-05:00
 
  - #### Explain
    - <span style="color:red">SuperClass</span> : 최상위 Class
-   - MethodA() : 확장할 기능
+     - MethodA() : 확장할 기능
      
    - <span style="color:red">ChildClass</span> : SuperClass의 자식 Class
   
