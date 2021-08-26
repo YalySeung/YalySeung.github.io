@@ -125,11 +125,11 @@ last_modified_at: 2021-08-12T08:06:00-05:00
   - **result)**  
   ```c#
   using system;
-  class Sample{
-    public Sample(){
+      class Sample{
+        public Sample(){
 
-    }
-  }
+        }
+      }
   ```
     스페이스바 4번으로도 가능
 
