@@ -46,5 +46,25 @@
         </ul>
     </li>
 
+    <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">프로그래밍 언어</span>
+        <ul>
+            {% for category in site.categories %}
+            {% if category[0] == "C++" %}
+                <li><a href="/categories/C++" class="">C++ ({{category[1].size}})</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </li>
+
+    <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">기타</span>
+        <ul>
+            {% for category in site.categories %}
+            {% if category[0] == "Algorithm" %}
+                <li><a href="/categories/Algorithm" class="">Algorithm ({{category[1].size}})</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </li>
+
   </ul>
 </nav>
