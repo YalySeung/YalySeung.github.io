@@ -35,7 +35,7 @@ last_modified_at: 2021-08-27T08:00:00-10:00:00
    - <span style="color:red">AbstractionImpl Class</span> : Abstraction을 구체화한 Class
      - AbstractFunction() : 구현 Class 의 메서드
 
-　　![image](/assets/images/common/Arrow.png){: width="10%" height="10%"} 구현 부분과 추상화 부분을 각각 확장할 수 있다.
+　　![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} 구현 부분과 추상화 부분을 각각 확장할 수 있다.
    
 ---
 ### 구현방법
