@@ -1,6 +1,6 @@
 ---
 title: "Decorator Pattern"
-excerpt: "요건을 동적으로 추가" 
+excerpt: "요건을 동적으로 추가하기" 
 
 categories:
   - Design Pattern
