@@ -55,12 +55,12 @@ last_modified_at: 2021-08-29T08:06:00-05:00
   - 붉은색 영역을 모두 작성하면 파란색 영역의 script 코드가 생성된다.
 
 - #### Step4 : 블로그에 적용하기
- - Minimal Mistake를 사용하지 않는 경우에는 scipt 코드를 그대로 블로그 페이지에 복사하여 적용한다.
- - Minimal Mistake 사용자는 _config.yml 파일에 다음 부분을 수정한다.
+  - Minimal Mistake를 사용하지 않는 경우에는 scipt 코드를 그대로 블로그 페이지에 복사하여 적용한다.
+  - Minimal Mistake 사용자는 _config.yml 파일에 다음 부분을 수정한다.
  ![image](/assets/images/Blog/UtteranceConfigyml.png){: width="90%" height="90%"}
- - Minimal Mistake를 사용하는 경우에는 댓글 가로 영역이 좁게 보일 수 있다. -> _page.scss 파일에 아래와 같이 추가한다. 
+  - Minimal Mistake를 사용하는 경우에는 댓글 가로 영역이 좁게 보일 수 있다. -> _page.scss 파일에 아래와 같이 추가한다.  
  ![image](/assets/images/Blog/UtteranceSetWidth.png){: width="70%" height="70%"}
- - 변경사항을 Push 한다.
+  - 변경사항을 Push 한다.
 
 ---
 
