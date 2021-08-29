@@ -166,13 +166,13 @@ last_modified_at: 2021-08-12T08:06:00-05:00
   - **markdown ex)**  
   ![image]\(이미지주소){: width="20%" height="20%"}
   - **result)**  
-  ![image](/assets/images/LinkImage.jpg){: width="20%" height="20%"}
+  ![image](/assets/images/Blog/LinkImage.jpg){: width="20%" height="20%"}
 
 ### 그림 링크 삽입
   - **markdown ex)**  
   \[![image]\(이미지 경로)](링크주소)
   - **result)**  
-  [![image](/assets/images/LinkImage.jpg)](#inline-코드블럭)
+  [![image](/assets/images/Blog/LinkImage.jpg)](#inline-코드블럭)
 
   ---
 ### 인용문
