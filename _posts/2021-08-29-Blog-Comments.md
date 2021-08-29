@@ -21,6 +21,8 @@ last_modified_at: 2021-08-29T08:06:00-05:00
     - [Step2 : utterance 설치](#step2--utterance-설치)
     - [Step3 : 블로그에 반영할 script 코드 얻어오기](#step3--블로그에-반영할-script-코드-얻어오기)
     - [Step4 : 블로그에 적용하기](#step4--블로그에-적용하기)
+  - [utterance 결과](#utterance-결과)
+  - [에러 Fix](#에러-fix)
 
 ---
 
@@ -62,4 +64,25 @@ last_modified_at: 2021-08-29T08:06:00-05:00
 
 ---
 
- ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Blog/UtteranceResult.png){: width="70%" height="70%"}
+### utterance 결과
+ - 댓글
+ >![image](/assets/images/Blog/UtteranceResult.png){: width="70%" height="70%"}  
+
+ - 깃허브 이슈
+ >![image](/assets/images/Blog/UtteranceResultIssue.png){: width="70%" height="70%"}  
+
+ - 이메일 알림
+ >![image](/assets/images/Blog/UtteranceResultEmail.png){: width="70%" height="70%"}
+
+---
+
+### 에러 Fix
+ - 댓글 작성시, 아래와 같은 에러 발생  
+ ![image](/assets/images/Blog/UtteranceError.png){: width="70%" height="70%"}
+
+- 조치
+  - 깃허브 Repository에서 Application 설정 변경
+  ![image](/assets/images/Blog/UtteranceErrorFix1.png){: width="70%" height="70%"}
+
+  - Repository Access 설정에 Comments Repository를 추가해준다.
+  ![image](/assets/images/Blog/UtteranceErrorFix2.png){: width="70%" height="70%"}
