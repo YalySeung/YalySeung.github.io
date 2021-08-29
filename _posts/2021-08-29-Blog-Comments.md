@@ -14,7 +14,7 @@ last_modified_at: 2021-08-29T08:06:00-05:00
 
 ---
 
-- #### 목차
+### 목차
   - [utterance 소개](#utterance-소개)
   - [utterance 적용하기](#utterance-적용하기)
     - [Step1 : Comment용 git 저장소 생성](#step1--comment용-git-저장소-생성)
