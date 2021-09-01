@@ -64,6 +64,14 @@
             {% endif %}
             {% endfor %}
         </ul>
+        
+        <ul>
+            {% for category in site.categories %}
+            {% if category[0] == "DataStructure" %}
+              <li><a href="/categories/DataStructure" class="">DataStructure ({{category[1].size}})</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
     </li>
 
   </ul>
