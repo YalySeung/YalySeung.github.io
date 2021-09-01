@@ -1,7 +1,7 @@
 ---
 
 title: "Heap"
-excerpt: "O(Logn)의 복잡도로 최대값, 최솟값 구하기" 
+excerpt: "O(Log N)의 복잡도로 최대값, 최솟값 구하기" 
 
 categories:
   - DataStructure
