@@ -15,7 +15,7 @@ last_modified_at: 2021-09-02T08:00:00-10:00:00
 
 ---
 
-### <span style="color:#FFB400">목차</span>
+### 목차
   - [개요](#개요)
   - [기본 정렬](#기본-정렬)
   - [오름차순 정렬](#오름차순-정렬)
@@ -24,14 +24,14 @@ last_modified_at: 2021-09-02T08:00:00-10:00:00
 
 ---
 
-### <span style="color:#FFB400">개요</span>
+### 개요
   - Heap 기반의 Queue
   - Queue Items에 우선순위가 필요할 경우 사용
   - #include \<queue>
 
 ---
 
-### <span style="color:#FFB400">기본 정렬</span>
+### 기본 정렬
   - 소스코드
 
   ```c++
@@ -49,7 +49,7 @@ last_modified_at: 2021-09-02T08:00:00-10:00:00
 
 ---
 
-### <span style="color:#FFB400">오름차순 정렬</span>
+### 오름차순 정렬
   - 소스코드
 
   ```c++
@@ -67,7 +67,7 @@ last_modified_at: 2021-09-02T08:00:00-10:00:00
 
 ---
 
-### <span style="color:#FFB400">내림차순 정렬</span>
+### 내림차순 정렬
   - 소스코드
 
   ```c++
@@ -85,7 +85,7 @@ last_modified_at: 2021-09-02T08:00:00-10:00:00
 
 ---
 
-### <span style="color:#FFB400">사용자 정의 정렬</span>
+### 사용자 정의 정렬
   - 소스코드
 
   ```c++
