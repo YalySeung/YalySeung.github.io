@@ -9,8 +9,6 @@
       <span style="color:#AADBFF">전체 글 수 </span> <span style="color:#AADBFF">{{sum}}</span> <span style="color:#AADBFF"> 개</span>
     </li>
 
-    <li>
-
     <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">클린 코딩</span>
         <ul>
             {% for category in site.categories %}
@@ -44,7 +42,7 @@
             {% endif %}
             {% endfor %}
         </ul>
-    </li>
+
 
     <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">프로그래밍 언어</span>
         <ul>
@@ -54,7 +52,7 @@
             {% endif %}
             {% endfor %}
         </ul>
-    </li>
+
 
     <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">기타</span>
         <ul>
@@ -72,7 +70,6 @@
             {% endif %}
             {% endfor %}
         </ul>
-    </li>
 
   </ul>
 </nav>
