@@ -14,7 +14,7 @@ last_modified_at: 2021-08-26T08:00:00-10:00:00
 ---
 
 
-### <span style="color:yellow">Collection 정렬</span>
+### Collection 정렬
   - ####  #include \<algorithm> sort 함수 사용
 
   ```c++
@@ -50,7 +50,7 @@ last_modified_at: 2021-08-26T08:00:00-10:00:00
 
 ---
 
-### <span style="color:yellow">다음 순열 구하기</span>
+### 다음 순열 구하기
 
   - ####  #include \<algorithm> next_permutation 함수 사용
 
