@@ -33,8 +33,9 @@ last_modified_at: 2021-09-11T08:00:00-10:00:00
       }
     ```
 
-    - 결과  
-    ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/cincoutResult.png){: width="30%" height="30%"}  
+    - 결과
+
+      ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/cincoutResult.png){: width="30%" height="30%"}  
 
   - ## scanf, printf 사용
     - 개요
@@ -52,8 +53,9 @@ last_modified_at: 2021-09-11T08:00:00-10:00:00
       }
     ```
 
-    - 결과  
-    ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/scanfprintfResult.png){: width="50%" height="50%"}  
+    - 결과
+
+      ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/scanfprintfResult.png){: width="50%" height="50%"}  
 
   - ## 라인 단위로 입력받기
     - 개요
@@ -68,8 +70,9 @@ last_modified_at: 2021-09-11T08:00:00-10:00:00
         cout << "입력받은 line 데이터 : " << inputString << endl;
       }
     ```
-    - 결과  
-    ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/getlineResult.png){: width="50%" height="50%"}  
+    - 결과
+
+      ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/getlineResult.png){: width="50%" height="50%"}  
 
   - ## 파일 입력 받기
     - 개요
@@ -96,11 +99,13 @@ last_modified_at: 2021-09-11T08:00:00-10:00:00
         fclose(fp);
       }
     ```
-    - 입력 파일  
-    ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/freopenInput.png){: width="30%" height="30%"}
+    - 입력 파일
 
-    - 결과  
-    ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/freopenResult.png){: width="50%" height="50%"}  
+      ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/freopenInput.png){: width="30%" height="30%"}
+
+    - 결과
+
+      ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/freopenResult.png){: width="50%" height="50%"}  
 
 ---
 
@@ -120,16 +125,17 @@ last_modified_at: 2021-09-11T08:00:00-10:00:00
         sort(v.rbegin(), v.rend()); //내림차순
       }
     ```
-    - 결과  
-    ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/collectionSortResult.png){: width="10%" height="10%"}  
+    - 결과
+
+      ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/collectionSortResult.png){: width="10%" height="10%"}  
 
   - ## sort 함수 사용자 정의 정렬
     - 개요 
       - #include <algorithm> 헤더 사용
       - 구조체 operator< 정의방식 / 비교함수 정의 방식 이 있음
-  
-      1. ### 구조체 연산자 오버로딩 방식
-        - 소스 코드
+        1. ### 구조체 연산자 오버로딩 방식
+          - 소스 코드
+
             ```c++
               struct Sample{
                   int x, y;
@@ -145,13 +151,15 @@ last_modified_at: 2021-09-11T08:00:00-10:00:00
                 sort(v.begin(), v.end());
                 print(v);
               }
-            ```
+            ```  
 
-          - 결과  
-          ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/sortOperatorOverroadingResult.png){: width="30%" height="30%"}
-        
-      2. ### 비교함수 정의 방식
+            - 결과
+
+              ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/sortOperatorOverroadingResult.png){: width="30%" height="30%"}
+
+        2. ### 비교함수 정의 방식
           - 소스코드
+
             ```c++  
               bool compare(string before, string after) {
                 return before.length() < after.length();
@@ -163,8 +171,10 @@ last_modified_at: 2021-09-11T08:00:00-10:00:00
                 sort(names.begin(), names.end(), compare);
               }
             ```
-          - 결과  
-          ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/collectionSortResultUsingCompare.png){: width="30%" height="30%"}
+
+            - 결과
+
+              ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/collectionSortResultUsingCompare.png){: width="30%" height="30%"}
 
 ---
 
@@ -187,7 +197,8 @@ last_modified_at: 2021-09-11T08:00:00-10:00:00
   ```
 
   - 결과
-  ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/iteratorResult.png){: width="10%" height="10%"}
+
+    ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/iteratorResult.png){: width="10%" height="10%"}
 
 ---
 
@@ -222,4 +233,5 @@ last_modified_at: 2021-09-11T08:00:00-10:00:00
   ```
   
   - 결과
-  ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/nextPermutationResult.png){: width="30%" height="30%"}
+  
+    ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/Algorithm/nextPermutationResult.png){: width="30%" height="30%"}
