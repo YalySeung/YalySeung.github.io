@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
 toc_label: "Strategy Pattern"
 
-last_modified_at: 2021-09-11T08:06:00-05:00
+last_modified_at: 2021-09-11T08:00:00-10:00:00
 ---
 
 # 개요
@@ -30,11 +30,9 @@ last_modified_at: 2021-09-11T08:06:00-05:00
   - ## Explain
     - <span style="color:red">SuperClass</span> : 내가 구현할 Class
       - SetVariance() : 변경되는 기능 인터페이스를 SuperClass에 위임
-      - DoVariance() : 변경되는 기능의 DoSomething() 메서드를 호출  
-
+      - DoVariance() : 변경되는 기능의 DoSomething() 메서드를 호출
     - <span style="color:red">VarianceInterface</span> : 변경되는 기능에 대한 정의 Interface
-      - DoSomething() : 수행할 동작  
-
+      - DoSomething() : 수행할 동작
     - <span style="color:red">VarianceImpl</span> : 변경되는 기능을 구체화한 Implement Class
 
 ---

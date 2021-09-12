@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
 toc_label: "Observer Pattern"
 
-last_modified_at: 2021-09-11T08:06:00-05:00
+last_modified_at: 2021-09-11T08:00:00-10:00:00
 ---
 
 # 개요
