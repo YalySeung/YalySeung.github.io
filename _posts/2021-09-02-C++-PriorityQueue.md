@@ -46,7 +46,7 @@ last_modified_at: 2021-09-12T08:00:00-10:00:00
 
   - 정렬 결과
 
-    ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/DataStructure/DefaultPriorityQueueResult.png){: width="30%" height="30%"}  
+    ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/C++/DefaultPriorityQueueResult.png){: width="30%" height="30%"}  
 
 ---
 
@@ -64,7 +64,7 @@ last_modified_at: 2021-09-12T08:00:00-10:00:00
 
   - 정렬 결과
 
-    ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/DataStructure/MaxPriorityQueueResult.png){: width="30%" height="30%"}  
+    ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/C++/MaxPriorityQueueResult.png){: width="30%" height="30%"}  
 
 ---
 
@@ -82,7 +82,7 @@ last_modified_at: 2021-09-12T08:00:00-10:00:00
 
   - 정렬 결과
 
-    ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/DataStructure/MinPriorityQueueResult.png){: width="30%" height="30%"}  
+    ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/C++/MinPriorityQueueResult.png){: width="30%" height="30%"}  
 
 ---
 
@@ -107,5 +107,5 @@ last_modified_at: 2021-09-12T08:00:00-10:00:00
 
   - 정렬 결과
 
-    ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/DataStructure/CustomPriorityQueueResult.png){: width="30%" height="30%"}  
+    ![image](/assets/images/Common/Arrow.png){: width="10%" height="10%"} ![image](/assets/images/C++/CustomPriorityQueueResult.png){: width="30%" height="30%"}  
 
