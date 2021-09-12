@@ -138,11 +138,11 @@ last_modified_at: 2021-09-12T08:00:00-10:00:00
 
             ```c++
               struct Sample{
-                  int x, y;
-                  bool operator<(const Sample &p) const{
-                      if (x == p.x) return y < p.y;
-                      return x < p.x;    
-                  }
+                int x, y;
+                bool operator<(const Sample &p) const{
+                    if (x == p.x) return y < p.y;
+                    return x < p.x;    
+                }
               };
             
               int main() {
@@ -188,11 +188,11 @@ last_modified_at: 2021-09-12T08:00:00-10:00:00
   - 소스
   ```c++
     int main (){
-        vector<int> v = {3, 1, 8};
-        
-        for(vector<int>::iterator it = v.begin(); it != v.end(); it++){
-            cout << to_string(*it) << endl;
-        }   
+      vector<int> v = {3, 1, 8};
+      
+      for(vector<int>::iterator it = v.begin(); it != v.end(); it++){
+        cout << to_string(*it) << endl;
+      }   
     }
   ```
 
