@@ -14,13 +14,21 @@ toc: true
 toc_sticky: true
 toc_label: "Priority Queue"
 
-last_modified_at: 2021-09-11T08:00:00-10:00:00
+last_modified_at: 2021-09-12T08:00:00-10:00:00
 ---
 
 # 개요
   - Heap 기반의 Queue
   - Queue Items에 우선순위가 필요할 경우 사용
   - #include \<queue>
+  - 추가, 삭제 시간복잡도 O(log n)
+
+---
+
+# 함수
+  - push() : 원소 삽입
+  - pop() : 원소 제거
+  - front() : 마지막 원소 get
 
 ---
 

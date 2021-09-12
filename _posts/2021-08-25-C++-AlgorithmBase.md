@@ -14,7 +14,7 @@ toc: true
 toc_sticky: true
 toc_label: AlgorithmBase
 
-last_modified_at: 2021-09-11T08:00:00-10:00:00
+last_modified_at: 2021-09-12T08:00:00-10:00:00
 ---
 
 # 입출력
@@ -208,7 +208,8 @@ last_modified_at: 2021-09-11T08:00:00-10:00:00
   - radom_shuffle() : 무작위로 섞기
   - lower_bound() : 특정 값 이상인 첫번째 원소의 Iterator 반환, 주어진 범위가 정렬되어있어야 동작, 없을경우 v.end() 반환
   - upper_bound() : 특정 값 이하인 첫번째 원소의 Iterator 반환, 주어진 범위가 정렬되어있어야 동작, 없을경우 v.end() 반환
-  - v.erase() : 중복 원소 삭제
+  - v.erase() : 원소 삭제
+  - unique() : 중복된 원소 뒤로 이동, 중복된 원소의 Iterator 반환
 
 ---
 
