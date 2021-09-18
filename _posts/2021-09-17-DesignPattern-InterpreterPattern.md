@@ -11,7 +11,7 @@ tags:
 
 toc: true
 toc_sticky: true
-toc_label: "Set"
+toc_label: "Interpreter"
 
 last_modified_at: 2021-09-17T08:00:00-10:00:00
 ---
@@ -29,14 +29,14 @@ last_modified_at: 2021-09-17T08:00:00-10:00:00
  - ## Explain
    - <span style="color:red">Interpreter Class</span> : Expression을 사용하여, 문법적 언어를 해석하는 Class
    - <span style="color:red">Expression Interface</span> : 표현식 Interface
-     - Interprete() : 언어를 해석하는 함수
+     - Interprete() : 언어를 해석하는 메서드
    - <span style="color:red">TerminalExpression Class</span> : Terminal Data를 해석하는 Expression Class
      - data : 해석할 Terminal data
-     - Interprete() : 언어를 해석하는 함수
+     - Interprete() : 언어를 해석하는 메서드
    - <span style="color:red">NonTerminalExpression Class</span> : 표현식 간의 상호작용 Expression Class
      - expressionA : 표현식A
      - expressionA : 표현식B
-     - Interprete() : 언어를 해석하는 함수
+     - Interprete() : 언어를 해석하는 메서드
    
 ---
 
