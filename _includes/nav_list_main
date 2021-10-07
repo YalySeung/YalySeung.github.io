@@ -73,7 +73,7 @@
 
         <ul>
             {% for category in site.categories %}
-            {% if category[0] == "ParallelProcessing" %}
+            {% if category[0] == "Parallel Processing" %}
               <li><a href="/categories/ParallelProcessing" class="">ParallelProcessing ({{category[1].size}})</a></li>
             {% endif %}
             {% endfor %}
