@@ -3,10 +3,10 @@ title: "Garbage Collection"
 excerpt: "메모리 관리"
 
 categories:
-  - C#
+  - CSharp
 
 tags:
-  - [C#]
+  - [CSharp]
 
 toc: true
 toc_sticky: true
