@@ -21,7 +21,7 @@ last_modified_at: 2022-02-24T08:00:00-10:00:00
 
 # boxing
   - boxing은 값 형식을 형식 또는 이 값 형식에서 구현된 임의의 인터페이스 형식으로 변환하는 프로세스
-  -  CLR은 값 형식을 boxing할 때 값을 System.Object 인스턴스 내부에 래핑하고 관리되는 힙에 저장
+  - CLR은 값 형식을 boxing할 때 값을 System.Object 인스턴스 내부에 래핑하고 관리되는 힙에 저장
   - unboxing하면 개체에서 값 형식이 추출
   - ex)
     ```c#
