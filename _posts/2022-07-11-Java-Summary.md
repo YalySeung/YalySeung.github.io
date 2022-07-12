@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
 toc_label: "Java Summary"
 
-last_modified_at: 2022-07-11T08:00:00-10:00:00
+last_modified_at: 2022-07-12T08:00:00-10:00:00
 ---
 
 # JVM
@@ -107,5 +107,66 @@ last_modified_at: 2022-07-11T08:00:00-10:00:00
 
 ---
 
+# final 키워드
+## 개요
+  - Read Only
+  - Static final : 클래스 변수로 선언시 초기화
+  - Instance final : 인스턴수 변수로 인스턴스 생성(new)시 초기화
+
+## Sample
+  - static 블럭과 인스턴스 블럭을 이용한 초기화
+### 소스코드
+  ```java
+  public class MyClass {
+        public static final int CONSTANT1 = 10;
+        public static final int CONSTANT4;
+
+        public final int CONSTANT2;
+        public final int CONSTANT3;
+
+        static{
+          System.out.println("정적 초기화 블럭");
+          CONSTANT4 = 40;
+        }
+
+        {
+          System.out.println("인스턴스 초기화 블럭");
+          CONSTANT3 = 30;
+        }
+
+        public MyClass() {
+          System.out.println("생성자");
+          CONSTANT2 = 20;
+        }
+  }
+  ```
+### 결과
+  ![image](/assets/images/Java/FieldInitSequence.png){: width="40%" height="40%"}
+
+---
+
+# Exception
+## 개요
+  - 소스 상에서 논리적 에러가 발생하면 소스는 JVM runtime 에 에러 전달
+  - JVM runtime 은 Exception 객체 생성하여 소스로 전달
+  - 개발자는 이 Exception 객체를 처리해줘야 한다.
+  - 클래스 선언시, throws [예외명] 명시
+
+## 분류
+  - 일반 예외 : 컴파일러 체크 예외, 컴파일 과정에서 예외처리 코드 있는지 검사
+  - 실행 예외 : 컴파일러 논 체크 예외, 컴파일 과정에서 예외처리코드 검사하지 않음
+
+## Sample
+  ```java
+
+  public static int add(int a, int b) {
+    return 0;
+  }
+
+  ```
+
+---
+
 # 참고서적
   - [uml for javaprogrammer] / Robert C. Martin
+  - [패턴을 활용한 리팩터링] / 조슈아 케리에브스키
