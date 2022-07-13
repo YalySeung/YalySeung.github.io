@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
 toc_label: "Java Summary"
 
-last_modified_at: 2022-07-12T08:00:00-10:00:00
+last_modified_at: 2022-07-13T08:00:00-10:00:00
 ---
 
 # JVM
@@ -51,7 +51,7 @@ last_modified_at: 2022-07-12T08:00:00-10:00:00
 
 # Class
 ## 개요
-  - class 생성시 eqauls, tostring, hashcode(역이 성립하지 않는 Value 반환 메서드 암호화시 사용) 재정의
+  - class 생성시 equals, tostring, hashcode(key 값 찾아올때 사용) 재정의
   - Role & Responsibility 작성 : 클래스의 행위는 클래스의 데이터에 영향을 주는 행위만 정의한다.
 
 ## 객체간의 관계 
@@ -67,6 +67,18 @@ last_modified_at: 2022-07-12T08:00:00-10:00:00
 ### 상속 관계 
   - 키워드(implements, extends)
   - Generalization
+
+## Class 정보 획득
+### Sample
+  ```java
+  Class cls = MyClass.class; // 정적필드
+  
+  Class.forName("패키지명.classname"); // 정적 메서드
+  
+  MyClass cls = new MyClass();
+  cls.getClass(); // 객체로부터 가져오기
+
+  ```
 
 ---
 
@@ -164,6 +176,54 @@ last_modified_at: 2022-07-12T08:00:00-10:00:00
   }
 
   ```
+
+---
+
+# Comparable<T>, Comparator<T>
+## 개요
+  - <T> 타입의 값 대소비교에 사용되는 인터페이스
+  - CompareTo() 메소드를 구현하여 사용
+
+## Sample
+  ```java
+
+  public class Student implements Comparable<Student> {
+
+    private String name;
+    private int age;
+    private int height;
+
+    public int compareTo(Student o) {
+      return this.age - o.age;
+    }
+  }
+
+  public class Main {
+    public static void main(String[] args) {
+
+      Student student1 = new Student("홍길동", 16, 170);
+      Student student2 = new Student("이순신", 13, 180);
+      Student student3 = new Student("강감찬", 18, 190);
+      
+      List<Student> studentList = new ArrayList<Student>();
+      studentList.add(student1);
+      studentList.add(student2);
+      studentList.add(student3);
+      
+      studentList.sort(new Comparator<Student>() {
+        public int compare(Student o1, Student o2) {
+          return o1.compareTo(o2);
+        }
+      });
+
+      System.out.println(studentList);
+    }
+  }
+
+  ```
+
+## 결과
+  ![image](/assets/images/Java/SortResult.png){: width="100%" height="100%"}
 
 ---
 
