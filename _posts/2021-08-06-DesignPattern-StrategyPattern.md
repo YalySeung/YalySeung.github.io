@@ -1,6 +1,6 @@
 ---
 title: "Strategy Pattern"
-excerpt: "변경되는 부분을 캡슐화" 
+excerpt: "기능을 추상화" 
 
 categories:
 - Design Pattern
@@ -12,12 +12,11 @@ toc: true
 toc_sticky: true
 toc_label: "Strategy Pattern"
 
-last_modified_at: 2021-09-11T08:00:00-10:00:00
+last_modified_at: 2022-07-14T08:00:00-10:00:00
 ---
 
 # 개요
-  - 알고리즘 군을 정의하고 각각을 캡슐화 하는 디자인 패턴
-  - 달라질 부분과 달라지지 않을 부분으로 분리
+  - 기능을 추상화하여 각각을 캡슐화 하는 디자인 패턴
   - 구현이 아닌 인터페이스에 의존
   - 상속보다는 [구성](#용어설명)을 활용
 
@@ -38,7 +37,7 @@ last_modified_at: 2021-09-11T08:00:00-10:00:00
 ---
 
 # 구현방법
-  - 달라질 가능성이 있는 부분을 인터페이스로 분리
+  - 기능알고리즘을 인터페이스로 분리
   - 인터페이스를 상속하는 알고리즘군 구현
   - 수퍼 클래스 로컬 변수를 Set하는 Method, 실행하는 Method 명시
 
