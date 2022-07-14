@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
 toc_label: "Java Summary"
 
-last_modified_at: 2022-07-13T08:00:00-10:00:00
+last_modified_at: 2022-07-14T08:00:00-10:00:00
 ---
 
 # JVM
@@ -224,6 +224,19 @@ last_modified_at: 2022-07-13T08:00:00-10:00:00
 
 ## 결과
   ![image](/assets/images/Java/SortResult.png){: width="100%" height="100%"}
+
+---
+
+# Byte Stream
+## 개요
+  - 네트워크에서 사용하는 데이터 전달 포맷
+  - 데이터 => serializedData => stream => deserializedData => 데이터 일련의 흐름으로 데이터 전달
+  - Encoding : 데이터를 바이트화 할때, 어떤방식으로 serialize 했는지에 대한 정의
+  - flush : 버퍼 스트림을 비운다!! / 스트림의 출발지에서 수행한다.
+  - Serializable 마커 인터페이스를 구현해야한다.
+
+## Sample
+  - Sream 객체 확인
 
 ---
 
