@@ -12,12 +12,13 @@ toc: true
 toc_sticky: true
 toc_label: "Decorator Pattern"
 
-last_modified_at: 2021-09-11T08:00:00-10:00:00
+last_modified_at: 2022-07-14T08:00:00-10:00:00
 ---
 
 # 개요
 - 객체에 추가적인 요건을 동적으로 추가 하는 디자인 패턴
 - 구조적으로 new 키워드의 사용이 많음
+- 상속만으로 해결이 안되는 문제에 대한 해결방안
 - 클래스는 확장에 열려있어야 하고 코드 변경에는 닫혀있어야 한다.(OCP : Open-Close Principle)
 
 ---
