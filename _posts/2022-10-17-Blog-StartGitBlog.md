@@ -32,10 +32,10 @@ last_modified_at: 2022-10-17T08:00:00-10:00:00
 
 ## 블로그용 git repository 생성 및 clone
   - repository 생성
-  - repository 이름은 <span style="color:red">username.github.io</span> 형식으로 생성해야한다!! => 깃헙 계정 기본설정은 계정당 1개의 블로그로 설정되어있다.
+  - repository 이름은 <span style="color:red">username.github.io</span> 형식으로 생성해야한다!! => 깃헙 계정 기본설정은 계정당 1개의 블로그로 설정되어있다.  
   ![image](/assets/images/Blog/BlogRepository.png)  
 
-  - Source Tree로 소스 Clone
+  - Source Tree로 소스 Clone  
   ![image](/assets/images/Blog/GitRepositoryUrl.png)  
   위와 같이 url을 복사하여  
   ![image](/assets/images/Blog/CloneBlogRepository.png)  
