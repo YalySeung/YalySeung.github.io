@@ -26,7 +26,7 @@ last_modified_at: 2022-10-17T08:00:00-10:00:00
   ![image](/assets/images/ServerProgramming/GradleExtention.png)
 
 # Java App 프로젝트 생성
-  - Ctrl + Shift + P 모든 명령 표시 화면에서 gradle 입력 후 Create a Gradle Java Project(Advanced) 항목을 선택한다.
+  - Ctrl + Shift + P 모든 명령 표시 화면에서 gradle 입력 후 Create a Gradle Java Project(Advanced) 항목을 선택한다.  
   ![image](/assets/images/ServerProgramming/CreateGradleProject.png)
 
   - 프로젝트 폴더 경로를 설정한 후 아래와 같이 진행한다.
@@ -36,14 +36,14 @@ last_modified_at: 2022-10-17T08:00:00-10:00:00
   ![image](/assets/images/ServerProgramming/Gradle_InsertProjectName.png)
   ![image](/assets/images/ServerProgramming/Gradle_InsertPackage.png)
 
-  - 생성 결과
+  - 생성 결과  
   ![image](/assets/images/ServerProgramming/CreateGradleProjectResult.png)
 
 # Java App 프로젝트 실행
   - main 소스의 App.java 파일을 우클릭하여 Run Java를 선택한다.
   ![image](/assets/images/ServerProgramming/RunGradleProject.png)
   
-  - 실행결과
+  - 실행결과  
   ![image](/assets/images/ServerProgramming/RunJavaResult.png)
 
   Gradle : 7.3, JDK : 17 버전으로 자동 셋팅되어 빌드되었다. Spring Lagacy 셋팅은 추후에 업데이트 할 예정..
