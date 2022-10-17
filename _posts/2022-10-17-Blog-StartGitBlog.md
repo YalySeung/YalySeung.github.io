@@ -32,6 +32,7 @@ last_modified_at: 2022-10-17T08:00:00-10:00:00
 
 ## 블로그용 git repository 생성 및 clone
   - repository 생성
+  - repository 이름은 <span style="color:red">username.github.io</span> 형식으로 생성해야한다!! => 깃헙 계정 기본설정은 계정당 1개의 블로그로 설정되어있다.
   ![image](/assets/images/Blog/BlogRepository.png)  
 
   - Source Tree로 소스 Clone
@@ -80,3 +81,16 @@ last_modified_at: 2022-10-17T08:00:00-10:00:00
     - <span style="color:red">bundle install</span>
   
 초기 설정 완료~!!
+
+## 접근 url 설정
+  - _config.yml : 블로그 설정파일  
+  ![image](/assets/images/Blog/SetBlogUrl.png)  
+  - url 값 변경하면 웹페이지에서 접근 가능
+
+## git repository에 변경사항 push
+  ![image](/assets/images/Blog/PostingCommit.png)  
+  - 최초 반영되는데 시간이 좀 소요된다.
+
+  ![image](/assets/images/Blog/GitHubBlogResult.png)  
+
+[글 포스팅 하기로 이동~!](https://yalyseung.github.io/github/blog/VSCodeSpringSetting/)
