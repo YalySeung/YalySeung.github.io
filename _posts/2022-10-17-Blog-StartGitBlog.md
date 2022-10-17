@@ -93,4 +93,4 @@ last_modified_at: 2022-10-17T08:00:00-10:00:00
 
   ![image](/assets/images/Blog/GitHubBlogResult.png)  
 
-[글 포스팅 하기로 이동~!](https://yalyseung.github.io/github/blog/PostContents/)
+[글 포스팅 하기로 이동~!](https://yalyseung.github.io/blog/Blog-PostContents/)
