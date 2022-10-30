@@ -64,10 +64,14 @@ last_modified_at: 2022-10-20T08:00:00-10:00:00
 
 ## repositories
   - '어떤 저장소를 사용할 것인가' 에 대한 정의
-  - mavenCenteral() => Maven Central
+  - mavenCentral() => Maven Central
   - jcenter() => Bintray JCenter
   - google() => Google Android
   - 대표적으로 3가지를 주로 사용하며 이외에도 많은 저장소가 있다. ==> [go to MavenRepo](https://mvnrepository.com/repos)
+
+### mavenCentral vs jcenter
+  - jcenter는 mavenCentral보다 라이브러리 업로드가 쉽다.
+  - jcenter에 업로드시, mavenCentral에 동기화 설정도 가능하다.
 
 ## dependencies
   - 저장소에 필요한 라이브러리 항목 정의
