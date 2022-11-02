@@ -1,6 +1,6 @@
 ---
 title: "Filter / Interceptor"
-excerpt: "문서객체 모델"
+excerpt: "Client Request 전처리기"
 
 categories:
 - ServerProgramming
