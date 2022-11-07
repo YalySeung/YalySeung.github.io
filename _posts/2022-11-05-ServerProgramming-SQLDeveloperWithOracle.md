@@ -51,7 +51,7 @@ last_modified_at: 2022-11-05T08:00:00-10:00:00
 
   ![image](/assets/images/ServerProgramming/SQLDeveloper_CreateTableSpace_02.png){: width="40%" height="40%"}  
 
-  - 파일 사양 탭에서 필요한 정보들을 입력한다.  
+  - 파일 사양 탭에서 필요한 정보들을 입력한다. 이름 항목에는 <span style="color:red">.DBF 확장자를 꼭 붙여주자</span>  
 
   ![image](/assets/images/ServerProgramming/SQLDeveloper_CreateTableSpace_03.png){: width="70%" height="70%"}  
 
