@@ -26,9 +26,32 @@ last_modified_at: 2022-11-02T08:00:00-10:00:00
   - ex) 보안, 인코딩, 로깅, 데이터 압축
 
 ## 예시
+  - Web.xml
+  ```xml
+    ...
+    <filter>
+        <filter-name>SampleFilter1</filter-name>
+        <filter-class>필터패키지 경로.SampleFilter1</filter-class>        
+    </filter>
+    <filter-mapping>
+        <filter-name>SampleFilter1</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
+    <filter>
+        <filter-name>SampleFilter2</filter-name>
+        <filter-class>필터패키지 경로.SampleFilter2</filter-class>        
+    </filter>
+    <filter-mapping>
+        <filter-name>SampleFilter2</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    ...
+  ```
+
+  - SampleFilter.xml
   ```java
-    public class SampleFilter implements Filter{
+    public class SampleFilter1 implements Filter{
       public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
               // 처리할 로직...
 
