@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
 toc_label: "Filter / Interceptor"
 
-last_modified_at: 2022-11-02T08:00:00-10:00:00
+last_modified_at: 2022-11-08T08:00:00-10:00:00
 ---
 # Spring MVC Life Cycle
   ![image](/assets/images/ServerProgramming/SpringMVCLifeCycle.png)
@@ -49,7 +49,7 @@ last_modified_at: 2022-11-02T08:00:00-10:00:00
     ...
   ```
 
-  - SampleFilter.xml
+  - SampleFilter1 class
   ```java
     public class SampleFilter1 implements Filter{
       public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
