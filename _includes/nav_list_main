@@ -43,12 +43,19 @@
             {% endfor %}
         </ul>
 
-
     <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">서버프로그래밍</span>
         <ul>
             {% for category in site.categories %}
             {% if category[0] == "ServerProgramming" %}
                 <li><a href="/categories/ServerProgramming" class="">ServerProgramming ({{category[1].size}})</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul>
+            {% for category in site.categories %}
+            {% if category[0] == "DataBase" %}
+                <li><a href="/categories/DataBase" class="">DataBase ({{category[1].size}})</a></li>
             {% endif %}
             {% endfor %}
         </ul>
