@@ -19,8 +19,23 @@ last_modified_at: 2023-01-10T08:00:00-10:00:00
 
 ---
 
-# synchronized 키워드의 사용
-  - 공유자원 number의 값을 1 증가시키는 멀티스레드 프로그램을 예시로 synchronized 키워드에 대해 알아보자.
+# Volatile 키워드
+## Single Thread vs Multi Thread
+  ![image](/assets/images/ServerProgramming/ValueHandling_Single_Multi_Thread.png)  
+
+## Volatile 이란?
+  - 변수를 Main Memory에 저장하겠다는 명시적 표현
+  - 일반 변수의 값은 CPU cache에 저장되지만, Volatile로 선언된 변수의 값은 Main Memory 에 Read/Write 된다.
+
+## Volatile의 필요성
+  - MultiThread 어플리케이션에서 일반 변수를 사용하면, CPU cache에서 값을 Read/Write 하기때문에 변수값이 불일치 하는 상황이 발생
+  - 1개의 Write Transaction와 1개 이상의 Read Transaction를 사용할 경우, 값의 무결성을 보장한다.
+
+---
+
+# synchronized 키워드
+  - Main Memory의 값 동기화를 위해 사용
+  - example) 공유자원 number의 값을 1 증가시키는 멀티스레드 프로그램을 예시로 synchronized 키워드에 대해 알아보자.
 
 ## 테스트 소스 구조
   ![image](/assets/images/ServerProgramming/SynchronizedSource_ClassDiagram.png)  
@@ -31,13 +46,11 @@ last_modified_at: 2023-01-10T08:00:00-10:00:00
   ```java
   public abstract class AddOneTestBase {
     public void AddOne(NumberTableClass numberTable){
-        System.out.println("AddOne(+)");
         int currentNumber = numberTable.getNumber();
 
         WaitOneSec();
 
         numberTable.setNumber(currentNumber + 1);
-        System.out.println("AddOne(-)");
     }
 
     private void WaitOneSec() {
@@ -80,10 +93,8 @@ last_modified_at: 2023-01-10T08:00:00-10:00:00
         return new Thread(() -> {
             Method method;
             try {
-                System.out.println("OuterDo(+)");
                 method = testClass.getClass().getMethod("Do", NumberTableClass.class);
                 method.invoke(testClass, numberTable);
-                System.out.println("OuterDo(-)");
             } catch (NoSuchMethodException e) {
                 throw new RuntimeException(e);
             } catch (InvocationTargetException e) {
@@ -148,3 +159,5 @@ last_modified_at: 2023-01-10T08:00:00-10:00:00
   ```
   - 클래스 단위로 공유자원에 대한 접근을 잠금/해제한다.
   - 메서드 내 특정 범위에 synchronized 키워드 적용
+
+
