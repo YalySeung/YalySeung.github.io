@@ -53,18 +53,22 @@ last_modified_at: 2023-01-20T08:00:00-10:00:00
   ```json
   POST http://localhost/{Collection}/{Document}
 
+  //직원정보 요청
   GET http://localhost/worker/얄리
 
+  //직원정보 등록
   POST http://localhost/worker 
   {
     "name":"얄리",
     "team":"연구1팀"
   }
 
+  //직원정보 변경
   PUT http://localhost/worker/얄리{
     "team":"Q서비스팀"
   }
 
+  //직원정보 제거
   DELETE http://localhost/worker/얄리
   ```
 
@@ -84,10 +88,10 @@ last_modified_at: 2023-01-20T08:00:00-10:00:00
 
 ## Representation(표현)
   ```json
-  POST http://localhost/module/deparment
-  {
-    "name" : "연구팀",
-    "people" : "20"
+  PUT http://localhost/worker/얄리{
+    
+    //표현
+    "team":"Q서비스팀"
   }
   ```  
   - body 부분이 표현에 해당한다.
