@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
 toc_label: "RESTful"
 
-last_modified_at: 2022-11-30T08:00:00-10:00:00
+last_modified_at: 2023-01-20T08:00:00-10:00:00
 ---
 
 # 정의
@@ -52,6 +52,20 @@ last_modified_at: 2022-11-30T08:00:00-10:00:00
 ## REST Resource(자원)
   ```json
   POST http://localhost/{Collection}/{Document}
+
+  GET http://localhost/worker/얄리
+
+  POST http://localhost/worker 
+  {
+    "name":"얄리",
+    "team":"연구1팀"
+  }
+
+  PUT http://localhost/worker/얄리{
+    "team":"Q서비스팀"
+  }
+
+  DELETE http://localhost/worker/얄리
   ```
 
 ### Collection
