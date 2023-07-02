@@ -1,5 +1,5 @@
 ---
-title : "포트폴리오"
+title : "경력"
 layout : archive
 permalink : categories/Career
 author_profile : true
