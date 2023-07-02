@@ -93,6 +93,15 @@
             {% endfor %}
         </ul>
 
+    <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">경력 </span>
+        <ul>
+            {% for category in site.categories %}
+            {% if category[0] == "Career" %}
+                <li><a href="/categories/Career" class="">Career ({{category[1].size}})</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
     <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">기타</span>
         <ul>
             {% for category in site.categories %}
