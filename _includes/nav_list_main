@@ -1,4 +1,3 @@
-{% assign sum = site.posts | size %}
 
 <nav class="nav__list">
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
@@ -9,138 +8,481 @@
       <span style="color:#AADBFF">전체 글 수 </span> <span style="color:#AADBFF">{{sum}}</span> <span style="color:#AADBFF"> 개</span>
     </li>
 
-    <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">클린 코딩</span>
-        <ul>
-            {% for category in site.categories %}
-            {% if category[0] == "Design Pattern" %}
-                <li><a href="/categories/DesignPattern" class="">Design Pattern ({{category[1].size}})</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
-        <ul>
-            {% for category in site.categories %}
-            {% if category[0] == "TDD" %}
-                <li><a href="/categories/TDD" class="">TDD ({{category[1].size}})</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
-
-    <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">깃 허브</span>
-        <ul>
-            {% for category in site.categories %}
-            {% if category[0] == "Blog" %}
-                <li><a href="/categories/Blog" class="">Blog ({{category[1].size}})</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
     
-    <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">게임개발</span>
-        <ul>
-            {% for category in site.categories %}
-            {% if category[0] == "Unity" %}
-                <li><a href="/categories/Unity" class="">Unity ({{category[1].size}})</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Build</span>
 
-    <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">서버프로그래밍</span>
-        <ul>
-            {% for category in site.categories %}
-            {% if category[0] == "ServerProgramming" %}
-                <li><a href="/categories/ServerProgramming" class="">ServerProgramming ({{category[1].size}})</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "Build" %}
+            <li><a href="/categories/Build" class="">Build ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
 
-        <ul>
-            {% for category in site.categories %}
-            {% if category[0] == "DataBase" %}
-                <li><a href="/categories/DataBase" class="">DataBase ({{category[1].size}})</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">CLI</span>
 
-    <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">프로그래밍 언어</span>
-        <ul>
-            {% for category in site.categories %}
-            {% if category[0] == "C++" %}
-                <li><a href="/categories/C++" class="">C++ ({{category[1].size}})</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
-        
-        <ul>
-            {% for category in site.categories %}
-            {% if category[0] == "CSharp" %}
-                <li><a href="/categories/CSharp" class="">C# ({{category[1].size}})</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "CLI" %}
+            <li><a href="/categories/CLI" class="">CLI ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
 
-        <ul>
-            {% for category in site.categories %}
-            {% if category[0] == "Python" %}
-                <li><a href="/categories/Python" class="">Python ({{category[1].size}})</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">CleanCode</span>
 
-        <ul>
-            {% for category in site.categories %}
-            {% if category[0] == "Java" %}
-                <li><a href="/categories/Java" class="">Java ({{category[1].size}})</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "CleanCode" %}
+            <li><a href="/categories/CleanCode" class="">CleanCode ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
 
-    <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">경력 </span>
-        <ul>
-            {% for category in site.categories %}
-            {% if category[0] == "Career" %}
-                <li><a href="/categories/Career" class="">Career ({{category[1].size}})</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "BDD" %}
+            <li><a href="/categories/BDD" class="">BDD ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
 
-    <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">기타</span>
-        <ul>
-            {% for category in site.categories %}
-            {% if category[0] == "Algorithm" %}
-                <li><a href="/categories/Algorithm" class="">Algorithm ({{category[1].size}})</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
-        
-        <ul>
-            {% for category in site.categories %}
-            {% if category[0] == "DataStructure" %}
-              <li><a href="/categories/DataStructure" class="">DataStructure ({{category[1].size}})</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "TDD" %}
+            <li><a href="/categories/TDD" class="">TDD ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
 
-        <ul>
-            {% for category in site.categories %}
-            {% if category[0] == "Parallel Processing" %}
-              <li><a href="/categories/ParallelProcessing" class="">ParallelProcessing ({{category[1].size}})</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Database</span>
 
-        <ul>
-            {% for category in site.categories %}
-            {% if category[0] == "Computer Architecture" %}
-                <li><a href="/categories/ComputerArchitecture" class="">ComputerArchitecture ({{category[1].size}})</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "Database" %}
+            <li><a href="/categories/Database" class="">Database ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
 
-        <ul>
-            {% for category in site.categories %}
-            {% if category[0] == "Git" %}
-                <li><a href="/categories/Git" class="">Git ({{category[1].size}})</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "MariaDB" %}
+            <li><a href="/categories/MariaDB" class="">MariaDB ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "MSSQL" %}
+            <li><a href="/categories/MSSQL" class="">MSSQL ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "Oracle" %}
+            <li><a href="/categories/Oracle" class="">Oracle ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">DesignPattern</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "DesignPattern" %}
+            <li><a href="/categories/DesignPattern" class="">DesignPattern ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">DevelopCommon</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "DevelopCommon" %}
+            <li><a href="/categories/DevelopCommon" class="">DevelopCommon ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "ServerCommon" %}
+            <li><a href="/categories/ServerCommon" class="">ServerCommon ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "WebCommon" %}
+            <li><a href="/categories/WebCommon" class="">WebCommon ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Git</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "Git" %}
+            <li><a href="/categories/Git" class="">Git ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">GithubBlog</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "GithubBlog" %}
+            <li><a href="/categories/GithubBlog" class="">GithubBlog ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Idea</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "메모장" %}
+            <li><a href="/categories/메모장" class="">메모장 ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "할일" %}
+            <li><a href="/categories/할일" class="">할일 ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Markdown</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "Markdown" %}
+            <li><a href="/categories/Markdown" class="">Markdown ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Nodejs</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "Nodejs" %}
+            <li><a href="/categories/Nodejs" class="">Nodejs ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Obsidian</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "Obsidian" %}
+            <li><a href="/categories/Obsidian" class="">Obsidian ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Procreate</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "Procreate" %}
+            <li><a href="/categories/Procreate" class="">Procreate ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">React</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "React" %}
+            <li><a href="/categories/React" class="">React ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "ReactStudy" %}
+            <li><a href="/categories/ReactStudy" class="">ReactStudy ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Spring</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "Spring" %}
+            <li><a href="/categories/Spring" class="">Spring ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "Annotation" %}
+            <li><a href="/categories/Annotation" class="">Annotation ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "Test" %}
+            <li><a href="/categories/Test" class="">Test ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">SpringBoot</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "SpringBoot" %}
+            <li><a href="/categories/SpringBoot" class="">SpringBoot ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "사이드프로젝트" %}
+            <li><a href="/categories/사이드프로젝트" class="">사이드프로젝트 ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Unity</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "Unity" %}
+            <li><a href="/categories/Unity" class="">Unity ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "리소스" %}
+            <li><a href="/categories/리소스" class="">리소스 ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Vim</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "Vim" %}
+            <li><a href="/categories/Vim" class="">Vim ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Vue</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "VueStudy" %}
+            <li><a href="/categories/VueStudy" class="">VueStudy ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">개발환경</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "개발환경" %}
+            <li><a href="/categories/개발환경" class="">개발환경 ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "IDE" %}
+            <li><a href="/categories/IDE" class="">IDE ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">사이드프로젝트</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "Server" %}
+            <li><a href="/categories/Server" class="">Server ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "게임" %}
+            <li><a href="/categories/게임" class="">게임 ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">암복호화</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "암복호화" %}
+            <li><a href="/categories/암복호화" class="">암복호화 ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">자료구조</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "자료구조" %}
+            <li><a href="/categories/자료구조" class="">자료구조 ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">통신</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "통신" %}
+            <li><a href="/categories/통신" class="">통신 ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">프로그래밍언어</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "프로그래밍언어" %}
+            <li><a href="/categories/프로그래밍언어" class="">프로그래밍언어 ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "CSharp" %}
+            <li><a href="/categories/CSharp" class="">CSharp ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "Expression" %}
+            <li><a href="/categories/Expression" class="">Expression ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "java" %}
+            <li><a href="/categories/java" class="">java ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "Exception" %}
+            <li><a href="/categories/Exception" class="">Exception ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "python" %}
+            <li><a href="/categories/python" class="">python ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">하드웨어</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "하드웨어" %}
+            <li><a href="/categories/하드웨어" class="">하드웨어 ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "키보드" %}
+            <li><a href="/categories/키보드" class="">키보드 ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
   </ul>
 </nav>
