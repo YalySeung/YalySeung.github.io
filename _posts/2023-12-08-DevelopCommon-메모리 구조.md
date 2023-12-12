@@ -19,6 +19,7 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 # 내용
 
 ## 메모리 구조
+  
 ![image](./../../assets/images/MemoryStructure.png){: width="60%" height="60%"} 
 
 ### Code영역

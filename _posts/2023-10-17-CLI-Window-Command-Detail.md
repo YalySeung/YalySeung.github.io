@@ -42,21 +42,25 @@ last_modified_at: 2023-10-17T08:00:00-10:00:00
 ```bash
 netstat -ano | find "LISTEN"
 ```
+  
 ![image](./../../assets/images/FindListenPort.png)
 
 ```bash
 netstat -anp tcp | find "LISTEN"
 ```
+  
 ![image](./../../assets/images/FindListenTCPPort.png)
 
 ```bash
 netstat -anp tcp | find "443"
 ```
+  
 ![image](./../../assets/images/Find443Port.png)
 
 ```bash
 netstat -anp tcp | findstr 49414
 ```
+  
 ![image](./../../assets/images/FindSpecificPort.png)
 
 ### tasklist
@@ -73,16 +77,19 @@ netstat -anp tcp | findstr 49414
 ```bash
 tasklist
 ```
+  
 ![image](./../../assets/images/../../assets/Images/Tasklist.png)
 
 ```bash
 tasklist /M | findstr "RuntimeBroker"
 ```
+  
 ![image](./../../assets/images/../../assets/Images/TaskListRuntimeBroker.png)
 
 ```bash
 tasklist /V
 ```
+  
 ![image](./../../assets/images/../../assets/Images/TaskListDetails.png)
 
 ### sc

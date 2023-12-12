@@ -21,6 +21,7 @@ last_modified_at: 2023-10-22T08:00:00-10:00:00
 ## 프로젝트 구조
 
 ### 폴더 구조
+  
 ![image](./../../assets/images/ProjectStructure.png)
 
 #### node_module

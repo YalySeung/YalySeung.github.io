@@ -21,6 +21,7 @@ last_modified_at: 2023-11-01T08:00:00-10:00:00
 ## 환경변수 사용 방법
 
 ### .env 파일 생성
+  
 ![image](./../../assets/images/../../assets/Images/VueENVFile.png)
 
 ### 사용

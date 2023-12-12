@@ -43,7 +43,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 ### 중첩
 - 여러 수준을 중첩 할 수 있다
 ```
->[!question] Can callouts be nested? 
+> Can callouts be nested? 
 >> Yes!, they can. 
 >>> You can even use multiple layers of nesting.
 
@@ -71,7 +71,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 
 #### 추상적인
 ```
-> [!abstract] 
+> 
 > Lorem ipsum dolor sit amet
 
 ```
@@ -99,14 +99,14 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 
 #### 성공
 ```
-> [!success] 
+> 
 > Lorem ipsum dolor sit amet
 
 ```
 
 #### 질문
 ```
-> [!question]
+>
 > Lorem ipsum dolor sit amet
 
 ```
@@ -148,7 +148,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 
 #### 인용
 ```
-> [!quote] 
+> 
 > Lorem ipsum dolor sit amet
 
 ```

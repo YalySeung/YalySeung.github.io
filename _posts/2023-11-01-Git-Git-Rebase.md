@@ -22,9 +22,11 @@ last_modified_at: 2023-11-01T08:00:00-10:00:00
 - 두 개의 공통 Base를 가진 Branch에서 한 Branch의 Base를 다른 Branch의 최신 커밋으로 옮기는 작업
 
 ### Rebase 전
+  
 ![image](./../../assets/images/../../assets/Images/Git-Rebase-Before.png)
 
 ### Rebase 후
+  
 ![image](./../../assets/images/../../assets/Images/Git-Rebase-After.png)
 
 ## 장점

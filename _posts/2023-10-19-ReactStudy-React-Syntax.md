@@ -38,6 +38,7 @@ export default function App(){
 const myName = "david"
 console.log(`이름은 ${myName} 입니다`);
 ```
+  
 ![image](./../../assets/images/../../assets/Images/TemplateLiteralResult.png)
 
 ### map
@@ -50,6 +51,7 @@ const newAges = ages.map((age) => age + 1);
 console.log(ages);
 console.log(newAges);
 ```
+  
 ![image](./../../assets/images/../../assets/Images/LamdaResult.png)
 
 ### filter
@@ -68,6 +70,7 @@ infos.filter((person) => {
 	 return person.age > 25);
 	});
 ```
+  
 ![image](./../../assets/images/LamdaResult%201.png)
 
 ### Clone

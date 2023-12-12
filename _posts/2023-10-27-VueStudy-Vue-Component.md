@@ -21,6 +21,7 @@ last_modified_at: 2023-10-27T08:00:00-10:00:00
 ## 컴포넌트 간 통신
 - vue에서 컴포넌트 간의 데이터 전달은 단방향으로만 가능
 - 컴포넌트간의 의존 줄이기, 데이터 일관성 확보를 위함
+  
 ![image](./../../assets/images/../../assets/Images/VueComponentRelation.png)
 
 ## Props

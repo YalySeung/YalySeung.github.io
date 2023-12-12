@@ -19,6 +19,7 @@ last_modified_at: 2023-11-13T08:00:00-10:00:00
 # 내용
 
 ## SpringBoot 프로젝트 구성
+  
 ![image](./../../assets/images/SpringVueProjectStructure.png)
 
 ## 필요 외부 모듈
@@ -39,6 +40,7 @@ npm install path
 
 ## Vue.js dev 서버에 proxy 설정
 - Boot 서버 포트 변경
+  
 ![image](./../../assets/images/../../assets/Images/ChangeServerPort.png)
 - vite.config.js
 

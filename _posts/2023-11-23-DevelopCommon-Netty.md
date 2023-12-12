@@ -23,6 +23,7 @@ last_modified_at: 2023-11-23T08:00:00-10:00:00
 >비동기 이벤트 기반 네트워크 애플리케이션 프레임워크
 
 ## 구조
+  
 ![image](./../../assets/images/../../assets/Images/NettyStructure.png)
 
 ### Application Layer
@@ -45,12 +46,15 @@ last_modified_at: 2023-11-23T08:00:00-10:00:00
 ## Event Loop
 
 ### 기본 구조
+  
 ![image](./../../assets/images/../../assets/Images/NettyEventLoop.png)
 
 ### sync(동기)
+  
 ![image](./../../assets/images/../../assets/Images/NettySyncModel.png)
 
 ### async(비동기)
+  
 ![image](./../../assets/images/../../assets/Images/NettyAsyncModel.png)
 
 ## 주요 Classes
@@ -224,6 +228,7 @@ private ReceiveHandler RECEIVE_HANDLER; // = new ReceiveHandler();
 - close() 메서드로 채널 연결을 종료
 
 ## pipeline process
+  
 ![image](./../../assets/images/../../assets/Images/NettyProcess.png)
 
 ### 1. 채널을 통해 메시지 전송

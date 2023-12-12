@@ -124,6 +124,7 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 ```
 
 ### LiveServer 결과
+  
 ![image](./../../assets/images/VueCDNSample.png)
 
 ### binding

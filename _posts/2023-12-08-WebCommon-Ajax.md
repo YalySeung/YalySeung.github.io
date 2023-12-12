@@ -28,9 +28,11 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 ## Conventional Web Model <span style="color:gray">vs</span> Ajax Web Model
 
 ### Conventional Web Model
+  
 ![image](./../../assets/images/Web_ConventionalModel.png)  
 
 ### Ajax Web Model
+  
 ![image](./../../assets/images/Web_AjaxModel.png)
 
 ## Ajax 장점

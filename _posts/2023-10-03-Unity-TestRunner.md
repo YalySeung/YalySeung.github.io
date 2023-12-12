@@ -25,25 +25,33 @@ last_modified_at: 2023-10-03T08:00:00-10:00:00
 ## 환경 설정
 
 ### Step1 : TestRunner 윈도우 Open  
-![image](./../../assets/images/../../assets/Images/TestRunnerMenu.png){: width=350 height=350}![image](./../../assets/images/../../assets/Images/Arrow.png){: width=50 height=50}![image](./../../assets/images/../../assets/Images/TestRunnerWindow.png){: width=200 height=200}
+  
+![image](./../../assets/images/../../assets/Images/TestRunnerMenu.png){: width=350 height=350}  
+![image](./../../assets/images/../../assets/Images/Arrow.png){: width=50 height=50}  
+![image](./../../assets/images/../../assets/Images/TestRunnerWindow.png){: width=200 height=200}
 
 ### Step2 : Assembly Folder 생성
 - 위 이미지의 Create EditMode Test Assembly Folder 버튼을 선택하여 테스트 폴더를 생성 => EditTest Assembly Definition 파일도 함께 생성됨  
+  
 ![image](./../../assets/images/TestFolder%201.png)
 
 ### Step3 : 테스트 스크립트에서 사용할 Assembly 생성
 - 스크립트 폴더 밑에 생성  
   ![image](CreateAssemblyDefinition.png)
-![image](./../../assets/images/../../assets/Images/Arrow.png){: width=50 height=50} ![image](./../../assets/images/../../assets/Images/ScriptAssemblyDefinition.png) 
+  
+![image](./../../assets/images/../../assets/Images/Arrow.png){: width=50 height=50}   
+![image](./../../assets/images/../../assets/Images/ScriptAssemblyDefinition.png) 
 
 ### Step4 : EditTests Assembly Definition 파일에 Script Assembly Definition 파일 연결
-  ![image](./../../assets/images/../../assets/Images/AssemblyDefinitionInspector.png)
+    
+![image](./../../assets/images/../../assets/Images/AssemblyDefinitionInspector.png)
 
 ---  
 
 ## 테스트 스크립트 작성
 
 ### 스크립트 생성
+  
 ![image](./../../assets/images/../../assets/Images/TestRunnerScriptMenu.png)
 
 ### TestScript Attribute

@@ -28,9 +28,11 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 ```
 
 #### 파일 인코딩 변경
+  
 ![image](./../../assets/images/../../assets/Images/IntelliJSetFileEncoding.png)
 
 #### WAS 인코딩 변경
+  
 ![image](./../../assets/images/../../assets/Images/IntellijSetWASEncoding.png)
 ---
 

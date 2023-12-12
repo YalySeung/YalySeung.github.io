@@ -23,6 +23,7 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 > Java Servlet을 실행하고 웹페이지를 렌더링하는 응용프로그램 서버
 
 ## 톰캣 설정파일
+  
 ![image](./../../assets/images/Tomcat_Conf.png)
 
 ## server.xml
@@ -82,16 +83,16 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
   - Server, Resoure, Connector, Host를 주의깊게 보도록 하자.\
 
 ## 컴포넌트 별 설명
-- [Server](#Server) : server.xml의 최상위 컴포넌트
-- [Listener](#Listener) : Listener 모듈 등록
-- [GlobalNamingResources](#GlobalNamingResources) : global JNDI 리소스들을 정의
-- [Resource](#Resource): global JNDI 리소스
-- [Service](#Service): Connectors와 Engine 을 정의하는 프로퍼티
-- [Connector](#Connector): Listening Server 정보 설정
-- [Engine](#Engine): DB Access 처리 라이브러리와 host 정보를 처리하는 컴포넌트
-- [Realm](#Realm): 사용자에 할당된 데이터베이스 관리 및 컨테이너 관리 보안 구현, 사용할 Realm 클래스들 명시
-- [Host](#Host): 가상의 Host를 정의
-- [Value](#Value): Catalina 컨테이너에 대한 요청 처리 파이프라인에 삽입될 구성요소
+- [Server](#server) : server.xml의 최상위 컴포넌트
+- [Listener](#listener) : Listener 모듈 등록
+- [GlobalNamingResources](#globalnamingresources) : global JNDI 리소스들을 정의
+- [Resource](#resource): global JNDI 리소스
+- [Service](#service): Connectors와 Engine 을 정의하는 프로퍼티
+- [Connector](#connector): Listening Server 정보 설정
+- [Engine](#engine): DB Access 처리 라이브러리와 host 정보를 처리하는 컴포넌트
+- [Realm](#realm): 사용자에 할당된 데이터베이스 관리 및 컨테이너 관리 보안 구현, 사용할 Realm 클래스들 명시
+- [Host](#host): 가상의 Host를 정의
+- [Value](#value): Catalina 컨테이너에 대한 요청 처리 파이프라인에 삽입될 구성요소
 
 ### Server
 

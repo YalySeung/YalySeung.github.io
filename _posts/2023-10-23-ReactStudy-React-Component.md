@@ -82,6 +82,7 @@ export default function App() {
 ### 컴포넌트 추가
 
 #### components 폴더 하위에 jsx 생성
+  
 ![image](./../../assets/images/AppHeaderjsx.png)
 
 #### jsx 파일 작성

@@ -36,7 +36,7 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 ```
 
 ### HTML 출력
-- [Text Interpolation](#Text-Interpolation) 은  데이터를 html 이 아닌 일반 텍스트로 해석
+- [Text Interpolation](#text-interpolation) 은  데이터를 html 이 아닌 일반 텍스트로 해석
 - 실제 html 출력을 위해서는 [v-html](../../VueStudy/VueStudy-Vue-Directive#v-html) Directive를 사용해야 한다.
 
 ```javascript

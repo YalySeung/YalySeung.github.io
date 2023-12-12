@@ -23,6 +23,7 @@ last_modified_at: 2023-10-15T08:00:00-10:00:00
 - 인터넷 사용환경
 
 ## Gradle Process
+  
 ![image](./../../assets/images/../../assets/Images/GradleProcess.png)
 
 ## Gradle Script Sample

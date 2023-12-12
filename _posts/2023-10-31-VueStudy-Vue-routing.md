@@ -23,9 +23,11 @@ last_modified_at: 2023-10-31T08:00:00-10:00:00
 
 ### 환경구성
 - vite 프로젝트 생성시, Router 추가
+  
 ![image](./../../assets/images/CreateVueWithRouter%201.png)
 
 ### 프로젝트 구조
+  
 ![image](./../../assets/images/VueRouterProjectStructure.png)
 
 #### views

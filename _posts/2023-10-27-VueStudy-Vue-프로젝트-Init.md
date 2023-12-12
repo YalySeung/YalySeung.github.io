@@ -24,8 +24,10 @@ last_modified_at: 2023-10-27T08:00:00-10:00:00
 ### Vue.js devtools
 - 크롬 확장 프로그램
 - 리액트 사용 페이지에 접속하면 초록색으로 활성화됨
+  
 ![image](./../../assets/images/VueDevTool.png)
 - Component 구조 확인
+  
 ![image](./../../assets/images/VueComponentStructure.png)
 
 ## 프로젝트 생성
@@ -34,6 +36,7 @@ last_modified_at: 2023-10-27T08:00:00-10:00:00
 - npm run dev
 
 ## 프로젝트 구조
+  
 ![image](./../../assets/images/VueProjectStructure.png)
 
 ### public
@@ -43,6 +46,7 @@ last_modified_at: 2023-10-27T08:00:00-10:00:00
 - 소스 디렉토리
 
 ### 파일 구조
+  
 ![image](./../../assets/images/../../assets/Images/VueViteProjectStructure.png)
 
 ---

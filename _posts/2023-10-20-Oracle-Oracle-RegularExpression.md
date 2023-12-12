@@ -31,6 +31,7 @@ SELECT *
 FROM TB_BZ_RBT  
 WHERE REGEXP_LIKE(RBT_NM, '로봇|SH', 'i');
 ```
+  
 ![image](./../../assets/images/../../assets/Images/REGEXP_LIKE_Result.png)
 
 ### REGEXP_REPLACE(<컬럼명>, <정규식>, <대체문자열>, <검색 시작위치>, <일치횟수>, <정규식옵션>)
@@ -40,6 +41,7 @@ WHERE REGEXP_LIKE(RBT_NM, '로봇|SH', 'i');
 SELECT REGEXP_REPLACE(RBT_NM, '로봇|SH', '나는대체된문자열이다', 1, 0, 'i')  
 FROM TB_BZ_RBT;
 ```
+  
 ![image](./../../assets/images/../../assets/Images/REGEXP_REPLACE_Result.png)
 
 ### REGEXP_INSTR(<컬럼명>, <정규식>, <시작위치>, <일치횟수>, <매칭되는 문자의 문자열 상 index>, <정규식 옵션>)
@@ -49,7 +51,9 @@ FROM TB_BZ_RBT;
 SELECT REGEXP_INSTR(RBT_NM, '로봇|SH', 1, 1, 0, 'i')  
 FROM TB_BZ_RBT;
 ```
-![image](./../../assets/images/../../assets/Images/Robot_Source.png)![image](./../../assets/images/REGEXP_INSTR_Result.png)
+  
+![image](./../../assets/images/../../assets/Images/Robot_Source.png)  
+![image](./../../assets/images/REGEXP_INSTR_Result.png)
 
 ### REGEXP_SUBSTR(<컬럼명>, <정규식>, <시작위치>, <일치횟수>, <정규식 옵션>)
 - 정규식 패턴을 검색하여 부분 문자 추출
@@ -58,7 +62,9 @@ FROM TB_BZ_RBT;
 SELECT REGEXP_SUBSTR(RBT_NM, '다람쥐|SH', 1, 1, 'i')  
 FROM TB_BZ_RBT;
 ```
-![image](./../../assets/images/../../assets/Images/Robot_Source.png)![image](./../../assets/images/REGEXP_SUBSTR_Result.png)
+  
+![image](./../../assets/images/../../assets/Images/Robot_Source.png)  
+![image](./../../assets/images/REGEXP_SUBSTR_Result.png)
 
 ### REGEXP_COUNT(<컬럼명>, <정규식>, <시작위치>, <정규식 옵션>)
 - v11g 버전부터 사용 가능
@@ -69,7 +75,8 @@ SELECT REGEXP_COUNT(RBT_NM, '다람쥐|SH', 1, 'i')
 FROM TB_BZ_RBT;
 ```
 
-![image](./../../assets/images/../../assets/Images/Robot_Source.png)![image](./../../assets/images/REGEXP_COUNT_Result.png)
+![image](./../../assets/images/../../assets/Images/Robot_Source.png)  
+![image](./../../assets/images/REGEXP_COUNT_Result.png)
 
 ## 메타문자
 - 검색 알고리즘을 지정하는 연산자

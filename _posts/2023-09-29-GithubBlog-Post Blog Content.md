@@ -25,7 +25,8 @@ last_modified_at: 2023-09-29T08:00:00-10:00:00
 ## 새 글 게시
 
 ### _posts 폴더 및 게시글 생성
-  ![image](./../../assets/images/../../assets/Images/MakePostFolderAndMdFile.png)
+    
+![image](./../../assets/images/../../assets/Images/MakePostFolderAndMdFile.png)
 -  md 파일 포멧 : yyyy-MM-dd-카테고리명-타이틀명.md
 
 ### 게시글 내용 작성 .md파일

@@ -145,4 +145,4 @@ export default function ChickenChild({title, salt, onChangeSalt}) {
 ---
 
 # 연결문서
-- [React-Keyword](../../ReactStudy/ReactStudy-React-Keyword#**useState**)
+- [React-Keyword](../../ReactStudy/ReactStudy-React-Keyword#**usestate**)

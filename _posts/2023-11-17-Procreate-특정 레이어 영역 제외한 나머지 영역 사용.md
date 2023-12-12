@@ -20,7 +20,9 @@ last_modified_at: 2023-11-17T08:00:00-10:00:00
 >
 > 내가 사용할 영역에서 제외할 Layer 설정
 > 
->![image](./../../assets/images/../../assets/Images/ProcreateReference.png)
+>  
+
+![image](./../../assets/images/../../assets/Images/ProcreateReference.png)
 
 >
 >새 Layer를 생성해서 확인해보면 Reference로 지정한 영역이 구분되는것을 확인 할 수 있다.

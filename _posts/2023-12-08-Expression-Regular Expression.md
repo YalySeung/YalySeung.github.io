@@ -83,87 +83,117 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 ### 그룹과 범위 실습
 
 #### \| : 또는  
-![image](./../../assets/images/or1.png)![image](./../../assets/images/or2.png)
+  
+![image](./../../assets/images/or1.png)  
+![image](./../../assets/images/or2.png)
 
 #### () : 그룹
+  
 ![image](./../../assets/images/group1.png)
+  
 ![image](./../../assets/images/group2.png)
 
 #### [] : 문자집합  
+  
 ![image](./../../assets/images/brakets1.png)
+  
 ![image](./../../assets/images/brakets2.png)
 
 #### ?: : 찾지만 기억하지 않음  
+  
 ![image](./../../assets/images/forget.png)  
 
 #### \[^\] : 문자집합의 여집합  
+  
 ![image](./../../assets/images/not_brakets.png)
 
 ### 수량자 실습
 
 #### ? : 0 <= [문자] <= 1  
+  
 ![image](./../../assets/images/qeustionMark.png)
 
 #### \* : 0 <= [문자]  
+  
 ![image](./../../assets/images/multiply.png)
 
 #### \+ : 1 <= [문자]  
+  
 ![image](./../../assets/images/plus.png)
 
 #### {n} : n번 반복  
+  
 ![image](./../../assets/images/repeatNumber.png)
 
 #### {min,} : n번 이상  
+  
 ![image](./../../assets/images/repeatMin%201.png)
 
 #### {min,max} : min 이상 max 이하  
+  
 ![image](./../../assets/images/repeatMinMax.png)  
 
 ### 경계범위 실습
 
 #### \b : 단어 경계  
+  
 ![image](./../../assets/images/b1.png)
+  
 ![image](./../../assets/images/b2.png)
 
 #### \B : 단어 경계 아님  
+  
 ![image](./../../assets/images/bigB1.png)
+  
 ![image](./../../assets/images/bigB2.png)
 
 #### ^ : 문장의 시작  
+  
 ![image](./../../assets/images/angle1.png)
+  
 ![image](./../../assets/images/angle2.png)
 
 #### $ : 문장의 끝  
+  
 ![image](./../../assets/images/dolar.png)
 
 ### 문자 클래스 실습
 
 #### \\ : 특수문자 prefix  
+  
 ![image](./../../assets/images/backSlash.png)
 
 #### . : 줄바꿈 문자를 제외한 모든 문자  
+  
 ![image](./../../assets/images/dot.png)
 
 #### \\d : digit 숫자  
+  
 ![image](./../../assets/images/digit.png)
 
 #### \\D : digit 숫자 아닌 문자  
+  
 ![image](./../../assets/images/not_digit.png)
 
 #### \\w : word 문자  
+  
 ![image](./../../assets/images/word.png)
 
 #### \\W : word 문자가 아닌 문자  
+  
 ![image](./../../assets/images/not_word.png)
 
 #### \\s : 공백  
+  
 ![image](./../../assets/images/space.png)
 
 #### \\S : 공백 아닌 문자  
+  
 ![image](./../../assets/images/not_space.png)  
 
 ### 웹페이지에서 실습
 - 페이지 주소에서 도메인만 가져오기!  
+  
 ![image](./../../assets/images/match.png)
 - match 함수 결과 배열의 첫번째 인덱스에 정규식과 일치하는 문자열을 확인 할 수 있다.
 

@@ -29,7 +29,7 @@ last_modified_at: 2023-11-24T08:00:00-10:00:00
 
 ## 쓰레드 종류와 상태
 - [Thread 종류](../../ServerCommon/ServerCommon-Thread#종류)
-- [Thread 상태](../../ServerCommon/ServerCommon-Thread#State)
+- [Thread 상태](../../ServerCommon/ServerCommon-Thread#state)
 
 ## MAT
 
@@ -43,6 +43,7 @@ last_modified_at: 2023-11-24T08:00:00-10:00:00
 ### 분석
 
 #### dominator_tree
+  
 ![image](./../../assets/images/MATDominator_tree.png)
 
 ##### 각 항목 설명

@@ -51,6 +51,7 @@ last_modified_at: 2023-11-17T08:00:00-10:00:00
 
 ### Class Relationship
 - 게임을 예시로 각 관계에 대해 이해해보자
+  
 ![image](./../../assets/images/GameExampleOfUML.png)
 
 #### 일반화(Generalization)
@@ -58,7 +59,7 @@ last_modified_at: 2023-11-17T08:00:00-10:00:00
 - 부모는 자식을 **일반화(Generalize)**, 자식을 부모를 **구체화(Specialize)**
 - 속이 빈 화살표로 표현
 - 위 예시에서 Weapon과 Item 의 관계에 해당한다.
-
+  
 ![image](./../../assets/images/Generalize.png)
 
 ```java
@@ -84,6 +85,7 @@ public class Weapon extends Item {
 - interface의 기능을 실제로 구현
 - 점선에 속이 빈 화살표로 표현
 - 위 예시에서 Attackable, Damagable 과 Monster의 관계에 해당한다.
+  
 ![image](./../../assets/images/Realization.png)
 
 ```java
@@ -119,6 +121,7 @@ public class Monster implements Attackable, Damagable {
 - 멤버변수로 다른 객체를 사용할 때
 - 점선 화살표로 표현
 - 위 예시에서 Damabable, Monster와 DamageInfo의 관계에 해당한다.
+  
 ![image](./../../assets/images/Dependency.png)
 
 ```java
@@ -155,6 +158,7 @@ public class Monster implements Attackable, Damagable {
 - 두 객체는 독립적이며, 라이프사이클이 독립적
 - 속이 빈 다이아몬드 실선으로 표현
 - 뒤 예시에서 MonsterAdministrator와 Monster의 관계에 해당한다.
+  
 ![image](./../../assets/images/Aggregation.png)
 
 ```java
@@ -186,6 +190,7 @@ public class MonsterAdministrator {
 - 라이프사이클이 독립적
 - 실선으로 표현
 - 위 예시에서 GameManager와 MonsterAdministrator의 관계에 해당
+  
 ![image](./../../assets/images/Association.png)
 
 ```java
@@ -199,10 +204,11 @@ public class GameManager {
 ```
 
 #### 합성(Composition)
-- [집약(Aggregation)](#집약(Aggregation)) 이나 [집약(Aggregation)](#집약(Aggregation)) 보다 더 강력한 결합 관계
+- [집약(Aggregation)](#집약(aggregation)) 이나 [집약(Aggregation)](#집약(aggregation)) 보다 더 강력한 결합 관계
 - 한 객체가 다른 객체를 포함하며, 라이프사이클 공유
 - 속이 찬 다이아몬드 실선으로 표현
 - 위 예시에서 Status와 Monster의 관계에 해당한다.
+  
 ![image](./../../assets/images/Composition.png)
 
 ```java

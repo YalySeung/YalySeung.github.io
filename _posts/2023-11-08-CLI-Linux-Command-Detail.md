@@ -31,6 +31,7 @@ jmap -heap <pid>
 ```bash
 top
 ```
+  
 ![image](./../../assets/images/../../assets/Images/LinuxTopResult.png)
 
 #### Summary Region

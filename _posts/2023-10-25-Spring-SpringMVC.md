@@ -36,6 +36,7 @@ last_modified_at: 2023-10-25T08:00:00-10:00:00
 - Spring에서 제공하는 웹 모듈을 포함하는 프레임웍
 
 ## Spring MVC 구조
+  
 ![image](./../../assets/images/../../assets/Images/SpringMVCProcess.png)
 
 ### DispatcherServlet

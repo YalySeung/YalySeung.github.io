@@ -30,6 +30,7 @@ last_modified_at: 2023-10-25T08:00:00-10:00:00
 - 보안 기능 적용하기 쉬움
 
 ## 동작
+  
 ![image](./../../assets/images/../../assets/Images/ServletProcess.png)
 
 ## Servlet Interface
