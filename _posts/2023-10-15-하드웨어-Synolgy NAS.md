@@ -34,14 +34,14 @@ last_modified_at: 2023-10-15T08:00:00-10:00:00
 ![image](./../../assets/images/Pasted%20image%2020231118183506.png)
 
 ### 설정
-![image](./../../assets/images/Pasted%20image%2020231118183649.png)
-![image](./../../assets/images/Pasted%20image%2020231118183809.png)
-![image](./../../assets/images/Pasted%20image%2020231118183827.png)
-![image](./../../assets/images/Pasted%20image%2020231118184315.png)
-![image](./../../assets/images/Pasted%20image%2020231118184349.png)
-![image](./../../assets/images/Pasted%20image%2020231118184413.png)
-![image](./../../assets/images/Pasted%20image%2020231118184448.png)
-![image](./../../assets/images/Pasted%20image%2020231118184603.png)
+![image](./../../assets/images/StartSynologyNas_1.png)
+![image](./../../assets/images/StartSynologyNas_2.png)
+![image](./../../assets/images/StartSynologyNas_3.png)
+![image](./../../assets/images/StartSynologyNas_4.png)
+![image](./../../assets/images/StartSynologyNas_5.png)
+![image](./../../assets/images/StartSynologyNas_6.png)
+![image](./../../assets/images/StartSynologyNas_7.png)
+![image](./../../assets/images/StartSynologyNas_8.png)
 
 ## DDNS 설정
 ![image](./../../assets/images/../../assets/Images/IptimeSetDDNS.png)
