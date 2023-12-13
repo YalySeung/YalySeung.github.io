@@ -25,7 +25,7 @@ last_modified_at: 2023-11-01T08:00:00-10:00:00
 
 #### Pinia 프로젝트 생성
   
-![image](./../../assets/images/../../assets/Images/CreateVuePiniaProject.png)
+![image](../../assets/Images/CreateVuePiniaProject.png)
 
 #### 프로젝트 구조
   

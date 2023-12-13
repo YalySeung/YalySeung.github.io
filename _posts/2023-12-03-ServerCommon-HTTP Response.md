@@ -18,7 +18,7 @@ last_modified_at: 2023-12-03T08:00:00-10:00:00
 
 # 내용
   
-![image](./../../assets/images/../../assets/Images/HTTPResponse.png)
+![image](../../assets/Images/HTTPResponse.png)
 
 ## 상태줄
 - HTTP 응답의 시작 줄

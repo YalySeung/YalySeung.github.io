@@ -18,7 +18,7 @@ last_modified_at: 2023-11-02T08:00:00-10:00:00
 
 # 내용
   
-![image](./../../assets/images/../../assets/Images/WebCaching.png)
+![image](../../assets/Images/WebCaching.png)
 
 ## 기능
 - 사용자가 웹사이트에 접속할 때, 정적 컨텐츠(js, 이미지, css)를 특정 위치에 저장하여, 웹 사이트 서버에 해당 컨텐츠를 저장

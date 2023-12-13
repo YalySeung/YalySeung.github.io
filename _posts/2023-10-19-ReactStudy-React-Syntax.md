@@ -39,7 +39,7 @@ const myName = "david"
 console.log(`이름은 ${myName} 입니다`);
 ```
   
-![image](./../../assets/images/../../assets/Images/TemplateLiteralResult.png)
+![image](../../assets/Images/TemplateLiteralResult.png)
 
 ### map
 - function을 매개변수로 받아 Collection의 매개변수가 함수에 적용된 Collection 반환
@@ -52,7 +52,7 @@ console.log(ages);
 console.log(newAges);
 ```
   
-![image](./../../assets/images/../../assets/Images/LamdaResult.png)
+![image](../../assets/Images/LamdaResult.png)
 
 ### filter
 - 함수에서 true를 리턴하는 Element만 배열로 반환

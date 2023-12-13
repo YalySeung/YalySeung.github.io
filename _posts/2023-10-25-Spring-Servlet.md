@@ -31,7 +31,7 @@ last_modified_at: 2023-10-25T08:00:00-10:00:00
 
 ## 동작
   
-![image](./../../assets/images/../../assets/Images/ServletProcess.png)
+![image](../../assets/Images/ServletProcess.png)
 
 ## Servlet Interface
 

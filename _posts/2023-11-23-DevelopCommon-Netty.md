@@ -24,7 +24,7 @@ last_modified_at: 2023-11-23T08:00:00-10:00:00
 
 ## 구조
   
-![image](./../../assets/images/../../assets/Images/NettyStructure.png)
+![image](../../assets/Images/NettyStructure.png)
 
 ### Application Layer
 - 실제 비즈니스로직
@@ -47,15 +47,15 @@ last_modified_at: 2023-11-23T08:00:00-10:00:00
 
 ### 기본 구조
   
-![image](./../../assets/images/../../assets/Images/NettyEventLoop.png)
+![image](../../assets/Images/NettyEventLoop.png)
 
 ### sync(동기)
   
-![image](./../../assets/images/../../assets/Images/NettySyncModel.png)
+![image](../../assets/Images/NettySyncModel.png)
 
 ### async(비동기)
   
-![image](./../../assets/images/../../assets/Images/NettyAsyncModel.png)
+![image](../../assets/Images/NettyAsyncModel.png)
 
 ## 주요 Classes
 
@@ -229,7 +229,7 @@ private ReceiveHandler RECEIVE_HANDLER; // = new ReceiveHandler();
 
 ## pipeline process
   
-![image](./../../assets/images/../../assets/Images/NettyProcess.png)
+![image](../../assets/Images/NettyProcess.png)
 
 ### 1. 채널을 통해 메시지 전송
 

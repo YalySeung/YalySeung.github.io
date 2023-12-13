@@ -26,7 +26,7 @@ last_modified_at: 2023-11-07T08:00:00-10:00:00
 
 ### 수정
   
-![image](./../../assets/images/../../assets/Images/IntellijTestErrorFix.png)
+![image](../../assets/Images/IntellijTestErrorFix.png)
 
 ---
 

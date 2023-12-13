@@ -24,7 +24,7 @@ last_modified_at: 2023-11-06T08:00:00-10:00:00
 
 ## intellij 에서 classpath 설정
   
-![image](./../../assets/images/../../assets/Images/IntellijClassPath.png)
+![image](../../assets/Images/IntellijClassPath.png)
 - Source, Resoureses 에 포함된 경로는 모두 classpath에 해당한다.
 
 ## ClassPathResource

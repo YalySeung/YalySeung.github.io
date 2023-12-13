@@ -20,7 +20,7 @@ last_modified_at: 2023-11-07T08:00:00-10:00:00
 
 ## Junit Test Flow
   
-![image](./../../assets/images/../../assets/Images/SpringJunitTestFlow.png)
+![image](../../assets/Images/SpringJunitTestFlow.png)
 
 ---
 

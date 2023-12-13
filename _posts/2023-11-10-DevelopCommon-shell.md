@@ -92,7 +92,7 @@ last_modified_at: 2023-11-10T08:00:00-10:00:00
 echo $SHELL
 ```
 
-![image](./../../assets/images/../../assets/Images/EchoShellResult.png)
+![image](../../assets/Images/EchoShellResult.png)
 
 ---
 

@@ -56,7 +56,7 @@ public class ScheduleSample {
 
 - 결과
   
-![image](./../../assets/images/../../assets/Images/ScheduleResult.png)
+![image](../../assets/Images/ScheduleResult.png)
 
 ### Schedule Option
 

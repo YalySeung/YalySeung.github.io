@@ -58,7 +58,7 @@ last_modified_at: 2023-10-15T08:00:00-10:00:00
 
 ## DDNS 설정
   
-![image](./../../assets/images/../../assets/Images/IptimeSetDDNS.png)
+![image](../../assets/Images/IptimeSetDDNS.png)
   
 ![image](./../../assets/images/IptimeDDNSPort.png)
 
@@ -87,7 +87,7 @@ last_modified_at: 2023-10-15T08:00:00-10:00:00
 
 ### 원격 서버 등록
   
-![image](./../../assets/images/../../assets/Images/FileManagerPlusNAS.png)
+![image](../../assets/Images/FileManagerPlusNAS.png)
 
 ---
 

@@ -18,7 +18,7 @@ last_modified_at: 2023-11-06T08:00:00-10:00:00
 
 # 내용
   
-![image](./../../assets/images/../../assets/Images/intelliJGradleProject.png)
+![image](../../assets/Images/intelliJGradleProject.png)
 
 ### gradlew
 - Linux, Mac용 실행 쉘 스크립트 파일

@@ -37,7 +37,7 @@ last_modified_at: 2023-11-24T08:00:00-10:00:00
 
 ## LifeCycle
   
-![image](./../../assets/images/../../assets/Images/JavaThreadLifeCycle.png)
+![image](../../assets/Images/JavaThreadLifeCycle.png)
 
 ## State
 

@@ -32,7 +32,7 @@ jmap -heap <pid>
 top
 ```
   
-![image](./../../assets/images/../../assets/Images/LinuxTopResult.png)
+![image](../../assets/Images/LinuxTopResult.png)
 
 #### Summary Region
 - 전체 프로세스가 OS에 대해서 리소스를 어느정도 차지하는지 표시

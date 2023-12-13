@@ -20,7 +20,7 @@ last_modified_at: 2023-11-28T08:00:00-10:00:00
 
 ## LifeCycle
   
-![image](./../../assets/images/../../assets/Images/SpringBeanLifeCycle.png)
+![image](../../assets/Images/SpringBeanLifeCycle.png)
 1. 스프링 컨테이너 생성
 2. 빈 생성
 3. 의존관계 주입

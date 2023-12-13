@@ -18,7 +18,7 @@ last_modified_at: 2023-11-29T08:00:00-10:00:00
 
 # 내용
   
-![image](./../../assets/images/../../assets/Images/HTTPRequest.png)
+![image](../../assets/Images/HTTPRequest.png)
 
 ## 첫째줄 
 - [HTTP Method](../../ServerCommon/ServerCommon-HTTP-Method) : 서버가 수행해야 할 동작을 나타냄

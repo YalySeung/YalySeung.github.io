@@ -204,7 +204,7 @@ public class GameManager {
 ```
 
 #### 합성(Composition)
-- [집약(Aggregation)](#집약(aggregation)) 이나 [집약(Aggregation)](#집약(aggregation)) 보다 더 강력한 결합 관계
+- [집약(Aggregation)](#집약aggregation) 이나 [연관(Association)](#연관association) 보다 더 강력한 결합 관계
 - 한 객체가 다른 객체를 포함하며, 라이프사이클 공유
 - 속이 찬 다이아몬드 실선으로 표현
 - 위 예시에서 Status와 Monster의 관계에 해당한다.

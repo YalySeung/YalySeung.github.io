@@ -78,19 +78,19 @@ netstat -anp tcp | findstr 49414
 tasklist
 ```
   
-![image](./../../assets/images/../../assets/Images/Tasklist.png)
+![image](../../assets/Images/Tasklist.png)
 
 ```bash
 tasklist /M | findstr "RuntimeBroker"
 ```
   
-![image](./../../assets/images/../../assets/Images/TaskListRuntimeBroker.png)
+![image](../../assets/Images/TaskListRuntimeBroker.png)
 
 ```bash
 tasklist /V
 ```
   
-![image](./../../assets/images/../../assets/Images/TaskListDetails.png)
+![image](../../assets/Images/TaskListDetails.png)
 
 ### sc
 - 서비스 관련 CLI

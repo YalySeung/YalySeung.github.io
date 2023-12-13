@@ -46,7 +46,7 @@ last_modified_at: 2023-11-07T08:00:00-10:00:00
 - testStudentIsNotAdmittedIfMandatoryFieldsAreMissing
 
 ### <테스트할 기능>
-- [테스트할 기능](#test-<테스트할-기능->) 과 동일
+- [테스트할 기능](#test-테스트할-기능-) 과 동일
 
 #### Example
 - IsNotAnAdultIfAgeLessThan18

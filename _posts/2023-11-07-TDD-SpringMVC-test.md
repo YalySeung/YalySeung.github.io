@@ -64,6 +64,6 @@ where file != this.file
 
 # 연결문서
 - [Gradle](../../Build/Build-Gradle)
-- [intellij 테스트환경 구축 에러](../../IDE/IDE-Intellij-error#execution-failed-for-task-'-test'.)
+- [intellij 테스트환경 구축 에러](../../IDE/IDE-Intellij-error#execution-failed-for-task--test)
 - [Junit Test Flow](../../Test/Test-Junit-Test-Flow)
 - [TDD-Naming](../../TDD/TDD-TDD-Naming)

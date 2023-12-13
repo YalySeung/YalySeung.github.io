@@ -28,7 +28,7 @@ last_modified_at: 2023-10-24T08:00:00-10:00:00
 npm i axios
 ```
   
-![image](./../../assets/images/../../assets/Images/InstallAxiosResult.png)
+![image](../../assets/Images/InstallAxiosResult.png)
 
 ## 사용하기
 
