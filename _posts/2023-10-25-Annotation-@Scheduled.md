@@ -56,7 +56,7 @@ public class ScheduleSample {
 
 - 결과
   
-![image](../../assets/Images/ScheduleResult.png)
+![image](../../assets/images/ScheduleResult.png)
 
 ### Schedule Option
 
@@ -117,6 +117,6 @@ private void scheduleTest() { logger.error("hello"); }
 ---
 
 # 연결문서
-- [SpringMVC](../../Spring/Spring-SpringMVC)
-- [SpringMVC 구현](../../Spring/Spring-SpringMVC-구현)
-- [Cron Expression](../../Expression/Expression-Cron-Expression)
+- [SpringMVC](../../spring/Spring-SpringMVC)
+- [SpringMVC 구현](../../spring/Spring-SpringMVC-구현)
+- [Cron Expression](../../expression/Expression-Cron-Expression)

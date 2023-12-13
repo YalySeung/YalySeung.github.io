@@ -37,7 +37,7 @@ last_modified_at: 2023-11-24T08:00:00-10:00:00
 
 ## LifeCycle
   
-![image](../../assets/Images/JavaThreadLifeCycle.png)
+![image](../../assets/images/JavaThreadLifeCycle.png)
 
 ## State
 
@@ -70,4 +70,4 @@ public final static int MAX_PRIORITY = 10;
 ---
 
 # 연결문서
-- [Thread Dump](../../ServerCommon/ServerCommon-Thread-Dump)
+- [Thread Dump](../../servercommon/ServerCommon-Thread-Dump)

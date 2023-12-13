@@ -20,7 +20,7 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 
 ## 메모리 구조
   
-![image](./../../assets/images/MemoryStructure.png){: width="60%" height="60%"} 
+![image](../../assets/images/MemoryStructure.png){: width="60%" height="60%"} 
 
 ### Code영역
 - 프로그램의 소스코드가 저장되는 영역

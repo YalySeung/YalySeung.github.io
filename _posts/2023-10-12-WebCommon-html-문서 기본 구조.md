@@ -57,4 +57,4 @@ last_modified_at: 2023-10-12T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [html-작성법 기본](../../WebCommon/WebCommon-html-작성법-기본)
+- [html-작성법 기본](../../webcommon/WebCommon-html-작성법-기본)

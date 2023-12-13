@@ -24,7 +24,7 @@ last_modified_at: 2023-10-15T08:00:00-10:00:00
 
 ## Gradle Process
   
-![image](../../assets/Images/GradleProcess.png)
+![image](../../assets/images/GradleProcess.png)
 
 ## Gradle Script Sample
 
@@ -103,7 +103,7 @@ tasks.named('test') {
 ### Daemon Process
 - 메모리상에 빌드 결과물을 보관
 - 한번 빌드된 프로젝트는 다음 빌드에 매우 적은 시간만 소요됨
-- [Daemon Process](../../ServerCommon/ServerCommon-Daemon-Process)
+- [Daemon Process](../../servercommon/ServerCommon-Daemon-Process)
 
 ---
 

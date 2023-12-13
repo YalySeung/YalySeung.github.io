@@ -39,5 +39,5 @@ last_modified_at: 2023-10-12T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [SpringMVC](../../Spring/Spring-SpringMVC)
-- [SpringMVC 구현](../../Spring/Spring-SpringMVC-구현)
+- [SpringMVC](../../spring/Spring-SpringMVC)
+- [SpringMVC 구현](../../spring/Spring-SpringMVC-구현)

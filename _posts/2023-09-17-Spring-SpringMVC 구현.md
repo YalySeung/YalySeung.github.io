@@ -20,7 +20,7 @@ last_modified_at: 2023-09-17T08:00:00-10:00:00
 
 ### 폴더 구조
   
-![image](./../../assets/images/SpringMVCDirectoryStructure.png)
+![image](../../assets/images/SpringMVCDirectoryStructure.png)
 
 ### build.gradle
 
@@ -129,5 +129,5 @@ public class IndexWebContoller {
 ---
 
 # 연결문서
-- [WebMvcConfigurer](../../Spring/Spring-WebMvcConfigurer)
+- [WebMvcConfigurer](../../spring/Spring-WebMvcConfigurer)
 

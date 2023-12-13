@@ -23,21 +23,21 @@ last_modified_at: 2023-11-17T08:00:00-10:00:00
 
 ## 모든 파일 확장자 인식 설정
   
-![image](../../assets/Images/ObsidianAllowAllFileExtention.png)
+![image](../../assets/images/ObsidianAllowAllFileExtention.png)
 
 ## font 파일 vault 경로에 저장
   
-![image](../../assets/Images/ObsidianFont.png)
+![image](../../assets/images/ObsidianFont.png)
 
 ## Excalidraw 옵션 변경
   
-![image](../../assets/Images/ExcalidrawFontConfig.png)
+![image](../../assets/images/ExcalidrawFontConfig.png)
 
 ## 사용
 >
 >  
 
-![image](../../assets/Images/ExcaliDrawUseCustomFont.png)
+![image](../../assets/images/ExcaliDrawUseCustomFont.png)
 
 ---
 

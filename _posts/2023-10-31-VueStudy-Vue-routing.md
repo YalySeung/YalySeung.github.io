@@ -24,14 +24,14 @@ last_modified_at: 2023-10-31T08:00:00-10:00:00
 ### 환경구성
 - vite 프로젝트 생성시, Router 추가
   
-![image](./../../assets/images/CreateVueWithRouter%201.png)
+![image](../../assets/images/CreateVueWithRouter%201.png)
 
 ### 프로젝트 구조
   
-![image](./../../assets/images/VueRouterProjectStructure.png)
+![image](../../assets/images/VueRouterProjectStructure.png)
 
 #### views
-- [Component](../../VueStudy/VueStudy-Vue-Component)들을 가져와서 사용할 view Directory
+- [Component](../../vuestudy/VueStudy-Vue-Component)들을 가져와서 사용할 view Directory
 - 일반적으로 \* View.vue 파일명 형식 사용
 
 #### App.vue
@@ -210,4 +210,4 @@ onBeforeRouteLeave((to, from) => {
 ---
 
 # 연결문서
-- [Vue-프로젝트-Init](../../VueStudy/VueStudy-Vue-프로젝트-Init)
+- [Vue-프로젝트-Init](../../vuestudy/VueStudy-Vue-프로젝트-Init)

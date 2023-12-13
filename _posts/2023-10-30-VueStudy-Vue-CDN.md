@@ -18,7 +18,7 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 
 # 내용
 
-## [CDN](../../WebCommon/WebCommon-CDN)을 이용한 vue 
+## [CDN](../../webcommon/WebCommon-CDN)을 이용한 vue 
 
 ### CDN link
 
@@ -125,7 +125,7 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 
 ### LiveServer 결과
   
-![image](./../../assets/images/VueCDNSample.png)
+![image](../../assets/images/VueCDNSample.png)
 
 ### binding
 

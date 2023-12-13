@@ -65,4 +65,4 @@ last_modified_at: 2023-11-14T08:00:00-10:00:00
 
 # 연결문서
 - 
-- [CSR SSR](../../WebCommon/WebCommon-CSR-SSR)
+- [CSR SSR](../../webcommon/WebCommon-CSR-SSR)

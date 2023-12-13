@@ -32,7 +32,7 @@ v-on:submit.prevent="onSubmit"
 Name:Argument.Modifier=value
 ```
   
-![image](./../../assets/images/DirectiveFormat.png)
+![image](../../assets/images/DirectiveFormat.png)
 
 ```javascript
 <a v-bind:href="url"> ... </a>  
@@ -264,4 +264,4 @@ const objectOfAttrs = { id: 'container', class: 'wrapper' }
 --
 
 # 연결문서
-- [Vue-Template Syntax](../../VueStudy/VueStudy-Vue-Template-Syntax)
+- [Vue-Template Syntax](../../vuestudy/VueStudy-Vue-Template-Syntax)

@@ -29,6 +29,6 @@ last_modified_at: 2023-10-26T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [CSR SSR](../../WebCommon/WebCommon-CSR-SSR)
-- [Vue-프로젝트-Init](../../VueStudy/VueStudy-Vue-프로젝트-Init)
-- [Vue-Script Syntax](../../VueStudy/VueStudy-Vue-Script-Syntax)
+- [CSR SSR](../../webcommon/WebCommon-CSR-SSR)
+- [Vue-프로젝트-Init](../../vuestudy/VueStudy-Vue-프로젝트-Init)
+- [Vue-Script Syntax](../../vuestudy/VueStudy-Vue-Script-Syntax)

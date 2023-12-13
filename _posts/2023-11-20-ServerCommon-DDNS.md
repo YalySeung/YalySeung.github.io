@@ -32,4 +32,4 @@ last_modified_at: 2023-11-20T08:00:00-10:00:00
 
 # 연결문서
 - [DHCP](../../통신/통신-DHCP)
-- [DNS](../../ServerCommon/ServerCommon-DNS)
+- [DNS](../../servercommon/ServerCommon-DNS)

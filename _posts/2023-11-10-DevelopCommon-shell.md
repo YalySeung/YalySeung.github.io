@@ -92,10 +92,10 @@ last_modified_at: 2023-11-10T08:00:00-10:00:00
 echo $SHELL
 ```
 
-![image](../../assets/Images/EchoShellResult.png)
+![image](../../assets/images/EchoShellResult.png)
 
 ---
 
 # 연결문서
-- [Linux-Command-Detail](../../CLI/CLI-Linux-Command-Detail)
-- [Window-Command-Detail](../../CLI/CLI-Window-Command-Detail)
+- [Linux-Command-Detail](../../cli/CLI-Linux-Command-Detail)
+- [Window-Command-Detail](../../cli/CLI-Window-Command-Detail)

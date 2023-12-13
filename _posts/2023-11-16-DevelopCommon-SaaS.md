@@ -39,7 +39,7 @@ last_modified_at: 2023-11-16T08:00:00-10:00:00
 - 솔루션의 scale up으로 인한 요금 미발생
 
 ### 빠른 배포
-- [On-premise](../../DevelopCommon/DevelopCommon-On-premise) 소프트웨어와 관련된 설치 및 구성이 불필요
+- [On-premise](../../developcommon/DevelopCommon-On-premise) 소프트웨어와 관련된 설치 및 구성이 불필요
 
 ### ondemand 확장성
 - 인프라 업그레이드 비용 불필요

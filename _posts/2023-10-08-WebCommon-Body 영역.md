@@ -18,7 +18,7 @@ last_modified_at: 2023-10-08T08:00:00-10:00:00
 
 # 내용
   
-![image](../../assets/Images/Web_Body.png)
+![image](../../assets/images/Web_Body.png)
 
 ### Header
 - 웹 페이지나 애플리케이션 상단 부분에 위치

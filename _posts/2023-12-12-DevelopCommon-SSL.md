@@ -25,7 +25,7 @@ last_modified_at: 2023-12-12T08:00:00-10:00:00
 
 ## 특징
   
-![image](../../assets/Images/SSLOperation.png)
+![image](../../assets/images/SSLOperation.png)
 - 높은 수준의 개인정보 보호 제공을 위해 웹에서 전송되는 데이터를 암호화
 - 두 통신 장치 사이에 handshake 인증 프로세스로 ID를 확인
 - 데이터 무결성 제공을 위해 데이터에 디지털 서명하여 데이터가 의도된 수신자에게 도착하기 전에 조작되지 않았음을 증명

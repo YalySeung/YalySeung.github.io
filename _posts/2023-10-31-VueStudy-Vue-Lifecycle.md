@@ -23,7 +23,7 @@ last_modified_at: 2023-10-31T08:00:00-10:00:00
 
 ## LifeCycle
   
-![image](./../../assets/images/ReactView-LifeCycle.png)
+![image](../../assets/images/ReactView-LifeCycle.png)
 
 ## 사용
 - Lifecycle hook 에서 사용하는 참조 변수가 업데이트 될 때, 콜백 함수가 호출

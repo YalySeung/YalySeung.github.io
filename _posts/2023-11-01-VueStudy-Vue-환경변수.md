@@ -22,7 +22,7 @@ last_modified_at: 2023-11-01T08:00:00-10:00:00
 
 ### .env 파일 생성
   
-![image](../../assets/Images/VueENVFile.png)
+![image](../../assets/images/VueENVFile.png)
 
 ### 사용
 - 선언된 환경변수는 빌드시점에 **import.meta.env** 객체에 주입

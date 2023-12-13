@@ -34,7 +34,7 @@ last_modified_at: 2023-11-23T08:00:00-10:00:00
 
 ## 구조
   
-![image](./../../assets/images/ReactorStructure.png)
+![image](../../assets/images/ReactorStructure.png)
 
 ### Reactor
 - 싱글스레드
@@ -133,5 +133,5 @@ public class EventHandler {
 ---
 
 # 연결문서
-- [Thread](../../ServerCommon/ServerCommon-Thread)
-- [UML Diagram](../../DevelopCommon/DevelopCommon-UML-Diagram)
+- [Thread](../../servercommon/ServerCommon-Thread)
+- [UML Diagram](../../developcommon/DevelopCommon-UML-Diagram)

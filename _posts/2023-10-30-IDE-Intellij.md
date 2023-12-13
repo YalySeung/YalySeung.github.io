@@ -29,11 +29,11 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 
 #### 파일 인코딩 변경
   
-![image](../../assets/Images/IntelliJSetFileEncoding.png)
+![image](../../assets/images/IntelliJSetFileEncoding.png)
 
 #### WAS 인코딩 변경
   
-![image](../../assets/Images/IntellijSetWASEncoding.png)
+![image](../../assets/images/IntellijSetWASEncoding.png)
 ---
 
 # 연결문서

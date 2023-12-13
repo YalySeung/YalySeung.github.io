@@ -144,5 +144,5 @@ p::first-letter {
 ---
 
 # 연결문서
-- [html-tags](../../WebCommon/WebCommon-html-tags)
-- [html-작성법 기본](../../WebCommon/WebCommon-html-작성법-기본)
+- [html-tags](../../webcommon/WebCommon-html-tags)
+- [html-작성법 기본](../../webcommon/WebCommon-html-작성법-기본)

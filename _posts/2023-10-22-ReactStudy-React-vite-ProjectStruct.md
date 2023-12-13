@@ -22,7 +22,7 @@ last_modified_at: 2023-10-22T08:00:00-10:00:00
 
 ### 폴더 구조
   
-![image](./../../assets/images/ProjectStructure.png)
+![image](../../assets/images/ProjectStructure.png)
 
 #### node_module
 - 프로젝트에 필요한 패키지가 실제 설치된 디렉토리

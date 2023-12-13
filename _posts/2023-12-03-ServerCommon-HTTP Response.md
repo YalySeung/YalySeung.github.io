@@ -18,7 +18,7 @@ last_modified_at: 2023-12-03T08:00:00-10:00:00
 
 # 내용
   
-![image](../../assets/Images/HTTPResponse.png)
+![image](../../assets/images/HTTPResponse.png)
 
 ## 상태줄
 - HTTP 응답의 시작 줄
@@ -60,6 +60,6 @@ last_modified_at: 2023-12-03T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [HTTP](../../ServerCommon/ServerCommon-HTTP)
-- [HTTP Method](../../ServerCommon/ServerCommon-HTTP-Method)
-- [HTTP Request](../../ServerCommon/ServerCommon-HTTP-Request)
+- [HTTP](../../servercommon/ServerCommon-HTTP)
+- [HTTP Method](../../servercommon/ServerCommon-HTTP-Method)
+- [HTTP Request](../../servercommon/ServerCommon-HTTP-Request)

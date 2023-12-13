@@ -26,9 +26,9 @@ last_modified_at: 2023-11-07T08:00:00-10:00:00
 
 ### 수정
   
-![image](../../assets/Images/IntellijTestErrorFix.png)
+![image](../../assets/images/IntellijTestErrorFix.png)
 
 ---
 
 # 연결문서
-- [Intellij](../../IDE/IDE-Intellij)
+- [Intellij](../../ide/IDE-Intellij)

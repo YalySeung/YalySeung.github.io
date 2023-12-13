@@ -39,7 +39,7 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 
 ### Active-Standby  
   
-![image](./../../assets/images/Active_Standby.png) 
+![image](../../assets/images/Active_Standby.png) 
 - 활성화 상태의 서버와 예비 클론 서버를 구성
 - 하나의 자원에서 장애가 발생했을 경우 예비 시스템을 가동
 - 활성화/비활성화 서버간 heartbeat를 주고받아 시스템의 정상상태를 주기적으로 체크
@@ -47,7 +47,7 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 
 ### Active-Active  
   
-![image](./../../assets/images/Active_Active.png)
+![image](../../assets/images/Active_Active.png)
 - 두개의 자원을 활성화 상태로 운영
 - 부하 분산에 중점을 둔 이중화 방법
 - L4, L7 스위치등의 부하분산 로드밸런서를 사용
@@ -55,4 +55,4 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [LoadBalancer](../../ServerCommon/ServerCommon-LoadBalancer)
+- [LoadBalancer](../../servercommon/ServerCommon-LoadBalancer)

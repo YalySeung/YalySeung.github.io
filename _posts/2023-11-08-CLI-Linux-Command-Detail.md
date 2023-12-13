@@ -32,7 +32,7 @@ jmap -heap <pid>
 top
 ```
   
-![image](../../assets/Images/LinuxTopResult.png)
+![image](../../assets/images/LinuxTopResult.png)
 
 #### Summary Region
 - 전체 프로세스가 OS에 대해서 리소스를 어느정도 차지하는지 표시
@@ -96,5 +96,5 @@ shutdown -h now
 ---
 
 # 연결문서
-- [CLI](../../CLI/CLI-CLI)
-- [CLI-BaseCommand](../../CLI/CLI-CLI-BaseCommand)
+- [CLI](../../cli/CLI-CLI)
+- [CLI-BaseCommand](../../cli/CLI-CLI-BaseCommand)

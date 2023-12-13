@@ -22,7 +22,7 @@ last_modified_at: 2023-10-27T08:00:00-10:00:00
 - vue에서 컴포넌트 간의 데이터 전달은 단방향으로만 가능
 - 컴포넌트간의 의존 줄이기, 데이터 일관성 확보를 위함
   
-![image](../../assets/Images/VueComponentRelation.png)
+![image](../../assets/images/VueComponentRelation.png)
 
 ## Props
 - 부모 속성이 업데이트 되면 자식에게 전달되지만 반대는 안됨
@@ -109,4 +109,4 @@ const onUpdateName = (name) => {
 ---
 
 # 연결문서
-- [v-on](../../VueStudy/VueStudy-Vue-Script-Syntax#v-on)
+- [v-on](../../vuestudy/VueStudy-Vue-Script-Syntax#v-on)

@@ -49,4 +49,4 @@ last_modified_at: 2023-11-29T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [HTTP](../../ServerCommon/ServerCommon-HTTP)
+- [HTTP](../../servercommon/ServerCommon-HTTP)

@@ -44,5 +44,5 @@ public void init() {
 ---
 
 # 연결문서
-- [SpringBean LifeCycle](../../Spring/Spring-SpringBean-LifeCycle)
-- [@PreDestory](../../Annotation/Annotation-@PreDestory)
+- [SpringBean LifeCycle](../../spring/Spring-SpringBean-LifeCycle)
+- [@PreDestory](../../annotation/Annotation-@PreDestory)

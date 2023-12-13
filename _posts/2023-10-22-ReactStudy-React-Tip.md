@@ -21,7 +21,7 @@ last_modified_at: 2023-10-22T08:00:00-10:00:00
 ## 리스트 렌더링
 - 태그 반복시, map, filter 사용
 - key 값은 필수
-- 2개 이상의 Element를 리스팅하려면 [React-Fragment](../../ReactStudy/ReactStudy-React-Fragment)를 사용한다.
+- 2개 이상의 Element를 리스팅하려면 [React-Fragment](../../reactstudy/ReactStudy-React-Fragment)를 사용한다.
 
 ```javascript
 export default function App() {

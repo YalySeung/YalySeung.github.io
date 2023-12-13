@@ -24,7 +24,7 @@ last_modified_at: 2023-11-06T08:00:00-10:00:00
 
 ## intellij 에서 classpath 설정
   
-![image](../../assets/Images/IntellijClassPath.png)
+![image](../../assets/images/IntellijClassPath.png)
 - Source, Resoureses 에 포함된 경로는 모두 classpath에 해당한다.
 
 ## ClassPathResource
@@ -40,4 +40,4 @@ public Resource getResource(String relativePath) {
 ---
 
 # 연결문서
-- [Intellij](../../IDE/IDE-Intellij)
+- [Intellij](../../ide/IDE-Intellij)

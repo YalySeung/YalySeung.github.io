@@ -33,7 +33,7 @@ test {
 ```
 
 ## Test
-- [테스트 플로우](../../Test/Test-Junit-Test-Flow)
+- [테스트 플로우](../../test/Test-Junit-Test-Flow)
 
 ```java
 @RunWith(SpringJUnit4ClassRunner.class)  
@@ -63,7 +63,7 @@ where file != this.file
 ---
 
 # 연결문서
-- [Gradle](../../Build/Build-Gradle)
-- [intellij 테스트환경 구축 에러](../../IDE/IDE-Intellij-error#execution-failed-for-task--test)
-- [Junit Test Flow](../../Test/Test-Junit-Test-Flow)
-- [TDD-Naming](../../TDD/TDD-TDD-Naming)
+- [Gradle](../../build/Build-Gradle)
+- [intellij 테스트환경 구축 에러](../../ide/IDE-Intellij-error#execution-failed-for-task--test)
+- [Junit Test Flow](../../test/Test-Junit-Test-Flow)
+- [TDD-Naming](../../tdd/TDD-TDD-Naming)

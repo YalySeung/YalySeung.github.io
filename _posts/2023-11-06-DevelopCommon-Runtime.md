@@ -33,4 +33,4 @@ last_modified_at: 2023-11-06T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [Compile](../../DevelopCommon/DevelopCommon-Compile)
+- [Compile](../../developcommon/DevelopCommon-Compile)

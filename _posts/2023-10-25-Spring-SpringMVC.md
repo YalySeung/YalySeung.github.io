@@ -37,7 +37,7 @@ last_modified_at: 2023-10-25T08:00:00-10:00:00
 
 ## Spring MVC 구조
   
-![image](../../assets/Images/SpringMVCProcess.png)
+![image](../../assets/images/SpringMVCProcess.png)
 
 ### DispatcherServlet
 - request를 처리할 Controller 를 배정
@@ -63,5 +63,5 @@ last_modified_at: 2023-10-25T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [SpringMVC 구현](../../Spring/Spring-SpringMVC-구현)
-- [Servlet](../../Spring/Spring-Servlet)
+- [SpringMVC 구현](../../spring/Spring-SpringMVC-구현)
+- [Servlet](../../spring/Spring-Servlet)

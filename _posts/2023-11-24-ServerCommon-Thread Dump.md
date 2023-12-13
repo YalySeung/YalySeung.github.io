@@ -28,8 +28,8 @@ last_modified_at: 2023-11-24T08:00:00-10:00:00
 - 응용프로그램과 JVM 성능을 최적화 하는데 도움을 주는 정보 포함
 
 ## 쓰레드 종류와 상태
-- [Thread 종류](../../ServerCommon/ServerCommon-Thread#종류)
-- [Thread 상태](../../ServerCommon/ServerCommon-Thread#state)
+- [Thread 종류](../../servercommon/ServerCommon-Thread#종류)
+- [Thread 상태](../../servercommon/ServerCommon-Thread#state)
 
 ## MAT
 
@@ -44,7 +44,7 @@ last_modified_at: 2023-11-24T08:00:00-10:00:00
 
 #### dominator_tree
   
-![image](./../../assets/images/MATDominator_tree.png)
+![image](../../assets/images/MATDominator_tree.png)
 
 ##### 각 항목 설명
 * Retained Heap : 해당 오브젝트와 연결된 모든 객체를 포함한 메모리 점유량, GC에 의해 해제되지 않은 메모리 량
@@ -55,4 +55,4 @@ last_modified_at: 2023-11-24T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [Thread](../../ServerCommon/ServerCommon-Thread)
+- [Thread](../../servercommon/ServerCommon-Thread)

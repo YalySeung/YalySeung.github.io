@@ -29,11 +29,11 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 
 ### Conventional Web Model
   
-![image](./../../assets/images/Web_ConventionalModel.png)  
+![image](../../assets/images/Web_ConventionalModel.png)  
 
 ### Ajax Web Model
   
-![image](./../../assets/images/Web_AjaxModel.png)
+![image](../../assets/images/Web_AjaxModel.png)
 
 ## Ajax 장점
 - 페이지 이동 화면의 일부를 전환할수 있다.

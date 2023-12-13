@@ -25,11 +25,11 @@ last_modified_at: 2023-11-01T08:00:00-10:00:00
 
 #### Pinia 프로젝트 생성
   
-![image](../../assets/Images/CreateVuePiniaProject.png)
+![image](../../assets/images/CreateVuePiniaProject.png)
 
 #### 프로젝트 구조
   
-![image](./../../assets/images/VuePiniaProcjectStructure.png)
+![image](../../assets/images/VuePiniaProcjectStructure.png)
 
 ### Keyword
 
@@ -128,4 +128,4 @@ const doubleCount = computed(() => count.value * 2)
 ---
 
 # 연결문서
-- [Vue-프로젝트-Init](../../VueStudy/VueStudy-Vue-프로젝트-Init)
+- [Vue-프로젝트-Init](../../vuestudy/VueStudy-Vue-프로젝트-Init)

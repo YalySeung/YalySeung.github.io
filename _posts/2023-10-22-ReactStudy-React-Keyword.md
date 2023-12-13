@@ -90,4 +90,4 @@ import { useEffect } from "react";
 ---
 
 # 연결문서
-- [React-LifeCycle](../../ReactStudy/ReactStudy-React-LifeCycle)
+- [React-LifeCycle](../../reactstudy/ReactStudy-React-LifeCycle)

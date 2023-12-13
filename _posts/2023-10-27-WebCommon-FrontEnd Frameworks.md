@@ -20,8 +20,8 @@ last_modified_at: 2023-10-27T08:00:00-10:00:00
 - nextjs
 - nustjs
 - quasar
-- [Reactjs](../../ReactStudy/ReactStudy-React-JSX)
-- [Vuejs](../../VueStudy/VueStudy-Vuejs)
+- [Reactjs](../../reactstudy/ReactStudy-React-JSX)
+- [Vuejs](../../vuestudy/VueStudy-Vuejs)
 
 ---
 

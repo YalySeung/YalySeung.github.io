@@ -22,13 +22,13 @@ last_modified_at: 2023-11-17T08:00:00-10:00:00
 > 
 >  
 
-![image](../../assets/Images/ProcreateReference.png)
+![image](../../assets/images/ProcreateReference.png)
 
 >
 >새 Layer를 생성해서 확인해보면 Reference로 지정한 영역이 구분되는것을 확인 할 수 있다.
 >
 
-![image](./../../assets/images/ProcreateRefernceResult.jpg)
+![image](../../assets/images/ProcreateRefernceResult.jpg)
 
 ---
 

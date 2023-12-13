@@ -30,7 +30,7 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 
 ## 웹페이지(Document) 렌더링 프로세스
   
-![image](./../../assets/images/HtmlToDoc.png)
+![image](../../assets/images/HtmlToDoc.png)
 - DOM : HTML 요소들을 구조화
 - CCSOM(Cascading Style Sheets Object Model) : 요소들과 연관된 스타일 정보의 구조화
 - Render Tree : 각 요소들을 트리구조화
@@ -90,6 +90,6 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [html-문서 기본 구조](../../WebCommon/WebCommon-html-문서-기본-구조)
-- [html-작성법 기본](../../WebCommon/WebCommon-html-작성법-기본)
-- [html-tags](../../WebCommon/WebCommon-html-tags)
+- [html-문서 기본 구조](../../webcommon/WebCommon-html-문서-기본-구조)
+- [html-작성법 기본](../../webcommon/WebCommon-html-작성법-기본)
+- [html-tags](../../webcommon/WebCommon-html-tags)

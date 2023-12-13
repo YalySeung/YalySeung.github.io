@@ -24,7 +24,7 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 
 ## 톰캣 설정파일
   
-![image](./../../assets/images/Tomcat_Conf.png)
+![image](../../assets/images/Tomcat_Conf.png)
 
 ## server.xml
 - 메인 설정 파일

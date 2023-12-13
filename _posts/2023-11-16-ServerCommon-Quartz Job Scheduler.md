@@ -36,7 +36,7 @@ last_modified_at: 2023-11-16T08:00:00-10:00:00
 
 ## Quartz Workflow
   
-![image](../../assets/Images/QuartzWorkflow.png)
+![image](../../assets/images/QuartzWorkflow.png)
 
 ## Quartz Classes
 
@@ -84,7 +84,7 @@ JobDetailImpl.setJobDataMap(new JobDataMap())
 - 반복횟수, 실행 간격 지정
 
 #### CronTrigger
-- [Cron Expression](../../Expression/Expression-Cron-Expression)으로 trigger를 정의하는 방식
+- [Cron Expression](../../expression/Expression-Cron-Expression)으로 trigger를 정의하는 방식
 
 ### Misfire Instruction
 - Scheduler가 Misfire된 Trigger에 대해서 어떻게 처리할지에 대한 다양한 policy 지원

@@ -77,4 +77,4 @@ export const useUserStore = defineStore('user', () =>{
 ---
 
 # 연결문서
-- [Vue-State](../../VueStudy/VueStudy-Vue-State)
+- [Vue-State](../../vuestudy/VueStudy-Vue-State)

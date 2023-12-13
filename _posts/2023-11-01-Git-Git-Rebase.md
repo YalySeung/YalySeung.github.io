@@ -23,11 +23,11 @@ last_modified_at: 2023-11-01T08:00:00-10:00:00
 
 ### Rebase 전
   
-![image](../../assets/Images/Git-Rebase-Before.png)
+![image](../../assets/images/Git-Rebase-Before.png)
 
 ### Rebase 후
   
-![image](../../assets/Images/Git-Rebase-After.png)
+![image](../../assets/images/Git-Rebase-After.png)
 
 ## 장점
 - 공유 Branch의 최신 변경사항을 즉각 반영할 수 있다.

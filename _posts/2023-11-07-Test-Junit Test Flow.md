@@ -20,11 +20,11 @@ last_modified_at: 2023-11-07T08:00:00-10:00:00
 
 ## Junit Test Flow
   
-![image](../../assets/Images/SpringJunitTestFlow.png)
+![image](../../assets/images/SpringJunitTestFlow.png)
 
 ---
 
 # 연결문서
-- [@Test](../../Test/Test-@Test)
-- [@Before, @After](../../Test/Test-@Before,-@After)
-- [@BeforeClass, @AfterClass](../../Test/Test-@BeforeClass,-@AfterClass)
+- [@Test](../../test/Test-@Test)
+- [@Before, @After](../../test/Test-@Before,-@After)
+- [@BeforeClass, @AfterClass](../../test/Test-@BeforeClass,-@AfterClass)

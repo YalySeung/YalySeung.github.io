@@ -43,25 +43,25 @@ last_modified_at: 2023-10-17T08:00:00-10:00:00
 netstat -ano | find "LISTEN"
 ```
   
-![image](./../../assets/images/FindListenPort.png)
+![image](../../assets/images/FindListenPort.png)
 
 ```bash
 netstat -anp tcp | find "LISTEN"
 ```
   
-![image](./../../assets/images/FindListenTCPPort.png)
+![image](../../assets/images/FindListenTCPPort.png)
 
 ```bash
 netstat -anp tcp | find "443"
 ```
   
-![image](./../../assets/images/Find443Port.png)
+![image](../../assets/images/Find443Port.png)
 
 ```bash
 netstat -anp tcp | findstr 49414
 ```
   
-![image](./../../assets/images/FindSpecificPort.png)
+![image](../../assets/images/FindSpecificPort.png)
 
 ### tasklist
 - 실행중인 process list를 보여줌
@@ -78,19 +78,19 @@ netstat -anp tcp | findstr 49414
 tasklist
 ```
   
-![image](../../assets/Images/Tasklist.png)
+![image](../../assets/images/Tasklist.png)
 
 ```bash
 tasklist /M | findstr "RuntimeBroker"
 ```
   
-![image](../../assets/Images/TaskListRuntimeBroker.png)
+![image](../../assets/images/TaskListRuntimeBroker.png)
 
 ```bash
 tasklist /V
 ```
   
-![image](../../assets/Images/TaskListDetails.png)
+![image](../../assets/images/TaskListDetails.png)
 
 ### sc
 - 서비스 관련 CLI

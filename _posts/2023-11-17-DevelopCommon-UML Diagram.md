@@ -52,7 +52,7 @@ last_modified_at: 2023-11-17T08:00:00-10:00:00
 ### Class Relationship
 - 게임을 예시로 각 관계에 대해 이해해보자
   
-![image](./../../assets/images/GameExampleOfUML.png)
+![image](../../assets/images/GameExampleOfUML.png)
 
 #### 일반화(Generalization)
 - 부모클래스와 자식클래스간 상속 관계를 나타냄
@@ -60,7 +60,7 @@ last_modified_at: 2023-11-17T08:00:00-10:00:00
 - 속이 빈 화살표로 표현
 - 위 예시에서 Weapon과 Item 의 관계에 해당한다.
   
-![image](./../../assets/images/Generalize.png)
+![image](../../assets/images/Generalize.png)
 
 ```java
 public abstract class Item {  
@@ -86,7 +86,7 @@ public class Weapon extends Item {
 - 점선에 속이 빈 화살표로 표현
 - 위 예시에서 Attackable, Damagable 과 Monster의 관계에 해당한다.
   
-![image](./../../assets/images/Realization.png)
+![image](../../assets/images/Realization.png)
 
 ```java
 public interface Attackable {  
@@ -122,7 +122,7 @@ public class Monster implements Attackable, Damagable {
 - 점선 화살표로 표현
 - 위 예시에서 Damabable, Monster와 DamageInfo의 관계에 해당한다.
   
-![image](./../../assets/images/Dependency.png)
+![image](../../assets/images/Dependency.png)
 
 ```java
 public class DamangeInfo {  
@@ -159,7 +159,7 @@ public class Monster implements Attackable, Damagable {
 - 속이 빈 다이아몬드 실선으로 표현
 - 뒤 예시에서 MonsterAdministrator와 Monster의 관계에 해당한다.
   
-![image](./../../assets/images/Aggregation.png)
+![image](../../assets/images/Aggregation.png)
 
 ```java
 public class Monster implements Attackable, Damagable {  
@@ -191,7 +191,7 @@ public class MonsterAdministrator {
 - 실선으로 표현
 - 위 예시에서 GameManager와 MonsterAdministrator의 관계에 해당
   
-![image](./../../assets/images/Association.png)
+![image](../../assets/images/Association.png)
 
 ```java
 public class MonsterAdministrator {  
@@ -209,7 +209,7 @@ public class GameManager {
 - 속이 찬 다이아몬드 실선으로 표현
 - 위 예시에서 Status와 Monster의 관계에 해당한다.
   
-![image](./../../assets/images/Composition.png)
+![image](../../assets/images/Composition.png)
 
 ```java
 public class Status {  

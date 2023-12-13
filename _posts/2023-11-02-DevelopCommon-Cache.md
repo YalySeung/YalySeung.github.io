@@ -29,4 +29,4 @@ last_modified_at: 2023-11-02T08:00:00-10:00:00
 ---
 
 # 연결문서
-[Web Caching](../../WebCommon/WebCommon-Web-Caching)
+[Web Caching](../../webcommon/WebCommon-Web-Caching)

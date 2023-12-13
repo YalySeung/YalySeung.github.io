@@ -22,7 +22,7 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 - 내부 네트워크에서 인터넷을 접속할 때, 빠른 액세스나 안전한 통신을 확보하기 위한 중계자
 - Client와 Web Server의 중간에 위치
   
-![image](../../assets/Images/ProxyBase.png)
+![image](../../assets/images/ProxyBase.png)
 
 ## 기능
 - Server IP가 아닌 Proxy IP를 노출하여 개인정보 보호
@@ -37,14 +37,14 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 - 요청을 중계하며 요청과 응답은 모두 Proxy를 거친다
 - 클라이언트를 감추는 효과
   
-![image](../../assets/Images/ForwardProxy%201.png)
+![image](../../assets/images/ForwardProxy%201.png)
 
 ### Reverse Proxy
 - 내부서버 대신 Proxy가 Client와 통신해주는 구성
 - 응답을 중계하며 요청과 응답은 모두 Proxy를 거친다.
 - 내부 서버를 감추는 효과
   
-![image](../../assets/Images/ReverseProxy.png)
+![image](../../assets/images/ReverseProxy.png)
 
 ---
 

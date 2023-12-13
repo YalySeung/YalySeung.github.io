@@ -69,7 +69,7 @@ last_modified_at: 2023-11-07T08:00:00-10:00:00
 - When_MandatoryFieldsAreMissing_Expect_StudentAdmissionToFail
 
 ### given_사전조건_When_테스트상태_기대결과
-- [BDD](../../BDD/BDD-BDD)에서 사용하는 naming rule
+- [BDD](../../bdd/BDD-BDD)에서 사용하는 naming rule
 
 #### Example
 - Given_UserIsAuthenticated_When_InvalidAccountNumberIsUsedToWithdrawMoney_Then_TransactionsWillFail

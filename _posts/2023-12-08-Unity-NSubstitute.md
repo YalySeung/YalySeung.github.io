@@ -27,7 +27,7 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 ### NSubstitude Nuget 설치
 - <https://www.nuget.org/downloads>
   
-![image](./../../assets/images/NugetDownloadLink.png){: width="60%" height="60%"}
+![image](../../assets/images/NugetDownloadLink.png){: width="60%" height="60%"}
 
 ### 커맨드 창을 열어 다운받은 nuget.exe 파일 경로로 이동
 
@@ -37,22 +37,22 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 nuget.exe Install NSubstitute.Analyzers.CSharp -Version 1.0.15
 ```
   
-![image](./../../assets/images/NSubstituteInstall.png){: width="100%" height="100%"}
+![image](../../assets/images/NSubstituteInstall.png){: width="100%" height="100%"}
 
 ### DLL 파일을 저장하고자 하는 경로에 Import 
 - 이때, Castle.Core.dll 파일도 같은 경로에 import 해야함
   
-![image](./../../assets/images/ImportNewAsset.png){: width="50%" height="50%"}
+![image](../../assets/images/ImportNewAsset.png){: width="50%" height="50%"}
 
-![image](./../../assets/images/NSubstituteImport.png){: width="50%" height="50%"}
+![image](../../assets/images/NSubstituteImport.png){: width="50%" height="50%"}
 
-![image](./../../assets/images/CastleCoreImport.png)  {: width="50%" height="50%"}
+![image](../../assets/images/CastleCoreImport.png)  {: width="50%" height="50%"}
 
 ### Unity Play TestRunner 를 생성 한 후 Play Tests 파일에 Assembly References를 등록
   
-![image](./../../assets/images/AssemblyReferenceInspector%201.png){: width="50%" height="50%"}
+![image](../../assets/images/AssemblyReferenceInspector%201.png){: width="50%" height="50%"}
 
-Player TestRunner 생성 방법은 => [TestRunner](../../Unity/Unity-TestRunner) 참고  
+Player TestRunner 생성 방법은 => [TestRunner](../../unity/Unity-TestRunner) 참고  
 
 ## 테스트
 
@@ -101,9 +101,9 @@ public class TestTestObj
 
 ### 결과
   
-![image](./../../assets/images/NSubstituteUnitTestResult.png){: width="70%" height="70%"}
+![image](../../assets/images/NSubstituteUnitTestResult.png){: width="70%" height="70%"}
 
 ---
 
 # 연결문서
-- [TestRunner](../../Unity/Unity-TestRunner)
+- [TestRunner](../../unity/Unity-TestRunner)

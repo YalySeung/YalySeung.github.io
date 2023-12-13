@@ -28,71 +28,71 @@ last_modified_at: 2023-10-15T08:00:00-10:00:00
 ### 설치
 - [시놀로지 Web Assistant 접속](https://finds.synology.com/)
   
-![image](./../../assets/images/SynologyConnectComplete.png)
+![image](../../assets/images/SynologyConnectComplete.png)
 - 설치 진행
   
-![image](./../../assets/images/SynologyInstall_1.png)  
-![image](./../../assets/images/SynologyInstall_2.png)
+![image](../../assets/images/SynologyInstall_1.png)  
+![image](../../assets/images/SynologyInstall_2.png)
   
-![image](./../../assets/images/SynologyInstall_3.png)
+![image](../../assets/images/SynologyInstall_3.png)
   
-![image](./../../assets/images/Pasted%20image%2020231118183506.png)
+![image](../../assets/images/DSMStarted.png)
 
 ### 설정
   
-![image](./../../assets/images/StartSynologyNas_1.png)
+![image](../../assets/images/StartSynologyNas_1.png)
   
-![image](./../../assets/images/StartSynologyNas_2.png)
+![image](../../assets/images/StartSynologyNas_2.png)
   
-![image](./../../assets/images/StartSynologyNas_3.png)
+![image](../../assets/images/StartSynologyNas_3.png)
   
-![image](./../../assets/images/StartSynologyNas_4.png)
+![image](../../assets/images/StartSynologyNas_4.png)
   
-![image](./../../assets/images/StartSynologyNas_5.png)
+![image](../../assets/images/StartSynologyNas_5.png)
   
-![image](./../../assets/images/StartSynologyNas_6.png)
+![image](../../assets/images/StartSynologyNas_6.png)
   
-![image](./../../assets/images/StartSynologyNas_7.png)
+![image](../../assets/images/StartSynologyNas_7.png)
   
-![image](./../../assets/images/StartSynologyNas_8.png)
+![image](../../assets/images/StartSynologyNas_8.png)
 
 ## DDNS 설정
   
-![image](../../assets/Images/IptimeSetDDNS.png)
+![image](../../assets/images/IptimeSetDDNS.png)
   
-![image](./../../assets/images/IptimeDDNSPort.png)
+![image](../../assets/images/IptimeDDNSPort.png)
 
 ## 포트 포워딩 설정
 - http 프로토콜을 사용할 예정이라 5000~5005 번만 포워딩
   
-![image](./../../assets/images/IptimePortForwarding.png)
+![image](../../assets/images/IptimePortForwarding.png)
 
-![image](./../../assets/images/SynologyNASAddDDNS.png)
+![image](../../assets/images/SynologyNASAddDDNS.png)
 
-![image](./../../assets/images/SynologyNASSetDNS.png)
+![image](../../assets/images/SynologyNASSetDNS.png)
   
-![image](./../../assets/images/SynologyNASSetHTTPHeader.png)
+![image](../../assets/images/SynologyNASSetHTTPHeader.png)
 
 ## 패키지 설치
   
-![image](./../../assets/images/SynologyNASInstallPackage%201.png)
+![image](../../assets/images/SynologyNASInstallPackage%201.png)
   
-![image](./../../assets/images/SynologyNASWebDAVConfig.png)
+![image](../../assets/images/SynologyNASWebDAVConfig.png)
 
 ## 모바일 연결
 
 ### File Manager Plus 다운로드
   
-![image](./../../assets/images/FileManagerPlusApp.png)
+![image](../../assets/images/FileManagerPlusApp.png)
 
 ### 원격 서버 등록
   
-![image](../../assets/Images/FileManagerPlusNAS.png)
+![image](../../assets/images/FileManagerPlusNAS.png)
 
 ---
 
 # 연결문서
 - [DHCP](../../통신/통신-DHCP)
 - [NAS](../../하드웨어/하드웨어-NAS)
-- [DDNS](../../ServerCommon/ServerCommon-DDNS)
-- [Port Forwarding](../../ServerCommon/ServerCommon-Port-Forwarding)
+- [DDNS](../../servercommon/ServerCommon-DDNS)
+- [Port Forwarding](../../servercommon/ServerCommon-Port-Forwarding)

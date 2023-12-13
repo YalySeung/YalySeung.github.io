@@ -25,10 +25,10 @@ last_modified_at: 2023-10-27T08:00:00-10:00:00
 - 크롬 확장 프로그램
 - 리액트 사용 페이지에 접속하면 초록색으로 활성화됨
   
-![image](./../../assets/images/VueDevTool.png)
+![image](../../assets/images/VueDevTool.png)
 - Component 구조 확인
   
-![image](./../../assets/images/VueComponentStructure.png)
+![image](../../assets/images/VueComponentStructure.png)
 
 ## 프로젝트 생성
 - npm create vue@latest 
@@ -37,7 +37,7 @@ last_modified_at: 2023-10-27T08:00:00-10:00:00
 
 ## 프로젝트 구조
   
-![image](./../../assets/images/VueProjectStructure.png)
+![image](../../assets/images/VueProjectStructure.png)
 
 ### public
 - 정적 파일 디렉토리
@@ -47,11 +47,11 @@ last_modified_at: 2023-10-27T08:00:00-10:00:00
 
 ### 파일 구조
   
-![image](../../assets/Images/VueViteProjectStructure.png)
+![image](../../assets/images/VueViteProjectStructure.png)
 
 ---
 
 # 연결문서
-- [npm](../../Nodejs/Nodejs-npm)
-- [vite](../../WebCommon/WebCommon-vite)
-- [Vue-SFC](../../VueStudy/VueStudy-Vue-SFC)
+- [npm](../../nodejs/Nodejs-npm)
+- [vite](../../webcommon/WebCommon-vite)
+- [Vue-SFC](../../vuestudy/VueStudy-Vue-SFC)
