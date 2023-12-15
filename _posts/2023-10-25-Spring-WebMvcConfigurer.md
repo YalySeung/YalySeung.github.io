@@ -51,6 +51,8 @@ public void configureViewResolvers(ViewResolverRegistry registry) {
 }
 ```
 
+> [@EnableWebMvc](../../annotation/Annotation-@EnableWebMvc) Annotation과 함께 적용해야 한다.
+
 ### 리소스 핸들링
 - javascript, Css, images 와 같은 정적 리소스를 제어
 - 리소스의 위치를 설정할 수 있다.
