@@ -40,5 +40,5 @@ live-server
 
 # 연결문서
 - [npm](../../nodejs/nodejs-npm)
-- [Vue-프로젝트-Init](../../vuestudy/vuestudy-Vue-프로젝트-Init)
-- [React-Init](../../reactstudy/reactstudy-React-Init)
+- [Vue-프로젝트-Init](../../vuestudy/vuestudy-Vue프로젝트Init)
+- [React-Init](../../reactstudy/reactstudy-ReactInit)

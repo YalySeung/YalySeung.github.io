@@ -42,13 +42,13 @@ public class VueMvcConfigurer implements WebMvcConfigurer {
 }
 ```
 
-> [!caution]
+>
 > @EnableAspectJAutoProxy Annotation은 Spring Bean이 초기되 된 이후 시점에 적용되어야 한다.
 
 ## 역할
 - Advisor를 만들기 위한 Annotation
 
-> [!caution]
+>
 > @Aspect Annotation Component 스캔 기능이 없으므로 반드시 Bean으로 등록해줘야한다.
 > **@Bean @Component @Import**
 

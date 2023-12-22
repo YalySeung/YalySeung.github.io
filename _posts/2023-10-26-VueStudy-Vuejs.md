@@ -30,5 +30,5 @@ last_modified_at: 2023-10-26T08:00:00-10:00:00
 
 # 연결문서
 - [CSR SSR](../../webcommon/webcommon-CSR-SSR)
-- [Vue-프로젝트-Init](../../vuestudy/vuestudy-Vue-프로젝트-Init)
-- [Vue-Script Syntax](../../vuestudy/vuestudy-Vue-Script-Syntax)
+- [Vue-프로젝트-Init](../../vuestudy/vuestudy-Vue프로젝트Init)
+- [Vue-Script Syntax](../../vuestudy/vuestudy-VueScript-Syntax)
