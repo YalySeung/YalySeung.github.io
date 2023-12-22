@@ -187,5 +187,5 @@ last_modified_at: 2023-10-24T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [html-작성법 기본](../../webcommon/WebCommon-html-작성법-기본)
-- [html-문서 기본 구조](../../webcommon/WebCommon-html-문서-기본-구조)
+- [html-작성법 기본](../../webcommon/webcommon-html-작성법-기본)
+- [html-문서 기본 구조](../../webcommon/webcommon-html-문서-기본-구조)

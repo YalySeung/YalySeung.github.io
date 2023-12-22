@@ -48,5 +48,5 @@ NVL2(comm, 'Y', 'N')
  ---
 
 # 연결문서
-- [CommonDB](../../database/Database-CommonDB)
-- [Oracle 환경 구성](../../oracle/Oracle-Oracle-환경-구성)
+- [CommonDB](../../database/database-CommonDB)
+- [Oracle 환경 구성](../../oracle/oracle-Oracle-환경-구성)

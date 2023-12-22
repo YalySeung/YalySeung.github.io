@@ -21,7 +21,7 @@ last_modified_at: 2023-11-29T08:00:00-10:00:00
 ![image](../../assets/images/HTTPRequest.png)
 
 ## 첫째줄 
-- [HTTP Method](../../servercommon/ServerCommon-HTTP-Method) : 서버가 수행해야 할 동작을 나타냄
+- [HTTP Method](../../servercommon/servercommon-HTTP-Method) : 서버가 수행해야 할 동작을 나타냄
 - URI : URL, 프로토콜, 포트, 도메인등의 절대경로
 - HTTP 버전 : 메시지의 남은 구조 결정, 응답 메시지에 사용할 HTTP 버전
 
@@ -64,6 +64,6 @@ last_modified_at: 2023-11-29T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [HTTP](../../servercommon/ServerCommon-HTTP)
-- [HTTP Method](../../servercommon/ServerCommon-HTTP-Method)
-- [HTTP Response](../../servercommon/ServerCommon-HTTP-Response)
+- [HTTP](../../servercommon/servercommon-HTTP)
+- [HTTP Method](../../servercommon/servercommon-HTTP-Method)
+- [HTTP Response](../../servercommon/servercommon-HTTP-Response)

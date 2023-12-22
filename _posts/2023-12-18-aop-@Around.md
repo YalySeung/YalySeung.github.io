@@ -42,7 +42,7 @@ last_modified_at: 2023-12-18T08:00:00-10:00:00
 | proceed()      | 다음 Advice, Target method 호출               |
 
 ## 사용법
-- [@Aspect](../../aop/AOP-@Aspect)가 적용된 Class 하위 메서드에 Around Annotation을 사용
+- [@Aspect](../../aop/aop-@Aspect)가 적용된 Class 하위 메서드에 Around Annotation을 사용
 
 ```java
 @Around("execution(* com.mvcvue.controller..*.*(..))")  
@@ -55,7 +55,7 @@ public Object aroundLogger(ProceedingJoinPoint joinPoint, Object obj) throws Thr
 ---
 
 # 연결문서
--  [AOP](../../spring/Spring-AOP)
-- [@Aspect](../../aop/AOP-@Aspect)
-- [Pointcut Designator](../../spring/Spring-Pointcut-Designator)
-- [Advice](../../spring/Spring-Advice)
+-  [AOP](../../spring/spring-AOP)
+- [@Aspect](../../aop/aop-@Aspect)
+- [Pointcut Designator](../../spring/spring-Pointcut-Designator)
+- [Advice](../../spring/spring-Advice)

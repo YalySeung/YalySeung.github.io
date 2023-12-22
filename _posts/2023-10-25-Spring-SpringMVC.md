@@ -59,6 +59,6 @@ last_modified_at: 2023-10-25T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [SpringMVC 구현](../../spring/Spring-SpringMVC-구현)
-- [Servlet](../../spring/Spring-Servlet)
-- [DispatcherServlet](../../spring/Spring-DispatcherServlet)
+- [SpringMVC 구현](../../spring/spring-SpringMVC-구현)
+- [Servlet](../../spring/spring-Servlet)
+- [DispatcherServlet](../../spring/spring-DispatcherServlet)

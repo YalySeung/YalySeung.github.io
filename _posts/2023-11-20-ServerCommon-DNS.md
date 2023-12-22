@@ -34,4 +34,4 @@ last_modified_at: 2023-11-20T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [DDNS](../../servercommon/ServerCommon-DDNS)
+- [DDNS](../../servercommon/servercommon-DDNS)

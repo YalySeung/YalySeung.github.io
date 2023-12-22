@@ -52,7 +52,7 @@ nuget.exe Install NSubstitute.Analyzers.CSharp -Version 1.0.15
   
 ![image](../../assets/images/AssemblyReferenceInspector%201.png){: width="50%" height="50%"}
 
-Player TestRunner 생성 방법은 => [TestRunner](../../unity/Unity-TestRunner) 참고  
+Player TestRunner 생성 방법은 => [TestRunner](../../unity/unity-TestRunner) 참고  
 
 ## 테스트
 
@@ -106,4 +106,4 @@ public class TestTestObj
 ---
 
 # 연결문서
-- [TestRunner](../../unity/Unity-TestRunner)
+- [TestRunner](../../unity/unity-TestRunner)

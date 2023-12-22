@@ -28,8 +28,8 @@ last_modified_at: 2023-11-24T08:00:00-10:00:00
 - 응용프로그램과 JVM 성능을 최적화 하는데 도움을 주는 정보 포함
 
 ## 쓰레드 종류와 상태
-- [Thread 종류](../../servercommon/ServerCommon-Thread#종류)
-- [Thread 상태](../../servercommon/ServerCommon-Thread#state)
+- [Thread 종류](../../servercommon/servercommon-Thread#종류)
+- [Thread 상태](../../servercommon/servercommon-Thread#state)
 
 ## MAT
 
@@ -61,4 +61,4 @@ last_modified_at: 2023-11-24T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [Thread](../../servercommon/ServerCommon-Thread)
+- [Thread](../../servercommon/servercommon-Thread)

@@ -19,8 +19,8 @@ last_modified_at: 2023-10-25T08:00:00-10:00:00
 # 내용
 
 ## WebMvcConfigurer란
-- [Boiler Plate](../../cleancode/CleanCode-Boiler-Plate)코드 없이 요구사항에 맞게 프레임워크를 조정할 수 있게 해준다.
-- [@EnableWebMvc](../../annotation/Annotation-@EnableWebMvc) 를 통해 활성화된 Web MVC 애플리케이션의 구성정보 커스터마이징을 돕는다.
+- [Boiler Plate](../../cleancode/cleancode-Boiler-Plate)코드 없이 요구사항에 맞게 프레임워크를 조정할 수 있게 해준다.
+- [@EnableWebMvc](../../annotation/annotation-@EnableWebMvc) 를 통해 활성화된 Web MVC 애플리케이션의 구성정보 커스터마이징을 돕는다.
 
 ## 용도
 
@@ -52,7 +52,7 @@ public void configureViewResolvers(ViewResolverRegistry registry) {
 ```
 
 > 
-> [@EnableWebMvc](../../annotation/Annotation-@EnableWebMvc) Annotation과 함께 적용해야 한다.
+> [@EnableWebMvc](../../annotation/annotation-@EnableWebMvc) Annotation과 함께 적용해야 한다.
 
 ### 리소스 핸들링
 - javascript, Css, images 와 같은 정적 리소스를 제어
@@ -135,4 +135,4 @@ public void addCorsMappings(CorsRegistry registry) {
 ---
 
 # 연결문서
-- [DispatcherServlet](../../spring/Spring-DispatcherServlet)
+- [DispatcherServlet](../../spring/spring-DispatcherServlet)

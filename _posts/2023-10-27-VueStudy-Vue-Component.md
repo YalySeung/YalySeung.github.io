@@ -109,4 +109,4 @@ const onUpdateName = (name) => {
 ---
 
 # 연결문서
-- [v-on](../../vuestudy/VueStudy-Vue-Script-Syntax#v-on)
+- [v-on](../../vuestudy/vuestudy-Vue-Script-Syntax#v-on)

@@ -25,6 +25,6 @@ last_modified_at: 2023-11-07T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [@Test](../../test/Test-@Test)
-- [@Before, @After](../../test/Test-@Before,-@After)
-- [@BeforeClass, @AfterClass](../../test/Test-@BeforeClass,-@AfterClass)
+- [@Test](../../test/test-@Test)
+- [@Before, @After](../../test/test-@Before,-@After)
+- [@BeforeClass, @AfterClass](../../test/test-@BeforeClass,-@AfterClass)

@@ -51,5 +51,5 @@ last_modified_at: 2023-11-22T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [DNS](../../servercommon/ServerCommon-DNS)
+- [DNS](../../servercommon/servercommon-DNS)
 - [SSH](../../통신/통신-SSH)

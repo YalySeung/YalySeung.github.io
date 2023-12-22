@@ -37,7 +37,7 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 
 ### HTML 출력
 - [Text Interpolation](#text-interpolation) 은  데이터를 html 이 아닌 일반 텍스트로 해석
-- 실제 html 출력을 위해서는 [v-html](../../vuestudy/VueStudy-Vue-Directive#v-html) Directive를 사용해야 한다.
+- 실제 html 출력을 위해서는 [v-html](../../vuestudy/vuestudy-Vue-Directive#v-html) Directive를 사용해야 한다.
 
 ```javascript
 <p>v-html 디렉티브 사용: <span v-html="rawHtml"></span></p>
@@ -87,7 +87,7 @@ const errorClass = ref('text-danger')
 ### javascript 표현식 사용
 - vue는 모든 데이터 바인딩 내에 javascript 표현식 지원
 	- 이중괄호 내부
-	- 모든 [Vue-Directive](../../vuestudy/VueStudy-Vue-Directive) 속성 내부
+	- 모든 [Vue-Directive](../../vuestudy/vuestudy-Vue-Directive) 속성 내부
 - 하나의 단일 표현식만 가능
 - 함수호출 가능
 
@@ -102,4 +102,4 @@ const errorClass = ref('text-danger')
 ---
 
 # 연결문서
-- [Vue-Directive](../../vuestudy/VueStudy-Vue-Directive)
+- [Vue-Directive](../../vuestudy/vuestudy-Vue-Directive)

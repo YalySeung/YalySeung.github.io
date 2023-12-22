@@ -89,4 +89,4 @@ public LocaleResolver localeResolver() {
 ---
 
 # 연결문서
-- [WebMvcConfigurer](../../spring/Spring-WebMvcConfigurer)
+- [WebMvcConfigurer](../../spring/spring-WebMvcConfigurer)

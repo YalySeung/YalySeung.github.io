@@ -40,5 +40,5 @@ public void preDestroy() {
 ---
 
 # 연결문서
-- [SpringBean LifeCycle](../../spring/Spring-SpringBean-LifeCycle)
-- [@PostConstruct](../../annotation/Annotation-@PostConstruct)
+- [SpringBean LifeCycle](../../spring/spring-SpringBean-LifeCycle)
+- [@PostConstruct](../../annotation/annotation-@PostConstruct)

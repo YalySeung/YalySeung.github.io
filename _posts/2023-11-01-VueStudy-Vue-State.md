@@ -128,4 +128,4 @@ const doubleCount = computed(() => count.value * 2)
 ---
 
 # 연결문서
-- [Vue-프로젝트-Init](../../vuestudy/VueStudy-Vue-프로젝트-Init)
+- [Vue-프로젝트-Init](../../vuestudy/vuestudy-Vue-프로젝트-Init)

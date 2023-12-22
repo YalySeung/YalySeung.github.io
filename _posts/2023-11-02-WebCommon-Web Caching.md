@@ -39,10 +39,10 @@ last_modified_at: 2023-11-02T08:00:00-10:00:00
 - 클라이언트 간 공유 불가능
 - 브라우저의 back, 페이지 재방문시, 서비스 효율 증가
 
-### Proxy Caches([CDN](../../webcommon/WebCommon-CDN))
+### Proxy Caches([CDN](../../webcommon/webcommon-CDN))
 - Browser Cache와 동일한 원리로 동작
 - 네트워크상에서 동작
-- 주로 [IPS](../../servercommon/ServerCommon-IPS)의 방화벽에 설치
+- 주로 [IPS](../../servercommon/servercommon-IPS)의 방화벽에 설치
 - 대기시간, 트래픽 감소
 - 접근정책과 제한 우회, 사용률 기록
 - 한정된 수의 클라이언트를 위해 다수의 웹 서버 컨텐츠를 캐시
@@ -69,7 +69,7 @@ last_modified_at: 2023-11-02T08:00:00-10:00:00
 
 |디렉티브|설명|
 |---|---|
-|public|[CDN](../../webcommon/WebCommon-CDN) 이나 프록시 서버 같은 공용 캐시에서도 캐싱 허용|
+|public|[CDN](../../webcommon/webcommon-CDN) 이나 프록시 서버 같은 공용 캐시에서도 캐싱 허용|
 |private|브라우저 캐시등의 로컬 캐시에서만 캐싱 가능|
 |must-revalidate|캐시된 데이터를 사용하기 전 반드시 서버에게 유효성 검사|
 |proxy-revalidate|must-revalidate + 공유 캐시에만 적용|
@@ -96,4 +96,4 @@ last_modified_at: 2023-11-02T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [CDN](../../webcommon/WebCommon-CDN) 
+- [CDN](../../webcommon/webcommon-CDN) 

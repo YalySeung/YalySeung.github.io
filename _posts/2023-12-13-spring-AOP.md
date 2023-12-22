@@ -63,5 +63,5 @@ last_modified_at: 2023-12-13T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [@Aspect](../../aop/AOP-@Aspect)
-- [Pointcut Designator](../../spring/Spring-Pointcut-Designator)
+- [@Aspect](../../aop/aop-@Aspect)
+- [Pointcut Designator](../../spring/spring-Pointcut-Designator)

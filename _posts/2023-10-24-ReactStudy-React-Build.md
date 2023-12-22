@@ -35,4 +35,4 @@ npm run build
 ---
 
 # 연결문서
-- [CSR SSR](../../webcommon/WebCommon-CSR-SSR)
+- [CSR SSR](../../webcommon/webcommon-CSR-SSR)

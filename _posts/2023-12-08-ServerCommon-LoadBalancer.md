@@ -62,4 +62,4 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [서버 이중화](../../servercommon/ServerCommon-서버-이중화)
+- [서버 이중화](../../servercommon/servercommon-서버-이중화)

@@ -37,4 +37,4 @@ last_modified_at: 2023-10-25T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [Servlet](../../spring/Spring-Servlet)
+- [Servlet](../../spring/spring-Servlet)

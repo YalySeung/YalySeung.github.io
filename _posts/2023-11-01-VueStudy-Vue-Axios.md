@@ -104,6 +104,6 @@ const onClick = async()=> {
 ---
 
 # 연결문서
-- [Vue-환경변수](../../vuestudy/VueStudy-Vue-환경변수)
-- [npm](../../nodejs/Nodejs-npm)
+- [Vue-환경변수](../../vuestudy/vuestudy-Vue-환경변수)
+- [npm](../../nodejs/nodejs-npm)
 - Api Sample :  https://dummyjson.com/docs/auth

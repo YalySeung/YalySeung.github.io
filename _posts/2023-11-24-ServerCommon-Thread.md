@@ -70,4 +70,4 @@ public final static int MAX_PRIORITY = 10;
 ---
 
 # 연결문서
-- [Thread Dump](../../servercommon/ServerCommon-Thread-Dump)
+- [Thread Dump](../../servercommon/servercommon-Thread-Dump)

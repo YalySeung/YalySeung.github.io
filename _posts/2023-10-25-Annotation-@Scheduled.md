@@ -117,6 +117,6 @@ private void scheduleTest() { logger.error("hello"); }
 ---
 
 # 연결문서
-- [SpringMVC](../../spring/Spring-SpringMVC)
-- [SpringMVC 구현](../../spring/Spring-SpringMVC-구현)
-- [Cron Expression](../../expression/Expression-Cron-Expression)
+- [SpringMVC](../../spring/spring-SpringMVC)
+- [SpringMVC 구현](../../spring/spring-SpringMVC-구현)
+- [Cron Expression](../../expression/expression-Cron-Expression)

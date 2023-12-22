@@ -33,4 +33,4 @@ last_modified_at: 2023-10-15T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [Git-Private Repository](../../git/Git-Git-Private-Repository)
+- [Git-Private Repository](../../git/git-Git-Private-Repository)

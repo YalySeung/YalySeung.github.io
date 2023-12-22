@@ -133,5 +133,5 @@ public class EventHandler {
 ---
 
 # 연결문서
-- [Thread](../../servercommon/ServerCommon-Thread)
-- [UML Diagram](../../developcommon/DevelopCommon-UML-Diagram)
+- [Thread](../../servercommon/servercommon-Thread)
+- [UML Diagram](../../developcommon/developcommon-UML-Diagram)

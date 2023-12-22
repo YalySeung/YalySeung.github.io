@@ -131,5 +131,5 @@ public class IndexWebContoller {
 ---
 
 # 연결문서
-- [WebMvcConfigurer](../../spring/Spring-WebMvcConfigurer)
+- [WebMvcConfigurer](../../spring/spring-WebMvcConfigurer)
 

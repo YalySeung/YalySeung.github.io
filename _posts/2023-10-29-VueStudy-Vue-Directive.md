@@ -264,4 +264,4 @@ const objectOfAttrs = { id: 'container', class: 'wrapper' }
 --
 
 # 연결문서
-- [Vue-Template Syntax](../../vuestudy/VueStudy-Vue-Template-Syntax)
+- [Vue-Template Syntax](../../vuestudy/vuestudy-Vue-Template-Syntax)

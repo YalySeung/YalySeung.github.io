@@ -57,6 +57,6 @@ last_modified_at: 2023-11-10T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [Linux-Command-Detail](../../cli/CLI-Linux-Command-Detail)
-- [Window-Command-Detail](../../cli/CLI-Window-Command-Detail)
-- [CLI](../../cli/CLI-CLI)
+- [Linux-Command-Detail](../../cli/cli-Linux-Command-Detail)
+- [Window-Command-Detail](../../cli/cli-Window-Command-Detail)
+- [CLI](../../cli/cli-CLI)

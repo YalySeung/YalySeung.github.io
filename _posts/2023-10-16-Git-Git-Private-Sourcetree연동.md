@@ -61,4 +61,4 @@ last_modified_at: 2023-10-16T08:00:00-10:00:00
 
 # 연결문서
 - [SSH](../../통신/통신-SSH#git을-사용한--키-생성)
-- [Git-ErrorList](../../git/Git-Git-ErrorList#ssh-rsa)
+- [Git-ErrorList](../../git/git-Git-ErrorList#ssh-rsa)

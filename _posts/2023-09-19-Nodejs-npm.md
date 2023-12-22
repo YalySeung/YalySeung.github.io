@@ -42,5 +42,5 @@ last_modified_at: 2023-09-19T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [npx](../../nodejs/Nodejs-npx)
+- [npx](../../nodejs/nodejs-npx)
 

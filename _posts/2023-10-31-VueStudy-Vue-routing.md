@@ -31,7 +31,7 @@ last_modified_at: 2023-10-31T08:00:00-10:00:00
 ![image](../../assets/images/VueRouterProjectStructure.png)
 
 #### views
-- [Component](../../vuestudy/VueStudy-Vue-Component)들을 가져와서 사용할 view Directory
+- [Component](../../vuestudy/vuestudy-Vue-Component)들을 가져와서 사용할 view Directory
 - 일반적으로 \* View.vue 파일명 형식 사용
 
 #### App.vue
@@ -210,4 +210,4 @@ onBeforeRouteLeave((to, from) => {
 ---
 
 # 연결문서
-- [Vue-프로젝트-Init](../../vuestudy/VueStudy-Vue-프로젝트-Init)
+- [Vue-프로젝트-Init](../../vuestudy/vuestudy-Vue-프로젝트-Init)

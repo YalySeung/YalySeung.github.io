@@ -31,6 +31,6 @@ last_modified_at: 2023-10-20T08:00:00-10:00:00
 
 # 연결문서
 - <https://www.w3schools.com/jsref/dom_obj_event.asp>
-- [React-EventHandler](../../reactstudy/ReactStudy-React-EventHandler)
-- [React-Keyword](../../reactstudy/ReactStudy-React-Keyword)
-- [React-Syntax](../../reactstudy/ReactStudy-React-Syntax)
+- [React-EventHandler](../../reactstudy/reactstudy-React-EventHandler)
+- [React-Keyword](../../reactstudy/reactstudy-React-Keyword)
+- [React-Syntax](../../reactstudy/reactstudy-React-Syntax)

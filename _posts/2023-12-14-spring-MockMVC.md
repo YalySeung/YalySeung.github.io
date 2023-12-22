@@ -28,4 +28,4 @@ last_modified_at: 2023-12-14T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [SpringMVC](../../spring/Spring-SpringMVC)
+- [SpringMVC](../../spring/spring-SpringMVC)

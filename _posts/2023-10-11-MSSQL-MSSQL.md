@@ -61,4 +61,4 @@ CAST(#{endDate, jdbcType=VARCHAR} AS DATE
 ---
 
 # 연결문서
-- [CommonDB](../../database/Database-CommonDB)
+- [CommonDB](../../database/database-CommonDB)

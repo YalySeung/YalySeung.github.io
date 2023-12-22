@@ -44,5 +44,5 @@ last_modified_at: 2023-11-06T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [Intellij](../../ide/IDE-Intellij)
-- [Gradle](../../build/Build-Gradle)
+- [Intellij](../../ide/ide-Intellij)
+- [Gradle](../../build/build-Gradle)

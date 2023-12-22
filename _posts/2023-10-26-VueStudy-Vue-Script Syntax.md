@@ -190,5 +190,5 @@ watch(bookInfoModel, (newValue) => {
 ---
 
 # 연결문서
-- [html-tags](../../webcommon/WebCommon-html-tags)
-- [Vue-Directive](../../vuestudy/VueStudy-Vue-Directive)
+- [html-tags](../../webcommon/webcommon-html-tags)
+- [Vue-Directive](../../vuestudy/vuestudy-Vue-Directive)

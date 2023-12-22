@@ -62,4 +62,4 @@ CAST(expr AS type)
 ---
 
 # 연결문서
-- [CommonDB](../../database/Database-CommonDB)
+- [CommonDB](../../database/database-CommonDB)

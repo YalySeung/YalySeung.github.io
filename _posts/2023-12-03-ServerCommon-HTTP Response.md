@@ -60,6 +60,6 @@ last_modified_at: 2023-12-03T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [HTTP](../../servercommon/ServerCommon-HTTP)
-- [HTTP Method](../../servercommon/ServerCommon-HTTP-Method)
-- [HTTP Request](../../servercommon/ServerCommon-HTTP-Request)
+- [HTTP](../../servercommon/servercommon-HTTP)
+- [HTTP Method](../../servercommon/servercommon-HTTP-Method)
+- [HTTP Request](../../servercommon/servercommon-HTTP-Request)

@@ -45,4 +45,4 @@ last_modified_at: 2023-11-26T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [HTTP Request](../../servercommon/ServerCommon-HTTP-Request)
+- [HTTP Request](../../servercommon/servercommon-HTTP-Request)

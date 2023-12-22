@@ -131,6 +131,6 @@ public Object aroundLogger(ProceedingJoinPoint joinPoint, Object obj, Object tar
 ---
 
 # 연결문서
-- [AOP](../../spring/Spring-AOP)
-- [@Aspect](../../aop/AOP-@Aspect)
-- [Advice](../../spring/Spring-Advice)
+- [AOP](../../spring/spring-AOP)
+- [@Aspect](../../aop/aop-@Aspect)
+- [Advice](../../spring/spring-Advice)

@@ -97,5 +97,5 @@ echo $SHELL
 ---
 
 # 연결문서
-- [Linux-Command-Detail](../../cli/CLI-Linux-Command-Detail)
-- [Window-Command-Detail](../../cli/CLI-Window-Command-Detail)
+- [Linux-Command-Detail](../../cli/cli-Linux-Command-Detail)
+- [Window-Command-Detail](../../cli/cli-Window-Command-Detail)

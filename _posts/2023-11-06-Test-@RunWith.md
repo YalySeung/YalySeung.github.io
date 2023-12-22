@@ -44,4 +44,4 @@ public class TestResourceManager {
 ---
 
 # 연결문서
-- [TestDouble](../../tdd/TDD-TestDouble)
+- [TestDouble](../../tdd/tdd-TestDouble)

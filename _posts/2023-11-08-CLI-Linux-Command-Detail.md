@@ -96,5 +96,5 @@ shutdown -h now
 ---
 
 # 연결문서
-- [CLI](../../cli/CLI-CLI)
-- [CLI-BaseCommand](../../cli/CLI-CLI-BaseCommand)
+- [CLI](../../cli/cli-CLI)
+- [CLI-BaseCommand](../../cli/cli-CLI-BaseCommand)

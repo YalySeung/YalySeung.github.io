@@ -57,7 +57,7 @@ public class VueMvcConfigurer implements WebMvcConfigurer {
 ### @Aspect
 - @Aspect Annotation 적용
 - Class에 적용해야한다.
-- [Advice 선언](../../spring/Spring-Advice) [Pointcut 적용](../../spring/Spring-Pointcut-Designator)
+- [Advice 선언](../../spring/spring-Advice) [Pointcut 적용](../../spring/spring-Pointcut-Designator)
 
 ```java
 @Component
@@ -85,7 +85,7 @@ public class VueMvcConfigurer implements WebMvcConfigurer {
 ---
 
 # 연결문서
-- [WebMvcConfigurer](../../spring/Spring-WebMvcConfigurer)
-- [AOP](../../spring/Spring-AOP)
-- [Pointcut Designator](../../spring/Spring-Pointcut-Designator)
-- [Advice](../../spring/Spring-Advice)
+- [WebMvcConfigurer](../../spring/spring-WebMvcConfigurer)
+- [AOP](../../spring/spring-AOP)
+- [Pointcut Designator](../../spring/spring-Pointcut-Designator)
+- [Advice](../../spring/spring-Advice)

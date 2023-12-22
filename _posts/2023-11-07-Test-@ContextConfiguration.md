@@ -45,4 +45,4 @@ public class ScheduleTest {
 ---
 
 # 연결문서
-- [@RunWith](../../test/Test-@RunWith)
+- [@RunWith](../../test/test-@RunWith)

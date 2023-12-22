@@ -40,7 +40,7 @@ last_modified_at: 2023-10-15T08:00:00-10:00:00
 - 변경된 부분만 빌드 가능
 - 병렬처리로 빌드시간 단축
 - 선언적 언어 사용으로 빌드 프로세스를 이해하고 관리하기 쉬움
-- [Gradle](../../build/Build-Gradle)
+- [Gradle](../../build/build-Gradle)
 
 ## 역할
 - 의존성 관리

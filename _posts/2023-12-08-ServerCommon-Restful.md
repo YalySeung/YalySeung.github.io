@@ -48,7 +48,7 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 
 ## RESTful 아키텍처
 - URI가 정보의 <span style="color:red">자원</span>을 표현
-- 자원에 대한 <span style="color:red">행위</span>는 [HTTP Method](../../servercommon/ServerCommon-HTTP-Method) (GET, POST, PUT, DELETE)로 표현
+- 자원에 대한 <span style="color:red">행위</span>는 [HTTP Method](../../servercommon/servercommon-HTTP-Method) (GET, POST, PUT, DELETE)로 표현
 - 특정 행위의 <span style="color:red">표현</span>은 body를 이용(XML, JSON)
 - 리소스 명은 명사를 사용
 > format
@@ -86,7 +86,7 @@ DELETE http://localhost/worker/얄리
 - Collection 뒤에 위치
 
 ### Method(행위)
-- [HTTP Method](../../servercommon/ServerCommon-HTTP-Method)
+- [HTTP Method](../../servercommon/servercommon-HTTP-Method)
 - POST : 리소스 생성
 - GET : 리소스 조회
 - PUT : 리소스 수정
@@ -115,4 +115,4 @@ PUT http://localhost/worker/얄리{
 ---
 
 # 연결문서
-- [HTTP Method](../../servercommon/ServerCommon-HTTP-Method)
+- [HTTP Method](../../servercommon/servercommon-HTTP-Method)

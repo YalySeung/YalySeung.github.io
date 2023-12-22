@@ -40,4 +40,4 @@ public Resource getResource(String relativePath) {
 ---
 
 # 연결문서
-- [Intellij](../../ide/IDE-Intellij)
+- [Intellij](../../ide/ide-Intellij)

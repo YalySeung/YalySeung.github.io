@@ -52,6 +52,6 @@ last_modified_at: 2023-10-27T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [npm](../../nodejs/Nodejs-npm)
-- [vite](../../webcommon/WebCommon-vite)
-- [Vue-SFC](../../vuestudy/VueStudy-Vue-SFC)
+- [npm](../../nodejs/nodejs-npm)
+- [vite](../../webcommon/webcommon-vite)
+- [Vue-SFC](../../vuestudy/vuestudy-Vue-SFC)

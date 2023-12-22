@@ -76,7 +76,7 @@ export default defineConfig({
 ---
 
 # 연결문서
-- [Intellij](../../ide/IDE-Intellij)
-- [Vue-프로젝트-Init](../../vuestudy/VueStudy-Vue-프로젝트-Init)
-- [Vue-환경변수](../../vuestudy/VueStudy-Vue-환경변수)
-- [npm](../../nodejs/Nodejs-npm)
+- [Intellij](../../ide/ide-Intellij)
+- [Vue-프로젝트-Init](../../vuestudy/vuestudy-Vue-프로젝트-Init)
+- [Vue-환경변수](../../vuestudy/vuestudy-Vue-환경변수)
+- [npm](../../nodejs/nodejs-npm)

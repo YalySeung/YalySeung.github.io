@@ -18,7 +18,7 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 
 # 내용
 
-## [CDN](../../webcommon/WebCommon-CDN)을 이용한 vue 
+## [CDN](../../webcommon/webcommon-CDN)을 이용한 vue 
 
 ### CDN link
 

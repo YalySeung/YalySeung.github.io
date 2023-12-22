@@ -80,5 +80,5 @@ last_modified_at: 2023-09-29T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [Github Blog 만들기](../../githubblog/GithubBlog-Github-Blog-만들기)
-- [Post Blog Content](../../githubblog/GithubBlog-Post-Blog-Content)
+- [Github Blog 만들기](../../githubblog/githubblog-Github-Blog-만들기)
+- [Post Blog Content](../../githubblog/githubblog-Post-Blog-Content)

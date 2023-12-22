@@ -94,5 +94,5 @@ last_modified_at: 2023-10-15T08:00:00-10:00:00
 # 연결문서
 - [DHCP](../../통신/통신-DHCP)
 - [NAS](../../하드웨어/하드웨어-NAS)
-- [DDNS](../../servercommon/ServerCommon-DDNS)
-- [Port Forwarding](../../servercommon/ServerCommon-Port-Forwarding)
+- [DDNS](../../servercommon/servercommon-DDNS)
+- [Port Forwarding](../../servercommon/servercommon-Port-Forwarding)

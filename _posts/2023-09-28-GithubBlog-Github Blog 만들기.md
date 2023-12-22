@@ -106,6 +106,6 @@ last_modified_at: 2023-09-28T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [Post Blog Content](../../githubblog/GithubBlog-Post-Blog-Content) 
-- [Blog Comment 적용](../../githubblog/GithubBlog-Blog-Comment-적용)
+- [Post Blog Content](../../githubblog/githubblog-Post-Blog-Content) 
+- [Blog Comment 적용](../../githubblog/githubblog-Blog-Comment-적용)
 

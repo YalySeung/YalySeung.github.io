@@ -103,7 +103,7 @@ tasks.named('test') {
 ### Daemon Process
 - 메모리상에 빌드 결과물을 보관
 - 한번 빌드된 프로젝트는 다음 빌드에 매우 적은 시간만 소요됨
-- [Daemon Process](../../servercommon/ServerCommon-Daemon-Process)
+- [Daemon Process](../../servercommon/servercommon-Daemon-Process)
 
 ---
 
