@@ -51,6 +51,7 @@ public void configureViewResolvers(ViewResolverRegistry registry) {
 }
 ```
 
+> 
 > [@EnableWebMvc](../../annotation/Annotation-@EnableWebMvc) Annotation과 함께 적용해야 한다.
 
 ### 리소스 핸들링
@@ -60,8 +61,27 @@ public void configureViewResolvers(ViewResolverRegistry registry) {
 ```java
 @Override
 public void addResourceHandlers(ResourceHandlerRegistry registry) {
-    registry.addResourceHandler("/static/**")
-            .addResourceLocations("classpath:/static/");
+    registry.addResourceHandler("/assets/**")  
+        .addResourceLocations("classpath:/static/assets/");  
+	registry.addResourceHandler("/static/**")  
+        .addResourceLocations("classpath:/static/");
+}
+```
+
+> 
+> ResourceLocation은 폴더구조상의 경로
+> ResourceHandler는 request 요청상의 경로이다
+
+>
+> http://localhost:8080/assets/my.js  이렇게 request가 들어왔다고 가정하면 classpath:/static/assets/ 경로에서 .js파일을 찾을 것이다.
+
+### Exception 핸들링
+- Contoller 밖으로  Throw된 exception을 처리하고 동작방식 재정의
+
+```java
+@Override  
+public void extendHandlerExceptionResolvers(List<HandlerExceptionResolver> resolvers) {  
+    resolvers.add(new MyHandlerExceptionResolver());  
 }
 ```
 
@@ -115,3 +135,4 @@ public void addCorsMappings(CorsRegistry registry) {
 ---
 
 # 연결문서
+- [DispatcherServlet](../../spring/Spring-DispatcherServlet)

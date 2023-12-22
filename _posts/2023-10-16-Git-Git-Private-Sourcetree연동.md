@@ -21,7 +21,10 @@ last_modified_at: 2023-10-16T08:00:00-10:00:00
 ##  SSH key 생성
 - [key 생성방법](../../통신/통신-SSH#git을-사용한--키-생성)
 
-## Git Repository에 Public Key 등록
+## Public Key 등록
+
+### Repository에 등록하는법
+- **특정 Repository에 대한 권한만 획득하려면 Repository에 Deploy Key를 등록한다.**
 - Repository의 settings 탭에 Add deploy key 항목을 선택한다
   
 ![image](../../assets/images/GitRepositoryAddSSHKeyMenu.png)
@@ -33,6 +36,13 @@ last_modified_at: 2023-10-16T08:00:00-10:00:00
 ![image](../../assets/images/GitAddSSHKeyContent.png){: width=500 height=500}
   
 ![image](../../assets/images/GitSSHKeyAddResult.png){: width=500 height=500}
+
+### Git 계정에 등록하는법
+- **계정에 귀속된 모든 Repository에 대한 권한을 획득하려면 계정 SSH키 설정에 키를 등록한다.**
+  
+![image](../../assets/images/GitUserSetting.png)
+  
+![image](../../assets/images/GitUserAddSSHKey.png)
 
 ## SourceTree에 Public Key 등록
 - 소스트리의 도구-옵션 팝업창에 SSH 키를 등록하는 항목이 있다.

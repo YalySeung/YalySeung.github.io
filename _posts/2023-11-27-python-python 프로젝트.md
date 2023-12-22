@@ -7,13 +7,13 @@ toc_label : "python 프로젝트"
 categories:
 - python
 tags:
-- [미완료]
+- [python, 미완료]
 last_modified_at: 2023-11-27T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-11-27 12:19
 
-# 태그 : #미완료 
+# 태그 : #python #미완료 
 ---
 
 # 내용

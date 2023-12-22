@@ -42,6 +42,7 @@ last_modified_at: 2023-10-25T08:00:00-10:00:00
 ### DispatcherServlet
 - request를 처리할 Controller 를 배정
 - 결과 View를 user에게 전달
+- 서블릿으로 등록하며, 모든 경로에 urlPatterns="/" 매핑
 
 ### Handler
 - Controller
@@ -55,13 +56,9 @@ last_modified_at: 2023-10-25T08:00:00-10:00:00
 - View Name으로 반환할 View를 탐색
 - View에 Model 데이터를 삽입
 
-## Spring MVC 동작 방식
-
-### DispatcherServlet
-- 서블릿으로 등록하며, 모든 경로에 urlPatterns="/" 매핑
-
 ---
 
 # 연결문서
 - [SpringMVC 구현](../../spring/Spring-SpringMVC-구현)
 - [Servlet](../../spring/Spring-Servlet)
+- [DispatcherServlet](../../spring/Spring-DispatcherServlet)

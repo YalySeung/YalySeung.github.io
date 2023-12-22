@@ -100,6 +100,8 @@ public class SampleConfiguration {
 - Web설정
 
 ```java
+@EnableWebMvc
+@ComponentScan(basePackages = "<패키지명>")
 public class SampleConfiguration implements WebMvcConfigurer {  
     @Override  
     public void configureViewResolvers(ViewResolverRegistry registry) {  

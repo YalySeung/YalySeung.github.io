@@ -7,13 +7,13 @@ toc_label : "Thread Dump"
 categories:
 - ServerCommon
 tags:
-- [ServerCommon, java, 미완료]
+- [ServerCommon, java]
 last_modified_at: 2023-11-24T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-11-24 14:37
 
-# 태그 : #ServerCommon #java #미완료 
+# 태그 : #ServerCommon #java
 ---
 
 # 내용
@@ -39,6 +39,12 @@ last_modified_at: 2023-11-24T08:00:00-10:00:00
 >dump 파일 분석 툴
 
 ### 사용방법
+
+#### dump 파일 로드
+  
+![image](../../assets/images/MATOpenHeapDump.png)
+- 팝업된 윈도우 탐색기에서 .hprof 파일을 선택한다.
+- MAT가 해당 덤프파일을 분석하여 결과를 보여준다.
 
 ### 분석
 
