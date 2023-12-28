@@ -97,3 +97,5 @@ last_modified_at: 2023-11-02T08:00:00-10:00:00
 
 # 연결문서
 - [CDN](../../webcommon/webcommon-CDN) 
+- [HTTP Request](../../servercommon/servercommon-HTTP-Request)
+- [HTTP Response](../../servercommon/servercommon-HTTP-Response)
