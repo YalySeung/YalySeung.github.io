@@ -44,6 +44,7 @@ TASK FROM #projects/active
 
 ### 프론트메터
 - 노트 맨 앞에 작성하는 메타데이터
+
 ```
 
 --- 
@@ -62,6 +63,7 @@ TABLE wakeup as 기상시간, sleep as 취침시간, workout as 운동, gratitud
 ### 인라인 필드
 - 노트 중간에 작성하는 필드
 - 작성법 : \[drama:: 오징어게임\], \[DP\]
+
 ```
 TABLE drama as 드라마 FROM "/" WHERE file.name = "드라마"
 ```
