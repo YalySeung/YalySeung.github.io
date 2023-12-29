@@ -90,6 +90,6 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 ---
 
 # 연결문서
-- [html-문서 기본 구조](../../webcommon/webcommon-html문서-기본-구조)
-- [html-작성법 기본](../../webcommon/webcommon-html작성법-기본)
-- [html-tags](../../webcommon/webcommon-htmltags)
+- [html-문서 기본 구조](../../webcommon/webcommon-html-문서-기본-구조)
+- [html-작성법 기본](../../webcommon/webcommon-html-작성법-기본)
+- [html-tags](../../webcommon/webcommon-html-tags)
