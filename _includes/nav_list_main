@@ -161,6 +161,17 @@
     </ul>
 
     
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">ITBusiness</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "ITBusiness" %}
+            <li><a href="/categories/ITBusiness" class="">ITBusiness ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
 <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Idea</span>
 
     <ul>
@@ -240,6 +251,17 @@
         {% for category in site.categories %}
         {% if category[0] == "ReactStudy" %}
             <li><a href="/categories/ReactStudy" class="">ReactStudy ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">SourceTree</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "SourceTree" %}
+            <li><a href="/categories/SourceTree" class="">SourceTree ({{category[1].size}})</a></li>
         {% endif %}
         {% endfor %}
     </ul>

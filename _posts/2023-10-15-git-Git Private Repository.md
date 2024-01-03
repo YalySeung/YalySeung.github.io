@@ -7,13 +7,13 @@ toc_label : "Git Private Repository"
 categories:
 - Git
 tags:
-- [Git, Repository, SourceTree]
+- [Git, Repository]
 last_modified_at: 2023-10-15T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-10-15 23:17
 
-# 태그 : #Git #Repository  #SourceTree
+# 태그 : #Git #Repository
 ---
 
 # 내용

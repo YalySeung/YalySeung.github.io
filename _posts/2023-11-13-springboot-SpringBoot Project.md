@@ -40,8 +40,6 @@ npm install path
 
 ## Vue.js dev 서버에 proxy 설정
 - Boot 서버 포트 변경
-  
-![image](../../assets/images/ChangeServerPort.png)
 - vite.config.js
 
 ```javascript
