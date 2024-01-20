@@ -19,8 +19,10 @@ last_modified_at: 2023-11-16T08:00:00-10:00:00
 # 내용
 
 ## 정의
+> **info**
 >
 >Java로 개발된 Job Scheduling library
+{: .notice--info}
 
 ## 장점
 - DB 기반으로 스케쥴러 간 Clustering 제공

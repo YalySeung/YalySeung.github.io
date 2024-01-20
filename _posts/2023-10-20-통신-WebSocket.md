@@ -19,8 +19,10 @@ last_modified_at: 2023-10-20T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> WebSocket이란?
+> **WebSocket이란?**
+>
 > 서버와 클라이언트 간 양방향 데이터 전송이 가능하도록 하는 통신방법 중 하나
+{: .notice--info}
 
 ## 특징
 - Stateful Protocol

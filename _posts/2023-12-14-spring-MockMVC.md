@@ -19,8 +19,10 @@ last_modified_at: 2023-12-14T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> MockMVC란?
+> **MockMVC란?**
+>
 > Web Application을 배포하지 않고 Spring MVC의 동작을 재현할 수 있는 테스트 도우미
+{: .notice--info}
 
 ## Artifact
 - org.springframework.test.web.servlet

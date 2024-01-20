@@ -41,7 +41,7 @@ last_modified_at: 2023-10-24T08:00:00-10:00:00
 	  
 	}}
 >
-
+{: .notice--info}
 	데이터패치
   </button>
 

@@ -19,8 +19,10 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> Tomcat이란?
+> **Tomcat이란?**
+>
 > Java Servlet을 실행하고 웹페이지를 렌더링하는 응용프로그램 서버
+{: .notice--info}
 
 ## 톰캣 설정파일
   

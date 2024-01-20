@@ -38,13 +38,17 @@ last_modified_at: 2023-12-30T08:00:00-10:00:00
   
 ![image](../../assets/images/CopyMonolineBrush.png)
 
+> **tip**
 >
 > 복제할 브러쉬를 좌측으로 Swife 하면 복제 옵션이 보인다.
+{: .notice--info}
 
 ### 5. 브러쉬 스튜디오에서 브러쉬 설정
 
+> **tip**
 >
 > 브러쉬 선택 창에서 원하는 브러쉬를 한번 더 선택하면 브러쉬 스튜디오로 이동한다.
+{: .notice--info}
 
 - 브러쉬 모양 편집
   
@@ -60,8 +64,10 @@ last_modified_at: 2023-12-30T08:00:00-10:00:00
   
 ![image](../../assets/images/BrushStudioEditProperties.jpg)
 
+> **caution**
 >
 > 속성 > 스크린 방향으로 맞추기 설정을 on 해야만 정방향 이모티콘 브러쉬를 만들 수 있다.
+{: .notice--info}
 
 ### 6. 만든 브러쉬를 사용하여 캔버스에 그려본다.
   

@@ -19,10 +19,12 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> DOM이란?
+> **DOM이란?**
+>
 > The Document Object Model
 > HTML, XML 문서의 프로그래밍 인터페이스
 > <span style="color:red">웹 브라우저가 HTML 페이지를 인식하는 방식</span>  
+{: .notice--info}
 
 ## 특징
 - 프로그래밍 언어가 문서구조에 접근할 수 있는 방법 제공

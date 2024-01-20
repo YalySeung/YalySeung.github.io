@@ -19,8 +19,10 @@ last_modified_at: 2023-10-25T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> Boiler Plate란?
+> **Boiler Plate란?**
+>
 > 대부분 코딩을 할 때 필수로 작성하며, 반복적으로 비슷한 형태를 띄는 코드
+{: .notice--info}
 
 ## Boiler Plate 에 해당하는 것들..
 - Getter, Setter

@@ -19,8 +19,10 @@ last_modified_at: 2023-10-24T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> axios 란 
+> **axios 란**
+>
 > 브라우저를 위한 Promise 기반 HTTP 클라이언트
+{: .notice--info}
 
 ## 설치
 
@@ -59,7 +61,7 @@ const URL = "https://jsonplaceholder.typicode.com/todos";
 	  
 	}}
 >
-
+{: .notice--info}
 	데이터패치
   </button>
 ```

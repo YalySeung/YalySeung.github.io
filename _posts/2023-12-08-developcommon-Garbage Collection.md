@@ -20,8 +20,10 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 
 ## 정의
 
-> Garbage Collection이란?
+> **Garbage Collection이란?**
+>
 > 자바의 메모리 관리 방법 중 하나로 JVM의 heap 영역에 동적으로 할당했던 메모리 중 필요없게 된 메모리 객체를 모아 주기적으로 제거하는 프로세스 
+{: .notice--info}
 
 ## 장점
 - 이미 해제 된 메모리에 접근 방지

@@ -19,9 +19,11 @@ last_modified_at: 2023-09-19T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> npm이란?
+> **npm이란?**
+>
 > Node Package Manager
 > node.js의 자동화된 의존성과 패키지 관리를 위한 패키지 매니저
+{: .notice--info}
 
 ## 역할
 - 라이브러리 다운

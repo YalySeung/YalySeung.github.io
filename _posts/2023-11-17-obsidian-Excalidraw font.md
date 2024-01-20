@@ -34,9 +34,10 @@ last_modified_at: 2023-11-17T08:00:00-10:00:00
 ![image](../../assets/images/ExcalidrawFontConfig.png)
 
 ## 사용
+> **example**
 >
 >  
-
+{: .notice--info}
 ![image](../../assets/images/ExcaliDrawUseCustomFont.png)
 
 ---

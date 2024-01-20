@@ -75,6 +75,7 @@ last_modified_at: 2023-11-29T08:00:00-10:00:00
 | deflate  | deflate 압축 알고리즘과 함께 zlib 구조를 사용                                                                                                                   |
 | gzip     | unix gzip 프로그램의 형식                                                                                                                                       |
 
+> **example**
 >
 > HTTP/1.1 200 OK
 > Content-Type: text/plain
@@ -86,6 +87,7 @@ last_modified_at: 2023-11-29T08:00:00-10:00:00
 > Developer Network\r\n
 > 0\r\n
 > \r\n
+{: .notice--info}
 
 ---
 

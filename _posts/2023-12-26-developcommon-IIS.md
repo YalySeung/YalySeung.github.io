@@ -19,9 +19,11 @@ last_modified_at: 2023-12-26T08:00:00-10:00:00
 # 내용
 
 ## 정의
->  IIS란?
+> **IIS란?**
+>
 > Internet Information Service
 > 마이크로소프트 윈도우를 사용하는 서버들을 위한 인터넷 기반 서비스들의 모임
+{: .notice--info}
 
 ## 특징
 - Apache 웹 서버에 이어 세계 두번째로 잘 알려진 웹서버 소프트웨어

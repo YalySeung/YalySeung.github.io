@@ -19,9 +19,10 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> Proxy서버란?
+> **Proxy서버란?**
+>
 > 내부 네트워크에서 인터넷을 접속할 때, 빠른 액세스나 안전한 통신을 확보하기 위한 중계자
-
+{: .notice--info}
 - Client와 Web Server의 중간에 위치
   
 ![image](../../assets/images/ProxyBase.png)

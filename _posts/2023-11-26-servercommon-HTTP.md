@@ -19,11 +19,13 @@ last_modified_at: 2023-11-26T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> HTTP란?
+> **HTTP란?**
+>
 >Hyper Text Transfer Protocol
 >브라우저와 서버가 통신할 수 있도록 만들어주는 여러 프로토콜 가운데 한 종류
 >웹 브라우저와 웹 서버 사이에 HTML 문서를 주고받는데 쓰이는 통신 프로토콜
 >최근에는 text, JSON, XML 등 다양한 데이터 송수신 가능
+{: .notice--info}
 
 ## 특징
 

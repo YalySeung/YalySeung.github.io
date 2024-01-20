@@ -19,9 +19,11 @@ last_modified_at: 2023-11-20T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> DNS란?
+> **DNS란?**
+>
 >Domain Name System
 >Domain을 숫자로 된 IP로 바꾸는 일을 하는 서비스
+{: .notice--info}
 
 ## 특징
 - 고정 IP를 사용하는 환경에서 사용

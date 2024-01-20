@@ -19,11 +19,13 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> Ajax 란?
+> **Ajax 란?**
+>
 > Asynchronous Javascript And Xml
 > Javascript Library
 > 브라우저의 XMLHttpRequest 객체를 활용하여 페이지 새로고침 없이 데이터를 교환하고 조작하는 기법
 > 서버와 브라우저가 비동기 방식으로 데이터를 교환할 수 있는 통신기능
+{: .notice--info}
 
 ## Conventional Web Model <span style="color:gray">vs</span> Ajax Web Model
 

@@ -19,8 +19,10 @@ last_modified_at: 2023-12-18T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> Advice란?
+> **Advice란?**
+>
 > 실질적으로 프록시에서 수행하게 되는 로직을 명세
+{: .notice--info}
 
 ## 특징
 
@@ -38,8 +40,10 @@ last_modified_at: 2023-12-18T08:00:00-10:00:00
   
 ![image](../../assets/images/AdviceAnnotationOrder.png)
 
-> 
+> **tip**
+>
 > 같은 Advice가 한 JoinPoint에 적용되어 있을 경우 임의의 순서로 동작하는데, 이때 [@Order](../../annotation/annotation-@Order) Annotation을 적용하여 순서를 지정할 수 있다.
+{: .notice--info}
 
 ## Example
 

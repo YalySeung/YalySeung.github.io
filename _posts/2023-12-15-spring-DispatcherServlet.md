@@ -19,8 +19,10 @@ last_modified_at: 2023-12-15T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> DispatcherServlet이란?
+> **DispatcherServlet이란?**
+>
 > HTTP 프로토콜로 들러오는 모든 요청을 가장 먼저 받아 적합한 컨트롤러에 위임해주는 Front Controller
+{: .notice--info}
 
 ## 장점
 - web.xml 역할 축소

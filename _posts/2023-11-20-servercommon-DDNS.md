@@ -19,9 +19,11 @@ last_modified_at: 2023-11-20T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> DDNS란
+> **DDNS란**
+>
 >Dynamic Domain Name System
 >IP 주소가 변경될 때, DNS 레코드를 자동으로 업데이트 할 수 있는 서비스
+{: .notice--info}
 
 ## 기능
 - 유동 IP를 고정 IP처럼 사용 가능

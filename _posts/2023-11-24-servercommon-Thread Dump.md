@@ -19,8 +19,10 @@ last_modified_at: 2023-11-24T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> Thread Dump란?
+> **Thread Dump란?**
+>
 >프로세스에 속한 모든 쓰레드들의 상태를 기록한 것
+{: .notice--info}
 
 ## 특징
 - 각 쓰레드들은 stack trace의 형태로 보여짐
@@ -34,9 +36,11 @@ last_modified_at: 2023-11-24T08:00:00-10:00:00
 ## MAT
 
 ### 정의
-> MAT란?
+> **MAT란?**
+>
 >Eclipse Memory Analizer
 >dump 파일 분석 툴
+{: .notice--info}
 
 ### 사용방법
 

@@ -19,8 +19,10 @@ last_modified_at: 2024-01-09T08:00:00-10:00:00
 # 내용
 
 ##  정의
-> Spring Security란?
+> **Spring Security란?**
+>
 > Spring 기반의 애플리케이션 보안을 담당하는 스프링 하위 프레임워크
+{: .notice--info}
 
 ## 특징
 - Spring Security는 기본적으로 인증 절차 후 인가 절차를 진행

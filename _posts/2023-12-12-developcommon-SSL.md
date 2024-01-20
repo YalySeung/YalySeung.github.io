@@ -19,9 +19,11 @@ last_modified_at: 2023-12-12T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> SSL 이란?
+> **SSL 이란?**
+>
 > Secure Socket Layer
 > 암호화 기반 인터넷 보안 프로토콜
+{: .notice--info}
 
 ## 특징
   

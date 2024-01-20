@@ -19,9 +19,11 @@ last_modified_at: 2024-01-03T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> CoE 란?
+> **CoE 란?**
+>
 > Center of Excellence
 > 특정 분야 또는 주제에 대해 탁월한 전문성과 지식을 보유하고 있는 팀 또는 조직
+{: .notice--info}
 
 ## 특징
 

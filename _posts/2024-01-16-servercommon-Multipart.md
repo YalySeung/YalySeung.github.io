@@ -19,7 +19,10 @@ last_modified_at: 2024-01-16T08:00:00-10:00:00
 # 내용
 
 ## 정의
+> **Multipart란?**
+>
 > Client와 Server 간에 전송되는 HTTP 요청 또는 응답에서 여러 종류의 데이터 타입을 동시에 전송하기 위해 사용되는 데이터 포맷
+{: .notice--info}
 
 ## 특징
 - 일반적으로 파일 업로드와 관련된 데이터를 전송하는데 사용
@@ -110,8 +113,10 @@ Y
 ------WebKitFormBoundaryXPLfucybaRfnOC6m--
 ```
 
+> **tip**
 >
 > 라이브러리를 사용하여 Multipart 요청을 보낼수도 있지만 위와같은 포맷의 데이터를 만들어서 전송하기도 한다.
+{: .notice--info}
 
 ---
 

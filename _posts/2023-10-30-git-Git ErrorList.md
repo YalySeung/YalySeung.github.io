@@ -20,7 +20,7 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 
 ## ssh-rsa
 >[!error]
-
+{: .notice--info}
 Unable to negotiate with xxx.xxx.xxx.xxx port 22: no matching host key type found. Their offer: ssh-rsa
 
 ### 원인

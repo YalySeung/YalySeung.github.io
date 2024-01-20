@@ -19,8 +19,10 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> boxing 과 unboxing이란?
+> **boxing 과 unboxing이란?**
+>
 > C# 개발의 사용 편의성을 위한 기능 
+{: .notice--info}
 
 ## boxing
 - boxing은 값 형식을 형식 또는 이 값 형식에서 구현된 임의의 인터페이스 형식으로 변환하는 프로세스

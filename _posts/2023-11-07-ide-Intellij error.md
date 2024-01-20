@@ -23,6 +23,7 @@ last_modified_at: 2023-11-07T08:00:00-10:00:00
 ### 에러내용
 > [!error]
 > Execution failed for task ':test'.
+{: .notice--info}
 
 ### 수정
   

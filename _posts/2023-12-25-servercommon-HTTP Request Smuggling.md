@@ -19,8 +19,10 @@ last_modified_at: 2023-12-25T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> HTTP Request Smuggling이란?
+> **HTTP Request Smuggling이란?**
+>
 > 사용자로부터 수신된 HTTP 요청 순차 처리를 방해하는 기술
+{: .notice--info}
 
 ## 특징
 - WAS 의 취약점을 이용해 보안 장치를 우회할 수 있고 인가되지 않은 민감한 데이터를 접근할 수 있으며, 직접적으로 다른 사용자들에게 손해를 줄 수 있음 
@@ -42,8 +44,10 @@ Content-Length: 11
 <11자리의 Data><Smuggling 공격을 할 Data>
 ```
 
+> **note**
 >
 > 여기서 주목해야 할 점은 Header에 명시된 Content  이외에 Smuggling 공격에 사용할 data를 Body에 포함시켰다는 것이다.
+{: .notice--info}
 
 ---
 

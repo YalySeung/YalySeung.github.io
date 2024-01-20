@@ -20,6 +20,7 @@ last_modified_at: 2023-11-06T08:00:00-10:00:00
 
 ## Compile 이란
 >개발자가 프로그램을 위해 작성한 소스크드를 다른 프로그램이나 기계어로 바꾸는 과정
+{: .notice--info}
 
 ## Compile 언어란
 - Compile 과정이 필요한 언어
@@ -41,6 +42,7 @@ last_modified_at: 2023-11-06T08:00:00-10:00:00
 ## Compile 타임 에러
 > Compile 에러는 프로그램이 컴파일링 되는 과정에서 발생하는 에러
 > 일반적으로 컴파일 에러는 IDE에서 확인이 가능
+{: .notice--info}
 
 ### Compile 에러 종류
 - Syntax Error

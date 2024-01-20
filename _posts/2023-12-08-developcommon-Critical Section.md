@@ -19,8 +19,9 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> Critical Section이란?
-
+> **Critical Section이란?**
+>
+{: .notice--info}
   공유 자원에 접근하는 코드 영역
 
 ## Critical Section 문제

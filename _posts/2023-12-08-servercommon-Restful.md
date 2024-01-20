@@ -19,9 +19,11 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> Restful 이란?
+> **Restful 이란?**
+>
 > Respresentational State Transfer
 > 분산 하이퍼미디어 시스템을 위한 소프트웨어 아키텍처의 한 형식
+{: .notice--info}
 
 ## 특징
 
@@ -51,8 +53,10 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 - 자원에 대한 <span style="color:red">행위</span>는 [HTTP Method](../../servercommon/servercommon-HTTP-Method) (GET, POST, PUT, DELETE)로 표현
 - 특정 행위의 <span style="color:red">표현</span>은 body를 이용(XML, JSON)
 - 리소스 명은 명사를 사용
-> format
+> **format**
+>
 > POST http://localhost/{Collection}/{Document}
+{: .notice--info}
 
 ```
 

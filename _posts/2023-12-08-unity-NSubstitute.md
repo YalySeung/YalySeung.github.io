@@ -19,8 +19,10 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 # 내용
 
 ## 정의
-> NSubstitute란?
+> **NSubstitute란?**
+>
 > .NET 에서 단위테스트 도구로 사용되는 DLL
+{: .notice--info}
 
 ## 환경구성
 
