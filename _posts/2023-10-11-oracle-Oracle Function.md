@@ -45,7 +45,15 @@ NVL(name, 0)
 ```sql
 NVL2(comm, 'Y', 'N')
 ```
- ---
+
+### REPLACE
+- REPLACE(<컬럼명>,  <변경대상 문자열>, <변경결과 문자열>)
+
+```SQL
+UPDATE mytable SET FILE_PATH = REPLACE(FILE_PATH, '\\', '\/')
+```
+
+- ---
 
 # 연결문서
 - [CommonDB](../../database/database-CommonDB)

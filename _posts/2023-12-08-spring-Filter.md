@@ -18,8 +18,11 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 
 # 내용
 
+## 역할
+- J2EE 표준 스펙 기능으로 [DispatcherServlet](../../spring/spring-DispatcherServlet)에 요청이 전달되기 전/후에 url 패턴에 맞는 모든 요청에 대한 부가작업 처리
+
 ## 특징
-- DispatcherServlet에 요청이 전달되지 전, 후에 url 패턴에 맞는 모든 요청에 대한 처리
+- DispatcherServlet에 요청이 전달되기 전, 후에 url 패턴에 맞는 모든 요청에 대한 처리
 - 스프링과 무관하게 전역적으로 처리해야 할 작업 수행
 - ServletRequest/ServletResponse 객체를 조작 가능
 - 웹 컨테이너에 의해 관리됨
@@ -67,3 +70,4 @@ public class SampleFilter1 implements Filter{
 ---
 
 # 연결문서
+- [SpringMVC](../../spring/spring-SpringMVC)

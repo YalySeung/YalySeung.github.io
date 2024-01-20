@@ -19,9 +19,10 @@ last_modified_at: 2023-09-28T08:00:00-10:00:00
 # 내용
 
 ## 필요한 Utility / Tool
-- git
+- Git
+- SourceTree
 
-### Jekyll 테마 사용을 위해 필요
+### Jekyll 테마 Utility
 - Ruby
 - Jekyll 과 Bundler
 
@@ -44,9 +45,14 @@ last_modified_at: 2023-09-28T08:00:00-10:00:00
   
 ![image](../../assets/images/GitRepositoryUrl.png)
 
-  위와 같이 url을 복사하여  
+  위와 같이 url 복사 후 SourceTree에서 Clone을 진행한다.
   
-![image](../../assets/images/CloneBlogRepository.png)소스 Clone!
+![image](../../assets/images/CloneBlogRepository.png)
+
+>
+> SourceTree 대신 Git GUI Client를 사용해도 무방하다
+
+[Git GUI Client 다운로드 링크](https://git-scm.com/download/gui/windows)
 
 ### Ruby 설치
   
@@ -110,4 +116,3 @@ last_modified_at: 2023-09-28T08:00:00-10:00:00
 # 연결문서
 - [Post Blog Content](../../githubblog/githubblog-Post-Blog-Content) 
 - [Blog Comment 적용](../../githubblog/githubblog-Blog-Comment-적용)
-
