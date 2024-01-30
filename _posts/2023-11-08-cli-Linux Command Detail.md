@@ -20,11 +20,21 @@ last_modified_at: 2023-11-08T08:00:00-10:00:00
 
 ## 명령어
 
-### JVM heap 메모리 사용량 확인
+### jmap
+
+#### JVM heap 메모리 사용량 확인
 
 ```bash
 jmap -heap <pid>
 ```
+
+#### heap 덤프 파일 생성
+
+```bash
+jmap -dump:live,file=<덤프파일경로> <프로세스ID>
+```
+
+- dump:live : 현재 heap 내의 액티브 메모리 레퍼런스가 있는 object만 캡처
 
 ### top
 

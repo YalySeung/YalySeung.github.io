@@ -21,7 +21,8 @@ last_modified_at: 2023-11-07T08:00:00-10:00:00
 ## gradle 단위테스트 에러
 
 ### 에러내용
-> [!error]
+> **error**
+>
 > Execution failed for task ':test'.
 {: .notice--info}
 
