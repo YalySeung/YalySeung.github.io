@@ -18,9 +18,13 @@ last_modified_at: 2023-11-03T08:00:00-10:00:00
 
 # 내용
 
-## IPS란
-- Intrusion Prevention System : 침입 방지 시스템
-- 인터넷 웜, 악성코드, 해킹 등에 기인한 유해 트래픽 차단 솔루션
+## 정의
+> **IPS란?**
+>
+> Intrusion Prevention System 
+> 침입 방지 시스템
+> 인터넷 웜, 악성코드, 해킹 등에 기인한 유해 트래픽 차단 솔루션
+{: .notice--info}
 
 ## 주요기능
 - OS나 Application 취약점을 사전 예방

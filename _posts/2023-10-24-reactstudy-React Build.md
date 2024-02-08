@@ -19,7 +19,12 @@ last_modified_at: 2023-10-24T08:00:00-10:00:00
 # 내용
 
 ## SPA
-- Single Page Application
+> **SPA 란?**
+>
+> Single Page Application
+{: .notice--info}
+
+## 특징
 - React는 반드시 하나의 HTML 파일만 존재
 
 ## 빌드

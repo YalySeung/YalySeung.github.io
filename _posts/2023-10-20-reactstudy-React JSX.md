@@ -18,10 +18,13 @@ last_modified_at: 2023-10-20T08:00:00-10:00:00
 
 # 내용
 
-## JSX란 
-- JavaScript XML
-- Javascript + html
-- JavaScript 문법 확장
+## 정의
+> **JSX 란?**
+>
+> JavaScript XML
+> Javascript + html
+> JavaScript 문법 확장
+{: .notice--info}
 
 ## 특징
 - 리턴값은 단 하나의 html 태그

@@ -57,9 +57,9 @@ last_modified_at: 2023-11-07T08:00:00-10:00:00
 - 쉽게 이해할 수 있기 때문에 많이 사용되는 naming rule
 
 #### Example
-1. - - should_ThrowException_When_AgeLessThan18
-        - should_FailToWithdrawMoney_ForInvalidAccount
-        - should_FailToAdmit_IfMandatoryFieldsAreMissing
+- should_ThrowException_When_AgeLessThan18
+- should_FailToWithdrawMoney_ForInvalidAccount
+- should_FailToAdmit_IfMandatoryFieldsAreMissing
 
 ### when_테스트상태_Expect_기대결과
 

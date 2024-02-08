@@ -18,9 +18,12 @@ last_modified_at: 2023-10-26T08:00:00-10:00:00
 
 # 내용
 
-## CDN이란
-- Content Delivery Network | Content Distribution Network
-- 지리적 제약 없이 전 세계 사용자에게 빠르게 콘텐츠를 전송하는 기술
+## 정의
+> **CDN이란?**
+>
+> Content Delivery Network | Content Distribution Network
+> 지리적 제약 없이 전 세계 사용자에게 빠르게 콘텐츠를 전송하는 기술
+{: .notice--info}
 
 ## 원리
 - 웹 캐시의 클라우드화

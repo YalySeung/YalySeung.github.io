@@ -18,12 +18,17 @@ last_modified_at: 2023-11-01T08:00:00-10:00:00
 
 # 내용
 
-## Cron 이란
-- Unix의 Job Scheduler System 
-- Job Scheduler와 동일한 의미로도 사용
+## 정의
+> **Cron이란?**
+>
+> Unix의 Job Scheduler System 
+> Job Scheduler와 동일한 의미로도 사용
+{: .notice--info}
 
-## Cron Expression 이란
-- 시간 단위를 표현하는 표현식
+> **Cron Expression 이란?**
+>
+> 시간 단위를 표현하는 표현식
+{: .notice--info}
 
 ## 사용
 

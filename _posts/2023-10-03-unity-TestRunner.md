@@ -18,9 +18,15 @@ last_modified_at: 2023-10-03T08:00:00-10:00:00
 
 # 내용
 
-## 개요
-  - Unity Unit Test (단위테스트) 도구
-  - PlayMode Test / EditMode Test
+## 정의
+> **TestRunner 란?**
+>
+> Unity Unit Test (단위테스트) 도구
+{: .notice--info}
+
+## 종류
+- PlayMode Test : 게임 play 시점 테스트
+- EditMode Test : 스크립트 테스트
 
 ## 환경 설정
 
