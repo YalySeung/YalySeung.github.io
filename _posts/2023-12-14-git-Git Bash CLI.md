@@ -7,13 +7,13 @@ toc_label : "Git Bash CLI"
 categories:
 - Git
 tags:
-- [Git, CLI, 미완료]
+- [Git, CLI]
 last_modified_at: 2023-12-14T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-12-14 18:24
 
-# 태그 : #Git #CLI #미완료 
+# 태그 : #Git #CLI
 ---
 
 # 내용

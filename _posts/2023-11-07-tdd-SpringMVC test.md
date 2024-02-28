@@ -7,13 +7,13 @@ toc_label : "SpringMVC test"
 categories:
 - TDD
 tags:
-- [Spring, CleanCode, Test, TDD, 환경구성]
+- [Spring, CleanCode, Test, TDD, 환경]
 last_modified_at: 2023-11-07T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-11-07 11:29
 
-# 태그 : #Spring #CleanCode #Test #TDD #환경구성 
+# 태그 : #Spring #CleanCode #Test #TDD #환경 
 ---
 
 # 내용

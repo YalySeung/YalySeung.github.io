@@ -103,6 +103,15 @@ top
 shutdown -h now 
 ```
 
+### chmod
+
+#### 파일 실행 권한 부여
+
+```bash
+// 현재 폴더 경로의 모든 shell 파일 실행 권한 부여
+chmod -x *.sh
+```
+
 ---
 
 # 연결문서

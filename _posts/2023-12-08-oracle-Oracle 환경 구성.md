@@ -7,13 +7,13 @@ toc_label : "Oracle 환경 구성"
 categories:
 - Oracle
 tags:
-- [Database, Oracle, 환경구성]
+- [Database, Oracle, 환경]
 last_modified_at: 2023-12-08T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-12-08 12:21
 
-# 태그 : #Database #Oracle #환경구성 
+# 태그 : #Database #Oracle #환경 
 ---
 
 # 내용

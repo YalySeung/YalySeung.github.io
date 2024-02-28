@@ -407,6 +407,17 @@
     </ul>
 
     
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">알고리즘</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "알고리즘" %}
+            <li><a href="/categories/알고리즘" class="">알고리즘 ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
 <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">암복호화</span>
 
     <ul>

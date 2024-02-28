@@ -7,13 +7,13 @@ toc_label : "SpringBoot Project"
 categories:
 - SpringBoot
 tags:
-- [SpringBoot, 미완료]
+- [SpringBoot]
 last_modified_at: 2023-11-13T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-11-13 14:23
 
-# 태그 : #SpringBoot #미완료 
+# 태그 : #SpringBoot
 ---
 
 # 내용

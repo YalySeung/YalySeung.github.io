@@ -17,6 +17,10 @@ last_modified_at: 2023-10-15T08:00:00-10:00:00
 ---
 
 # 내용
+> **Gradle이란?**
+>
+> CI/CD를 위해 아래 작업들을 자동화 시켜 주는 **Groovy 기반의 오픈소스 빌드 도구**
+{: .notice--info}
 
 ## 환경
 - JDK 또는 JRE 8 이상
@@ -108,3 +112,4 @@ tasks.named('test') {
 ---
 
 # 연결문서
+- [Java BuildTools](../../build/build-Java-BuildTools)

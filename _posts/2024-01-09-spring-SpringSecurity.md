@@ -29,6 +29,10 @@ last_modified_at: 2024-01-09T08:00:00-10:00:00
 - 인가 과정에서 해당 리소스에 대한 접근 권한이 있는지 확인
 - Principal(접근 주체) 을 아이디로 Credential(비밀번호)을 비밀번호로 사용하는 Credential 기반의 인증방식 사용
 
+## 구조
+  
+![image](../../assets/images/SpringSecurityHolder.png)
+
 ## 주요 모듈
 
 ### SecurityContextHolder

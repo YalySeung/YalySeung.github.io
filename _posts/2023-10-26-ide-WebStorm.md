@@ -7,13 +7,13 @@ toc_label : "WebStorm"
 categories:
 - IDE
 tags:
-- [환경구성, IDE]
+- [환경, IDE]
 last_modified_at: 2023-10-26T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-10-26 16:30
 
-# 태그 : #환경구성 #IDE
+# 태그 : #환경 #IDE
 ---
 
 # 내용

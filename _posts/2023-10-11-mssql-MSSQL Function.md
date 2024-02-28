@@ -59,6 +59,20 @@ DATEADD(day, 3, GETDATE())
 CAST(#{endDate, jdbcType=VARCHAR} AS DATE
 ```
 
+#### STUFF
+- STUFF(<문자열>, <시작위치>, <문자길이>, <치환문자>)
+- 여러 행의 컬럼 값을 하나로 합치는 방법
+
+```sql
+SELECT a.birthday, 
+	STUFF((SELECT ',' + userId  
+			FROM user  
+			WHERE birthday = a.birthday
+			FOR XML PATH('')), 1, 1, '') AS userIds
+FROM user AS a  
+GROUP BY a.birthday
+```
+
 ---
 
 # 연결문서
