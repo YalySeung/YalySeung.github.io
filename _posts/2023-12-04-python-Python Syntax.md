@@ -7,13 +7,13 @@ toc_label : "Python Syntax"
 categories:
 - python
 tags:
-- [python]
+- [python, Syntax]
 last_modified_at: 2023-12-04T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-12-04 23:57
 
-# 태그 : #python
+# 태그 : #python #Syntax 
 ---
 
 # 내용

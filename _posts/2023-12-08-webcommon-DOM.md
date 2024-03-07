@@ -39,7 +39,7 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 - 이후 프로세스 : Tree를 Document로 렌더링
 
 ## DOM 에서 script의 사용
-- 각 브라우저 별로 각각의 DOM 이 구현되어 있다.
+- 각 브라우저 별로 DOM 이 구현되어 있다.
 - \<script\> 요소 사용
 
 ```xml
@@ -80,14 +80,17 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 - [Element class 정보](https://developer.mozilla.org/ko/docs/Web/API/Element)
 
 ## 웹페이지, XML 페이지 스크립팅에서 사용하는 공통 API
-- document.getElementById(id) : 주어진 id를 가진 요소의 참조를 반환한다.
-- document.getElementsByTagName(name) : 주어진 태그명을 갖는 요소의 목록을 반환한다
-- document.createElement(name) : 주어진 태그명을 사용해 새로운 요소를 생성한다.
-- parentNode.appendChild(node) : 부모 노드에 하위 노드를 추가한다.
-- element.innerHTML : 요소 콘텐츠의 마크업을 나타낸다.
-- element.setAttribute : 현재 노드의 명명된 속성 값을 설정한다.
-- element.getAttribute : 현재 노드에서 명명된 속성의 값을 반환한다.
-- element.addEventListener : 요소의 특정 이벤트 유형에 이벤트 처리기를 등록한다.
+
+| API명                                | 기능                            |
+| ----------------------------------- | ----------------------------- |
+| document.getElementById(id)         | 주어진 id를 가진 요소의 참조를 반환한다.      |
+| document.getElementsByTagName(name) | 주어진 태그명을 갖는 요소의 목록을 반환한다      |
+| document.createElement(name)        | 주어진 태그명을 사용해 새로운 요소를 생성한다.    |
+| parentNode.appendChild(node)        | 부모 노드에 하위 노드를 추가한다.           |
+| element.innerHTML                   | 요소 콘텐츠의 마크업을 나타낸다.            |
+| element.setAttribute                | 현재 노드의 명명된 속성 값을 설정한다.        |
+| element.getAttribute                | 현재 노드에서 명명된 속성의 값을 반환한다.      |
+| element.addEventListener            | 요소의 특정 이벤트 유형에 이벤트 처리기를 등록한다. |
 
 ---
 

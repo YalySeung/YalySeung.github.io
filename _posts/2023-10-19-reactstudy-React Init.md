@@ -7,13 +7,13 @@ toc_label : "React Init"
 categories:
 - ReactStudy
 tags:
-- [React, Lecture, 환경, FrontEnd, Study]
+- [React, 환경, FrontEnd, Study]
 last_modified_at: 2023-10-19T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-10-19 15:46
 
-# 태그 : #React #Lecture #환경 #FrontEnd #Study 
+# 태그 : #React #환경 #FrontEnd #Study 
 ---
 
 # 내용

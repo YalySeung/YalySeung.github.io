@@ -27,7 +27,7 @@ last_modified_at: 2024-01-05T08:00:00-10:00:00
 > **memo**
 >
 > Spring은 동일한 타입을 가진 bean 객체가 2개 존재할 경우 어떤 bean을 주입할지 알 수 없기때문에 Exception을 발생시킴
-{: .notice--info}
+{: .notice}
 
 ## 사용법
 

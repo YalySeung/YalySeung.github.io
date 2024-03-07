@@ -38,6 +38,11 @@ public class TestResourceManager {
 }
 ```
 
+> **tip**
+>
+> DB 와 관련된 테스트라면, Class에 @Transactional 태그를 적용하여 DB에 영향이 가지 않도록 하자
+{: .notice--primary}
+
 ### SpringJUnit4ClassRunner.class
 - 컨테이너 모든 설정 정보를 가지고 있는 class
 
@@ -45,3 +50,4 @@ public class TestResourceManager {
 
 # 연결문서
 - [TestDouble](../../tdd/tdd-TestDouble)
+- [@Transactional](../../annotation/annotation-@Transactional)

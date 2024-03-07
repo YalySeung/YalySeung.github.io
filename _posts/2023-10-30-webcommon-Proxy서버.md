@@ -25,7 +25,7 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 {: .notice--info}
 - Client와 Web Server의 중간에 위치
   
-![image](../../assets/images/ProxyBase.png)
+![image](../../assets/images/WhatIsProxy.png)
 
 ## 기능
 - Server IP가 아닌 Proxy IP를 노출하여 개인정보 보호

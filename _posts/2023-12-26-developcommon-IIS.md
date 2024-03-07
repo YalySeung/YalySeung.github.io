@@ -7,13 +7,13 @@ toc_label : "IIS"
 categories:
 - DevelopCommon
 tags:
-- [DevelopCommon]
+- [ServerCommon]
 last_modified_at: 2023-12-26T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-12-26 16:06
 
-# 태그 :  #DevelopCommon
+# 태그 :  #ServerCommon 
 ---
 
 # 내용
@@ -36,7 +36,7 @@ last_modified_at: 2023-12-26T08:00:00-10:00:00
 
 ## 단점
 - 윈도우에서만 사용 가능
-- Apache 와 비교하여 Reference가 적다
+- Apache 와 비교하여 Reference가 적음
 
 ---
 

@@ -7,13 +7,13 @@ toc_label : "Swagger"
 categories:
 - ServerCommon
 tags:
-- [ServerCommon, 미완료]
+- [ServerCommon, BackEnd, 미완료]
 last_modified_at: 2024-02-08T08:00:00-10:00:00
 ---
 
 # 날짜 : 2024-02-08 13:33
 
-# 태그 : #ServerCommon #미완료 
+# 태그 : #ServerCommon #BackEnd #미완료 
 ---
 
 # 내용
@@ -40,7 +40,7 @@ compile 'io.springfox:springfox-swagger2:2.9.2'
 > **caution**
 >
 > /swagger-ui.html 리소스가 정상적으로 보이려면 /v2/api-docs 리소스가 정상적인 json 형태로 보여져야한다.
-{: .notice--info}
+{: .notice--danger}
 
 ### Configuration
 - @Configuration , @EnableSwagger2 두개 Annotation 적용
@@ -90,7 +90,7 @@ public class RpaApiWebMvcConfiguration extends WebMvcConfigurerAdapter {
 > **tip**
 >
 > configureMessageConverters 함수내의 Converter에 Swagger API Json을 직렬화 할 수 있는 Converter를 추가해야한다.
-{: .notice--info}
+{: .notice--primary}
 
 ```java
 public class MessageConverterFactory {  

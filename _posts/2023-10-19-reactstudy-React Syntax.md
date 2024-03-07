@@ -7,13 +7,13 @@ toc_label : "React Syntax"
 categories:
 - ReactStudy
 tags:
-- [Javascript, Lecture, FrontEnd, React, Study]
+- [Javascript, FrontEnd, React, Study]
 last_modified_at: 2023-10-19T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-10-19 16:13
 
-# 태그 : #Javascript #Lecture #FrontEnd #React #Study 
+# 태그 : #Javascript #FrontEnd #React #Study 
 ---
 
 # 내용

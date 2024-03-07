@@ -7,13 +7,13 @@ toc_label : "@RestController"
 categories:
 - Annotation
 tags:
-- [Spring, Annotation]
+- [Spring, Annotation, RESTAPI]
 last_modified_at: 2024-02-18T08:00:00-10:00:00
 ---
 
 # 날짜 : 2024-02-18 14:14
 
-# 태그 : #Spring #Annotation
+# 태그 : #Spring #Annotation #RESTAPI 
 ---
 
 # 내용

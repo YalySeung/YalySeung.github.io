@@ -30,7 +30,7 @@ last_modified_at: 2023-09-28T08:00:00-10:00:00
 > **caution**
 >
 > 사용자 계정명 및 사용자폴더 경로에 한글이 있을 경우 환경 구성에 어려움이 있을 수 있으니 영문으로 변경하여 사용하는 것을 권장합니다.
-{: .notice--info}
+{: .notice--danger}
 
 ### git 설치
   [git 다운로드 링크](https://git-scm.com/downloads)
@@ -54,7 +54,7 @@ last_modified_at: 2023-09-28T08:00:00-10:00:00
 > **tip**
 >
 > SourceTree 대신 Git GUI Client를 사용해도 무방하다
-{: .notice--info}
+{: .notice--primary}
 
 [Git GUI Client 다운로드 링크](https://git-scm.com/download/gui/windows)
 

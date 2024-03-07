@@ -139,6 +139,53 @@
     </ul>
 
     
+<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">FrontEnd</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "NextJS" %}
+            <li><a href="/categories/NextJS" class="">NextJS ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "NodeJS" %}
+            <li><a href="/categories/NodeJS" class="">NodeJS ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "React" %}
+            <li><a href="/categories/React" class="">React ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "ReactStudy" %}
+            <li><a href="/categories/ReactStudy" class="">ReactStudy ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "VueStudy" %}
+            <li><a href="/categories/VueStudy" class="">VueStudy ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
 <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Git</span>
 
     <ul>
@@ -203,17 +250,6 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Nodejs</span>
-
-    <ul>
-        {% for category in site.categories %}
-        {% if category[0] == "Nodejs" %}
-            <li><a href="/categories/Nodejs" class="">Nodejs ({{category[1].size}})</a></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-
-    
 <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Obsidian</span>
 
     <ul>
@@ -231,26 +267,6 @@
         {% for category in site.categories %}
         {% if category[0] == "Procreate" %}
             <li><a href="/categories/Procreate" class="">Procreate ({{category[1].size}})</a></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-
-    
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">React</span>
-
-    <ul>
-        {% for category in site.categories %}
-        {% if category[0] == "React" %}
-            <li><a href="/categories/React" class="">React ({{category[1].size}})</a></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-
-    
-    <ul>
-        {% for category in site.categories %}
-        {% if category[0] == "ReactStudy" %}
-            <li><a href="/categories/ReactStudy" class="">ReactStudy ({{category[1].size}})</a></li>
         {% endif %}
         {% endfor %}
     </ul>
@@ -356,17 +372,6 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Vue</span>
-
-    <ul>
-        {% for category in site.categories %}
-        {% if category[0] == "VueStudy" %}
-            <li><a href="/categories/VueStudy" class="">VueStudy ({{category[1].size}})</a></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-
-    
 <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">개발환경</span>
 
     <ul>
@@ -418,23 +423,21 @@
     </ul>
 
     
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "자료구조" %}
+            <li><a href="/categories/자료구조" class="">자료구조 ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
 <span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">암복호화</span>
 
     <ul>
         {% for category in site.categories %}
         {% if category[0] == "암복호화" %}
             <li><a href="/categories/암복호화" class="">암복호화 ({{category[1].size}})</a></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-
-    
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">자료구조</span>
-
-    <ul>
-        {% for category in site.categories %}
-        {% if category[0] == "자료구조" %}
-            <li><a href="/categories/자료구조" class="">자료구조 ({{category[1].size}})</a></li>
         {% endif %}
         {% endfor %}
     </ul>
@@ -466,15 +469,6 @@
 
     <ul>
         {% for category in site.categories %}
-        {% if category[0] == "프로그래밍언어" %}
-            <li><a href="/categories/프로그래밍언어" class="">프로그래밍언어 ({{category[1].size}})</a></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-
-    
-    <ul>
-        {% for category in site.categories %}
         {% if category[0] == "CSharp" %}
             <li><a href="/categories/CSharp" class="">CSharp ({{category[1].size}})</a></li>
         {% endif %}
@@ -504,6 +498,15 @@
         {% for category in site.categories %}
         {% if category[0] == "Exception" %}
             <li><a href="/categories/Exception" class="">Exception ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "javascript" %}
+            <li><a href="/categories/javascript" class="">javascript ({{category[1].size}})</a></li>
         {% endif %}
         {% endfor %}
     </ul>

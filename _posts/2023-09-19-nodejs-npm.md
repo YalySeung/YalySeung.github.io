@@ -5,15 +5,15 @@ toc : true
 toc_sticky : true
 toc_label : "npm"
 categories:
-- Nodejs
+- NodeJS
 tags:
-- [Nodejs, npm]
+- [NodeJS, npm, 환경, Build]
 last_modified_at: 2023-09-19T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-09-19 00:21
 
-# 태그 : #Nodejs #npm
+# 태그 : #NodeJS #npm #환경 #Build 
 ---
 
 # 내용

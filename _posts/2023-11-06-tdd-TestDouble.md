@@ -20,7 +20,7 @@ last_modified_at: 2023-11-06T08:00:00-10:00:00
 
 ## TestDouble이란
 > 테스트를 진행하기 어려운 경우 이를 대신해 테스트를 진행할 수 있도록 만들어주는 객체를 의미한다.
-{: .notice--info}
+{: .notice}
 
 ## TestDouble로 대체할 대상
 - Database

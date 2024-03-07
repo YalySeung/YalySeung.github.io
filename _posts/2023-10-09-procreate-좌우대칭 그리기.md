@@ -7,13 +7,13 @@ toc_label : "좌우대칭 그리기"
 categories:
 - Procreate
 tags:
-- [Procreate]
+- [Procreate, 리소스제작]
 last_modified_at: 2023-10-09T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-10-09 14:36
 
-# 태그 : #Procreate
+# 태그 : #Procreate #리소스제작 
 ---
 
 # 내용

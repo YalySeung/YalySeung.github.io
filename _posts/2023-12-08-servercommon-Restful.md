@@ -7,13 +7,13 @@ toc_label : "Restful"
 categories:
 - ServerCommon
 tags:
-- [ServerCommon]
+- [ServerCommon, BackEnd, RESTAPI]
 last_modified_at: 2023-12-08T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-12-08 15:29
 
-# 태그 : #ServerCommon 
+# 태그 : #ServerCommon #BackEnd #RESTAPI 
 ---
 
 # 내용
@@ -56,7 +56,7 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 > **format**
 >
 > POST http://localhost/{Collection}/{Document}
-{: .notice--info}
+{: .notice--primary}
 
 ```
 

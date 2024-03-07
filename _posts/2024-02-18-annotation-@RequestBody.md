@@ -33,6 +33,27 @@ public ResponseEntity<UserAddResponse> addUser(@RequestBody @Valid UserAddForm u
 }
 ```
 
+> **tip**
+>
+> @RequestBody Annotation만으로 Request에 담긴 json body 데이터를 Conversion 할 수 없다. Converter도 함께 설정해주어야 한다.
+{: .notice--primary}
+
+```java
+@Configuration  
+@EnableWebMvc  
+public class APIConfiguration implements WebMvcConfigurer {  
+	@Override  
+	public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {  
+	    GsonHttpMessageConverter converter = new GsonHttpMessageConverter();  
+	    converters.add(converter);  
+	}
+}
+```
+
+```groovy
+implementation 'com.google.code.gson:gson:2.8.8'
+```
+
 ---
 
 # 연결문서

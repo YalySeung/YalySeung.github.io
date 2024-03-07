@@ -61,7 +61,7 @@ const URL = "https://jsonplaceholder.typicode.com/todos";
 	  
 	}}
 >
-{: .notice--info}
+{: .notice}
 	데이터패치
   </button>
 ```
@@ -69,4 +69,4 @@ const URL = "https://jsonplaceholder.typicode.com/todos";
 ---
 
 # 연결문서
-- [Javascript](../../프로그래밍언어/프로그래밍언어-Javascript#async-await)
+- [Async Await](../../javascript/javascript-Async-Await#async-await)

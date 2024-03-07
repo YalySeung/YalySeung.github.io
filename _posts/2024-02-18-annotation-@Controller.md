@@ -28,7 +28,7 @@ last_modified_at: 2024-02-18T08:00:00-10:00:00
 > **tip**
 >
 > @Controller를 Data를 반환하는데 사용하는 경우 @ResponseBody Annotation과 함께 사용해야 Json 형태로 데이터를 반환할 수 있다. 일반적으로 반환값은 ResponseEntity로 감싸서 반환한다.
-{: .notice--info}
+{: .notice--primary}
 
 ## 사용법
 

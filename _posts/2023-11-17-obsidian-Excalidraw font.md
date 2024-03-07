@@ -37,7 +37,7 @@ last_modified_at: 2023-11-17T08:00:00-10:00:00
 > **example**
 >
 >  
-{: .notice--info}
+{: .notice--success}
 ![image](../../assets/images/ExcaliDrawUseCustomFont.png)
 
 ---

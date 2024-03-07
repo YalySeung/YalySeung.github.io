@@ -7,13 +7,13 @@ toc_label : "특정 레이어 영역 제외한 나머지 영역 사용"
 categories:
 - Procreate
 tags:
-- [Procreate]
+- [Procreate, 리소스제작]
 last_modified_at: 2023-11-17T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-11-17 20:21
 
-# 태그 : #Procreate
+# 태그 : #Procreate #리소스제작 
 ---
 
 # 내용
@@ -29,7 +29,7 @@ last_modified_at: 2023-11-17T08:00:00-10:00:00
 >
 >새 Layer를 생성해서 확인해보면 Reference로 지정한 영역이 구분되는것을 확인 할 수 있다.
 >
-{: .notice--info}
+{: .notice--success}
   
 ![image](../../assets/images/ProcreateRefernceResult.jpg)
 

@@ -7,13 +7,13 @@ toc_label : "Boiler Plate"
 categories:
 - CleanCode
 tags:
-- [CleanCode, Concept]
+- [CleanCode]
 last_modified_at: 2023-10-25T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-10-25 16:47
 
-# 태그 : #CleanCode #Concept
+# 태그 : #CleanCode
 ---
 
 # 내용

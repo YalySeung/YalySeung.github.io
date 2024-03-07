@@ -87,7 +87,7 @@ last_modified_at: 2023-11-29T08:00:00-10:00:00
 > Developer Network\r\n
 > 0\r\n
 > \r\n
-{: .notice--info}
+{: .notice--success}
 
 ---
 

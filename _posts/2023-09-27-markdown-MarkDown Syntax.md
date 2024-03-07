@@ -252,13 +252,13 @@ class Sample{
 ### 인용문
 ```
 >인용문
-{: .notice--info}
+{: .notice}
   >>중첩 인용문
 ```
     
 > 인용문
 >> 중첩인용문
-{: .notice--info}
+{: .notice}
 
 ### 주석
 ```

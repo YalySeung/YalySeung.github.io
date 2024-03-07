@@ -32,7 +32,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 > **<제목명>**
 >
 > 내용
-{: .notice--info}
+{: .notice--primary}
 ```
 
 ### 접기 펼치기
@@ -40,7 +40,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 ```
 > [!faq]- Are callouts foldable?
 > Yes! In a foldable callout, the contents are hidden when the callout is collapsed.
-{: .notice--info}
+{: .notice--warning}
 ```
 
 ### 중첩
@@ -52,7 +52,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 >
 >>> **You can even use multiple layers of nesting.**
 >
-{: .notice--info}
+{: .notice--warning}
 ```
 
 ### custom callout
@@ -73,7 +73,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 > **note**
 >
 > Lorem ipsum dolor sit amet
-{: .notice--info}
+{: .notice--success}
 ```
 
 #### 추상적인
@@ -81,7 +81,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 > **abstract**
 >
 > Lorem ipsum dolor sit amet
-{: .notice--info}
+{: .notice--success}
 ```
 
 #### 정보
@@ -89,7 +89,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 > **info**
 >
 > Lorem ipsum dolor sit amet
-{: .notice--info}
+{: .notice--success}
 ```
 
 #### 할것
@@ -97,7 +97,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 > **todo**
 >
 > Lorem ipsum dolor sit amet
-{: .notice--info}
+{: .notice--success}
 ```
 
 #### 팁
@@ -105,7 +105,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 > **tip**
 >
 > Lorem ipsum dolor sit amet
-{: .notice--info}
+{: .notice--success}
 ```
 
 #### 성공
@@ -113,7 +113,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 > **success**
 >
 > Lorem ipsum dolor sit amet
-{: .notice--info}
+{: .notice--success}
 ```
 
 #### 질문
@@ -121,7 +121,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 > **question**
 >
 > Lorem ipsum dolor sit amet
-{: .notice--info}
+{: .notice--success}
 ```
 
 #### 경고
@@ -129,7 +129,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 > **warning**
 >
 > Lorem ipsum dolor sit amet
-{: .notice--info}
+{: .notice--success}
 ```
 
 #### 실패
@@ -137,7 +137,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 > **failure**
 >
 > Lorem ipsum dolor sit amet
-{: .notice--info}
+{: .notice--success}
 ```
 
 #### 위험
@@ -145,7 +145,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 > **danger**
 >
 > Lorem ipsum dolor sit amet
-{: .notice--info}
+{: .notice--success}
 ```
 
 #### 버그
@@ -153,7 +153,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 > **bug**
 >
 > Lorem ipsum dolor sit amet
-{: .notice--info}
+{: .notice--success}
 ```
 
 #### 예
@@ -161,7 +161,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 > **example**
 >
 > Lorem ipsum dolor sit amet
-{: .notice--info}
+{: .notice--success}
 ```
 
 #### 인용
@@ -169,7 +169,7 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
 > **quote**
 >
 > Lorem ipsum dolor sit amet
-{: .notice--info}
+{: .notice--success}
 ```
 
 ---

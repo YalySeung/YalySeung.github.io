@@ -44,12 +44,12 @@ public volatile int count = 0;
 > **caution**
 >
 > volatile 키워드가 항상 원자성을 보장해주는 것은 아니다.  여러 쓰레드에서 동시에 Main Memory에 접근하여 Read/Write 를 수행한다면, 값이 변경되는 사이에 Read 될 수 있기 때문이다.
-{: .notice--info}
+{: .notice--danger}
 
 > **tip**
 >
 > synchronized 블록이나 Atomic Class를 함께 사용하여 volatile 키워드를 보완 할 수 있다.
-{: .notice--info}
+{: .notice--primary}
 
 ---
 

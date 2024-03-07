@@ -5,15 +5,15 @@ toc : true
 toc_sticky : true
 toc_label : "npx"
 categories:
-- Nodejs
+- NodeJS
 tags:
-- [Nodejs, npx]
+- [NodeJS, npx, 환경]
 last_modified_at: 2023-10-10T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-10-10 13:30
 
-# 태그 : #Nodejs #npx
+# 태그 : #NodeJS #npx #환경 
 ---
 
 # 내용

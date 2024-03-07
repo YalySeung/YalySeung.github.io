@@ -23,8 +23,17 @@ last_modified_at: 2023-10-25T08:00:00-10:00:00
 
 ## 역할
 - @Configuration Annotation과 함께 쓰여 클래스가 Spring MVC의 구성요소중 하나임을 표기
-- WebMvcConfigurationSupport 에서 Spring MVC 구성을 가져온다.
-- ViewResolver 값 등록
+- 스프링이 제공하는 웹과 관련된 bean들이 제공된다
+
+## 사용법
+
+```java
+@Configuration  
+@EnableWebMvc  
+public class APIConfiguration implements WebMvcConfigurer {
+	...
+}
+```
 
 ---
 
