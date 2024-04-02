@@ -48,7 +48,7 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 ### Mutex
 - Mutual exclusion(상호배제)의 약자
 - Kernel 오브젝트인 Mutex를 이용한 동기화 기법
-- <span style="color:red">Lock을 실행한 Thread가 Critical Section에서 나갈 때만 utex 해제</span>
+- <span style="color:red">Lock을 실행한 Thread가 Critical Section에서 나갈 때만 Mutex 해제</span>
 - 여러 프로세스의 Thread 사이에서 동기화 가능
 - 한개의 Critical Section만 동기화 가능(Mutex는 한개의 Critical Setion을 소유한다 or 책임진다)
 - 일정 시간을 주기로 계속 Acquire를 반복 호출하여 Critical Section에 접근 가능한지 여부를 확인("Busy Waiting", "spinlock")
@@ -58,7 +58,7 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 - 받아들일 수 있는 Thread 또는 Process의 수를 semaphore는라고 부름
 - 지정된 수 만큼의 Thread가 동시에 실행되도록 동기화
 - 다중프로세스 동기화 기법
-- <span style="color:red">Lock을 실행하지 않은 다른 Thread에서도 Signal을 보내 ock을 해제할 수 있음</span>
+- <span style="color:red">Lock을 실행하지 않은 다른 Thread에서도 Signal을 보내 Lock을 해제할 수 있음</span>
 - wait와 signal이라는 개의 atomic operation 사용
 - Binary Semaphore(count = 1), Counting Semaphore(count > 1)가 존재
 - 하나의 Critical Section 에 2개 이상의 Thread 또는 Process 진입 가능

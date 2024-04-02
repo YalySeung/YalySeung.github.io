@@ -22,7 +22,7 @@ last_modified_at: 2024-03-04T08:00:00-10:00:00
 > **Message Converter란?**
 >
 > Spring MVC에서 요청 및 응답 메시지를 변환하는 인터페이스
-> HTTP  요청과 응답의 body를 자바객체로 변환, 자바 객체를 다양한 메시지로 변환 등의 역할을 수행
+> HTTP  요청과 응답의 body를 자바객체로 변환, 자바 객체를 다양한 메시지로 변환하는 역할을 수행
 {: .notice--info}
 
 ## 설정 방법
@@ -65,3 +65,6 @@ public class APIConfiguration implements WebMvcConfigurer {
 ---
 
 # 연결문서
+- [WebMvcConfigurer](../../spring/spring-WebMvcConfigurer)
+- [@EnableWebMvc](../../annotation/annotation-@EnableWebMvc)
+- [GsonHttpMessageConverter](../../spring/spring-GsonHttpMessageConverter)

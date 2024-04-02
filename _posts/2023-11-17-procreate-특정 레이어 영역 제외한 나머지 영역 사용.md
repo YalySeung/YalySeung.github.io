@@ -7,13 +7,13 @@ toc_label : "특정 레이어 영역 제외한 나머지 영역 사용"
 categories:
 - Procreate
 tags:
-- [Procreate, 리소스제작]
+- [Procreate]
 last_modified_at: 2023-11-17T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-11-17 20:21
 
-# 태그 : #Procreate #리소스제작 
+# 태그 : #Procreate
 ---
 
 # 내용

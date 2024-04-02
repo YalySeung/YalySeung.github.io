@@ -109,7 +109,15 @@ shutdown -h now
 
 ```bash
 // 현재 폴더 경로의 모든 shell 파일 실행 권한 부여
-chmod -x *.sh
+chmod +x *.sh
+```
+
+### ln
+
+#### Symbolic link 생성
+
+```bash
+ln -s <대상파일> <link 명>
 ```
 
 ---

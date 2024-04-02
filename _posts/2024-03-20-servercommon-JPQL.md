@@ -1,0 +1,56 @@
+---
+title : "JPQL"
+excerpt : "JPQL"
+toc : true
+toc_sticky : true
+toc_label : "JPQL"
+categories:
+- ServerCommon
+tags:
+- [ServerCommon, Database]
+last_modified_at: 2024-03-20T08:00:00-10:00:00
+---
+
+# 날짜 : 2024-03-20 09:52
+
+# 태그 : #ServerCommon #Database
+---
+
+# 내용
+
+## 정의
+> **JPQL이란?**
+>
+> Java Persistence Query Language
+> 객체 지향적인 방식으로 데이터베이스에 대한 쿼리를 작성할 수 있도록 지원하는 쿼리언어
+{: .notice--info}
+
+## 특징
+- 테이블이 아닌 객체를 검색
+- 특정 벤더에 종속적이지 않음
+
+## 사용시, 주의사항
+- Entity와 속성은 대소문자를 구분
+- Entity 명은 @Entity Annotation으로 명시 할 수 있으며, name 속성을 생략하면 클래스이름을 기본값으로 사용
+- Entity 별칭은 필수적으로 명시해야함
+
+## 문제점
+- 쿼리를 문자열로 작성하기때문에 컴파일 시점에 에러를 확인 할 수 없음
+- 동적 쿼리를 작성하는데 비효율적
+
+## Example
+
+```java
+String jpql = "select p From Product as p;
+List<Product> result = em.createQuery(jpql, Product.class).getResultList();
+
+for (Product product : result) {
+    System.out.println("product = " + product);
+}
+```
+
+---
+
+# 연결문서
+- [JPA](../../servercommon/servercommon-JPA)
+- [QueryDSL](../../servercommon/servercommon-QueryDSL)

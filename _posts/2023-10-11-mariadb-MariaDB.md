@@ -29,12 +29,21 @@ GRANT ALL PRIVILEGES ON *.* TO '아이디'@'접속ip' IDENTIFIED BY '패스워�
 
 ### 함수
 
-#### DATE_FORMAT
-- DATE_FORMAT(<문자열>, <포맷>)
+#### STR_TO_DATE
 - 문자열을 날짜 형식으로 변환
+- STR_TO_DATE(\<입력 데이터\>, \<입력 데이터 포맷\>)
 
 ```sql
-DATE_FORMAT(P.PRCS_END_DT, '%Y%m%d')
+select STR_TO_DATE('2024-04-01 23:59:59', '%Y-%m-%d %H:%i:%s');  
+select STR_TO_DATE('20240401 235959', '%Y%m%d %H%i%s');
+```
+
+#### DATE_FORMAT
+- 날짜를 지정된 형식의 문자열로 변환
+- DATE_FORMAT(<문자열>, <포맷>)
+
+```sql
+DATE_FORMAT(REG_DT, '%Y%m%d')
 ```
 
 #### DATE_ADD
@@ -58,6 +67,23 @@ SELECT DATETIME()
 ```sql
 CAST(expr AS type)
 ```
+
+### 시간 데이터 타입
+
+| 타입명       | 기능                               | 형식                           |
+| --------- | -------------------------------- | ---------------------------- |
+| TIME      | 시간 표기                            | HH:MM:SS                     |
+| DATE      | 날짜 표기                            | YYYY-MM-DD                   |
+| DATETIME  | 날짜와 시간 표기                        | YYYY-MM-DD HH:MM:SS          |
+| TIMESTAMP | 날짜와 시간 표기, DATETIME보다 정밀한 시간을 표기 | YYYY-MM-DD HH:MM:SS(.FFFFFF) |
+
+#### DATETIME과 TIMESTAMP
+
+|     | DATETIME   | TIMESTAMP             |
+| --- | ---------- | --------------------- |
+| 타입  | 문자형        | 숫자형                   |
+| 용량  | 8Byte      | 4Byte                 |
+| 입력  | 명식적 insert | Default Insert (AUTO) |
 
 ---
 

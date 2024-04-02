@@ -28,7 +28,9 @@ last_modified_at: 2023-10-25T08:00:00-10:00:00
 - request를 핸들링 하기 전,후 처리가 필요할 때 커스텀 인터셉터를 구성한다.
 
 ```java
-@Configuration
+@Configuration  
+@EnableWebMvc  
+@ComponentScan(basePackages = "org.infinity.server.controller.api")
 public class MvcConfig implements WebMvcConfigurer {
 
     @Override

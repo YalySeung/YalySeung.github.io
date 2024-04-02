@@ -7,13 +7,13 @@ toc_label : "캐릭터 브러쉬 만들기"
 categories:
 - Procreate
 tags:
-- [Procreate, 리소스제작]
+- [Procreate]
 last_modified_at: 2023-12-30T08:00:00-10:00:00
 ---
 
 # 날짜 : 2023-12-30 20:24
 
-# 태그 : #Procreate #리소스제작 
+# 태그 : #Procreate
 ---
 
 # 내용
