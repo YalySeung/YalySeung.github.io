@@ -97,7 +97,7 @@ body {
   }
 
   h2 {
-    border-left: 10px solid rgba(250, 179, 135, 0.2);
+    border-left: 12px solid rgba(250, 179, 135, 0.2);
     border-bottom: 4px solid rgba(250, 179, 135, 0.2);
     font-size: 1.5em;
     padding: 15px 20px !important;
@@ -106,7 +106,7 @@ body {
   }
 
   h3 {
-    border-left: 10px solid rgba(166, 227, 161, 0.2);
+    border-left: 14px solid rgba(166, 227, 161, 0.2);
     border-bottom: 4px solid rgba(166, 227, 161, 0.2);
     font-size: 1.3em;
     padding: 15px 20px !important;
@@ -118,12 +118,12 @@ body {
     padding: 15px 20px !important;
     margin: 10px 0 !important;
     border-radius: 10px;
-    border-left: 10px solid rgba(148, 226, 213, 0.2);
+    border-left: 16px solid rgba(148, 226, 213, 0.2);
     border-bottom: 4px solid rgba(148, 226, 213, 0.2);
   }
 
   h5 {
-    border-left: 10px solid rgba(180, 190, 254, 0.2);
+    border-left: 18px solid rgba(180, 190, 254, 0.2);
     border-bottom: 4px solid rgba(180, 190, 254, 0.2);
     padding: 15px 20px !important;
     margin: 10px 0 !important;
@@ -131,7 +131,7 @@ body {
   }
 
   h6 {
-    border-left: 10px solid rgba(203, 166, 247, 0.2);
+    border-left: 20px solid rgba(203, 166, 247, 0.2);
     border-bottom: 4px solid rgba(203, 166, 247, 0.2);
     padding: 15px 20px !important;
     margin: 10px 0 !important;
@@ -206,6 +206,14 @@ body {
   blockquote + .small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
+  }
+
+  strong {
+    color : rgb(255, 100, 100);
+  }
+
+  blockquote strong {
+    color: inherit;
   }
 }
 

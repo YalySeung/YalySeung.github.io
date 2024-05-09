@@ -10,7 +10,7 @@
     </li>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Build</span>
+<span class="nav__sub-title" style="font-size:24px;">Build</span>
 
     <ul>
         {% for category in site.categories %}
@@ -21,7 +21,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">CLI</span>
+<span class="nav__sub-title" style="font-size:24px;">CLI</span>
 
     <ul>
         {% for category in site.categories %}
@@ -32,7 +32,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">CleanCode</span>
+<span class="nav__sub-title" style="font-size:24px;">CleanCode</span>
 
     <ul>
         {% for category in site.categories %}
@@ -61,7 +61,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Database</span>
+<span class="nav__sub-title" style="font-size:24px;">Database</span>
 
     <ul>
         {% for category in site.categories %}
@@ -99,7 +99,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">DesignPattern</span>
+<span class="nav__sub-title" style="font-size:24px;">DesignPattern</span>
 
     <ul>
         {% for category in site.categories %}
@@ -110,7 +110,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">DevelopCommon</span>
+<span class="nav__sub-title" style="font-size:24px;">DevelopCommon</span>
 
     <ul>
         {% for category in site.categories %}
@@ -139,8 +139,17 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">FrontEnd</span>
+<span class="nav__sub-title" style="font-size:24px;">FrontEnd</span>
 
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "FrontEnd" %}
+            <li><a href="/categories/FrontEnd" class="">FrontEnd ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
     <ul>
         {% for category in site.categories %}
         {% if category[0] == "NextJS" %}
@@ -186,7 +195,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Git</span>
+<span class="nav__sub-title" style="font-size:24px;">Git</span>
 
     <ul>
         {% for category in site.categories %}
@@ -197,7 +206,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">GithubBlog</span>
+<span class="nav__sub-title" style="font-size:24px;">GithubBlog</span>
 
     <ul>
         {% for category in site.categories %}
@@ -208,7 +217,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">ITBusiness</span>
+<span class="nav__sub-title" style="font-size:24px;">ITBusiness</span>
 
     <ul>
         {% for category in site.categories %}
@@ -219,7 +228,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Idea</span>
+<span class="nav__sub-title" style="font-size:24px;">Idea</span>
 
     <ul>
         {% for category in site.categories %}
@@ -239,7 +248,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Markdown</span>
+<span class="nav__sub-title" style="font-size:24px;">Markdown</span>
 
     <ul>
         {% for category in site.categories %}
@@ -250,7 +259,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Obsidian</span>
+<span class="nav__sub-title" style="font-size:24px;">Obsidian</span>
 
     <ul>
         {% for category in site.categories %}
@@ -261,7 +270,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Procreate</span>
+<span class="nav__sub-title" style="font-size:24px;">Procreate</span>
 
     <ul>
         {% for category in site.categories %}
@@ -272,7 +281,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">SourceTree</span>
+<span class="nav__sub-title" style="font-size:24px;">SourceTree</span>
 
     <ul>
         {% for category in site.categories %}
@@ -283,7 +292,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Spring</span>
+<span class="nav__sub-title" style="font-size:24px;">Spring</span>
 
     <ul>
         {% for category in site.categories %}
@@ -298,6 +307,15 @@
         {% for category in site.categories %}
         {% if category[0] == "Annotation" %}
             <li><a href="/categories/Annotation" class="">Annotation ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "JPA" %}
+            <li><a href="/categories/JPA" class="">JPA ({{category[1].size}})</a></li>
         {% endif %}
         {% endfor %}
     </ul>
@@ -321,7 +339,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">SpringBoot</span>
+<span class="nav__sub-title" style="font-size:24px;">SpringBoot</span>
 
     <ul>
         {% for category in site.categories %}
@@ -341,7 +359,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Unity</span>
+<span class="nav__sub-title" style="font-size:24px;">Unity</span>
 
     <ul>
         {% for category in site.categories %}
@@ -361,7 +379,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">Vim</span>
+<span class="nav__sub-title" style="font-size:24px;">Vim</span>
 
     <ul>
         {% for category in site.categories %}
@@ -372,7 +390,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">개발환경</span>
+<span class="nav__sub-title" style="font-size:24px;">개발환경</span>
 
     <ul>
         {% for category in site.categories %}
@@ -392,7 +410,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">사이드프로젝트</span>
+<span class="nav__sub-title" style="font-size:24px;">사이드프로젝트</span>
 
     <ul>
         {% for category in site.categories %}
@@ -412,7 +430,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">알고리즘</span>
+<span class="nav__sub-title" style="font-size:24px;">알고리즘</span>
 
     <ul>
         {% for category in site.categories %}
@@ -432,7 +450,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">암복호화</span>
+<span class="nav__sub-title" style="font-size:24px;">암복호화</span>
 
     <ul>
         {% for category in site.categories %}
@@ -443,7 +461,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">재태크</span>
+<span class="nav__sub-title" style="font-size:24px;">재태크</span>
 
     <ul>
         {% for category in site.categories %}
@@ -454,7 +472,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">통신</span>
+<span class="nav__sub-title" style="font-size:24px;">통신</span>
 
     <ul>
         {% for category in site.categories %}
@@ -465,7 +483,7 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">프로그래밍언어</span>
+<span class="nav__sub-title" style="font-size:24px;">프로그래밍언어</span>
 
     <ul>
         {% for category in site.categories %}
@@ -521,7 +539,16 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px; color:#B4B4FF">하드웨어</span>
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "TypeScript" %}
+            <li><a href="/categories/TypeScript" class="">TypeScript ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+<span class="nav__sub-title" style="font-size:24px;">하드웨어</span>
 
     <ul>
         {% for category in site.categories %}

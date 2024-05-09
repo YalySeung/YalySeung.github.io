@@ -442,7 +442,7 @@
   font-size: 1.25rem;
 
   a {
-    color: inherit;
+    color: #fffdd0;
   }
 
   .active {
@@ -497,6 +497,7 @@
   font-weight: bold;
   text-transform: uppercase;
   border-bottom: 1px solid $border-color;
+  color: #e57881;
 }
 
 /*
@@ -540,7 +541,7 @@
   a {
     display: block;
     padding: 0.25rem 0.75rem;
-    color:#FF7A85;
+    color: #e57881;
     font-weight: bold;
     line-height: 1.5;
     border-bottom: 1px solid $border-color;
@@ -553,7 +554,7 @@
   li ul > li a {
     padding-left: 1.25rem;
     font-weight: normal;
-    color:#FFB400;
+    color: #e0b54b;
   }
 
   li ul li ul > li a {
@@ -563,16 +564,16 @@
 
   li ul li ul li ul > li a {
     padding-left: 2.25rem;
-    color:#228B22;
+    color: #59de59;
   }
 
   li ul li ul li ul li ul > li a {
     padding-left: 2.75rem;
-    color:#0064FF;
+    color: #6498ec;
   }
 
   li ul li ul li ul li ul li ul > li a {
     padding-left: 3.25rem;
-    color:#7878E1;
+    color: #9b89ee;
   }
 }
