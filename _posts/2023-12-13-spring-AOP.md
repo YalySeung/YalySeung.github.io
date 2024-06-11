@@ -10,29 +10,24 @@ tags:
 - [Spring, AOP]
 last_modified_at: 2023-12-13T08:00:00-10:00:00
 ---
-
-# 날짜 : 2023-12-13 16:51
-
-# 태그 : #Spring #AOP 
+  
 ---
-
-# 내용
-
+  
 ## 정의
-> **AOP란?**
+> **AOP란?**  
 >
 > Aspect Oriented Programming(관점 지향 프로그래밍)
-> 어떤 로직을 기준으로 핵심적인 관점, 부가적인 관점으로 나누고 그 기준을 각각 모듈화하는 관점 지향 프로그래밍 방법
-{: .notice--info}
-
+> 어떤 로직을 기준으로 핵심적인 관점, 부가적인 관점으로 나누고 그 기준을 각각 모듈화하는 관점 지향 프로그래밍 방법 
+{: .notice--info}  
+  
 ## 목적
   
 ![image](../../assets/images/AOPConcept.png)
 - 위와 같이 소스코드상에서 다른 부분에 계속 반복하여 사용하는 코드들을 Aspect로 모듈화
 - 핵심적인 비즈니스 로직에서 분리하여 재사용
-
+  
 ## 주요개념
-
+  
 | 용어      | 설명                                                                    |
 | --------- |:----------------------------------------------------------------------- |
 | Aspect    | 모듈화된 관심사, 주로 부가기능을 모듈화                                 |
@@ -43,18 +38,18 @@ last_modified_at: 2023-12-13T08:00:00-10:00:00
 | PointCut  | JoinPoint의 상세 스펙을 정의                                            |
 | Weaving   | PointCut으로 설정한 타겟의 Join Point 에 Advice를 적용하는 것           |
 | AOP프록시 | AOP 기능을 구현하기 위해 만든 프록시 객체                               |
-
+  
 ## 적용시점
-
+  
 ### Compile 시점
 - java 컴파일러를 통한 .class 생성 시점에 부가기능 추가
 - 모든 지점에 적용 가능
 - AspectJ 컴파일러 사용
-
+  
 ### Class Loading 시점
 - JVM 내부 Class Loader에 .class 파일을 보관하기 전 부가기능 추가
 - 모든 지점에 적용 가능
-
+  
 ### Runtime 시점
 - **스프링에서 사용하는 방식**
 - Application이 실행 된 후 동작하는 런타임 방식
@@ -63,7 +58,7 @@ last_modified_at: 2023-12-13T08:00:00-10:00:00
 - 구현이 쉽다.
 
 ---
-
+  
 # 연결문서
 - [@Aspect](../../aop/aop-@Aspect)
 - [Pointcut Designator](../../spring/spring-Pointcut-Designator)

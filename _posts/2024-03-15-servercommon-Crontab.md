@@ -10,20 +10,15 @@ tags:
 - [ServerCommon, Linux]
 last_modified_at: 2024-03-15T08:00:00-10:00:00
 ---
-
-# 날짜 : 2024-03-15 14:03
-
-# 태그 : #ServerCommon #Linux
+  
 ---
-
-# 내용
-
+  
 ## 정의
-> **Crontab이란**
+> **Crontab이란**  
 >
-> Linux 운영체제에서 배치 작업을 스케쥴링 하기 위한 프로그램
-{: .notice--info}
-
+> Linux 운영체제에서 배치 작업을 스케쥴링 하기 위한 프로그램 
+{: .notice--info}  
+  
 ## 명령어
 
 | Linux 명령어                 | 기능            |
@@ -34,27 +29,29 @@ last_modified_at: 2024-03-15T08:00:00-10:00:00
 | sudo service cron restart | 재시작           |
 | crontab -l                | 할당된 작업 리스트 조회 |
 | crontab -e                | 스크립트 작성       |
-
+  
 ## 예시
-
+  
 ### 실행파일 권한부여
-
+  
 ```bash
-chmod 755 <shell 파일명>
+chmod 755 <shell 파일명> 
+{: .notice}  
 ```
-
+  
 ### Crontab 등록
-- <크론식> 파일경로 형식으로 등록한다.
-
+- <크론식> 파일경로 형식으로 등록한다. 
+{: .notice}  
+  
 ```bash
-
+  
 # 매일 06:30분에 sampleLog.sh 파일 실행
 $ crontab -e
 30 06 * * * /Tomcat 홈 경로/logs/sampleLog.sh
 ```
 
 ---
-
+  
 # 연결문서
 - [CLI-BaseCommand](../../cli/cli-CLI-BaseCommand)
 - [Linux-Command-Detail](../../cli/cli-Linux-Command-Detail)

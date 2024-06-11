@@ -10,16 +10,11 @@ tags:
 - [Spring, CleanCode, Test, TDD, 환경]
 last_modified_at: 2023-11-07T08:00:00-10:00:00
 ---
-
-# 날짜 : 2023-11-07 11:29
-
-# 태그 : #Spring #CleanCode #Test #TDD #환경 
+  
 ---
-
-# 내용
-
+  
 ## build.gradle
-
+  
 ```groovy
 dependencies {  
 	...
@@ -31,10 +26,10 @@ test {
     useJUnitPlatform()  
 }
 ```
-
+  
 ## Test
 - [테스트 플로우](../../test/test-Junit-Test-Flow)
-
+  
 ```java
 @RunWith(SpringJUnit4ClassRunner.class)  
 @ContextConfiguration(classes = ResourceManager.class)  
@@ -50,9 +45,9 @@ public class TestResourceManager {
 }
 
 ```
-
+  
 ## Annotations
-
+  
 ```dataview
 table without id
 file.link as SpringTestAnnotation
@@ -61,7 +56,7 @@ where file != this.file
 ```
 
 ---
-
+  
 # 연결문서
 - [Gradle](../../build/build-Gradle)
 - [Junit Test Flow](../../test/test-Junit-Test-Flow)

@@ -7,31 +7,40 @@ toc_label : "Gradle"
 categories:
 - Build
 tags:
-- [Build]
+- [BuildManager]
 last_modified_at: 2023-10-15T08:00:00-10:00:00
 ---
-
-# 날짜 : 2023-10-15 22:47
-
-# 태그 : #Build 
+  
 ---
-
-# 내용
-> **Gradle이란?**
+  
+> **Gradle이란?**  
 >
-> CI/CD를 위해 아래 작업들을 자동화 시켜 주는 **Groovy 기반의 오픈소스 빌드 도구**
-{: .notice--info}
-
-## 환경
-- JDK 또는 JRE 8 이상
-- 인터넷 사용환경
-
+> CI/CD를 위해 아래 작업들을 자동화 시켜 주는 **Groovy 기반의 오픈소스 빌드 도구**이다. 
+{: .notice--info}  
+  
+## Gradle을 사용하는 이유
+  
+### 점진적 빌드
+- 바뀐 파일들만 빌드
+- 빌드 실행중, 마지막 빌드 호출 이후에 task 입력, 출력 혹은 구현이 변경됐는지 확인
+  
+### build cache
+- 하나의 빌드에서 사용되는 파일들이 다른 빌드들에 사용된다면 빌드 캐시를 사용해서 한번만 다운로드 또는 빌드
+  
+### Daemon Process
+- 메모리상에 빌드 결과물을 보관
+- 한번 빌드된 프로젝트는 다음 빌드에 매우 적은 시간만 소요됨
+- [Daemon Process](../../servercommon/servercommon-Daemon-Process)
+  
 ## Gradle Process
   
 ![image](../../assets/images/GradleProcess.png)
 
-## Gradle Script Sample
-
+ 위 이미지는 Gradle이 원격 레포지토리에서 **artifact**를 가져와서 **캐싱**하는 과정을 보여준다. **Gradle Refresh**를 하면, Gradle은 build.gradle 파일의 레포지토리에 명시된 외부 artifact를 요청하여 가져온다. 이 artifact들은 Gradle 내부적으로 **Cache에 저장**되고 기존과 동일한 artifact일 경우 cache에 있는 artifact를 사용한다. 
+  
+## Gradle Syntax
+ 이제 .gradle 파일 작성법을 살펴보자. .gradle 파일은 **groovy 스크립트**를 작성해야한다. 아래 text는 .gradle 샘플 스크립트이다.
+  
 ```groovy
 plugins {
     id 'application' 
@@ -58,58 +67,25 @@ tasks.named('test') {
 }
 ```
 
-## 의존성 관리
+ 위 스크립트의 내용을 기반으로 각 항목별 기능을 알아보자. 
 
-### repositories
-- 저장소 설정
-- 클로저의 내용은 RepositoryHandler 를 통해서 실행됨
-- mavenCentral 메소드와 jcenter 메서드 제공
+ **plugins** 항목은 빌드와 배포 **프로세스를 확장**하는데 사용한다. **java 컴파일**, **테스트**, **JAR 패키징** 등의 task를 확장할 수 있다.
 
-### ext 메소드
-- 인자를 buildScript에서 전역 변수로 사용할 때 필요
+ **repositories** 항목은 **artifact를 가져올 저장소**를 명시해주는 부분이다. 위 스크립트에서는 mavenCentral 저장소를 사용했다. 
 
-### dependencies
-- 의존성 라이브러리를 추가할 때 사용
+ **dependencies** 항목은 프로젝트에 추가할 **의존성 라이브러리 목록**을 명시한다. 라이브러리 추가시, 옵션은 아래와 같다.
 
-#### implementation
-- 의존 라이브러리 수정시 본 모듈까지만 재빌드
+| Keyword             | 기능                                  |
+| ------------------- | ----------------------------------- |
+| implementation      | 의존 라이브러리 수정시 본 모듈까지만 재빌드            |
+| api                 | 의존 라이브러리 수정시 본 모듈을 의존하는 모듈들을 전부 재빌드 |
+| compileOnly         | compile시에만 빌드하고 빌드 결과물에는 포함하지 않음    |
+| testImplementation  | 테스트 코드를 수행할 때만 적용                   |
+| annotationProcessor | annotation processor 명시             |
 
-#### api
-- 의존 라이브러리 수정시 본 모듈을 의존하는 모듈들을 전부 재빌드
-
-#### compileOnly
-- compile시에만 빌드하고 빌드 결과물에는 포함하지 않음
-
-#### testImplementation
-- 테스트 코드를 수행할 때만 적용
-
-#### annotation processor
-- annotation processor 명시
-
-## task
-- 빌드, 테스트, 배포 등의 단계를 수행하는 작업 단위
-- build.gradle task 블록 내에서 정의
-- doFirst, doLast : task 내부에서 순서 지정
-
-## plugins
-- 빌드와 배포 프로세스를 확장하는데 사용
-- java 컴파일, 테스트, [JAR](../../java/java-JAR) 패키징 등의 task 제공
-
-## 빌드 속도가 빠른 이유
-
-### 점진적 빌드
-- 바뀐 파일들만 빌드
-- 빌드 실행중, 마지막 빌드 호출 이후에 task 입력, 출력 혹은 구현이 변경됐는지 확인
-
-### build cache
-- 하나의 빌드에서 사용되는 파일들이 다른 빌드들에 사용된다면 빌드 캐시를 사용해서 한번만 다운로드 또는 빌드
-
-### Daemon Process
-- 메모리상에 빌드 결과물을 보관
-- 한번 빌드된 프로젝트는 다음 빌드에 매우 적은 시간만 소요됨
-- [Daemon Process](../../servercommon/servercommon-Daemon-Process)
+ **tasks**는 빌드, 테스트, 배포 등의 단계를 수행하는 작업단위를 의미한다. task 내부에서 doFirst, doLast를 통해 순서를 지정 할 수 있다.
 
 ---
-
+  
 # 연결문서
 - [Java BuildTools](../../build/build-Java-BuildTools)

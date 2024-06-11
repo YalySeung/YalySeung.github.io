@@ -10,54 +10,53 @@ tags:
 - [python, Syntax]
 last_modified_at: 2023-12-04T08:00:00-10:00:00
 ---
-
-# 날짜 : 2023-12-04 23:57
-
-# 태그 : #python #Syntax 
+  
 ---
-
-# 내용
-
+  
 ## 기본 Syntax
 - 파이썬은 들여쓰기 기준으로 의미를 나눈다. ^a32e80
 - for, if, function 등등 키워드 문장 끝에는 콜론(:) 다음 문장은 \t 만큼 들여쓴다.
-
+  
 ## 문자열
-
+  
 ### 포함 여부 확인
-
+  
 ```python
-<체크할 문자열> in <대상 문자열>
+<체크할 문자열> in <대상 문자열> 
+{: .notice}  
 ```
-
+  
 ### split
-
+  
 ```python
-<split할 문자열>.split(<delimeter>)
+<split할 문자열>.split(<delimeter>) 
+{: .notice}  
 ```
-
+  
 ### 소문자로 변경
-
+  
 ```python
-<text>.lower()
+<text>.lower() 
+{: .notice}  
 ```
-
+  
 ### 비어있는지 확인
-
+  
 ```python
-
+  
 # 비어있을 경우 true
-not <문자열>
+not <문자열> 
+{: .notice}  
 ```
-
+  
 ## 연산자
-
+  
 ### or
 - 또는 연산자
-
+  
 ### and
 - 그리고 연산자
 
 ---
-
+  
 # 연결문서

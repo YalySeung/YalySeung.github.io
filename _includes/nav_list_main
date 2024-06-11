@@ -21,17 +21,6 @@
     </ul>
 
     
-<span class="nav__sub-title" style="font-size:24px;">CLI</span>
-
-    <ul>
-        {% for category in site.categories %}
-        {% if category[0] == "CLI" %}
-            <li><a href="/categories/CLI" class="">CLI ({{category[1].size}})</a></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-
-    
 <span class="nav__sub-title" style="font-size:24px;">CleanCode</span>
 
     <ul>
@@ -259,6 +248,26 @@
     </ul>
 
     
+<span class="nav__sub-title" style="font-size:24px;">OS</span>
+
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "OS" %}
+            <li><a href="/categories/OS" class="">OS ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "CLI" %}
+            <li><a href="/categories/CLI" class="">CLI ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
 <span class="nav__sub-title" style="font-size:24px;">Obsidian</span>
 
     <ul>
@@ -314,15 +323,6 @@
     
     <ul>
         {% for category in site.categories %}
-        {% if category[0] == "JPA" %}
-            <li><a href="/categories/JPA" class="">JPA ({{category[1].size}})</a></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-
-    
-    <ul>
-        {% for category in site.categories %}
         {% if category[0] == "AOP" %}
             <li><a href="/categories/AOP" class="">AOP ({{category[1].size}})</a></li>
         {% endif %}
@@ -334,6 +334,15 @@
         {% for category in site.categories %}
         {% if category[0] == "Test" %}
             <li><a href="/categories/Test" class="">Test ({{category[1].size}})</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        {% for category in site.categories %}
+        {% if category[0] == "JPA" %}
+            <li><a href="/categories/JPA" class="">JPA ({{category[1].size}})</a></li>
         {% endif %}
         {% endfor %}
     </ul>

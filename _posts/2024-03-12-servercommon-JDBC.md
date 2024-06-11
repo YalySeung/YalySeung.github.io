@@ -10,29 +10,24 @@ tags:
 - [ServerCommon, Database]
 last_modified_at: 2024-03-12T08:00:00-10:00:00
 ---
-
-# 날짜 : 2024-03-12 10:04
-
-# 태그 : #ServerCommon #Database
+  
 ---
-
-# 내용
-
+  
 ## 정의
-> **JDBC란?**
+> **JDBC란?**  
 >
-> Java 프로그래밍 언어와 다양한 데이터베이스의 데이터 사이에 독립적 연결을 지원하는 표준 인터페이스
-{: .notice--info}
-
+> Java 프로그래밍 언어와 다양한 데이터베이스의 데이터 사이에 독립적 연결을 지원하는 표준 인터페이스 
+{: .notice--info}  
+  
 ## JDBC Standard Interface
-- **DBMS는 이 Interface들을 구현**한다.
+- **모든 DBMS 및 Persistence Framework는 이 Interface들을 구현**한다.
 
 | Interface  | 기능     |
 | ---------- | ------ |
 | Connection | 연결     |
 | Statement  | SQL 전달 |
 | ResultSet  | 결과 응답  |
-
+  
 ## JDBC Flow
   
 ![image](../../assets/images/JDBCWorkflow.png)
@@ -44,7 +39,8 @@ last_modified_at: 2024-03-12T08:00:00-10:00:00
 6. 객체 Close : 생성된 객체들을 역순으로 Close
 
 ---
-
+  
 # 연결문서
 - [ORM](../../servercommon/servercommon-ORM)
 - [DBCP](../../servercommon/servercommon-DBCP)
+- [영속성(Persistence)](../../servercommon/servercommon-영속성(Persistence))

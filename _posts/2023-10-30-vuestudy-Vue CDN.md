@@ -10,41 +10,49 @@ tags:
 - [Vue, Study, FrontEnd]
 last_modified_at: 2023-10-30T08:00:00-10:00:00
 ---
-
-# 날짜 : 2023-10-30 12:25
-
-# 태그 : #Vue #Study #FrontEnd 
+  
 ---
-
-# 내용
-
+  
 ## [CDN](../../webcommon/webcommon-CDN)을 이용한 vue 
-
+  
 ### CDN link
-
+  
 ```javascript
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+{: .notice}  
 ```
-
+  
 ### CDN을 사용한 기본 포맷
-
+  
 ```javascript
-<!DOCTYPE html>  
-<html lang="en">  
+<!DOCTYPE html>   
+{: .notice}  
+<html lang="en">   
+{: .notice}  
   
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Document</title>  
-</head>  
+<head>   
+{: .notice}  
+    <meta charset="UTF-8">   
+{: .notice}  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+{: .notice}  
+    <title>Document</title>   
+{: .notice}  
+</head>   
+{: .notice}  
   
-<body>  
-<div id="app">  
+<body>   
+{: .notice}  
+<div id="app">   
+{: .notice}  
     //UI 정의
-</div>  
+</div>   
+{: .notice}  
   
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>  
-<script>  
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>   
+{: .notice}  
+<script>   
+{: .notice}  
     const {createApp, ref} = Vue  
     const app = createApp({  
         setup() {  
@@ -55,24 +63,35 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
         }  
     })  
     app.mount("#app")  
-</script>  
-</body>  
+</script>   
+{: .notice}  
+</body>   
+{: .notice}  
   
-</html>
+</html> 
+{: .notice}  
 ```
-
+  
 ### Sample
-
+  
 ```javascript
-<body>
-    <div id="app">
-        <h1>{{message}}</h1>
-        <button @click="count++">
+<body> 
+{: .notice}  
+    <div id="app"> 
+{: .notice}  
+        <h1>{{message}}</h1> 
+{: .notice}  
+        <button @click="count++"> 
+{: .notice}  
             Count is : {{count}}
-        </button>
-    </div>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script>
+        </button> 
+{: .notice}  
+    </div> 
+{: .notice}  
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+{: .notice}  
+    <script> 
+{: .notice}  
         const { createApp, ref } = Vue
         const app = createApp({ 
             setup() {
@@ -85,56 +104,55 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
             }
         })
         app.mount('#app')
-    </script>
-</body>
-```
-
+    </script> 
+{: .notice}  
+</body> 
+{: .notice}  
+```  
 -  Vue 객체에서 구조분해 할당 가져오기
-
+  
 ```javascript
 	const { createApp, ref } = Vue 
-```
-
+```  
 - Vue 인스턴스 생성
-
+  
 ```javascript
 	const app = createApp({ 
 	...
 	)}
-```
-
+```  
 - 반응성을 가진 참조 변수 선언
-
+  
 ```javascript
 	const message = ref("Hello Vue!!");
-```
-
+```  
 - \#app 라는 DOM 내부에서 Vue 반응성 기능을 사용할 수 있도록 Vue 인스턴스를 연결
-
+  
 ```javascript
 	app.mount('#app')
-```
-
+```  
 - 진입점
-
+  
 ```javascript
 	setup() {
 	...
 	}
 ```
-
+  
 ### LiveServer 결과
   
 ![image](../../assets/images/VueCDNSample.png)
-
+  
 ### binding
-
+  
 #### Object를 binding 하는 방법
-
+  
 ```javascript
-	<div :class="{active : isActive}">Text</div>
+	<div :class="{active : isActive}">Text</div> 
+{: .notice}  
 	
-    <script>
+    <script> 
+{: .notice}  
         const { createApp, ref } = Vue
 
         const app = createApp({
@@ -151,15 +169,18 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
             }
         })
         app.mount("#app")
-    </script>
+    </script> 
+{: .notice}  
 ```
-
+  
 ##### Array를 binding 하는 방법
-
+  
 ```javascript
-	<div :class="[activeClass, infoClass]">Text</div>
+	<div :class="[activeClass, infoClass]">Text</div> 
+{: .notice}  
     
-    <script>
+    <script> 
+{: .notice}  
         const { createApp, ref } = Vue
 
         const app = createApp({
@@ -176,16 +197,19 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
             }
         })
         app.mount("#app")
-    </script>
+    </script> 
+{: .notice}  
 ```
-
+  
 ### Handler
-
+  
 #### Inline
-
+  
 ```javascript
-	<button @click="greetings('Hello')">바꾸자</button>
-	<script>
+	<button @click="greetings('Hello')">바꾸자</button> 
+{: .notice}  
+	<script> 
+{: .notice}  
 		const { createApp, ref } = Vue
 		const app = createApp({
 			setup() {
@@ -208,17 +232,22 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 			}
 		})
 		app.mount("#app")
-	</script>
+	</script> 
+{: .notice}  
 ```
-
+  
 #### Method
-
+  
 ```javascript
-	<div id="app">
+	<div id="app"> 
+{: .notice}  
 		{{count}}
-		<button @click="increaseNum">+</button>
-	</div>
-	<script>
+		<button @click="increaseNum">+</button> 
+{: .notice}  
+	</div> 
+{: .notice}  
+	<script> 
+{: .notice}  
 		const { createApp, ref } = Vue
 		const app = createApp({
 			setup() {
@@ -235,9 +264,10 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 			}
 		})
 		app.mount("#app")
-	</script>
+	</script> 
+{: .notice}  
 ```
-
+  
 ---
-
+  
 # 연결문서

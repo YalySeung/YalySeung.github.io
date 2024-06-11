@@ -10,23 +10,15 @@ tags:
 - [Database]
 last_modified_at: 2024-01-01T08:00:00-10:00:00
 ---
-
-# 날짜 : 2024-01-01 21:49
-
-# 태그 : #Database
+  
 ---
-
-# 내용
-
-## 정의
-> **DCL 이란?**
+  
+> **DCL 이란?**  
 >
-> Data Control Language
-> 데이터 제어어
-> 데이터베이스에 접근하거나 객체에 권한을 주는 등의 역할을 하는 언어
-{: .notice--info}
+> Data Control Language의 약어로 데이터베이스에 접근하거나 객체에 권한을 주는 등의 역할을 하는 언어를 의미한다. 
+{: .notice--info}  
 
-## 종류
+ **DCL의 종류**는 아래와 같다.
 
 | 종류       | 역할                                      |
 | -------- | --------------------------------------- |
@@ -36,7 +28,7 @@ last_modified_at: 2024-01-01T08:00:00-10:00:00
 | ROLLBACK | 트랜잭션의 작업을 취소                            |
 
 ---
-
+  
 # 연결문서
 - [DML](../../database/database-DML)
 - [DDL](../../database/database-DDL)

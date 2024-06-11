@@ -10,20 +10,15 @@ tags:
 - [NextJS]
 last_modified_at: 2024-03-06T08:00:00-10:00:00
 ---
-
-# 날짜 : 2024-03-06 22:02
-
-# 태그 : #NextJS
+  
 ---
-
-# 내용
-
+  
 ## 정의
-> **Hydration이란?**
+> **Hydration이란?**  
 >
-> 정적 호스팅 혹은 SSR을 통해 받은 HTML 웹페이지를 동적인 웹페이지로 만드는 과정
-{: .notice--info}
-
+> 정적 호스팅 혹은 SSR을 통해 받은 HTML 웹페이지를 동적인 웹페이지로 만드는 과정 
+{: .notice--info}  
+  
 ## Hydration Process
   
 ![image](../../assets/images/Hydration.png)
@@ -34,15 +29,15 @@ last_modified_at: 2024-03-06T08:00:00-10:00:00
 
 > **memo**
 >
-> Hydration 으로 HTML이 React Component로 교체되어, 사용자가 첫 화면부터 연속적이고 부드럽게 Rendering 되는 동적 웹페이지를 사용할 수 있다.
-{: .notice}
+> Hydration 으로 HTML이 React Component로 교체되어, 사용자가 첫 화면부터 연속적이고 부드럽게 Rendering 되는 동적 웹페이지를 사용할 수 있다. 
+{: .notice--info}  
 
 > **memo**
 >
-> Hydration이 완료 되기 전에도 사용자는 정적 웹 페이지에서 컨텐츠를 확인 할 수 있다.
-{: .notice}
+> Hydration이 완료 되기 전에도 사용자는 정적 웹 페이지에서 컨텐츠를 확인 할 수 있다. 
+{: .notice--info}  
 
 ---
-
+  
 # 연결문서
  - [CSR SSR](../../webcommon/webcommon-CSR-SSR)

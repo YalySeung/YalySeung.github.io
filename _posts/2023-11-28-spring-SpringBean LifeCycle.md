@@ -10,14 +10,9 @@ tags:
 - [Spring]
 last_modified_at: 2023-11-28T08:00:00-10:00:00
 ---
-
-# 날짜 : 2023-11-28 16:52
-
-# 태그 : #Spring
+  
 ---
-
-# 내용
-
+  
 ## LifeCycle
   
 ![image](../../assets/images/SpringBeanLifeCycle.png)
@@ -30,5 +25,5 @@ last_modified_at: 2023-11-28T08:00:00-10:00:00
 7. 스프링 종료
 
 ---
-
+  
 # 연결문서

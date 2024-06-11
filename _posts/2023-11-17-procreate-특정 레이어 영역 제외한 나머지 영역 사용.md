@@ -10,29 +10,25 @@ tags:
 - [Procreate]
 last_modified_at: 2023-11-17T08:00:00-10:00:00
 ---
-
-# 날짜 : 2023-11-17 20:21
-
-# 태그 : #Procreate
+  
 ---
-
-# 내용
+  
 > **info**
 >
 > 내가 사용할 영역에서 제외할 Layer 설정
 > 
->  
-{: .notice--info}
+>   
+{: .notice--info}  
 ![image](../../assets/images/ProcreateReference.png)
-
+  
 > **example**
 >
 >새 Layer를 생성해서 확인해보면 Reference로 지정한 영역이 구분되는것을 확인 할 수 있다.
->
-{: .notice--success}
+> 
+{: .notice--info}  
   
 ![image](../../assets/images/ProcreateRefernceResult.jpg)
 
 ---
-
+  
 # 연결문서

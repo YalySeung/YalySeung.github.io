@@ -10,20 +10,15 @@ tags:
 - [사이드프로젝트, BackEnd, Spring]
 last_modified_at: 2023-09-17T08:00:00-10:00:00
 ---
-
-# 날짜 : 2023-09-17 23:33
-
-# 태그 : #사이드프로젝트 #BackEnd #Spring
+  
 ---
-
-# 내용
-
+  
 ### 폴더 구조
   
 ![image](../../assets/images/SpringMVCDirectoryStructure.png)
-
+  
 ### build.gradle
-
+  
 ```Groovy
 apply plugin: 'war'  
 apply plugin: 'java'  
@@ -59,16 +54,15 @@ dependencies {
 test {  
     useJUnitPlatform()  
 }
-```
-
+```  
 - junit : 단위테스트
 - log4j : 로깅
 - spring-web : WebApplicationInitializer, DispatcherServlet, @RestController, @RequestMapping, @GetMapping
 - spring-context : @ComponentScan, @Configuration
 - javax.servlet : ServletRegistration
-
+  
 ### WebApplicationInitializer
-
+  
 ```JAVA
 public class ApplicationInitializer implements WebApplicationInitializer {  
     @Override  
@@ -93,7 +87,7 @@ public class ApplicationInitializer implements WebApplicationInitializer {
 ```
 
 - API Listener만 추가하는 방법
-
+  
 ```java
 @Override  
 public void onStartup(ServletContext servletContext) throws ServletException {  
@@ -115,19 +109,18 @@ public void onStartup(ServletContext servletContext) throws ServletException {
 ```
 
 - DispatcherServlet 등록 필수!
-
+  
 ### Configuration
 - RESTAPI 설정
-
+  
 ```JAVA
 @Configuration  
 @ComponentScan(basePackages = "org.infinity.server.controller.api")  
 public class APIConfiguration {  
 }
-```
-
+```  
 - Web설정
-
+  
 ```java
 @EnableWebMvc  
 @ComponentScan(basePackages = "org.infinity.server.controller.web")  
@@ -141,10 +134,10 @@ public class WebConfigration implements WebMvcConfigurer {
     }  
 }
 ```
-
+  
 ### Test Controller
 - API Test
-
+  
 ```java
 @Controller  
 @RequestMapping("/test")  
@@ -155,10 +148,9 @@ public class apiTestController {
         return "test";  
     }  
 }
-```
-
+```  
 - View Test
-
+  
 ```java
 @Controller  
 @RequestMapping("/test")  
@@ -173,7 +165,7 @@ public class webController {
 ```
 
 ---
-
+  
 # 연결문서
 - [WebMvcConfigurer](../../spring/spring-WebMvcConfigurer)
-
+  

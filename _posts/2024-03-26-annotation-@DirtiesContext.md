@@ -10,24 +10,19 @@ tags:
 - [Spring, Annotation]
 last_modified_at: 2024-03-26T08:00:00-10:00:00
 ---
-
-# 날짜 : 2024-03-26 16:51
-
-# 태그 : #Spring #Annotation
+  
 ---
-
-# 내용
-
+  
 ## Artifact
 - Spring-test
-
+  
 ## 역할
 - 테스트시, TestCase간 Context 를 공유하여 발생하는 문제 해결
 - 테스트 종료시, 테스트 프레임워크의 캐시를 제거하고 닫음
 - classMode 에 설정한 시점에 따라 Context를 재생성
-
+  
 ## 사용법
-
+  
 ```java
 @RunWith(SpringJUnit4ClassRunner.class)  
 @ContextConfiguration(classes = RpaViewConfiguration.class)  
@@ -41,7 +36,7 @@ public class ViewTestBase {
     ...
 }
 ```
-
+  
 ### classMode
 - dirty 시점 설정
 
@@ -53,7 +48,7 @@ public class ViewTestBase {
 | AFTER_CLASS             | Test Class 모든 메서드 종료 후 |
 
 ---
-
+  
 # 연결문서
 - [@Test](../../test/test-@Test)
 - [@RunWith](../../test/test-@RunWith)

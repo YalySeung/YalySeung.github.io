@@ -10,19 +10,14 @@ tags:
 - [React, FrontEnd, Study]
 last_modified_at: 2023-10-22T08:00:00-10:00:00
 ---
-
-# 날짜 : 2023-10-22 21:02
-
-# 태그 : #React #FrontEnd #Study 
+  
 ---
-
-# 내용
-
+  
 ## 리스트 렌더링
 - 태그 반복시, map, filter 사용
 - key 값은 필수
 - 2개 이상의 Element를 리스팅하려면 [React-Fragment](../../reactstudy/reactstudy-React-Fragment)를 사용한다.
-
+  
 ```javascript
 export default function App() {
   const [hideCompleted, setHideCompleted] = useState(false);
@@ -32,26 +27,36 @@ export default function App() {
     { id: 3, text: "React 배우기", done: false },
   ];
   return (
-    <>
-      <ul>
+    <> 
+{: .notice}  
+      <ul> 
+{: .notice}  
         {todos
-          .filter((todo) => {
+          .filter((todo) => { 
+{: .notice}  
             console.log(hideCompleted);
             if (hideCompleted) return todo.done;
             else return todo;
           })
-          .map((todo) => (
-            <li key={todo.id}>
-              <span>{todo.text}</span>
-            </li>
+          .map((todo) => ( 
+{: .notice}  
+            <li key={todo.id}> 
+{: .notice}  
+              <span>{todo.text}</span> 
+{: .notice}  
+            </li> 
+{: .notice}  
           ))}
-      </ul>
-      <button onClick={() => setHideCompleted(!hideCompleted)}>토글</button>
-    </>
+      </ul> 
+{: .notice}  
+      <button onClick={() => setHideCompleted(!hideCompleted)}>토글</button> 
+{: .notice}  
+    </> 
+{: .notice}  
   );
 }
 ```
 
 ---
-
+  
 # 연결문서

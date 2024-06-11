@@ -10,26 +10,21 @@ tags:
 - [Vue, FrontEnd, Study]
 last_modified_at: 2023-11-01T08:00:00-10:00:00
 ---
-
-# 날짜 : 2023-11-01 17:45
-
-# 태그 : #Vue #FrontEnd #Study 
+  
 ---
-
-# 내용
-
+  
 ## AXIOS
-
+  
 ### 설치
-
+  
 ```bash
 npm install axios
 ```
-
+  
 ## 객체 정의
-
+  
 ### 방법 1
-
+  
 ```javascript
 import axios from "axios";  
   
@@ -40,9 +35,9 @@ export default axios.create({
     }  
 })
 ```
-
+  
 ### 방법2
-
+  
 ```javascript
 import axios from 'axios';  
   
@@ -55,42 +50,48 @@ const instance = axios.create({
   
 export default instance;
 ```
-
+  
 ### logging
-
+  
 ```javascript
 instance.interceptors.request.use(  
-    (config) => {  
+    (config) => {   
+{: .notice}  
         console.log('axios.js request : ' , config);  
         return config  
     },  
-    (error) => {  
+    (error) => {   
+{: .notice}  
         return Promise.reject(error);  
     }  
 );  
 instance.interceptors.response.use(  
-    (res) => {  
+    (res) => {   
+{: .notice}  
         console.log('axios.js response : ' , res);  
         return res  
     },  
-    (error) => {  
+    (error) => {   
+{: .notice}  
         return Promise.reject(error);  
     }  
 )  
 ```
-
+  
 ## 사용
-
+  
 ```javascript
 import axios from "@/plugins/axios";  
 import {useWelcomeMessageStore} from "@/stores/welcomeMessageStore"  
   
 const message = useWelcomeMessageStore();  
   
-const onClick = async()=> {  
+const onClick = async()=> {   
+{: .notice}  
   try{  
     await axios.get('/api/hello')  
-        .then((response)=>{  
+        .then((response)=>{   
+{: .notice}  
           console.log('data : ' + response.data)  
           message.setWelcomeMessage(response.data)  
         })  
@@ -99,10 +100,9 @@ const onClick = async()=> {
     alert('Error데이터를 불러올 수 없습니다')  
   }  
 }
-```
-
+```  
 ---
-
+  
 # 연결문서
 - [Vue-환경변수](../../vuestudy/vuestudy-Vue-환경변수)
 - [npm](../../nodejs/nodejs-npm)

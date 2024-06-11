@@ -1,0 +1,46 @@
+---
+title : "Querydsl DynamicQuery"
+excerpt : "Querydsl DynamicQuery"
+toc : true
+toc_sticky : true
+toc_label : "Querydsl DynamicQuery"
+categories:
+- JPA
+tags:
+- [Spring, JPA, Querydsl, 미완료]
+last_modified_at: 2024-05-10T08:00:00-10:00:00
+---
+  
+---
+  
+## 특정 조건에 따라 limit, offset을 적용해야 할 경우
+**JPAQuery** 를 사용하여 limit, offset 을 적용하기 전 쿼리를 선언하고, 원하는 조건에 따라 limit, offset 을 적용한다.
+  
+```java
+JPAQuery<RobotList> query = queryFactory.select(qRobot)   
+{: .notice}  
+        .from(qRobot)  
+        .leftJoin(qWork)  
+        .on(qRobot.lastExecuteWorkSequence.eq(qWork.workSequence))  
+        .where(getWhereClause(robotSearchForm))  
+        .orderBy(getOrderSpecifier(robotSearchForm.getSortKey(), robotSearchForm.getSortOrder()));  
+  
+if (robotSearchForm.getPageRowCount() > 0){   
+{: .notice}  
+        query.offset(robotSearchForm.getStartRowNo2())  
+        .limit(robotSearchForm.getEndRowNo());  
+}
+```
+  
+## coalesce()
+ 각 DB 별로 **null을 처리하는 함수**가 있기때문에 Querydsl도 이에 대응하는 coalesce() 함수가 있다.
+  
+```java
+qCustomer.age.coalesce(0)
+```
+ 위 예제는 Customer 테이블의 나이 항목이 null일 경우 0을 반환하는 예시이다.
+
+---
+  
+# 연결문서
+- [Querydsl 문법정리](https://russell-seo.tistory.com/28)

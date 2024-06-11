@@ -10,22 +10,17 @@ tags:
 - [DevelopCommon]
 last_modified_at: 2023-12-25T08:00:00-10:00:00
 ---
-
-# 날짜 : 2023-12-25 00:48
-
-# 태그 : #DevelopCommon 
+  
 ---
-
-# 내용
-
+  
 ## 정의
-> **Naming Convention 이란?**
+> **Naming Convention 이란?**  
 >
-> 식별자를 만들 때, 가독성을 높이기 위한 Naming 규칙
-{: .notice--info}
-
+> 식별자를 만들 때, 가독성을 높이기 위한 Naming 규칙 
+{: .notice--info}  
+  
 ## 종류
-
+  
 | 종류       | 설명                                                    | 예시         |
 | ---------- |:------------------------------------------------------- | ------------ |
 | camelCase  | 첫 글자는 소문자, 두번째 단어부터는 띄어쓰기없이 대문자 | className    |
@@ -35,5 +30,5 @@ last_modified_at: 2023-12-25T08:00:00-10:00:00
 | Hungarian  | 목적이나 타입을 접두사로 기재                           | strClassName |
 
 ---
-
+  
 # 연결문서

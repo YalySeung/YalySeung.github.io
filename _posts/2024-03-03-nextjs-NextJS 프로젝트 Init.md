@@ -10,32 +10,27 @@ tags:
 - [FrontEnd, NextJS]
 last_modified_at: 2024-03-03T08:00:00-10:00:00
 ---
-
-# 날짜 : 2024-03-03 21:30
-
-# 태그 : #FrontEnd #NextJS
+  
 ---
-
-# 내용
-
+  
 ## Project Init
-
+  
 ### 1. 빈 프로젝트 폴더 생성
-
+  
 ### 2. terminal 에서 초기화 - package.js 파일 생성
-
+  
 ```bash
 npm init -y
 ```
-
+  
 ### 3. 필요한 라이브러리 install
-
+  
 ```bash
 npm install react@latest next@latest react-dom@latest
 ```
-
+  
 ### 4. package.json 수정
-
+  
 ```json
 {  
   "name": "nomadsample",  
@@ -54,15 +49,14 @@ npm install react@latest next@latest react-dom@latest
     "react-dom": "^18.2.0"  
   }  
 }
-```
-
+```  
 - scripts는 프로젝트 실행시, 호출하는 script 이다.
 
 > **tip**
 >
-> 이제 프로젝트를 npm run dev 로 실행할 수 있다!
-{: .notice--primary}
-
+> 이제 프로젝트를 npm run dev 로 실행할 수 있다! 
+{: .notice--primary}  
+  
 ### 5. 프로젝트 구조
   
 ![image](../../assets/images/NextJSProjectStructure.png)
@@ -72,6 +66,6 @@ npm install react@latest next@latest react-dom@latest
 - package-lock.json :  package 버전 lock file
 
 ---
-
+  
 # 연결문서
 - [npm](../../nodejs/nodejs-npm)

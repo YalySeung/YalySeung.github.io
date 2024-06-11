@@ -10,48 +10,44 @@ tags:
 - [WebCommon, FrontEnd]
 last_modified_at: 2023-12-08T08:00:00-10:00:00
 ---
-
-# 날짜 : 2023-12-08 12:30
-
-# 태그 : #WebCommon #FrontEnd 
+  
 ---
-
-# 내용
-
+  
 ## 정의
-> **Ajax 란?**
+> **Ajax 란?**  
 >
 > Asynchronous Javascript And Xml
 > Javascript Library
 > 브라우저의 XMLHttpRequest 객체를 활용하여 페이지 새로고침 없이 데이터를 교환하고 조작하는 기법
-> 서버와 브라우저가 비동기 방식으로 데이터를 교환할 수 있는 통신기능
-{: .notice--info}
-
-## Conventional Web Model <span style="color:gray">vs</span> Ajax Web Model
-
+> 서버와 브라우저가 비동기 방식으로 데이터를 교환할 수 있는 통신기능 
+{: .notice--info}  
+  
+## Conventional Web Model <span style="color:gray">vs</span> Ajax Web Model 
+{: .notice}  
+  
 ### Conventional Web Model
   
 ![image](../../assets/images/Web_ConventionalModel.png)  
-
+  
 ### Ajax Web Model
   
 ![image](../../assets/images/Web_AjaxModel.png)
-
+  
 ## Ajax 장점
 - 페이지 이동 화면의 일부를 전환할수 있다.
 - 비동기 요청이 가능하다
 - 수신 데이터 양을 줄일 수 있다
-
+  
 ## Ajax 단점
 - ajax를 지원하는 브라우저에서만 사용할 수 있다. (미지원 : 오페라 7 이하, IE 4.0 이하 등)
 - 페이지 이동 없는 통신으로 인한 보안상의 문제가 있을 수 있다.
 - 지원하는 charset이 한정되어 있다.
-
+  
 ## ajax 적용
-
+  
 ### XMLHttpRequest 객체 사용
 - 웹 브라우저에 내장된 XMLHttpRequest 객체를 사용
-
+  
 ``` javascript
 var xMLHttpRequest = new XMLHttpRequest();
 // 요청에 대한 콜백 정의
@@ -67,11 +63,11 @@ xMLHttpRequest.onreadystatechange = function() {
 xMLHttpRequest.open('GET', url); // GET/POST 방식 과 url 전달
 xMLHttpRequest.send(); // 요청 전송
 ```
-
+  
 ### jqeury
 - jquery 라이브러리 import 필요
 - XMLHttpRequest 불편함과 호환성 개선
-
+  
 ```javascript
 $.ajax({
   url: 'url', // 요청이 전송될 URL 주소(필수)
@@ -97,27 +93,31 @@ $.ajax({
   }
 })
 ```
-
+  
 ### fetch API
 - 브라우저 내장 API
-- 가독성이 떨어지는 콜백함수 Syntax 개선 => Promise 방식 사용
+- 가독성이 떨어지는 콜백함수 Syntax 개선 => Promise 방식 사용 
+{: .notice}  
 - 응답으로 Response 객체를 반환한다.
 - 구형 브라우저에서는 미지원
-
+  
 ```javascript
 fetch('url', 설정)
-  .then((response) => response.json())
-  .catch((data) => console.log(data));
-
+  .then((response) => response.json()) 
+{: .notice}  
+  .catch((data) => console.log(data)); 
+{: .notice}  
+  
 ``` 
-
+  
 ### Axios
 - 라이브러리 설치 필요
 - Node.js, React 환경에서 주로 사용
-- 가독성이 떨어지는 콜백함수 Syntax 개선 => Promise 방식 사용
+- 가독성이 떨어지는 콜백함수 Syntax 개선 => Promise 방식 사용 
+{: .notice}  
 - 브라우저 호환성이 뛰어남
 - 자동으로 JSON 포맷 변환 지원
-
+  
 ```javascript
 const axios = require('axios')
 axios
@@ -137,5 +137,5 @@ axios
 ```
 
 ---
-
+  
 # 연결문서

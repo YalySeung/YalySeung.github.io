@@ -1,31 +1,26 @@
 ---
-title : "interceptor"
-excerpt : "interceptor"
+title : "Interceptor"
+excerpt : "Interceptor"
 toc : true
 toc_sticky : true
-toc_label : "interceptor"
+toc_label : "Interceptor"
 categories:
 - Spring
 tags:
 - [Spring]
 last_modified_at: 2024-01-09T08:00:00-10:00:00
 ---
-
-# 날짜 : 2024-01-09 13:42
-
-# 태그 : #Spring 
+  
 ---
-
-# 내용
-
+  
 ## 역할
 - Spring이 제공하는 기술
 - [DispatcherServlet](../../spring/spring-DispatcherServlet)이 컨트롤러를 호출하기 전과 후에 요청과 응답을 참조하거나 가공
-
+  
 ## 사용방법
-
+  
 ### Interceptor 정의
-
+  
 ```java
 public class DataSourceInterceptor implements HandlerInterceptor {  
   
@@ -54,9 +49,9 @@ public class DataSourceInterceptor implements HandlerInterceptor {
     }  
 }
 ```
-
+  
 ### WebMvcConfigurerAdapter 에 Interceptor 등록
-
+  
 ``` java
 public class RpaViewWebMvcConfiguration extends WebMvcConfigurerAdapter {  
 	...
@@ -69,6 +64,6 @@ public class RpaViewWebMvcConfiguration extends WebMvcConfigurerAdapter {
 ```
 
 ---
-
+  
 # 연결문서
 - [SpringMVC](../../spring/spring-SpringMVC)

@@ -10,22 +10,17 @@ tags:
 - [Spring, Annotation, Test]
 last_modified_at: 2023-11-07T08:00:00-10:00:00
 ---
-
-# 날짜 : 2023-11-07 11:54
-
-# 태그 : #Spring #Annotation #Test
+  
 ---
-
-# 내용
-
+  
 ## Artifact
 - junit
-
+  
 ## 역할
 - 메소드는 남겨두되 테스트에서 제외할 항목 명시
-
+  
 ## 사용법
-
+  
 ```java
 @Ignore  
 private void writeLog(String logMessage){  
@@ -34,5 +29,5 @@ private void writeLog(String logMessage){
 ```
 
 ---
-
+  
 # 연결문서

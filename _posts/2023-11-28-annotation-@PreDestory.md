@@ -10,25 +10,20 @@ tags:
 - [Spring, Annotation]
 last_modified_at: 2023-11-28T08:00:00-10:00:00
 ---
-
-# 날짜 : 2023-11-28 16:50
-
-# 태그 : #Spring #Annotation
+  
 ---
-
-# 내용
-
+  
 ## Artifact
 - javax.annotation
-
+  
 ## 역할
 - Bean 소멸 전에 종료 전처리 Callback을 정의할 수 있음
-
+  
 ## 특징
 - bean 제거 직전 한번만 실행됨
-
+  
 ## 사용법
-
+  
 ``` java
 @PreDestroy 
 public void preDestroy() { 
@@ -38,7 +33,7 @@ public void preDestroy() {
 ```
 
 ---
-
+  
 # 연결문서
 - [SpringBean LifeCycle](../../spring/spring-SpringBean-LifeCycle)
 - [@PostConstruct](../../annotation/annotation-@PostConstruct)
