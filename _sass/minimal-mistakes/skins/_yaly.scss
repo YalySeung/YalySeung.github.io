@@ -4,7 +4,7 @@
 
 /* Colors */
 $background-color: #f3f3f3 !default;
-$text-color: #343434 !default;
+$text-color: #000000 !default;
 $muted-text-color: #8e8b82 !default;
 $primary-color: #343434 !default;
 $border-color: #e9dcbe !default;
@@ -13,6 +13,15 @@ $link-color: #343434 !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: $text-color !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+$h1-header-color: #0056b3 !default;
+$h2-header-color: #007bff !default;
+$h3-header-color: #3399ff !default;
+$h4-header-color: #66b2ff !default;
+$h5-header-color: #99ccff !default;
+$h6-header-color: #ccccff !default;
+$link-background-color: rgba(187,239,253,0.3) !default;
+$link-background-hover-color: rgba(187,239,253,0.8) !default;
+$link-border-bottom-color: rgba(0,0,0,0.2) !default;
 
 /* dirt syntax highlighting (base16) */
 $base00: #231e18 !default;

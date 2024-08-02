@@ -58,6 +58,16 @@ section {
   display: block;
 }
 
+section {
+  a {
+    background-color: $link-background-color;
+
+    &:hover {
+      background-color: $link-background-hover-color
+    }
+  }
+}
+
 /* Display block in IE6-9 and FF3 */
 
 audio,
