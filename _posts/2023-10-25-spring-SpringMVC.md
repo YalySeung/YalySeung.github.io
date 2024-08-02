@@ -32,7 +32,7 @@ last_modified_at: 2023-10-25T08:00:00-10:00:00
   
 ## Spring MVC 구조
   
-![image](../../assets/images/SpringMVCProcess.png)
+![image](../../assets/images/SpringMVCStructure.png)
   
 ### DispatcherServlet
 - request를 처리할 Controller 를 배정

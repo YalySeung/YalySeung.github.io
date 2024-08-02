@@ -145,6 +145,38 @@ unalias <별칭>
 ifconfig
 ```
  장치명과 ip주소를 확인 할 수 있다.
+  
+## 계정
+  
+### adduser
+  
+```bash
+adduser <계정명> 
+{: .notice}  
+```
+  
+### useradd
+  
+```bash
+useradd <계정명> 
+{: .notice}  
+passwd <비밀번호> 
+{: .notice}  
+groupadd <그룹명> 
+{: .notice}  
+usermod -G <그룹명> <계정명> 
+{: .notice}  
+usermod -s /bin/bash <계정명> 
+{: .notice}  
+grep /bin/bash /etc/passwd | cut -f1 -d:
+```
+  
+### userdel
+  
+```bash
+userdel <계정명> 
+{: .notice}  
+```
 
 ---
   

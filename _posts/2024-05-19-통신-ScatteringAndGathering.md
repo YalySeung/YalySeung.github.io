@@ -7,7 +7,7 @@ toc_label : "ScatteringAndGathering"
 categories:
 - 통신
 tags:
-- [통신, 미완료]
+- [통신]
 last_modified_at: 2024-05-19T08:00:00-10:00:00
 ---
   

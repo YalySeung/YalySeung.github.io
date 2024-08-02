@@ -7,7 +7,7 @@ toc_label : "벌크연산"
 categories:
 - ServerCommon
 tags:
-- [ServerCommon, 미완료]
+- [ServerCommon]
 last_modified_at: 2024-04-09T08:00:00-10:00:00
 ---
   

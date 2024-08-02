@@ -146,6 +146,21 @@ public UserDTO getUserList(String userId) {
 #### @ApiResponses
 - Response 정보를 명시
   
+```java
+@PostMapping("/name")  
+@ApiOperation(value = "사용자 이름을 가져온다")  
+@ApiResponses(value = {  
+        @ApiResponse(code = 1400, message = "사용자가 없습니다."),
+        @ApiResponse(code = 1401, message = "사용자 정보 조회에 실패했습니다.")    
+})  
+public ResponseEntity<UserResponse> getUserName(   
+{: .notice}  
+        @ApiParam(value = "사용자 순번")  
+        @RequestBody(required = true) @Valid Integer userSequence) {  
+    ...
+}
+```
+  
 #### @ApiParam
 - request param 정보를 명시
   

@@ -42,13 +42,22 @@ git config --unset user.name
 git config --unset user.email
 ```
   
+### 브랜치 관리
+  
+```bash
+git branch -r // 원격 저장소 브랜치 조회
+git push origin --delete <브랜치명> // 원격 저장소 브랜치 삭제 
+{: .notice}  
+
+```
+  
 ## SSH
   
 ### ssh key 생성
 ```
 ssh-keygen
 ```
-
+  
 ---
   
 # 연결문서

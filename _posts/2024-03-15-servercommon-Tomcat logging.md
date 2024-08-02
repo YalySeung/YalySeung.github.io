@@ -13,8 +13,9 @@ last_modified_at: 2024-03-15T08:00:00-10:00:00
   
 ---
   
-## 로그 root
-- 기본으로 Tomcat 폴더 내의 logs 폴더를 사용
+ 이 글에서는 Tomcat logging에 관해서 알아보도록 하겠다.
+
+ Tomcat 설치 후 다른 작업을 하지 않았다면 default logging 경로는 Tomcat 폴더 내의 logs 폴더이다.
   
 ### 경로설정
 - Tomcat/conf/server.xml

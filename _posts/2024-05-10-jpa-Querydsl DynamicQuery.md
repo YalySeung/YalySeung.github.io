@@ -39,6 +39,59 @@ if (robotSearchForm.getPageRowCount() > 0){
 qCustomer.age.coalesce(0)
 ```
  위 예제는 Customer 테이블의 나이 항목이 null일 경우 0을 반환하는 예시이다.
+  
+## from절의 재사용
+ from절을 재사용하기 위해서는 JPAQuery 타입으로 쿼리 결과를 반환한다.
+  
+```java
+private JPAQuery<?> getNewFromClauseWorkExecutionList(String summaryType){   
+{: .notice}  
+    JPAQuery<?> fromQuery = queryFactory   
+{: .notice}  
+            .from(qTaskResultView)  
+            .leftJoin(qTaskProcess)  
+            .on(qTaskProcess.taskQueueSequence.eq(qTaskResultView.taskQueueSequence))  
+            .leftJoin(qWork)  
+            .on(qTaskResultView.workSequence.eq(qWork.workSequence));  
+  
+    if (summaryType.equals("RBT")) {  
+        fromQuery.innerJoin(qRobot).on(qTaskResultView.robotSequence.eq(qRobot.robotSequence));  
+    }  
+  
+    return fromQuery;  
+}
+```
+  
+## groupBy 절의 재사용
+ Expression Array 타입으로 반환하면 재사용이 가능하다.
+  
+```java
+private Expression<?>[] getWorkExecutionListGroupByClause(WorkExecutionResultSearchForm workExecutionResultSearchForm) {   
+{: .notice}  
+    List<Expression<?>> groupbyExpression = new ArrayList<>();   
+{: .notice}  
+    groupbyExpression.add(qWork.workSequence);  
+    groupbyExpression.add(qWork.workName);  
+    groupbyExpression.add(qTaskResultView.groupSequence);  
+  
+    if (workExecutionResultSearchForm.getSummaryType().equals("RBT")) {  
+        groupbyExpression.add(qTaskProcess.taskQueueSequence);  
+        groupbyExpression.add(qRobot.robotSequence);  
+        groupbyExpression.add(qRobot.robotName);  
+        groupbyExpression.add(qTaskResultView.lastExecuteDateTime);  
+        groupbyExpression.add(qTaskResultView.endDateTime == null ? qTaskResultView.lastExecuteDateTime : qTaskResultView.endDateTime);  
+    }  
+  
+    return groupbyExpression.toArray(new Expression<?>[0]);   
+{: .notice}  
+}
+```
+  
+## count(\*)
+  
+```java
+
+```
 
 ---
   

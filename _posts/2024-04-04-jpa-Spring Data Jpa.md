@@ -7,7 +7,7 @@ toc_label : "Spring Data Jpa"
 categories:
 - JPA
 tags:
-- [Spring, 미완료, JPA]
+- [Spring, JPA]
 last_modified_at: 2024-04-04T08:00:00-10:00:00
 ---
   
@@ -96,8 +96,9 @@ public class JpaConfiguration {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(@Qualifier("dataSourceForJPA")DataSource dataSource) {  
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();  
         em.setDataSource(dataSource);  
-        em.setPackagesToScan(new String[]{"<패키지명1>", "<패키지명2>"}); 
+        //em.setPackagesToScan(new String[]{"<패키지명1>", "<패키지명2>"}); 
 {: .notice}  
+        em.setPackagesToScan("org.infinity.server.entity");
         em.setPersistenceProviderClass(HibernatePersistenceProvider.class);  
         return em;  
     }  
@@ -129,5 +130,6 @@ public class JpaConfiguration {
 - [JPQL](../../jpa/jpa-JPQL)
 - [CustomRepository](../../jpa/jpa-CustomRepository)
 - [Querydsl](../../jpa/jpa-Querydsl)
+- [BooleanBuilder](../../jpa/jpa-BooleanBuilder)
+- [BooleanExpression](../../jpa/jpa-BooleanExpression)
 - [공식가이드 문서](https://docs.spring.io/spring-data/jpa/reference/repositories/query-by-example.html)
-- [참고자료블로그](https://zayson.tistory.com/entry/Spring-Data-Jpa)

@@ -7,7 +7,7 @@ toc_label : "Singleton"
 categories:
 - DesignPattern
 tags:
-- [DesignPattern, 미완료]
+- [DesignPattern]
 last_modified_at: 2024-04-14T08:00:00-10:00:00
 ---
   

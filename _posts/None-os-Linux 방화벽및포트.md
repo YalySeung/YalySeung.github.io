@@ -7,7 +7,7 @@ toc_label : "Linux 방화벽및포트"
 categories:
 - OS
 tags:
-- [OS, Linux, 미완료]
+- [OS, Linux]
 last_modified_at: NoneT08:00:00-10:00:00
 ---
 udo  날짜 : 2024-05-23 12:05

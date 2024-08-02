@@ -118,5 +118,4 @@ map(filter(file.tasks, (x) => !x.completed), (x) => x.text)
 ---
   
 # 연결문서
-- 참고사이트 : https://blacksmithgu.github.io/obsidian-dataview/reference/functions/
   

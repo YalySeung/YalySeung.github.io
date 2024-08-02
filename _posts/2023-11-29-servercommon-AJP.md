@@ -18,15 +18,7 @@ last_modified_at: 2023-11-29T08:00:00-10:00:00
 > Apache JServ Protocol의 약어로 웹서버 뒤에 있는 애플리케이션 서버로부터 웹서버로 들어오는 요청을 위임할 수 있는 바이너리 프로토콜이다. 
 {: .notice--info}  
 
- AJP는 애플리케이션 서버로 핑을 할 수 있는 웹서버의 모니터링 기능 지원한다. 또한 Load Balance(부하분산) 기능 구현에 사용되며, 각 세션들을 리다이렉트 하는 기능이 있다.
-  
-## Apach 와 Tomcat
-  
-### 연동해야 하는 이유
-- Tomcat은 WAS 서버이지만 Web 서버의 기능도 갖추고 있음
-- Tomcat의 WAS는 Apach보다 느린 처리속도를 가지고 있음
-- 정적 페이지는 Apach, 동적 페이지는 Tomcat이 처리하여 부하를 분산
-- 현재는 Tomcat이 Apach에 뒤쳐지지 않을 많큼 개선되었지만 Apach 내에서만 설정할 수 있는 부분, 유용한 모듈을 사용하기 위해서 과거 방식을 사용
+ AJP는 주로 Apache HTTP Server와 Apache Tomcat 같은 **서블릿 컨테이너 간의 연결을 위해 사용**된다. 뿐만 아니라 **HTTP 프로토콜을 최적화**하여 더 효율적인 데이터 전송을 가능하게 돕는다.
   
 ### mod_jk
 > **mod_jk란?**  
@@ -51,3 +43,4 @@ last_modified_at: 2023-11-29T08:00:00-10:00:00
   
 # 연결문서
 - [Port](../../developcommon/developcommon-Port)
+- [ApacheAndTomcat](../../servercommon/servercommon-ApacheAndTomcat)
