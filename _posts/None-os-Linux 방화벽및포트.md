@@ -20,7 +20,8 @@ udo  날짜 : 2024-05-23 12:05
   
 ```bash
 sudo netstat -tlnp | grep 3306
-sudo ufw allow 3306/tcp
+sudo ufw status // 방화벽 상태 확인
+sudo ufw allow 3306/tcp // 방화벽 열기
 ```
 
  3306 포트가 열려있는지 확인 후 포트를 여는 [CLI](../../cli/cli-CLI)이다.

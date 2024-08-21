@@ -54,12 +54,9 @@ sudo mysql_secure_installation
  먼저 mariadb 설정파일에서 **port**와 **bind-address**를 설정한다. 필자는 /etc/mysql/mariadb.conf.d/50-server.cnf 파일을 수정했다. 
 
 ```
-...
-
 [mysqld]
 bind-address = 0.0.0.0
 port = 3309
-
 ...
 ```
 
@@ -105,7 +102,7 @@ mysql -u root
   
 ```sql
 // 사용자 접속 권한 부여
-GRANT ALL PRIVILEGES ON mydatabase.* TO <사용자명>@<ip> IDENTIFIED BY <비밀번호>; FLUSH PRIVILEGES; 
+`GRANT ALL PRIVILEGES ON mydatabase.* TO <사용자명>@<ip> IDENTIFIED BY <비밀번호>; FLUSH PRIVILEGES;` 
 {: .notice}  
 ```
 

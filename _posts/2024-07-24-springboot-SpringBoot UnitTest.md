@@ -145,3 +145,4 @@ class EdocControllerTest {
   
 # 연결문서
 - [SpringBoot-Project](../../springboot/springboot-SpringBoot-Project)
+- [ObjectMapper](../../java/java-ObjectMapper)

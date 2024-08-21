@@ -18,7 +18,13 @@ last_modified_at: 2023-12-14T08:00:00-10:00:00
 > Spring 3.2 부터  Spring MVC를 모킹하여 웹 어플리케이션 테스트를 지원하는 라이브러리로 Web Application을 배포하지 않고 Spring MVC의 동작을 재현하여 테스트 할 수 있다 
 {: .notice--info}  
 
- 먼저 Mock MVC를 초기화 하는 방법을 살펴보자. Web Application Context를 사용하여 테스트할 경우와 특정 Controller만 테스트 할 때 초기화 하는 방법이 다르다.
+ 먼저 Mock MVC 사용을 위한 의존성을 설정한다.
+  
+```groovy
+testImplementation 'org.springframework:spring-test:5.3.8'
+```
+
+ 다음으로 Mock MVC를 초기화 하는 방법을 살펴보자. Web Application Context를 사용하여 테스트할 경우와 특정 Controller만 테스트 할 때 초기화 하는 방법이 다르다.
 
  **Web Application Context를 사용하여 테스트** 할 경우에는 아래와 같이 초기화 메서드에서 매개변수로 받아와 **MockMVC에 주입**한다.
   
@@ -87,6 +93,12 @@ public static MockHttpServletRequestBuilder delete(String urlTemplate, Object...
 | jsonPath              | body의 특정 값                          |
 | xpath                 |                                     |
 | cookie                |                                     |
+
+ 좀 더 다양한 검증을 위해서 [Hamcrest](../../tdd/tdd-Hamcrest) 라이브러리 의존성을 추가한다.
+  
+```groovy
+testImplementation 'org.hamcrest:hamcrest:2.2'
+```
   
 ```java
 @Test  
@@ -97,6 +109,7 @@ void TestTestController()  {
             .andExpect(jsonPath("$.error").value("false"))  
 	        .andExpect(jsonPath("$.count").value(matchesRegex("\\d+")))
 	        .andExpect(jsonPath("$.datalist").isArray())  
+	        .andExpect(jsonPath("$.datalist", hasSize(greaterThan(0))));
 			.andExpect(jsonPath("$.datalist[*].sequence", everyItem(matchesRegex("\\d+"))))  
 			.andExpect(jsonPath("$.datalist[*].processDateTime", everyItem(matchesRegex("\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}")))) // 예: "2024-07-30 15:00:00"  
 			.andExpect(jsonPath("$.datalist[*].userName", everyItem(matchesRegex("^[\\p{L} ]+$")))); // 이름이 문자와 공백만 포함하도록 정규 표현식 설정
@@ -104,11 +117,18 @@ void TestTestController()  {
 ```
 
  위 예시는 reponse에 대한 Json 파라미터를 하나씩 검증하는 것을 보여준다.
+  
+![image](../../assets/images/JsonPathError.png)
+
+ 위와 같은 json path 에러가 발생한다면, 종속성을 추가해준다.
+  
+```groovy
+implementation 'com.jayway.jsonpath:json-path:2.7.0'
+```
 
 ---
   
 # 연결문서
 - [SpringMVC](../../spring/spring-SpringMVC)
 - [ResultActions](../../spring/spring-ResultActions)
-- https://seongwon.dev/Spring-MVC/20220624-MockMvc%EB%9E%80/
-- https://adjh54.tistory.com/347
+- [Hamcrest](../../tdd/tdd-Hamcrest)

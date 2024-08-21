@@ -22,8 +22,15 @@ last_modified_at: 2024-06-04T08:00:00-10:00:00
  Offline 환경에서는 yum, apt-get 등을 사용할 수 없기 때문에 **외부 PC에서 바이너리 파일을 직접 다운로드 받아 대상 PC에 넣어야 한다**. [다운로드 링크]([https://downloads.mariadb.org/mariadb/](https://downloads.mariadb.org/mariadb/))에서 binary 파일을 다운로드 하자.
   
 ![image](../../assets/images/MariaDBBinaryDownload.png)
- 
- 필자는 10.6.18 버전에 64bit 바이너리 파일을 사용하도록 하겠다. 다운받은 바이너리 압축 파일을 설치할 PC로 이동시키고, **압축을 해제**한다. 필자는 **/home/mariadb**에 압축을 해제했다. 이 경로는 이후에 **MariaDB 설정 파일**과 **서비스 설정 파일**에 사용해야 하니 잘 기억해두도록 하자
+
+ 그리고 그룹과 mysql 계정을 생성한다.
+  
+```bash
+groupadd mysql
+useradd -g mysql mysql 
+```
+
+ 필자는 10.6.18 버전에 64bit 바이너리 파일을 사용하도록 하겠다. 다운받은 바이너리 압축 파일을 설치할 PC로 이동시키고, **압축을 해제**한다. 필자는 **/home/mariadb**에 압축을 해제했다. 이 경로는 이후에 **MariaDB 설정 파일**과 **서비스 설정 파일**에 사용해야 하니 잘 기억 해두도록 하자
   
 ```bash
 //압축 해제
@@ -41,31 +48,24 @@ vi /etc/my.cnf
 ```
 [mysqld] 
 port=3306
-character-set-server=utf8mb4 //인코딩 설정
+character-set-server=utf8mb4
 collation-server=utf8mb4_bin 
-basedir=/home/mariadb/bin //라이브러리 경로 설정
-datadir=/home/data //data 경로 설정
+basedir=/home/mariadb
+datadir=/home/data
 
 [mysqld_safe] 
-log-error=/var/lib/mysql/log/mariadb.log // 로그 경로 지정
-pid-file=/home/mariadb.pid // 프로세스 id 파일 경로 지정
+log-error=/var/lib/mysql/log/mariadb.log
+pid-file=/home/mariadb.pid
 ```
 
  준비가 완료되면 mariadb에서 제공하는 **script로 설치를 진행**한다. 주의해야 할 점은 **mariadb 탑 디렉토리에서 실행**해야 에러 없이 설치 된다. 여기서 **사용자는 관리자 계정명**을 의미한다.
   
 ```bash
 cd /home/mariadb
-./scripts/mysql_install_db --basedir=<mariadb최상위 경로> 
+sh scripts/mysql_install_db --basedir=<mariadb최상위 경로> 
 {: .notice--danger}  
 ```
 
-mysqld 명령어가 입력이 안된다면
-  
-```bash
-sudo apt-get update 
-sudo apt-get install -y mariadb-server
-```
-  
  PC 재기동시에도 MariaDB가 자동으로 실행 될 수 있도록 **서비스로 등록**해야 한다. 먼저 **service 설정파일을 열어 user와 group을 설정**해준다. 여기서 **user**는 **관리자 계정명**이고, **group**은 **linux 계정명**이다.
   
 ```bash
@@ -86,6 +86,7 @@ GROUP=
   
 ```bash
 cp mariadb.service /etc/systemd/system/
+chmod 777 /etc/systemd/system/mariadb.service // 실행 권한 부여
 ```
 
  서비스로 등록이 완료되면, **서비스를 시작하여 MariaDB가 실행되는지 확인**한다.
@@ -123,8 +124,28 @@ mysql -uroot // 접속
 msqladmin -uroot password '패스워드'
 ```
 
+ 접속 단계에서 아래와 같이 에러가 발생할 경우가 있다.
+  
+```bash
+$ mysql -u root -p
+libtinfo.so.5: cannot open shared object file: No such file or directory
+```
+
+ so 파일이 없거나 버전이 불일치하여 발생하는 에러로, 필자는 버전 불일치 문제였다. symbolic link를 사용하여 상위 버전으로 연결해주었다.
+  
+```bash
+$ sudo ln -s /usr/lib64/libncursesw.so.6 /usr/lib64/libncurses.so.5
+$ sudo ln -s /usr/lib64/libncursesw.so.6 /usr/lib64/libtinfo.so.5
+$ sudo ln -s /usr/lib64/libncursesw.so.6 /usr/lib/libncurses.so.5
+$ sudo ln -s /usr/lib64/libncursesw.so.6 /usr/lib/libtinfo.so.5
+```
+
 여기까지 따라왔다면, 이제 MariaDB를 마음껏 사용해보자!
 
 ---
   
 # 연결문서
+
+https://lahuman.github.io/redhat8_mysql_libtinfo.so.5/ -> symlink 
+{: .notice}  
+https://wildeveloperetrain.tistory.com/341 -> 설치

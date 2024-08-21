@@ -36,9 +36,10 @@ if (robotSearchForm.getPageRowCount() > 0){
  각 DB 별로 **null을 처리하는 함수**가 있기때문에 Querydsl도 이에 대응하는 coalesce() 함수가 있다.
   
 ```java
-qCustomer.age.coalesce(0)
+qCustomer.age.coalesce(0).asNumber().sum()
 ```
- 위 예제는 Customer 테이블의 나이 항목이 null일 경우 0을 반환하는 예시이다.
+ 
+ 위 예제는 Customer 테이블의 나이 항목이 null일 경우 0을 아닐 경우 나이를 합산하는 예시이다.
   
 ## from절의 재사용
  from절을 재사용하기 위해서는 JPAQuery 타입으로 쿼리 결과를 반환한다.

@@ -7,7 +7,7 @@ toc_label : "ObjectMapper"
 categories:
 - java
 tags:
-- [java, 미완료]
+- [java]
 last_modified_at: 2024-07-29T08:00:00-10:00:00
 ---
   
@@ -19,6 +19,12 @@ last_modified_at: 2024-07-29T08:00:00-10:00:00
 >
 > Jackson 라이브러리에서 제공하는 Class로, java 객체와 JSON 간 직렬화 및 역직렬화에 사용한다. 
 {: .notice--info}  
+
+ 먼저 Jackson ObjectMapper 사용을 위해서는 프로젝트에 의존성을 추가해야한다.
+  
+```groovy
+implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.3'
+```
   
 ## 주요 메서드
   
@@ -63,7 +69,9 @@ void getEchoUserInfo() throws Exception {
             .andExpect(content().json(requestBody));  
 }
 ```
-  
+
+ 간단하게 API 호출 하나만으로 Object 와 JsonString 간 변환이 가능함을 확인할 수 있다.
+
 ---
   
 # 연결문서
