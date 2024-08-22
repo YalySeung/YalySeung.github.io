@@ -74,12 +74,9 @@ module.exports = {
 ```javascript
 function App() {  
   return (  
-    <>   
-{: .notice}  
-      <h1 className="text-2xl font-thin text-amber-500">Vite + React</h1>   
-{: .notice}  
-    </>   
-{: .notice}  
+    <>  
+      <h1 className="text-2xl font-thin text-amber-500">Vite + React</h1>  
+    </>  
   )  
 }
 ```

@@ -21,8 +21,7 @@ last_modified_at: 2024-04-05T08:00:00-10:00:00
 @AllArgsConstructor  
 @Data  
 @Table(name = "BAT_SCDL")  
-public class BatchJob implements Comparable<BatchJob> {   
-{: .notice}  
+public class BatchJob implements Comparable<BatchJob> {  
     @Id  
     @Column(name = "BAT_TYPE_CD", length = 30, nullable = false)  
     private String batchJobTypeCode;  
