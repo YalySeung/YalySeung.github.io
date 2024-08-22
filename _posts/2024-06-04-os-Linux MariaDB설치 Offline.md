@@ -62,7 +62,8 @@ pid-file=/home/mariadb.pid
   
 ```bash
 cd /home/mariadb
-sh scripts/mysql_install_db --basedir=<mariadb최상위 경로>
+sh scripts/mysql_install_db --basedir=<mariadb최상위 경로> 
+{: .notice--danger}  
 ```
 
  PC 재기동시에도 MariaDB가 자동으로 실행 될 수 있도록 **서비스로 등록**해야 한다. 먼저 **service 설정파일을 열어 user와 group을 설정**해준다. 여기서 **user**는 **관리자 계정명**이고, **group**은 **linux 계정명**이다.
@@ -79,7 +80,7 @@ GROUP=
 > **caution**
 >
 > mariadb.service 파일 내 모든 경로는 내가 다운 받은 binary 파일의 bin 경로를 기준으로 설정해야 한다. 
-{: .notice--danger}  
+{: .notice}  
 
  파일 수정이 완료되었다면 mariadb.service 파일을 system 경로로 복사하여 **linux 서비스로 등록**한다.
   
@@ -145,5 +146,6 @@ $ sudo ln -s /usr/lib64/libncursesw.so.6 /usr/lib/libtinfo.so.5
   
 # 연결문서
 
-https://lahuman.github.io/redhat8_mysql_libtinfo.so.5/ -> symlink
+https://lahuman.github.io/redhat8_mysql_libtinfo.so.5/ -> symlink 
+{: .notice}  
 https://wildeveloperetrain.tistory.com/341 -> 설치

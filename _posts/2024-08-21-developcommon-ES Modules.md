@@ -64,7 +64,8 @@ console.log(multiply(2, 3));  // 6
  한편, 브라우저 환경에서는 import() 함수를 사용하여 **모듈을 비동기로 로드**할 수 있다. 그래서 필요할 때문 모듈을 로드할 수 있게 하여 성능을 향상 시킬 수 있다.
   
 ```java
-import('./math.js').then(math => {
+import('./math.js').then(math => { 
+{: .notice--info}  
     console.log(math.add(2, 3));  // 5
 });
 ```
@@ -72,13 +73,14 @@ import('./math.js').then(math => {
  위 방법 뿐 아니라 대부분의 브라우저와 Node.js 에서 ES 모듈을 기본적으로 지원하기 때문에 script 태그를 이용하여 모듈을 로드 할 수 있다.
   
 ```java
-<script type="module" src="main.js"></script>
+<script type="module" src="main.js"></script> 
+{: .notice}  
 ```
 
 > **caution**
 >
 > Node.js 에서는 파일 확장자가 .mjs 이거나 package.json 에 type:module 로 설정하여 ES 모듈을 인식한다. 
-{: .notice--info}  
+{: .notice}  
 
 ---
   

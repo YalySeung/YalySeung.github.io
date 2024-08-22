@@ -129,30 +129,36 @@ systemctl status nginx
 # ex) 도메인 이름 : test.com
   
 # 1. 디렉토리 생성:
-sudo mkdir -p /var/www/<도메인 이름>/html
+sudo mkdir -p /var/www/<도메인 이름>/html 
+{: .notice}  
   
 # 2. 소유자 설정:
-sudo chown -R $USER:$USER /var/www/<도메인 이름>/html
+sudo chown -R $USER:$USER /var/www/<도메인 이름>/html 
+{: .notice}  
   
 # 3. 권한 설정:
-sudo chmod -R 755 /var/www/<도메인 이름>
+sudo chmod -R 755 /var/www/<도메인 이름> 
+{: .notice}  
   
 # 4. 정적 데이터를 아래 경로로 이동:
   
 # /var/www/도메인 이름/html/
   
 # 5. 서버 블록 생성:
-sudo vi /etc/nginx/sites-available/<도메인 이름>
+sudo vi /etc/nginx/sites-available/<도메인 이름> 
+{: .notice}  
   
 # 아래 내용 입력:
 server {
     listen 80;
     listen [::]:80;
 
-    root /var/www/<도메인 이름>/html;
+    root /var/www/<도메인 이름>/html; 
+{: .notice}  
     index index.html index.htm index.nginx-debian.html;
 
-    server_name <도메인 이름> www.<도메인 이름>;
+    server_name <도메인 이름> www.<도메인 이름>; 
+{: .notice}  
 
     location / {
         try_files $uri $uri/ =404;
@@ -160,7 +166,8 @@ server {
 }
   
 # 6. 심볼릭 링크 생성:
-sudo ln -s /etc/nginx/sites-available/<도메인 이름> /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/<도메인 이름> /etc/nginx/sites-enabled/ 
+{: .notice}  
   
 # 7. nginx.conf 파일 설정:
 sudo vi /etc/nginx/etc/nginx

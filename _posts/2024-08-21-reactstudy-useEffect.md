@@ -30,12 +30,14 @@ last_modified_at: 2024-08-21T08:00:00-10:00:00
 import { useEffect } from 'react';
 
 function MyComponent() {
-    useEffect(() => {
+    useEffect(() => { 
+{: .notice}  
         // 이곳에 부수효과를 처리하는 코드를 작성합니다.
         console.log('컴포넌트가 렌더링되었습니다.');
 
         // 선택적으로 정리(clean-up) 함수를 반환할 수 있습니다.
-        return () => {
+        return () => { 
+{: .notice}  
             console.log('컴포넌트가 언마운트되거나 업데이트되기 직전에 실행됩니다.');
         };
     }, []); // 의존성 배열
@@ -58,17 +60,24 @@ import React, { useState, useEffect } from 'react';
 function DataFetchingComponent() {
     const [data, setData] = useState(null);
 
-    useEffect(() => {
+    useEffect(() => { 
+{: .notice}  
         fetch('https://api.example.com/data')
-            .then(response => response.json())
-            .then(data => setData(data))
-            .catch(error => console.error('Error fetching data:', error));
+            .then(response => response.json()) 
+{: .notice}  
+            .then(data => setData(data)) 
+{: .notice}  
+            .catch(error => console.error('Error fetching data:', error)); 
+{: .notice}  
     }, []); // 빈 배열로 의존성 설정: 한 번만 실행됨
 
     return (
-        <div>
-            {data ? <div>Data: {JSON.stringify(data)}</div> : <div>Loading...</div>}
-        </div>
+        <div> 
+{: .notice}  
+            {data ? <div>Data: {JSON.stringify(data)}</div> : <div>Loading...</div>} 
+{: .notice}  
+        </div> 
+{: .notice}  
     );
 }
 ```
@@ -79,7 +88,8 @@ function DataFetchingComponent() {
 import React, { useEffect } from 'react';
 
 function ResizeComponent() {
-    useEffect(() => {
+    useEffect(() => { 
+{: .notice}  
         function handleResize() {
             console.log('Window resized');
         }
@@ -87,12 +97,14 @@ function ResizeComponent() {
         window.addEventListener('resize', handleResize);
 
         // 정리 함수에서 이벤트 리스너를 제거
-        return () => {
+        return () => { 
+{: .notice}  
             window.removeEventListener('resize', handleResize);
         };
     }, []); // 빈 배열로 의존성 설정: 한 번만 실행되고, 컴포넌트가 언마운트될 때 정리됨
 
-    return <div>Resize the window and check the console!</div>;
+    return <div>Resize the window and check the console!</div>; 
+{: .notice}  
 }
 ```
 
