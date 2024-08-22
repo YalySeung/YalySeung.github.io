@@ -24,15 +24,13 @@ git config --list
 ### 사용자명 변경
   
 ```bash
-git config --global user.name <사용자명> 
-{: .notice}  
+git config --global user.name <사용자명>
 ```
   
 ### 이메일 주소 변경
   
 ```bash
-git config --global user.email <이메일주소> 
-{: .notice}  
+git config --global user.email <이메일주소>
 ```
   
 ### 계정정보 삭제
@@ -46,8 +44,7 @@ git config --unset user.email
   
 ```bash
 git branch -r // 원격 저장소 브랜치 조회
-git push origin --delete <브랜치명> // 원격 저장소 브랜치 삭제 
-{: .notice}  
+git push origin --delete <브랜치명> // 원격 저장소 브랜치 삭제
 
 ```
   

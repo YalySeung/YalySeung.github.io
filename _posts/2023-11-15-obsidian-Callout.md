@@ -55,12 +55,9 @@ last_modified_at: 2023-11-15T08:00:00-10:00:00
   
 ```css
 .callout[data-callout="custom-question-type"] { 
-	--callout-color: <rgb 값으로 된 컬러>; 
-{: .notice--info}  
-	--callout-icon: <lucide icon id>;  
-{: .notice--info}  
-	/*--callout-icon: '<svg>...custom svg...</svg>';*/ 
-{: .notice--info}  
+	--callout-color: <rgb 값으로 된 컬러>;
+	--callout-icon: <lucide icon id>; 
+	/*--callout-icon: '<svg>...custom svg...</svg>';*/
 	}
 ```
   

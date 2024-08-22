@@ -35,8 +35,7 @@ public class APIConfiguration implements WebMvcConfigurer {
 	...
 	
     @Override  
-    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {   
-{: .notice}  
+    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {  
         Gson gson = new GsonBuilder().create();
   
         GsonHttpMessageConverter converter = new GsonHttpMessageConverter(gson);  
@@ -47,12 +46,10 @@ public class APIConfiguration implements WebMvcConfigurer {
   
 ### GsonHttpMessageConverter에 Custom Class 등록
   
-#### 1. JsonSerializer<>를 구현하는 CustomSerializer 추가 
-{: .notice}  
+#### 1. JsonSerializer<>를 구현하는 CustomSerializer 추가
   
 ```java
-public class LocalDateSerializer implements JsonSerializer<LocalDate> {   
-{: .notice}  
+public class LocalDateSerializer implements JsonSerializer<LocalDate> {  
     private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");  
   
     @Override  
@@ -72,8 +69,7 @@ public class APIConfiguration implements WebMvcConfigurer {
 	...
 	
     @Override  
-    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {   
-{: .notice}  
+    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {  
         Gson gson = new GsonBuilder()  
                 .registerTypeAdapter(LocalDate.class, new LocalDateSerializer())  
                 .create();  

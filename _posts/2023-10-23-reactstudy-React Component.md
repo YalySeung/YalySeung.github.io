@@ -25,62 +25,42 @@ export default function App() {
   let content;
   let bmi;
 
-  if (weight === 0) content = <div>계산불가</div>; 
-{: .notice}  
-  else if (height === 0) content = <div>계산불가</div>; 
-{: .notice}  
+  if (weight === 0) content = <div>계산불가</div>;
+  else if (height === 0) content = <div>계산불가</div>;
 
   bmi = weight / (0.01 * 0.01 * height * height);
 
-  if (bmi < 18.5) content = <div>저체중</div>; 
-{: .notice}  
-  else if (bmi >= 18.5 && bmi < 25) content = <div>정상</div>; 
-{: .notice}  
-  else content = <div>과체중</div>; 
-{: .notice}  
+  if (bmi < 18.5) content = <div>저체중</div>;
+  else if (bmi >= 18.5 && bmi < 25) content = <div>정상</div>;
+  else content = <div>과체중</div>;
 
   return (
-    <> 
-{: .notice}  
-      <h1>BMI 계산기</h1> 
-{: .notice}  
-      <div> 
-{: .notice}  
-        <label> 
-{: .notice}  
+    <>
+      <h1>BMI 계산기</h1>
+      <div>
+        <label>
           신장
           <input
             type="number"
-            onChange={(e) => { 
-{: .notice}  
+            onChange={(e) => {
               setHeight(e.target.value);
             }}
-          /> 
-{: .notice}  
-        </label> 
-{: .notice}  
-      </div> 
-{: .notice}  
-      <div> 
-{: .notice}  
-        <label> 
-{: .notice}  
+          />
+        </label>
+      </div>
+      <div>
+        <label>
           체중
           <input
             type="number"
-            onChange={(e) => { 
-{: .notice}  
+            onChange={(e) => {
               setWeight(e.target.value);
             }}
-          /> 
-{: .notice}  
-        </label> 
-{: .notice}  
-      </div> 
-{: .notice}  
+          />
+        </label>
+      </div>
       {content}
-    </> 
-{: .notice}  
+    </>
   );
 }
 ```
@@ -105,12 +85,9 @@ export default function App() {
 ```javascript
 export default function AppFooter(){
     return (
-        <> 
-{: .notice}  
-            <h2>AppFooter</h2> 
-{: .notice}  
-        </> 
-{: .notice}  
+        <>
+            <h2>AppFooter</h2>
+        </>
     )
 }
 ```
@@ -122,14 +99,10 @@ import AppFooter from "./components/AppFooter";
 
 export default function App(){
   return (
-    <> 
-{: .notice}  
-      <h1>App</h1> 
-{: .notice}  
-      <AppFooter/> 
-{: .notice}  
-    </> 
-{: .notice}  
+    <>
+      <h1>App</h1>
+      <AppFooter/>
+    </>
   );
 }
 ```

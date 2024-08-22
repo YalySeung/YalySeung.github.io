@@ -20,20 +20,14 @@ last_modified_at: 2023-10-27T08:00:00-10:00:00
 ## Vue의 SFC
   
 ```javascript
-<script setup>   
-{: .notice}  
-</script>   
-{: .notice}  
+<script setup>  
+</script>  
   
-<template>   
-{: .notice}  
-</template>   
-{: .notice}  
+<template>  
+</template>  
   
-<style scoped>   
-{: .notice}  
-</style> 
-{: .notice}  
+<style scoped>  
+</style>
 ```
   
 ####  script
@@ -50,8 +44,7 @@ last_modified_at: 2023-10-27T08:00:00-10:00:00
 ### 옵션 API 방식
   
 ```javascript
-<script>   
-{: .notice}  
+<script>  
 export default {  
   // data()에서 반환된 속성들은 반응적인 상태가 되어 `this`에 노출됩니다.  
   data() {  
@@ -74,15 +67,13 @@ export default {
     console.log(`숫자 세기의 초기값은 ${this.count} 입니다.`)  
   }  
 }  
-</script> 
-{: .notice}  
+</script>
 ```
   
 ### 컴포지션 API 방식
   
 ```javascript
-<script>   
-{: .notice}  
+<script>  
 import {ref, onMounted} from 'vue'  
   
 // 반응적인 상태의 속성  
@@ -94,12 +85,10 @@ function increment() {
 }  
   
 // 생명 주기 훅  
-onMounted(() => {   
-{: .notice}  
+onMounted(() => {  
   console.log(`숫자 세기의 초기값은 ${count.value} 입니다.`)  
 })  
-</script> 
-{: .notice}  
+</script>
 ```
 ``
 

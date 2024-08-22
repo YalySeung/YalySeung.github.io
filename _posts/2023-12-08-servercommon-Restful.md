@@ -44,17 +44,14 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 - 로드밸런싱, 암호화, 사용자 인증등을 추가하여 구조상의 유연성 제공
   
 ## RESTful 아키텍처
-- URI가 정보의 <span style="color:red">자원</span>을 표현 
-{: .notice--info}  
-- 자원에 대한 <span style="color:red">행위</span>는 [HTTP Method](../../servercommon/servercommon-HTTP-Method) (GET, POST, PUT, DELETE)로 표현 
-{: .notice}  
-- 특정 행위의 <span style="color:red">표현</span>은 body를 이용(XML, JSON) 
-{: .notice}  
+- URI가 정보의 <span style="color:red">자원</span>을 표현
+- 자원에 대한 <span style="color:red">행위</span>는 [HTTP Method](../../servercommon/servercommon-HTTP-Method) (GET, POST, PUT, DELETE)로 표현
+- 특정 행위의 <span style="color:red">표현</span>은 body를 이용(XML, JSON)
 - 리소스 명은 명사를 사용
 > **format**  
 >
 > POST http://localhost/{Collection}/{Document} 
-{: .notice}  
+{: .notice--info}  
 
 ```
 

@@ -17,8 +17,7 @@ last_modified_at: 2023-10-08T08:00:00-10:00:00
 - 스크립트 추가 : Kakao 라이브러리 import
   
 ```html
-<script type="text/JavaScript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0d58a7c4c5ed270a2c5b5ab2fbc4cb1a"></script> 
-{: .notice}  
+<script type="text/JavaScript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0d58a7c4c5ed270a2c5b5ab2fbc4cb1a"></script>
 ```
   
 ## App.js
@@ -27,8 +26,7 @@ last_modified_at: 2023-10-08T08:00:00-10:00:00
 import React, { useEffect } from 'react';
 
 function Kakao() {
-  useEffect(() => { 
-{: .notice}  
+  useEffect(() => {
     const container =document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
     const options = {
       center : new kakao.maps.LatLng(33.450701, 126.570557), //지도의 중심좌표
@@ -43,10 +41,8 @@ function Kakao() {
     id = "map"
     style={{width: "80%",
 		    height: '500px',
-		  }}> 
-{: .notice}  
-	</div> 
-{: .notice}  
+		  }}>
+	</div>
 }
 
 export default Kakao

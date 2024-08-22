@@ -22,8 +22,7 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 > 서버와 브라우저가 비동기 방식으로 데이터를 교환할 수 있는 통신기능 
 {: .notice--info}  
   
-## Conventional Web Model <span style="color:gray">vs</span> Ajax Web Model 
-{: .notice}  
+## Conventional Web Model <span style="color:gray">vs</span> Ajax Web Model
   
 ### Conventional Web Model
   
@@ -96,25 +95,21 @@ $.ajax({
   
 ### fetch API
 - 브라우저 내장 API
-- 가독성이 떨어지는 콜백함수 Syntax 개선 => Promise 방식 사용 
-{: .notice}  
+- 가독성이 떨어지는 콜백함수 Syntax 개선 => Promise 방식 사용
 - 응답으로 Response 객체를 반환한다.
 - 구형 브라우저에서는 미지원
   
 ```javascript
 fetch('url', 설정)
-  .then((response) => response.json()) 
-{: .notice}  
-  .catch((data) => console.log(data)); 
-{: .notice}  
+  .then((response) => response.json())
+  .catch((data) => console.log(data));
   
 ``` 
   
 ### Axios
 - 라이브러리 설치 필요
 - Node.js, React 환경에서 주로 사용
-- 가독성이 떨어지는 콜백함수 Syntax 개선 => Promise 방식 사용 
-{: .notice}  
+- 가독성이 떨어지는 콜백함수 Syntax 개선 => Promise 방식 사용
 - 브라우저 호환성이 뛰어남
 - 자동으로 JSON 포맷 변환 지원
   

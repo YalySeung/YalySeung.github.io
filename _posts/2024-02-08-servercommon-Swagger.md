@@ -51,8 +51,7 @@ compile 'io.springfox:springfox-swagger2:2.9.2'
 public class RpaApiWebMvcConfiguration extends WebMvcConfigurerAdapter {  
 	...  
 	@Override  
-	public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {   
-{: .notice--info}  
+	public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {  
 		converters.addAll(MessageConverterFactory.createMessageConverters());  
 	}
   
@@ -86,15 +85,14 @@ public class RpaApiWebMvcConfiguration extends WebMvcConfigurerAdapter {
 > **tip**
 >
 > configureMessageConverters 함수내의 Converter에 Swagger API Json을 직렬화 할 수 있는 Converter를 추가해야한다. 
-{: .notice}  
+{: .notice--info}  
   
 ```java
 public class MessageConverterFactory {  
   
     /**  
      * Create MessageConverters.     *     * @return {@link HttpMessageConverter} arrays  
-     */    public static List<HttpMessageConverter<?>> createMessageConverters() {   
-{: .notice}  
+     */    public static List<HttpMessageConverter<?>> createMessageConverters() {  
         return Arrays.asList(  
                 createGsonHttpMessageConverter(),  
         );  
@@ -116,8 +114,7 @@ public class MessageConverterFactory {
 }
 
 // 직렬화
-public class GsonSpringfoxJsonSerializer implements JsonSerializer<Json> {   
-{: .notice}  
+public class GsonSpringfoxJsonSerializer implements JsonSerializer<Json> {  
     @Override  
     public JsonElement serialize(Json json, Type type, JsonSerializationContext context) {  
         return JsonParser.parseString(json.value());  
@@ -134,8 +131,7 @@ public class GsonSpringfoxJsonSerializer implements JsonSerializer<Json> {
 - endpoint 정보를 명시
   
 ```java
-@ApiOperation(value = <Method 요약>, notes = <상세설명>) 
-{: .notice}  
+@ApiOperation(value = <Method 요약>, notes = <상세설명>)
 @GetMapping("/user/info")
 @ResponseBody
 public UserDTO getUserList(String userId) {
@@ -153,8 +149,7 @@ public UserDTO getUserList(String userId) {
         @ApiResponse(code = 1400, message = "사용자가 없습니다."),
         @ApiResponse(code = 1401, message = "사용자 정보 조회에 실패했습니다.")    
 })  
-public ResponseEntity<UserResponse> getUserName(   
-{: .notice}  
+public ResponseEntity<UserResponse> getUserName(  
         @ApiParam(value = "사용자 순번")  
         @RequestBody(required = true) @Valid Integer userSequence) {  
     ...

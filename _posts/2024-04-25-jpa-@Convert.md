@@ -25,8 +25,7 @@ last_modified_at: 2024-04-25T08:00:00-10:00:00
   
 ```java
 @Converter(autoApply = true)  
-public class LocalDateAttributeConverter implements AttributeConverter<LocalDate, LocalDateTime> {   
-{: .notice}  
+public class LocalDateAttributeConverter implements AttributeConverter<LocalDate, LocalDateTime> {  
     @Override  
     public LocalDateTime convertToDatabaseColumn(LocalDate localDate) {  
         return localDate != null ? localDate.atStartOfDay() : null;  

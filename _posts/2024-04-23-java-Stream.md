@@ -7,7 +7,7 @@ toc_label : "Stream"
 categories:
 - java
 tags:
-- [java, 미완료]
+- [java]
 last_modified_at: 2024-04-23T08:00:00-10:00:00
 ---
   
@@ -26,21 +26,17 @@ last_modified_at: 2024-04-23T08:00:00-10:00:00
  우선 Stream을 생성하는 방법부터 알아보자. **List에서 가져오기**, **Array에서 가져오기**, **builder로 생성하기**, **generate로 생성하기** 등의 방법이 있다.
   
 ```java
-List<String> userList = Arrays.asList("철수", "영희", "동수"); 
-{: .notice--info}  
-Stream<String> userStream = list.stream(); 
-{: .notice}  
+List<String> userList = Arrays.asList("철수", "영희", "동수");
+Stream<String> userStream = list.stream();
 ```
   
 ```java
 String[] userArray = new String[]{"철수", "영희", "동수"};
-Stream<String> userStream = Arrays.stream(array); 
-{: .notice}  
+Stream<String> userStream = Arrays.stream(array);
 ```
   
 ```java
-String<String> userStream = Stream<String>builder() 
-{: .notice}  
+String<String> userStream = Stream<String>builder()
 						.add("철수")
 						.add("영희")
 						.add("동수")
@@ -49,8 +45,7 @@ String<String> userStream = Stream<String>builder()
   
 ```java
 // 무한한 난수를 생성하는 스트림 생성
-Stream<Integer> randomStream = Stream.generate(() -> new Random().nextInt()); // 무한한 난수 스트림에서 처음 10개의 요소를 출력 
-{: .notice}  
+Stream<Integer> randomStream = Stream.generate(() -> new Random().nextInt()); // 무한한 난수 스트림에서 처음 10개의 요소를 출력
 randomStream.limit(10).forEach(System.out::println);
 ```
  generate() 함수는 일반적으로 **무한한 요소를 생성**하는 Stream을 만들 때 사용한다.
@@ -58,7 +53,7 @@ randomStream.limit(10).forEach(System.out::println);
 > **caution**
 >
 > generate() 메서드는 Supplier를 사용하는데, Supplier 는 상태가 없어야하고, 호출할 때마다 새로운 값을 생성해야한다. 그렇지 않으면 무한루프에 빠질 가능성이 있으므로 주의하자. 
-{: .notice}  
+{: .notice--info}  
   
 ## Stream Method
  Stream을 생성했으니 Stream의 Method에 대해서 알아보자
@@ -78,16 +73,13 @@ randomStream.limit(10).forEach(System.out::println);
  Method를 활용한 예시를 살펴보겠다.
   
 ```java
-Stream<String> numberStream = Stream.iterate(1, n -> n + 1).limit(5); 
-{: .notice}  
-// => {1,2,3,4,5} 
-{: .notice}  
+Stream<String> numberStream = Stream.iterate(1, n -> n + 1).limit(5);
+// => {1,2,3,4,5}
 ```
   
 ```java
 //Item 출력
-Stream<String> numberStream = Stream.foreEach(item -> System.out.println(item); 
-{: .notice}  
+Stream<String> numberStream = Stream.foreEach(item -> System.out.println(item);
 ```
   
 ---

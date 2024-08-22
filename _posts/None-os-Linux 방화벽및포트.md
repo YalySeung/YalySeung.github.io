@@ -20,7 +20,8 @@ udo  날짜 : 2024-05-23 12:05
   
 ```bash
 sudo netstat -tlnp | grep 3306
-sudo ufw allow 3306/tcp
+sudo ufw status // 방화벽 상태 확인
+sudo ufw allow 3306/tcp // 방화벽 열기
 ```
 
  3306 포트가 열려있는지 확인 후 포트를 여는 [CLI](../../cli/cli-CLI)이다.
@@ -35,8 +36,7 @@ sudo iptables -I INPUT -p tcp --dport 3306 -j ACCEPT
  위 [CLI](../../cli/cli-CLI) 는 3306 방화벽을 체크한 후 여는 [CLI](../../cli/cli-CLI)이다.
   
 ```bash
-sudo firewall-cmd --permanent --add-port=<포트번호>/tcp 
-{: .notice}  
+sudo firewall-cmd --permanent --add-port=<포트번호>/tcp
 sudo firewall-cmd --reload
 ```
  firewall-cmd 를 사용하는 방법은 reload 과정이 필요하다.

@@ -35,27 +35,20 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
   
 ## DOM 에서 script의 사용
 - 각 브라우저 별로 DOM 이 구현되어 있다.
-- \<script\> 요소 사용 
-{: .notice}  
+- \<script\> 요소 사용
   
 ```xml
-<head> 
-{: .notice}  
-<title> DOM </title> 
-{: .notice}  
-<script type= "text/javascript"> 
-{: .notice}  
+<head>
+<title> DOM </title>
+<script type= "text/javascript">
 	//script 내용...
-</script> 
-{: .notice}  
-</head> 
-{: .notice}  
+</script>
+</head>
 ```  
 - window 또는 document elements를 위한 API 사용
   
 ```xml
-<body onload="window.alert('welcome to my home page!');"> 
-{: .notice}  
+<body onload="window.alert('welcome to my home page!');">
 ```
   
 ## node

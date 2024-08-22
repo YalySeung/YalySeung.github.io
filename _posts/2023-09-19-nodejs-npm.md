@@ -31,8 +31,7 @@ last_modified_at: 2023-09-19T08:00:00-10:00:00
 - npm start : 미리보기
 - npm run build : 프로젝트 빌드
 - npm install : 패키지 의존성 추가, 종속성 업데이트
-- npm install <package 명>:  외부 라이브러리 설치 
-{: .notice}  
+- npm install <package 명>:  외부 라이브러리 설치
 - npm uninstall package 명 외부 라이브러리 삭제
 - npm ls react : 로드된 react 컴포넌트 리스트 조회
 - npm cache clean --force : 캐시 제거  

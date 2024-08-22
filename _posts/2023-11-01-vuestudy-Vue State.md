@@ -32,11 +32,9 @@ last_modified_at: 2023-11-01T08:00:00-10:00:00
 import { ref, computed } from 'vue'  
 import { defineStore } from 'pinia'  
   
-export const useCounterStore = defineStore('counter', () => {   
-{: .notice}  
+export const useCounterStore = defineStore('counter', () => {  
   const count = ref(0)  
-  const doubleCount = computed(() => count.value * 2)   
-{: .notice}  
+  const doubleCount = computed(() => count.value * 2)  
   function increment() {  
     count.value++  
   }  
@@ -55,11 +53,9 @@ export const useCounterStore = defineStore('counter', () => {
 import { ref, computed } from 'vue'  
 import { defineStore } from 'pinia'  
   
-export const useCounterStore = defineStore('counter', () => {   
-{: .notice}  
+export const useCounterStore = defineStore('counter', () => {  
   const count = ref(0)  
-  const doubleCount = computed(() => count.value * 2)   
-{: .notice}  
+  const doubleCount = computed(() => count.value * 2)  
   function increment() {  
     count.value++  
   }  
@@ -75,8 +71,7 @@ import {useCounterStore} from "@/stores/counter";
 
 counter = useCounterStore()
 
-const increaseCount = () => {   
-{: .notice}  
+const increaseCount = () => {  
   counter.increment();  
 }
 ```
@@ -84,10 +79,8 @@ const increaseCount = () => {
 ###### Componenet 전환시 lazy import
   
 ```javascript
-beforeEnter: (to, from) => {   
-{: .notice}  
-    const userStore = import('../stores/user').then(storeModule => {   
-{: .notice}  
+beforeEnter: (to, from) => {  
+    const userStore = import('../stores/user').then(storeModule => {  
         const store = storeModule.useUserStore()  
         const isLogin = store.isLogin  
         if (!isLogin) {  
@@ -111,8 +104,7 @@ const count = ref(0)
 - 계산된 값
   
 ```javascript
-const doubleCount = computed(() => count.value * 2)   
-{: .notice}  
+const doubleCount = computed(() => count.value * 2)  
 ```
   
 #### actions

@@ -28,8 +28,7 @@ export default function App(){
 - **e.target.value** 값 주로 사용
   
 ```javascript
-<input type="text" value={message} onChange={(e) => setMessage(e.target.value)} /> 
-{: .notice}  
+<input type="text" value={message} onChange={(e) => setMessage(e.target.value)} />
 ```
   
 ### Event 종류
@@ -40,8 +39,7 @@ export default function App(){
 - 클릭 이벤트 발생시, 함수 실행됨
   
 ```javascript
-  <button onClick={() => {setText("짜잔");}}>클릭</button> 
-{: .notice}  
+  <button onClick={() => {setText("짜잔");}}>클릭</button>
 ```
   
 #### Change
@@ -53,10 +51,8 @@ export default function App(){
 	type="text"
 	placeholder="패스워드"
 	value={password}
-	onChange={(e) => setPassword(e.target.value)} 
-{: .notice}  
-/> 
-{: .notice}  
+	onChange={(e) => setPassword(e.target.value)}
+/>
 ```
 
 ---

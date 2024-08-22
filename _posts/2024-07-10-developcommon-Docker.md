@@ -43,17 +43,15 @@ last_modified_at: 2024-07-10T08:00:00-10:00:00
 ## Docker 환경 구축
   
 ### 1. Hyper-V 활성화
- Docker 사용에 필요한 가상화 기술인 Hyper-V를 활성화 해보자. 일단 작업 관리자 > 성능 탭에서 가상화 여부를 확인한다. 사용 안 함으로 되어있을 경우 BIOS에서 사용으로 설정해야 한다. 
-{: .notice--info}  
+ Docker 사용에 필요한 가상화 기술인 Hyper-V를 활성화 해보자. 일단 작업 관리자 > 성능 탭에서 가상화 여부를 확인한다. 사용 안 함으로 되어있을 경우 BIOS에서 사용으로 설정해야 한다.
    
 ![image](../../assets/images/AdministratorVirtualCheck.png)
 
- 그 다음으로 제어판 > 프로그램 설치 및 제거 > Window 기능 켜기/끄기 에서 Hyper-V 기능을 체크한다.  
-{: .notice}  
+ 그 다음으로 제어판 > 프로그램 설치 및 제거 > Window 기능 켜기/끄기 에서 Hyper-V 기능을 체크한다. 
  
 > **caution**
 > 
-{: .notice}  
+{: .notice--info}  
  MS 공식 문서를 보면 Hyper-V 기능은 Windows 10(Enterpirse, Pro, Education)에서 지원한다.
   
 ### 1. Docker 설치
@@ -62,4 +60,4 @@ last_modified_at: 2024-07-10T08:00:00-10:00:00
 ---
   
 # 연결문서
-- [VirtualBox](../../developcommon/developcommon-VirtualBox)
+- [VirtualBox-Ubuntu](../../developcommon/developcommon-VirtualBox-Ubuntu)

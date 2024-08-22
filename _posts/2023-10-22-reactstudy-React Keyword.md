@@ -35,8 +35,7 @@ last_modified_at: 2023-10-22T08:00:00-10:00:00
 ```javascript
 import { useState } from "react";
 ```  
-- 선언 및 초기화 : useState(<초기값>) -> 하나의 배열을 리턴받음 
-{: .notice}  
+- 선언 및 초기화 : useState(<초기값>) -> 하나의 배열을 리턴받음
   
 ```javascript
 const [message, setMessage] = useState("Hello"); //선언 및 초기값 지정
@@ -44,8 +43,7 @@ const [message, setMessage] = useState("Hello"); //선언 및 초기값 지정
 - 값 사용
   
 ```javascript
-<span>{message}</span> 
-{: .notice}  
+<span>{message}</span>
 ```  
 - 값 변경
   
@@ -64,8 +62,7 @@ import { useEffect } from "react";
 - 사용
   
 ```javascript
-  useEffect( () =>{ 
-{: .notice}  
+  useEffect( () =>{
     async function dataFetch() {
       try {
         const response = await axios.get(URL);
@@ -85,3 +82,4 @@ import { useEffect } from "react";
   
 # 연결문서
 - [React-LifeCycle](../../reactstudy/reactstudy-React-LifeCycle)
+- [useEffect](../../reactstudy/reactstudy-useEffect)

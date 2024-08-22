@@ -81,8 +81,7 @@ public class LoggingAspect {
 @RequestMapping("/api/hello")  
 public class HelloController {  
     @GetMapping  
-    public ResponseEntity<String> hello(){   
-{: .notice}  
+    public ResponseEntity<String> hello(){  
         System.out.println("Hello Contoller 로직 수행!");  
         return ResponseEntity.ok("hello");  
     }  

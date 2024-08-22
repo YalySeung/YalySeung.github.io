@@ -64,8 +64,7 @@ app.mount('#app')
 ```javascript
 import {defineStore} from "pinia";  
   
-export const useUserStore = defineStore('user', () =>{   
-{: .notice}  
+export const useUserStore = defineStore('user', () =>{  
   ...
 }, {persist:true})
 ```  

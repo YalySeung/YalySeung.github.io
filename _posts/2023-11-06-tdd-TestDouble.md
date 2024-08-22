@@ -38,8 +38,7 @@ public class PrintWarningDummy implements PrintWarning {
   
 ```java
 public class FakeUserRepository implements UserRepository {
-    private Collection<User> users = new ArrayList<>(); 
-{: .notice}  
+    private Collection<User> users = new ArrayList<>();
     
     @Override
     public void save(User user) {
@@ -76,8 +75,7 @@ public class StubUserRepository implements UserRepository {
 ```java
 public class MailingService {
     private int sendMailCount = 0;
-    private Collection<Mail> mails = new ArrayList<>(); 
-{: .notice}  
+    private Collection<Mail> mails = new ArrayList<>();
 
     public void sendMail(Mail mail) {
         sendMailCount++;

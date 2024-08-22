@@ -17,10 +17,8 @@ last_modified_at: 2024-04-24T08:00:00-10:00:00
  > **JPOQL이란?**  
 > 
 {: .notice--info}  
- > JDO Query Language 
-{: .notice}  
- > JDO 에서 객체를 쿼리하는데 사용하는 질의 언어 
-{: .notice}  
+ > JDO Query Language
+ > JDO 에서 객체를 쿼리하는데 사용하는 질의 언어
   
 ## 특징
 - 객체 지향적인 방식으로 Database에서 객체를 쿼리할 수 있도록 설계됨

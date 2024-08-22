@@ -18,41 +18,28 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 ### CDN link
   
 ```javascript
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
-{: .notice}  
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 ```
   
 ### CDN을 사용한 기본 포맷
   
 ```javascript
-<!DOCTYPE html>   
-{: .notice}  
-<html lang="en">   
-{: .notice}  
+<!DOCTYPE html>  
+<html lang="en">  
   
-<head>   
-{: .notice}  
-    <meta charset="UTF-8">   
-{: .notice}  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-{: .notice}  
-    <title>Document</title>   
-{: .notice}  
-</head>   
-{: .notice}  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Document</title>  
+</head>  
   
-<body>   
-{: .notice}  
-<div id="app">   
-{: .notice}  
+<body>  
+<div id="app">  
     //UI 정의
-</div>   
-{: .notice}  
+</div>  
   
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>   
-{: .notice}  
-<script>   
-{: .notice}  
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>  
+<script>  
     const {createApp, ref} = Vue  
     const app = createApp({  
         setup() {  
@@ -63,35 +50,24 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
         }  
     })  
     app.mount("#app")  
-</script>   
-{: .notice}  
-</body>   
-{: .notice}  
+</script>  
+</body>  
   
-</html> 
-{: .notice}  
+</html>
 ```
   
 ### Sample
   
 ```javascript
-<body> 
-{: .notice}  
-    <div id="app"> 
-{: .notice}  
-        <h1>{{message}}</h1> 
-{: .notice}  
-        <button @click="count++"> 
-{: .notice}  
+<body>
+    <div id="app">
+        <h1>{{message}}</h1>
+        <button @click="count++">
             Count is : {{count}}
-        </button> 
-{: .notice}  
-    </div> 
-{: .notice}  
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
-{: .notice}  
-    <script> 
-{: .notice}  
+        </button>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
         const { createApp, ref } = Vue
         const app = createApp({ 
             setup() {
@@ -104,10 +80,8 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
             }
         })
         app.mount('#app')
-    </script> 
-{: .notice}  
-</body> 
-{: .notice}  
+    </script>
+</body>
 ```  
 -  Vue 객체에서 구조분해 할당 가져오기
   
@@ -148,11 +122,9 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 #### Object를 binding 하는 방법
   
 ```javascript
-	<div :class="{active : isActive}">Text</div> 
-{: .notice}  
+	<div :class="{active : isActive}">Text</div>
 	
-    <script> 
-{: .notice}  
+    <script>
         const { createApp, ref } = Vue
 
         const app = createApp({
@@ -169,18 +141,15 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
             }
         })
         app.mount("#app")
-    </script> 
-{: .notice}  
+    </script>
 ```
   
 ##### Array를 binding 하는 방법
   
 ```javascript
-	<div :class="[activeClass, infoClass]">Text</div> 
-{: .notice}  
+	<div :class="[activeClass, infoClass]">Text</div>
     
-    <script> 
-{: .notice}  
+    <script>
         const { createApp, ref } = Vue
 
         const app = createApp({
@@ -197,8 +166,7 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
             }
         })
         app.mount("#app")
-    </script> 
-{: .notice}  
+    </script>
 ```
   
 ### Handler
@@ -206,10 +174,8 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 #### Inline
   
 ```javascript
-	<button @click="greetings('Hello')">바꾸자</button> 
-{: .notice}  
-	<script> 
-{: .notice}  
+	<button @click="greetings('Hello')">바꾸자</button>
+	<script>
 		const { createApp, ref } = Vue
 		const app = createApp({
 			setup() {
@@ -232,22 +198,17 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 			}
 		})
 		app.mount("#app")
-	</script> 
-{: .notice}  
+	</script>
 ```
   
 #### Method
   
 ```javascript
-	<div id="app"> 
-{: .notice}  
+	<div id="app">
 		{{count}}
-		<button @click="increaseNum">+</button> 
-{: .notice}  
-	</div> 
-{: .notice}  
-	<script> 
-{: .notice}  
+		<button @click="increaseNum">+</button>
+	</div>
+	<script>
 		const { createApp, ref } = Vue
 		const app = createApp({
 			setup() {
@@ -264,8 +225,7 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 			}
 		})
 		app.mount("#app")
-	</script> 
-{: .notice}  
+	</script>
 ```
   
 ---

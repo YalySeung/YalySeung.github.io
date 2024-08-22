@@ -23,8 +23,7 @@ ifconfig
   
 ![image](../../assets/images/ifconfig%202.png)
 
- 위와 같이 명령어를 입력하면 장치명과 ip주소를 확인할 수 있다. **설정파일 명**은 **ifcfg-<장치명>** 의 포맷이니 한번 열어보자. 
-{: .notice}  
+ 위와 같이 명령어를 입력하면 장치명과 ip주소를 확인할 수 있다. **설정파일 명**은 **ifcfg-<장치명>** 의 포맷이니 한번 열어보자.
   
 ![image](../../assets/images/LinuxNetworkConfig.png)
 

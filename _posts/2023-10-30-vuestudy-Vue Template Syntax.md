@@ -18,8 +18,7 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 ### Text Interpolation
   
 ```javascript
-<p>{{message}}</p> 
-{: .notice}  
+<p>{{message}}</p>
 ```  
 - ref값을 동적 텍스트로 렌더링 하는 방법
 - 이중괄호 문법 또는 콧수염 구문이라고도 한다.
@@ -27,8 +26,7 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 - 주로 텍스트 삽입시에만 사용한다.
   
 ```javascript
-<h1>{{ message.split('').reverse().join('') }}</h1> 
-{: .notice}  
+<h1>{{ message.split('').reverse().join('') }}</h1>
 ```
   
 ### HTML 출력
@@ -36,8 +34,7 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 - 실제 html 출력을 위해서는 [v-html](../../vuestudy/vuestudy-Vue-Directive#v-html) Directive를 사용해야 한다.
   
 ```javascript
-<p>v-html 디렉티브 사용: <span v-html="rawHtml"></span></p> 
-{: .notice}  
+<p>v-html 디렉티브 사용: <span v-html="rawHtml"></span></p>
 ```
   
 ### Binding
@@ -46,8 +43,7 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 - 속성의 표시 여부를 Boolean 속성의 변수로 분기
   
 ```javascript
-<button :disabled="isButtonDisabled">버튼</button> 
-{: .notice}  
+<button :disabled="isButtonDisabled">버튼</button>
 ```
   
 #### Object Binding
@@ -56,8 +52,7 @@ last_modified_at: 2023-10-30T08:00:00-10:00:00
 ```javascript
 const classObject = reactive({ active: true, 'text-danger': false })
 
-<div :class="classObject"></div> 
-{: .notice}  
+<div :class="classObject"></div>
 ```  
 - ex2)
   
@@ -65,14 +60,12 @@ const classObject = reactive({ active: true, 'text-danger': false })
 const isActive = ref(true)  
 const error = ref(null)  
   
-const classObject = computed(() => ({   
-{: .notice}  
+const classObject = computed(() => ({  
   active: isActive.value && !error.value,  
   'text-danger': error.value && error.value.type === 'fatal'  
 }))
 
-<div :class="classObject"></div> 
-{: .notice}  
+<div :class="classObject"></div>
 ```
   
 #### Array Binding
@@ -81,8 +74,7 @@ const classObject = computed(() => ({
 const activeClass = ref('active')
 const errorClass = ref('text-danger')
 
-<div :class="[activeClass, errorClass]"></div> 
-{: .notice}  
+<div :class="[activeClass, errorClass]"></div>
 ```
   
 ### javascript 표현식 사용
@@ -96,8 +88,7 @@ const errorClass = ref('text-danger')
 {{ number + 1 }}  
 {{ ok ? '예' : '아니오' }}  
 {{ message.split('').reverse().join('') }}  
-<div :id="`list-${id}`"></div> 
-{: .notice}  
+<div :id="`list-${id}`"></div>
 {{ formatDate(date) }}
 ```
   

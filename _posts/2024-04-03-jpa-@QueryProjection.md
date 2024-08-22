@@ -70,8 +70,7 @@ public class ApiServer {
 - DTO와 Entity 필드명이 일치해야함
   
 ```java
-public List<GroupUserInfo> selectMoveGroupList(GroupMoveSearchForm groupMoveSearchForm) {   
-{: .notice}  
+public List<GroupUserInfo> selectMoveGroupList(GroupMoveSearchForm groupMoveSearchForm) {  
     return queryFactory.select(  
                     Projections.fields(  
                             GroupUserInfo.class,  
@@ -129,8 +128,7 @@ public class CommonVariableList extends CommonVariable{
   
 ```java
 @Override  
-public List<CommonVariableList> selectAll() {   
-{: .notice}  
+public List<CommonVariableList> selectAll() {  
     return queryFactory.select(Projections.constructor(CommonVariableList.class,  
                     qCommonVariable,  
                     new CaseBuilder().when(qCommonVariable.useYn.eq("Y"))  

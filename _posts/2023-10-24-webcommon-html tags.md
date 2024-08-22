@@ -17,50 +17,37 @@ last_modified_at: 2023-10-24T08:00:00-10:00:00
 - 헤드라인을 구성할 때 사용
   
 ```html
-<h1>h1입니다.</h1> 
-{: .notice}  
-<h2>h2입니다.</h2> 
-{: .notice}  
-<h3>h3입니다.</h3> 
-{: .notice}  
-<h4>h4입니다.</h4> 
-{: .notice}  
-<h5>h5입니다.</h5> 
-{: .notice}  
-<h6>h6입니다.</h6> 
-{: .notice}  
+<h1>h1입니다.</h1>
+<h2>h2입니다.</h2>
+<h3>h3입니다.</h3>
+<h4>h4입니다.</h4>
+<h5>h5입니다.</h5>
+<h6>h6입니다.</h6>
 ```
   
 ### p
 - Paragraph(문단)
   
 ```html
-<p>Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.</p> 
-{: .notice}  
+<p>Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.</p>
 ```
   
 ### br
 - break(줄바꿈)
   
 ```html
-<p> O’er all the hilltops<br> 
-{: .notice}  
-    Is quiet now,<br> 
-{: .notice}  
-</p> 
-{: .notice}  
+<p> O’er all the hilltops<br>
+    Is quiet now,<br>
+</p>
 ```
   
 ### hr
 - horizontal rule(가로선)
   
 ```html
-<p>1: The first rule of Fight Club is: You do not talk about Fight Club.</p> 
-{: .notice}  
-<hr> 
-{: .notice}  
-<p>2: The second rule of Fight Club is: Always bring cupcakes.</p> 
-{: .notice}  
+<p>1: The first rule of Fight Club is: You do not talk about Fight Club.</p>
+<hr>
+<p>2: The second rule of Fight Club is: Always bring cupcakes.</p>
 ```
   
 ### li
@@ -70,36 +57,27 @@ last_modified_at: 2023-10-24T08:00:00-10:00:00
 - ordered list
   
 ```html
-<ol> 
-{: .notice}  
-  <li>목록 1</li> 
-{: .notice}  
-  <li>목록 2</li> 
-{: .notice}  
-</ol> 
-{: .notice}  
+<ol>
+  <li>목록 1</li>
+  <li>목록 2</li>
+</ol>
 ```
   
 #### ul
 - unordered list
   
 ```html
-<ul> 
-{: .notice}  
-  <li>목록 1</li> 
-{: .notice}  
-  <li>목록 2</li> 
-{: .notice}  
-</ul> 
-{: .notice}  
+<ul>
+  <li>목록 1</li>
+  <li>목록 2</li>
+</ul>
 ```
   
 ### img
 - image
   
 ```html
-<img src="이미지 파일 경로" alt="대체용 텍스트"> 
-{: .notice}  
+<img src="이미지 파일 경로" alt="대체용 텍스트">
 ```
   
 ### a
@@ -107,8 +85,7 @@ last_modified_at: 2023-10-24T08:00:00-10:00:00
 - 다른 콘텐츠와 연결되는 하이퍼 링크 또는 링크
   
 ```html
-<p><a href="~">표시 텍스트</a></p> 
-{: .notice}  
+<p><a href="~">표시 텍스트</a></p>
 ```
   
 ### div

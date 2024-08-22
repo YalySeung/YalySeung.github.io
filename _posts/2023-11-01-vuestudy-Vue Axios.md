@@ -55,24 +55,20 @@ export default instance;
   
 ```javascript
 instance.interceptors.request.use(  
-    (config) => {   
-{: .notice}  
+    (config) => {  
         console.log('axios.js request : ' , config);  
         return config  
     },  
-    (error) => {   
-{: .notice}  
+    (error) => {  
         return Promise.reject(error);  
     }  
 );  
 instance.interceptors.response.use(  
-    (res) => {   
-{: .notice}  
+    (res) => {  
         console.log('axios.js response : ' , res);  
         return res  
     },  
-    (error) => {   
-{: .notice}  
+    (error) => {  
         return Promise.reject(error);  
     }  
 )  
@@ -86,12 +82,10 @@ import {useWelcomeMessageStore} from "@/stores/welcomeMessageStore"
   
 const message = useWelcomeMessageStore();  
   
-const onClick = async()=> {   
-{: .notice}  
+const onClick = async()=> {  
   try{  
     await axios.get('/api/hello')  
-        .then((response)=>{   
-{: .notice}  
+        .then((response)=>{  
           console.log('data : ' + response.data)  
           message.setWelcomeMessage(response.data)  
         })  

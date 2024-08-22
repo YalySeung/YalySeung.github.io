@@ -20,8 +20,7 @@ last_modified_at: 2024-06-07T08:00:00-10:00:00
   **Files.walk(Path)**는 기본적으로 하위의 **모든 개체를 탐색**하며, **Files.walk(Path, depth)**는 **depth 깊이만큼 만 탐색**한다. Files.walk는 Stream을 반환하기 때문에 filter, map 등을 사용하여 원하는 데이터를 추출하고, collect 하면 된다.
   
 ```java
-List<Path> dirList = Files.walk(Paths.get(folderPath), 2)   
-{: .notice}  
+List<Path> dirList = Files.walk(Paths.get(folderPath), 2)  
         .filter(Files::isDirectory)  
         .collect(Collectors.toList());
 ```

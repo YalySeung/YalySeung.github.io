@@ -22,15 +22,14 @@ last_modified_at: 2024-04-03T08:00:00-10:00:00
   
 ```java
 @Repository  
-public interface UserRepository extends JpaRepository<User, Integer>, CustomUserRepository{   
-{: .notice--primary}  
+public interface UserRepository extends JpaRepository<User, Integer>, CustomUserRepository{  
 }
 ```
 
 > **tip**
 >
 > @ComponentScan Annotation으로 Scan 해주어야 해당 Bean이 Conatainer에 등록됨 
-{: .notice}  
+{: .notice--primary}  
 
 ---
   

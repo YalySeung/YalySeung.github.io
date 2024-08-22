@@ -29,23 +29,18 @@ last_modified_at: 2023-10-27T08:00:00-10:00:00
 - Child : camelCase 사용
   
 ```javascript
-<script setup>   
-{: .notice}  
+<script setup>  
 	import {ref} from "vue"  
 	
 	defineProps(['myMsg'])  
-</script> 
-{: .notice}  
+</script>
 ```  
 - Parent : kebab-case  사용
   
 ```javascript
-<template>   
-{: .notice}  
-  <Child my-msg="message"/>   
-{: .notice}  
-</template> 
-{: .notice}  
+<template>  
+  <Child my-msg="message"/>  
+</template>
 ```
   
 ```javascript
@@ -63,34 +58,25 @@ last_modified_at: 2023-10-27T08:00:00-10:00:00
 #### 콜벡함수 정의
   
 ```javascript
-<template>   
-{: .notice}  
-  <Child @some-event="callback"/>   
-{: .notice}  
-</template>   
-{: .notice}  
+<template>  
+  <Child @some-event="callback"/>  
+</template>  
   
-<script setup>   
-{: .notice}  
+<script setup>  
 import Child from "./Child.vue"  
 
-const callback = () => {   
-{: .notice}  
+const callback = () => {  
   alert("이벤트 발생!!")  
 }  
-</script> 
-{: .notice}  
+</script>
 ```
   
 #### 콜벡 호출
   
 ```javascript
-<template>   
-{: .notice}  
-  <button @click="$emit('someEvent')">emit</button>   
-{: .notice}  
-</template> 
-{: .notice}  
+<template>  
+  <button @click="$emit('someEvent')">emit</button>  
+</template>
 ```
   
 #### defindEmits
@@ -102,16 +88,14 @@ const emit = defineEmits(['updateNameToParent'])
 - 콜백 함수 호출
   
 ```javascript
-const onUpdateName = (name) => {   
-{: .notice}  
+const onUpdateName = (name) => {  
   emit('updateNameToParent', name)  
 }
 ```  
 - 콜백함수 연결
   
 ```javascript
-<Child @update-name-to-parent="changeName"/> 
-{: .notice}  
+<Child @update-name-to-parent="changeName"/>
 ```  
 ---
   

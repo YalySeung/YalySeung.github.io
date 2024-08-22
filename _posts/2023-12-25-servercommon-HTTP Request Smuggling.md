@@ -36,14 +36,13 @@ Host: samplehost.com
 Content-Type: application/x-www-form-urlencoded 
 Content-Length: 11 
 
-<11자리의 Data><Smuggling 공격을 할 Data> 
-{: .notice--info}  
+<11자리의 Data><Smuggling 공격을 할 Data>
 ```
 
 > **note**
 >
 > 여기서 주목해야 할 점은 Header에 명시된 Content  이외에 Smuggling 공격에 사용할 data를 Body에 포함시켰다는 것이다. 
-{: .notice}  
+{: .notice--info}  
 
 ---
   

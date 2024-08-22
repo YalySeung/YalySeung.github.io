@@ -47,8 +47,7 @@ Live Template 기능을 사용하는 방법은 아래와 같다.
   
 ### AnnotationProcessor
 AnnotationProcessor는 [Compile](../../developcommon/developcommon-Compile) 타임에 특정 라이브러리에서 사용하는 Annotation을 스캔하여 [Boiler Plate](../../cleancode/cleancode-Boiler-Plate)를 생성한다. AnnotationProcessor를 사용하는 라이브러리는 대표적으로 [Lombok](../../spring/spring-Lombok), [Querydsl](../../jpa/jpa-Querydsl) 이 있다. Intellij에서 AnnotationProcessor를 활성화 하는 방법은 아래와 같다.
-1. Settings > AnnotationProcessor 메뉴 선택 
-{: .notice}  
+1. Settings > AnnotationProcessor 메뉴 선택
 2. [AnnotationProcessor](../../spring/spring-AnnotationProcessor) 활성화
   
 ![image](../../assets/images/AnnotationProcessor.png)
@@ -57,10 +56,8 @@ AnnotationProcessor는 [Compile](../../developcommon/developcommon-Compile) 타�
 Git Commit 전에 Remote fetch를 해서 Commit 안한 로컬 변경 파일들이 모두 날아갔다.. 우리 IntetlliJ에게는 히스토리 관리하는 기능이 분명이 있을것이라고 확신하고 구글링하여 모두 복구 완료했다. 지워진 파일 복구 방법은 아래와 같다.
   
 ![image](../../assets/images/LocalHistoryRevert.png)
-1. 프로젝트 **탐색기에서 되돌리고 싶은 폴더를 찾아 우클릭** > LocalHistory > Show History 항목으로 이동한다. 
-{: .notice}  
-2. 윈도우가 팝업되고, 좌측 리스트에 시간대별 파일 스냅샷이 저장되어있다. 되돌리고싶은 시점의 항목에서 우클릭 > Revert 를 선택한다. 
-{: .notice}  
+1. 프로젝트 **탐색기에서 되돌리고 싶은 폴더를 찾아 우클릭** > LocalHistory > Show History 항목으로 이동한다.
+2. 윈도우가 팝업되고, 좌측 리스트에 시간대별 파일 스냅샷이 저장되어있다. 되돌리고싶은 시점의 항목에서 우클릭 > Revert 를 선택한다.
 
 복구완료!
 

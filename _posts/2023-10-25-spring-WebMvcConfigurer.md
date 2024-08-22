@@ -91,8 +91,7 @@ public void addResourceHandlers(ResourceHandlerRegistry registry) {
   
 ```java
 @Override  
-public void extendHandlerExceptionResolvers(List<HandlerExceptionResolver> resolvers) {   
-{: .notice}  
+public void extendHandlerExceptionResolvers(List<HandlerExceptionResolver> resolvers) {  
     resolvers.add(new MyHandlerExceptionResolver());  
 }
 ```
@@ -102,8 +101,7 @@ public void extendHandlerExceptionResolvers(List<HandlerExceptionResolver> resol
   
 ```java
 @Override
-public void extendMessageConverters(List<HttpMessageConverter<?>> converters) { 
-{: .notice}  
+public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
     converters.add(new MyCustomMessageConverter());
 }
 ```
