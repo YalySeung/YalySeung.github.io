@@ -17,16 +17,14 @@ last_modified_at: 2024-05-10T08:00:00-10:00:00
 **JPAQuery** 를 사용하여 limit, offset 을 적용하기 전 쿼리를 선언하고, 원하는 조건에 따라 limit, offset 을 적용한다.
   
 ```java
-JPAQuery<RobotList> query = queryFactory.select(qRobot)   
-{: .notice}  
+JPAQuery<RobotList> query = queryFactory.select(qRobot)  
         .from(qRobot)  
         .leftJoin(qWork)  
         .on(qRobot.lastExecuteWorkSequence.eq(qWork.workSequence))  
         .where(getWhereClause(robotSearchForm))  
         .orderBy(getOrderSpecifier(robotSearchForm.getSortKey(), robotSearchForm.getSortOrder()));  
   
-if (robotSearchForm.getPageRowCount() > 0){   
-{: .notice}  
+if (robotSearchForm.getPageRowCount() > 0){  
         query.offset(robotSearchForm.getStartRowNo2())  
         .limit(robotSearchForm.getEndRowNo());  
 }
@@ -45,10 +43,8 @@ qCustomer.age.coalesce(0).asNumber().sum()
  from절을 재사용하기 위해서는 JPAQuery 타입으로 쿼리 결과를 반환한다.
   
 ```java
-private JPAQuery<?> getNewFromClauseWorkExecutionList(String summaryType){   
-{: .notice}  
-    JPAQuery<?> fromQuery = queryFactory   
-{: .notice}  
+private JPAQuery<?> getNewFromClauseWorkExecutionList(String summaryType){  
+    JPAQuery<?> fromQuery = queryFactory  
             .from(qTaskResultView)  
             .leftJoin(qTaskProcess)  
             .on(qTaskProcess.taskQueueSequence.eq(qTaskResultView.taskQueueSequence))  
@@ -67,10 +63,8 @@ private JPAQuery<?> getNewFromClauseWorkExecutionList(String summaryType){
  Expression Array 타입으로 반환하면 재사용이 가능하다.
   
 ```java
-private Expression<?>[] getWorkExecutionListGroupByClause(WorkExecutionResultSearchForm workExecutionResultSearchForm) {   
-{: .notice}  
-    List<Expression<?>> groupbyExpression = new ArrayList<>();   
-{: .notice}  
+private Expression<?>[] getWorkExecutionListGroupByClause(WorkExecutionResultSearchForm workExecutionResultSearchForm) {  
+    List<Expression<?>> groupbyExpression = new ArrayList<>();  
     groupbyExpression.add(qWork.workSequence);  
     groupbyExpression.add(qWork.workName);  
     groupbyExpression.add(qTaskResultView.groupSequence);  
@@ -83,8 +77,7 @@ private Expression<?>[] getWorkExecutionListGroupByClause(WorkExecutionResultSea
         groupbyExpression.add(qTaskResultView.endDateTime == null ? qTaskResultView.lastExecuteDateTime : qTaskResultView.endDateTime);  
     }  
   
-    return groupbyExpression.toArray(new Expression<?>[0]);   
-{: .notice}  
+    return groupbyExpression.toArray(new Expression<?>[0]);  
 }
 ```
   

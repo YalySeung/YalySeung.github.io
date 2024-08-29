@@ -36,8 +36,7 @@ yarn --version
 ### yarn 버전 변경
   
 ```bash
-yarn set version <버전정보> 
-{: .notice--info}  
+yarn set version <버전정보>
 yarn set version latest
 yarn set version 3.x.x
 ```
@@ -90,7 +89,7 @@ yarn remove [package]
 > **memo**
 >
 > yarn.lock 파일은 설치된 모듈의 버전을 저장해 어디서나 같은 버전과 구소의 의존성을 가지게 함. yarn.install 할때마다 yarn.lock 파일이 생성되며, package-lock.json 파일과 같은 역할을 함 
-{: .notice}  
+{: .notice--info}  
 
 ---
   

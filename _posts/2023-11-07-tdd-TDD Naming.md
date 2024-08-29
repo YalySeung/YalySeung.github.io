@@ -33,8 +33,7 @@ withdrawMoney_ThrowsException_IfAccountIsInvalid(){}
 admitStudent_FailToAdmit_IfMandatoryFieldsAreMissing(){}
 ```
   
-## test\<테스트할 기능\> 
-{: .notice}  
+## test\<테스트할 기능\>
   테스트할 기능 앞에 test를 붙이는 Naming 방법으로 **코드의 악취를 방지**할 수 있지만, UnitTest가 문서화 됐을 경우에만 사용을 권장한다.
   
 ```java
@@ -43,10 +42,8 @@ testFailToWithdrawMoneyIfAccountIsInvalid(){}
 testStudentIsNotAdmittedIfMandatoryFieldsAreMissing(){}
 ```
   
-## <테스트할 기능> 
-{: .notice}  
- [test <테스트할 기능 >](#test-테스트할-기능-) 과 장단점이 동일하다. 
-{: .notice}  
+## <테스트할 기능>
+ [test <테스트할 기능 >](#test-테스트할-기능-) 과 장단점이 동일하다.
   
 ```java
 IsNotAnAdultIfAgeLessThan18(){}

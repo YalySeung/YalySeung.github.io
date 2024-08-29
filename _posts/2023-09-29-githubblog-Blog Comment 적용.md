@@ -19,8 +19,7 @@ last_modified_at: 2023-09-29T08:00:00-10:00:00
   - OpenSource
   - 광고가 없고 무료!
   - 여러가지 테마 지원
-  - <span style="color:red">깃허브 계정을 사용하여 댓글 추가</span> 
-{: .notice}  
+  - <span style="color:red">깃허브 계정을 사용하여 댓글 추가</span>
 
 ---
   
@@ -33,12 +32,10 @@ last_modified_at: 2023-09-29T08:00:00-10:00:00
 ![image](../../assets/images/UtteranceNewRepository.png){: width="70%" height="70%"}
   
 ### Step2 : utterance 설치
-- <https://github.com/apps/utterances> 링크로 이동하여 설치를 진행한다. 
-{: .notice}  
+- <https://github.com/apps/utterances> 링크로 이동하여 설치를 진행한다.
   
 ### Step3 : 블로그에 반영할 script 코드 얻어오기
-- <https://utteranc.es/> 링크로 이동한다. 
-{: .notice}  
+- <https://utteranc.es/> 링크로 이동한다.
       
 ![image](../../assets/images/UtteranceGetScriptCode.png)- 붉은색 영역을 모두 작성하면 파란색 영역의 script 코드가 생성된다.
   
@@ -46,8 +43,7 @@ last_modified_at: 2023-09-29T08:00:00-10:00:00
 - Minimal Mistake를 사용하지 않는 경우에는 scipt 코드를 그대로 블로그 페이지에 복사하여 적용한다.
 - Minimal Mistake 사용자는 _config.yml 파일에 다음 부분을 수정한다.
   
-![image](../../assets/images/UtteranceConfigyml.png)- Minimal Mistake를 사용하는 경우에는 댓글 가로 영역이 좁게 보일 수 있다. -> _page.scss 파일에 아래와 같이 추가한다.   
-{: .notice}  
+![image](../../assets/images/UtteranceConfigyml.png)- Minimal Mistake를 사용하는 경우에는 댓글 가로 영역이 좁게 보일 수 있다. -> _page.scss 파일에 아래와 같이 추가한다.  
   
 ![image](../../assets/images/UtteranceSetWidth.png)- 변경사항을 Push 한다.
   

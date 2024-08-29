@@ -19,8 +19,7 @@ last_modified_at: 2023-10-24T08:00:00-10:00:00
   
 ```javascript
   <button
-	onClick={async () => { 
-{: .notice}  
+	onClick={async () => {
 	  try{
 		const response = await axios.get(URL);
 		setData(response.data);
@@ -33,8 +32,7 @@ last_modified_at: 2023-10-24T08:00:00-10:00:00
 > 
 {: .notice}  
 	데이터패치
-  </button> 
-{: .notice}  
+  </button>
 
 ```
 

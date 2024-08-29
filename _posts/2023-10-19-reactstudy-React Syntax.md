@@ -19,12 +19,9 @@ last_modified_at: 2023-10-19T08:00:00-10:00:00
 export default function App(){
   const [message, setMessage] = useState("Hello");
   return (
-    <> 
-{: .notice}  
-      <p>message : {message}</p> 
-{: .notice}  
-    </> 
-{: .notice}  
+    <>
+      <p>message : {message}</p>
+    </>
   )
 }
 ```
@@ -44,8 +41,7 @@ console.log(`이름은 ${myName} 입니다`);
   
 ```javascript 
 const ages = [30,40,5];
-const newAges = ages.map((age) => age + 1); 
-{: .notice}  
+const newAges = ages.map((age) => age + 1);
 
 console.log(ages);
 console.log(newAges);
@@ -65,10 +61,8 @@ const infos = [
   { name: "박종식", age: 58, family: ["아들", "딸", "손자"] },
 ];
 
-infos.filter((person) => { 
-{: .notice}  
-	 return person.age > 25); 
-{: .notice}  
+infos.filter((person) => {
+	 return person.age > 25);
 	});
 ```
   
@@ -95,22 +89,17 @@ export default function App() {
   let content;
 
   if(isActive){
-    content = <div>짠</div>; 
-{: .notice}  
+    content = <div>짠</div>;
   }
   else{
-    content = <div>안보임</div>; 
-{: .notice}  
+    content = <div>안보임</div>;
   }
 
   return (
-    <> 
-{: .notice}  
-      <button onClick={() => setIsActive(!isActive)}>토글 버튼</button> 
-{: .notice}  
+    <>
+      <button onClick={() => setIsActive(!isActive)}>토글 버튼</button>
       {content}
-    </> 
-{: .notice}  
+    </>
   );
 }
 ```
@@ -122,14 +111,10 @@ export default function App() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <> 
-{: .notice}  
-      <button onClick={() => setIsActive(!isActive)}>토글 버튼</button> 
-{: .notice}  
-      {isActive ? <div>짠</div> : <div>안보임</div>} 
-{: .notice}  
-    </> 
-{: .notice}  
+    <>
+      <button onClick={() => setIsActive(!isActive)}>토글 버튼</button>
+      {isActive ? <div>짠</div> : <div>안보임</div>}
+    </>
   );
 }
 ```
@@ -144,14 +129,10 @@ export default function App() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <> 
-{: .notice}  
-      <button onClick={() => setIsActive(!isActive)}>토글 버튼</button> 
-{: .notice}  
-      {isActive && <div>짠</div>} 
-{: .notice}  
-    </> 
-{: .notice}  
+    <>
+      <button onClick={() => setIsActive(!isActive)}>토글 버튼</button>
+      {isActive && <div>짠</div>}
+    </>
   );
 }
 ```  

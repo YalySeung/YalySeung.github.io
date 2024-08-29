@@ -26,8 +26,7 @@ last_modified_at: 2023-10-23T08:00:00-10:00:00
 - 자식 컴포넌트에 전달
   
 ```javascript
-<AppChild name={name} age={age}/> 
-{: .notice}  
+<AppChild name={name} age={age}/>
 ```  
 - 자식 컴포넌트에서 사용
   
@@ -39,14 +38,12 @@ export default function AppChild({ name, age })
 - setState 내리기
   
 ```javascript
-<AppChild name={name} age={age} onChangeName={(newName) => setName(newName)}/> 
-{: .notice}  
+<AppChild name={name} age={age} onChangeName={(newName) => setName(newName)}/>
 ```  
 - setState 받아 쓰기
   
 ```javascript
-<button onClick={() => onChangeName("tom")} >이름 바꾸기</button> 
-{: .notice}  
+<button onClick={() => onChangeName("tom")} >이름 바꾸기</button>
 ```
   
 ### 예시
@@ -60,18 +57,12 @@ export default function App(){
   const [age, setAge] = useState(15);
 
   return (
-    <> 
-{: .notice}  
-      <h1>App</h1> 
-{: .notice}  
-      <p>{name}</p> 
-{: .notice}  
-      <p>{age}</p> 
-{: .notice}  
-      <AppChild name={name} age={age}/> 
-{: .notice}  
-    </> 
-{: .notice}  
+    <>
+      <h1>App</h1>
+      <p>{name}</p>
+      <p>{age}</p>
+      <AppChild name={name} age={age}/>
+    </>
   );
 }
 ```  
@@ -80,18 +71,12 @@ export default function App(){
 ```javascript
 export default function AppChild({ name, age }) {
   return (
-    <> 
-{: .notice}  
-      <h2>AppChild</h2> 
-{: .notice}  
-      <p>{name}</p> 
-{: .notice}  
-      <p>{age}</p> 
-{: .notice}  
-      <GrandChild /> 
-{: .notice}  
-    </> 
-{: .notice}  
+    <>
+      <h2>AppChild</h2>
+      <p>{name}</p>
+      <p>{age}</p>
+      <GrandChild />
+    </>
   );
 }
 ```
@@ -107,18 +92,12 @@ export default function App(){
   const [salt, setSalt] = useState(30);
 
   return (
-    <> 
-{: .notice}  
-      <h1>App</h1> 
-{: .notice}  
-      <p>{title}</p> 
-{: .notice}  
-      <p>{salt}</p> 
-{: .notice}  
-      <FriedChicken title={title} salt={salt} onChangeSalt={(newSalt) => setSalt(newSalt)}/> 
-{: .notice}  
-    </> 
-{: .notice}  
+    <>
+      <h1>App</h1>
+      <p>{title}</p>
+      <p>{salt}</p>
+      <FriedChicken title={title} salt={salt} onChangeSalt={(newSalt) => setSalt(newSalt)}/>
+    </>
   );
 }
 ```  
@@ -129,18 +108,12 @@ import ChickenChild from "./ChickenChild";
 
 export default function FriedChicken({title, salt, onChangeSalt}){
   return (
-    <> 
-{: .notice}  
-      <h2>FriedChicken</h2> 
-{: .notice}  
-      <p>{title}</p> 
-{: .notice}  
-      <p>{salt}</p> 
-{: .notice}  
-      <ChickenChild title={title} salt={salt} onChangeSalt={onChangeSalt}/> 
-{: .notice}  
-    </> 
-{: .notice}  
+    <>
+      <h2>FriedChicken</h2>
+      <p>{title}</p>
+      <p>{salt}</p>
+      <ChickenChild title={title} salt={salt} onChangeSalt={onChangeSalt}/>
+    </>
   );
 }
 ```  
@@ -149,18 +122,12 @@ export default function FriedChicken({title, salt, onChangeSalt}){
 ```javascript
 export default function ChickenChild({title, salt, onChangeSalt}) {
   return (
-    <> 
-{: .notice}  
-      <h3>ChickenChild</h3> 
-{: .notice}  
-      <p>{title}</p> 
-{: .notice}  
-      <p>{salt}</p> 
-{: .notice}  
-      <button onClick={() => onChangeSalt(20)}>소금을 줄이자</button> 
-{: .notice}  
-    </> 
-{: .notice}  
+    <>
+      <h3>ChickenChild</h3>
+      <p>{title}</p>
+      <p>{salt}</p>
+      <button onClick={() => onChangeSalt(20)}>소금을 줄이자</button>
+    </>
   );
 }
 ```  

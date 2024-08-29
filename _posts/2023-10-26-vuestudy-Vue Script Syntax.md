@@ -19,14 +19,12 @@ last_modified_at: 2023-10-26T08:00:00-10:00:00
 - 반응형 변수 사용 키워드
   
 ```javascript
-<script>   
-{: .notice}  
+<script>  
 import { ref } from 'vue'  
   
 const message = ref('안녕 Vue!')  
 message.value = '변경된 텍스트'
-</script> 
-{: .notice}  
+</script>
 ```  
 - 반응형 변수.value : 내부 값을 노출하는 객체 생성
   
@@ -90,8 +88,7 @@ const {computed} = Vue
 #### Example
   
 ```javascript
-<script setup>   
-{: .notice}  
+<script setup>  
 import { reactive, computed } from 'vue'  
   
 const author = reactive({  
@@ -104,22 +101,15 @@ const author = reactive({
 })  
   
 //계산된 ref
-const publishedBooksMessage = computed(() => {   
-{: .notice}  
-  return author.books.length > 0 ? 'Yes' : 'No'   
-{: .notice}  
+const publishedBooksMessage = computed(() => {  
+  return author.books.length > 0 ? 'Yes' : 'No'  
 })  
-</script>   
-{: .notice}  
+</script>  
   
-<template>   
-{: .notice}  
-  <p>책을 가지고 있다:</p>   
-{: .notice}  
-  <span>{{ publishedBooksMessage }}</span>   
-{: .notice}  
-</template> 
-{: .notice}  
+<template>  
+  <p>책을 가지고 있다:</p>  
+  <span>{{ publishedBooksMessage }}</span>  
+</template>
 ```
   
 ### watch
@@ -136,15 +126,12 @@ import { watch} from 'vue'
   
 ```javascript
 const count = ref(0)  
-const countWatch = watch(count, (newValue, oldValue) => {   
-{: .notice}  
+const countWatch = watch(count, (newValue, oldValue) => {  
   console.log(`newValue : ${newValue} oldValue : ${oldValue}`)  
 })
 
-<button @click="count++">+</button>   
-{: .notice}  
-<p>Count : {{ count }}</p> 
-{: .notice}  
+<button @click="count++">+</button>  
+<p>Count : {{ count }}</p>
 ```
   
 ### watcheffect
@@ -165,10 +152,8 @@ import {watchEffect} from 'vue'
 import {ref, computed, watch} from 'vue'  
   
 const bookInfo = computed({  
-      get: () => `${title.value} - ${author.value}`,   
-{: .notice}  
-      set: (newValue) => {   
-{: .notice}  
+      get: () => `${title.value} - ${author.value}`,  
+      set: (newValue) => {  
         const parts = newValue.split('-')  
         title.value = parts[0]  
         author.value = parts[1]  
@@ -180,28 +165,19 @@ const title = ref('기초')
 const author = ref('김')  
 const bookInfoModel = ref(bookInfo.value)  
   
-watch(bookInfoModel, (newValue) => {   
-{: .notice}  
+watch(bookInfoModel, (newValue) => {  
   const parts = newValue.split('-')  
   title.value = parts[0].trim()  
-  author.value = parts.length > 1 ? parts[0].trim() : ''   
-{: .notice}  
-  author.value = parts.length > 1 ? parts[1].trim() : ''   
-{: .notice}  
+  author.value = parts.length > 1 ? parts[0].trim() : ''  
+  author.value = parts.length > 1 ? parts[1].trim() : ''  
 })
 
-<div>   
-{: .notice}  
-  <p>제목 : {{ title }}</p>   
-{: .notice}  
-  <p>저자 : {{ author }}</p>   
-{: .notice}  
-  <p>전체 정보 : {{ bookInfo }}</p>   
-{: .notice}  
-  <input v-model="bookInfoModel">   
-{: .notice}  
-</div> 
-{: .notice}  
+<div>  
+  <p>제목 : {{ title }}</p>  
+  <p>저자 : {{ author }}</p>  
+  <p>전체 정보 : {{ bookInfo }}</p>  
+  <input v-model="bookInfoModel">  
+</div>
 ```
 
 ---

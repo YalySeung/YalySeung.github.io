@@ -36,8 +36,7 @@ sudo iptables -I INPUT -p tcp --dport 3306 -j ACCEPT
  위 [CLI](../../cli/cli-CLI) 는 3306 방화벽을 체크한 후 여는 [CLI](../../cli/cli-CLI)이다.
   
 ```bash
-sudo firewall-cmd --permanent --add-port=<포트번호>/tcp 
-{: .notice}  
+sudo firewall-cmd --permanent --add-port=<포트번호>/tcp
 sudo firewall-cmd --reload
 ```
  firewall-cmd 를 사용하는 방법은 reload 과정이 필요하다.

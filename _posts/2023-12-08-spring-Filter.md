@@ -30,39 +30,23 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
   
 ```xml
 ...
-<filter> 
-{: .notice}  
-  <filter-name>SampleFilter1</filter-name> 
-{: .notice}  
-  <filter-class>필터패키지 경로.SampleFilter1</filter-class>         
-{: .notice}  
-</filter> 
-{: .notice}  
-<filter-mapping> 
-{: .notice}  
-  <filter-name>SampleFilter1</filter-name> 
-{: .notice}  
-  <url-pattern>/*</url-pattern> 
-{: .notice}  
-</filter-mapping> 
-{: .notice}  
+<filter>
+  <filter-name>SampleFilter1</filter-name>
+  <filter-class>필터패키지 경로.SampleFilter1</filter-class>        
+</filter>
+<filter-mapping>
+  <filter-name>SampleFilter1</filter-name>
+  <url-pattern>/*</url-pattern>
+</filter-mapping>
 
-<filter> 
-{: .notice}  
-  <filter-name>SampleFilter2</filter-name> 
-{: .notice}  
-  <filter-class>필터패키지 경로.SampleFilter2</filter-class>         
-{: .notice}  
-</filter> 
-{: .notice}  
-<filter-mapping> 
-{: .notice}  
-  <filter-name>SampleFilter2</filter-name> 
-{: .notice}  
-  <url-pattern>/*</url-pattern> 
-{: .notice}  
-</filter-mapping> 
-{: .notice}  
+<filter>
+  <filter-name>SampleFilter2</filter-name>
+  <filter-class>필터패키지 경로.SampleFilter2</filter-class>        
+</filter>
+<filter-mapping>
+  <filter-name>SampleFilter2</filter-name>
+  <url-pattern>/*</url-pattern>
+</filter-mapping>
 ...
 ```
   

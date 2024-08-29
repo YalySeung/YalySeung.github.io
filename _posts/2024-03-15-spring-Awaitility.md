@@ -41,8 +41,7 @@ dependencies {
 #### 특정 시간 시내에 조건 만족
   
 ```java
-await().atMost(5, SECONDS).until(() -> {   
-{: .notice}  
+await().atMost(5, SECONDS).until(() -> {  
     return testMapper.insert(EXPECTED_OBJECT);    
 });
 ```
@@ -50,8 +49,7 @@ await().atMost(5, SECONDS).until(() -> {
 #### 특정 시간 이후에 조건 만족
   
 ```java
-await().atLeast(5, SECONDS).until(() -> {   
-{: .notice}  
+await().atLeast(5, SECONDS).until(() -> {  
     return testMapper.insert(EXPECTED_OBJECT);  
 });
 ```
@@ -59,8 +57,7 @@ await().atLeast(5, SECONDS).until(() -> {
 #### 특정시간동안 연속해서 조건 만족
   
 ```java
-await().during(2, SECONDS).atLeast(5, SECONDS).until(() -> {   
-{: .notice}  
+await().during(2, SECONDS).atLeast(5, SECONDS).until(() -> {  
     return testMapper.insert(EXPECTED_OBJECT);  
 });
 ```

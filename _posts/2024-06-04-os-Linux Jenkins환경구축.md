@@ -65,8 +65,7 @@ systemctl start jenkins
 /var/lib/jenkins/config.xml 파일의 보안 설정을 false로 변경하여 재시작하자
 ```
 ...
-<useSecurity>false</useSecurity> 
-{: .notice}  
+<useSecurity>false</useSecurity>
 ...
 ```
 
@@ -74,8 +73,7 @@ systemctl start jenkins
    
 ![image](../../assets/images/JenkinsWelcome.png)
 
- jenkins 관리 > Security 페이지에 접근하여 보안 설정을 변경한다. 
-{: .notice}  
+ jenkins 관리 > Security 페이지에 접근하여 보안 설정을 변경한다.
   
 ![image](../../assets/images/Pasted%20image%2020240604155214.png)
   

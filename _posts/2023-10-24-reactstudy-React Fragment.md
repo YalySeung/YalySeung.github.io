@@ -16,10 +16,8 @@ last_modified_at: 2023-10-24T08:00:00-10:00:00
 ## Fragment란?
   
 ```javascript
-<> 
-{: .notice}  
-</> 
-{: .notice}  
+<>
+</>
 ```
   
 ## 역할

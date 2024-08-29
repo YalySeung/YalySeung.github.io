@@ -51,8 +51,7 @@ SELECT User, Host FROM mysql.user
  아래 쿼리는 **사용자를 생성**한다.
   
 ```sql
-CREATE USER <id>@<ip> IDENTIFIED BY <비밀번호> 
-{: .notice}  
+CREATE USER <id>@<ip> IDENTIFIED BY <비밀번호>
 ```
 
 ---

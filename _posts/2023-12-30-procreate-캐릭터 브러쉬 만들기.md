@@ -51,20 +51,18 @@ last_modified_at: 2023-12-30T08:00:00-10:00:00
   
 ![image](../../assets/images/BrushStudioEditShape_2.png)
 
-- 획경로 > 간격 최대로 변경 
-{: .notice--primary}  
+- 획경로 > 간격 최대로 변경
   
 ![image](../../assets/images/BrushStudioChangeInterval.jpg)
 
-- 속성 > 최대 크기, 최소크기 조정 
-{: .notice}  
+- 속성 > 최대 크기, 최소크기 조정
   
 ![image](../../assets/images/BrushStudioEditProperties.jpg)
 
 > **caution**
 >
 > 속성 > 스크린 방향으로 맞추기 설정을 on 해야만 정방향 이모티콘 브러쉬를 만들 수 있다. 
-{: .notice}  
+{: .notice--primary}  
   
 ### 6. 만든 브러쉬를 사용하여 캔버스에 그려본다.
   

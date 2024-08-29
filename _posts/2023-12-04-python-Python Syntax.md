@@ -22,22 +22,19 @@ last_modified_at: 2023-12-04T08:00:00-10:00:00
 ### 포함 여부 확인
   
 ```python
-<체크할 문자열> in <대상 문자열> 
-{: .notice}  
+<체크할 문자열> in <대상 문자열>
 ```
   
 ### split
   
 ```python
-<split할 문자열>.split(<delimeter>) 
-{: .notice}  
+<split할 문자열>.split(<delimeter>)
 ```
   
 ### 소문자로 변경
   
 ```python
-<text>.lower() 
-{: .notice}  
+<text>.lower()
 ```
   
 ### 비어있는지 확인
@@ -45,8 +42,7 @@ last_modified_at: 2023-12-04T08:00:00-10:00:00
 ```python
   
 # 비어있을 경우 true
-not <문자열> 
-{: .notice}  
+not <문자열>
 ```
   
 ## 연산자

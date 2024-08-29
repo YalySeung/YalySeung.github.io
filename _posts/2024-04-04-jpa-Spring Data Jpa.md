@@ -36,22 +36,16 @@ JPA에서 정의해 놓은 NamingConvention을 활용하면 내용을 구현하�
 
 | Keyword            | Sample                                                    | JPQL                                                                      |
 | ------------------ | --------------------------------------------------------- | ------------------------------------------------------------------------- |
-| Distinct           | findDistinctByLastnameAndFirstname                        | select distinct \<columnName\> where x.lastname = ?1 and x.firstname = ?2 | 
-{: .notice--info}  
-| And<br>            | findByLastnameAndFirstname                                | select distinct \<columnName\> where x.lastname = ?1 and x.firstname = ?2 | 
-{: .notice--info}  
-| Or                 | findByLastnameOrFirstname                                 | select distinct \<columnName\> where x.lastname = ?1 or x.firstname = ?2  | 
-{: .notice}  
+| Distinct           | findDistinctByLastnameAndFirstname                        | select distinct \<columnName\> where x.lastname = ?1 and x.firstname = ?2 |
+| And<br>            | findByLastnameAndFirstname                                | select distinct \<columnName\> where x.lastname = ?1 and x.firstname = ?2 |
+| Or                 | findByLastnameOrFirstname                                 | select distinct \<columnName\> where x.lastname = ?1 or x.firstname = ?2  |
 | Is, Equal          | findByFirstname, findByFirstnameIs, findByFirstnameEquals | ... where x.firstname = ?1                                                |
 | LessThan           | findByAgeLessThan                                         | ... where x.age < ?1                                                      |
 | LessThanEqual      | findByAgeLessThanEqual                                    | ... where x.age <= ?1                                                     |
-| GreaterThan        | findByAgeGreaterThan                                      | ... where x.age > ?1                                                      | 
-{: .notice}  
-| GreaterThanEqual   | findByAgeGreaterThanEqual                                 | ...... where x.age >= ?1                                                  | 
-{: .notice}  
+| GreaterThan        | findByAgeGreaterThan                                      | ... where x.age > ?1                                                      |
+| GreaterThanEqual   | findByAgeGreaterThanEqual                                 | ...... where x.age >= ?1                                                  |
 | Between            | findByStartDateBetween                                    | ... where x.startDate beween ?1 and ?2                                    |
-| After              | findByStartDateAfter                                      | ... where x.startDate > ?1                                                | 
-{: .notice}  
+| After              | findByStartDateAfter                                      | ... where x.startDate > ?1                                                |
 | Before             | findByStartDateBefore                                     | ... where x.startDate < ?1                                                |
 | IsNull, Null       | findByAge(Is)Null                                         | ... where x.age is null                                                   |
 | isNotNull, NotNull | findByAge(Is)NotNull                                      | ... where x.age is not null                                               |
@@ -61,12 +55,9 @@ JPA에서 정의해 놓은 NamingConvention을 활용하면 내용을 구현하�
 | EndingWith         | findByFirstnameEndingWith                                 | ... where x.firstname like ?1                                             |
 | Contating          | findByFirstnameContating                                  | ... where x.firstname like ?1                                             |
 | OrderBy            | findByAgeOrderByLastnameDesc                              | … where x.age = ?1 order by x.lastname desc                               |
-| Not                | findByLastnameNot                                         | … where x.lastname <> ?1                                                  | 
-{: .notice}  
-| In                 | findByAgeIn(Collection\<Age\> ages)                       | … where x.age in ?1                                                       | 
-{: .notice}  
-| NotIn              | findByAgeNotIn(Collection\<Age\> ages)                    | … where x.age not in ?1                                                   | 
-{: .notice}  
+| Not                | findByLastnameNot                                         | … where x.lastname <> ?1                                                  |
+| In                 | findByAgeIn(Collection\<Age\> ages)                       | … where x.age in ?1                                                       |
+| NotIn              | findByAgeNotIn(Collection\<Age\> ages)                    | … where x.age not in ?1                                                   |
 | True               | findByActiveTrue()                                        | … where x.active = true                                                   |
 | False              | findByActiveFalse()                                       | … where x.active = false                                                  |
 | IgnoreCase         | findByFirstnameIgnoreCase                                 | … where UPPER(x.firstname) = UPPER(?1)                                    |
@@ -75,8 +66,7 @@ JPA에서 정의해 놓은 NamingConvention을 활용하면 내용을 구현하�
   
 ```java
 @Configuration  
-@EnableJpaRepositories(basePackages = "<패키지명>.api.repository")   
-{: .notice}  
+@EnableJpaRepositories(basePackages = "<패키지명>.api.repository")  
 @EnableJpaAuditing  
 @EnableTransactionManagement  
 public class JpaConfiguration {  
@@ -96,8 +86,7 @@ public class JpaConfiguration {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(@Qualifier("dataSourceForJPA")DataSource dataSource) {  
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();  
         em.setDataSource(dataSource);  
-        //em.setPackagesToScan(new String[]{"<패키지명1>", "<패키지명2>"}); 
-{: .notice}  
+        //em.setPackagesToScan(new String[]{"<패키지명1>", "<패키지명2>"});
         em.setPackagesToScan("org.infinity.server.entity");
         em.setPersistenceProviderClass(HibernatePersistenceProvider.class);  
         return em;  
@@ -120,7 +109,7 @@ public class JpaConfiguration {
 > **caution**
 >
 > Entity가 정상적으로 스캔되기 위해서는 **setPackagesToScan()**으로 등록된 패키지 내에 위치해야한다. 
-{: .notice}  
+{: .notice--info}  
 
 ---
   

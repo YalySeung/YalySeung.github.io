@@ -18,8 +18,7 @@ last_modified_at: 2023-12-03T08:00:00-10:00:00
 ### window
   
 ```bash
-python <파일명> 
-{: .notice}  
+python <파일명>
 ```
 
 ---

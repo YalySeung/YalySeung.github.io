@@ -35,16 +35,11 @@ implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.3'
 | writeValue(File resultFile, Object value)        | Java 객체를 JSON 형식으로 파일에 Write             |
 | writeValue(OutputStream out, Object value)       | Java 객체를 JSON 형식으로 출력 Stream에 Write      |
 | writeValue(Writer writer, Object value)          | Java 객체를 JSON 형식으로 Writer 객체에 Write      |
-| readValue(String content, Class\<T\> valueType)  | JSON 문자열을 T Class 타입의 객체로 변환             | 
-{: .notice}  
-| readValue(byte[] src, Class\<T\> valueType)      | JSON Byte 배열을 T Class 타입의 객체로 변환         | 
-{: .notice}  
-| readValue(File src, Class\<T\> valueType)        | 파일에서 읽은 JSON 문자열을 T Class 타입의 객체로 변환     | 
-{: .notice}  
-| readValue(InputStream src, Class\<T\> valueType) | 입력 스트림에서 읽은 JSON 문자열을 T Class 타입의 객체로 변환 | 
-{: .notice}  
-| readValue(Reader src, Class\<T\> valueType)      | Reader에서 읽은 JSON 문자열을 T Class 타입의 객체로 변환 | 
-{: .notice}  
+| readValue(String content, Class\<T\> valueType)  | JSON 문자열을 T Class 타입의 객체로 변환             |
+| readValue(byte[] src, Class\<T\> valueType)      | JSON Byte 배열을 T Class 타입의 객체로 변환         |
+| readValue(File src, Class\<T\> valueType)        | 파일에서 읽은 JSON 문자열을 T Class 타입의 객체로 변환     |
+| readValue(InputStream src, Class\<T\> valueType) | 입력 스트림에서 읽은 JSON 문자열을 T Class 타입의 객체로 변환 |
+| readValue(Reader src, Class\<T\> valueType)      | Reader에서 읽은 JSON 문자열을 T Class 타입의 객체로 변환 |
 
  아래 소스코드는 java 객체를 JSON String으로 변환하여 API 를 호출하는 샘플 코드이다.
   

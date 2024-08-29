@@ -32,8 +32,7 @@ last_modified_at: 2023-10-03T08:00:00-10:00:00
 ![image](../../assets/images/TestRunnerWindow.png){: width=200 height=200}
   
 ### Step2 : Assembly Folder 생성
-- 위 이미지의 Create EditMode Test Assembly Folder 버튼을 선택하여 테스트 폴더를 생성 => EditTest Assembly Definition 파일도 함께 생성됨   
-{: .notice}  
+- 위 이미지의 Create EditMode Test Assembly Folder 버튼을 선택하여 테스트 폴더를 생성 => EditTest Assembly Definition 파일도 함께 생성됨  
   
 ![image](../../assets/images/TestFolder%201.png)
   
@@ -82,8 +81,7 @@ last_modified_at: 2023-10-03T08:00:00-10:00:00
 		  Vector3 expectedPos = new Vector3(1, 0, 0);
 		  testObject.transform.position = Vector3.zero;
 
-		  testObject.AddComponent<MoveOnePointToXPos>(); 
-{: .notice}  
+		  testObject.AddComponent<MoveOnePointToXPos>();
 
 		  yield return null;
 

@@ -29,8 +29,7 @@ last_modified_at: 2024-03-04T08:00:00-10:00:00
 @ComponentScan(basePackages = "org.infinity.server.controller.api")  
 public class APIConfiguration implements WebMvcConfigurer {  
     @Override  
-    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {   
-{: .notice--info}  
+    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {  
         GsonHttpMessageConverter converter = new GsonHttpMessageConverter();  
         converters.add(converter);  
     }  
@@ -40,22 +39,18 @@ public class APIConfiguration implements WebMvcConfigurer {
 > **caution**
 >
 > 여러 MessageConverter가 동일한 데이터를 처리할 경우 충돌이 발생할 수 있으므로, 우선순위를 조정해야 한다. 
-{: .notice}  
+{: .notice--info}  
   
 ## 종류
   
 | Converter명                           | 기능                                             |
 | ------------------------------------ | ---------------------------------------------- |
-| MappingJackson2HttpMessageConverter  | Jackson 라이브러리를 사용하여 java객체 <-> Json 객체 변환      | 
-{: .notice}  
-| GsonHttpMessageConverter             | Gson 라이브러리를 사용하여 java객체 <-> Json 객체 변환         | 
-{: .notice}  
+| MappingJackson2HttpMessageConverter  | Jackson 라이브러리를 사용하여 java객체 <-> Json 객체 변환      |
+| GsonHttpMessageConverter             | Gson 라이브러리를 사용하여 java객체 <-> Json 객체 변환         |
 | StringHttpMessageConverter           | 문자열 데이터 처리, 주로 text/plain 타입에 사용               |
 | ByteArrayHttpMessageConverter        | byte 배열 처리를 위한 컨버터, 이미지나 다른 바이너리 데이터를 전송할 때 사용 |
-| FormHttpMessageConverter             | HTML Form 데이터 처리, HTML Form <-> Map 변환         | 
-{: .notice}  
-| Jaxb2RootElementHttpMessageConverter | XML 데이터 처리, Java <-> XML                       | 
-{: .notice}  
+| FormHttpMessageConverter             | HTML Form 데이터 처리, HTML Form <-> Map 변환         |
+| Jaxb2RootElementHttpMessageConverter | XML 데이터 처리, Java <-> XML                       |
 | SourceHttpMessageConverter           | XML Source 객체 처리, 주로 XML 데이터를 처리할 때 사용         |
 | BufferedImageHttpMessageConverter    | BufferedImage 객체 처리, 주로 이미지를 전송할 때 사용          |
 | ResourceHttpMessageConverter         | String Resource 객체 처리, 주로 파일 다운로드에 사용          |

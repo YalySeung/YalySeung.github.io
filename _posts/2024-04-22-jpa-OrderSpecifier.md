@@ -46,8 +46,7 @@ private OrderSpecifier getOrderSpecifier(String sortKey, String sortOrder) {
   
 ```java
 private OrderSpecifier[] getOrderSpecifier(String sortKey, String sortOrder) {  
-    List<OrderSpecifier> orderSpecifiers = new ArrayList<>();   
-{: .notice}  
+    List<OrderSpecifier> orderSpecifiers = new ArrayList<>();  
   
     if (StringUtils.hasText(sortKey)){  
         if (sortKey.equals("version")){  
@@ -74,8 +73,7 @@ private OrderSpecifier[] getOrderSpecifier(String sortKey, String sortOrder) {
 **OrderSpecifier 타입의 변수에 먼저 할당** 후 orderSpecifiers에 Add해야 한다.
   
 ```java
-OrderSpecifier<Integer> orderSpecifier = new CaseBuilder()   
-{: .notice}  
+OrderSpecifier<Integer> orderSpecifier = new CaseBuilder()  
         .when(qRobot.robotStatusCode.eq("CNCT")).then(1)  
         .when(qRobot.robotStatusCode.eq("REG")).then(2)  
         .when(qRobot.robotStatusCode.eq("DSCN_RBT")).then(3)  
@@ -92,8 +90,7 @@ orderSpecifiers.add(orderSpecifier);
   
 ```java
 @Override  
-public List<HolidayCodeName> selectHolidayList(HolidaySearchForm holidaySearchForm) {   
-{: .notice}  
+public List<HolidayCodeName> selectHolidayList(HolidaySearchForm holidaySearchForm) {  
     return queryFactory.selectfrom(qHoliday)
             .where(qHoliday.holidayDate.between(holidaySearchForm.getStartDate(), holidaySearchForm.getEndDate()))  
             .orderBy(getOrderSpecifier(holidaySearchForm.getSortKey(), holidaySearchForm.getSortOrder()))  

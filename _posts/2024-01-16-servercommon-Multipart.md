@@ -55,10 +55,8 @@ private void sendRequest(RequestData requestData, File file) throws IOException 
   
 ```java
 @PostMapping("/regist")  
-public ResponseEntity<BaseResponse> registerUser(@Valid registerUserRequest request, BindingResult bindingResult) {   
-{: .notice--info}  
-    return new ResponseEntity<BaseResponse>(userService.regist(request), HttpStatus.OK); 
-{: .notice}  
+public ResponseEntity<BaseResponse> registerUser(@Valid registerUserRequest request, BindingResult bindingResult) {  
+    return new ResponseEntity<BaseResponse>(userService.regist(request), HttpStatus.OK);
 ```
   
 ### Multipart 파일 처리
@@ -74,8 +72,7 @@ public String write(MultipartFile multipartFile, String subPath, String fileName
 private void writeMultipartFile(MultipartFile multipartFile, String rootPath, String filePath)  
         throws IllegalStateException, IOException {  
     Assert.notNull(multipartFile, "file must not be null");  
-    Assert.isTrue(multipartFile.getSize() > 0, "size must be greater than 0");   
-{: .notice}  
+    Assert.isTrue(multipartFile.getSize() > 0, "size must be greater than 0");  
     File targetFile = new File(rootPath + SEPARATOR + filePath);  
     multipartFile.transferTo(targetFile);  
 }
@@ -114,7 +111,7 @@ Y
 > **tip**
 >
 > 라이브러리를 사용하여 Multipart 요청을 보낼수도 있지만 위와같은 포맷의 데이터를 만들어서 전송하기도 한다. 
-{: .notice}  
+{: .notice--info}  
 
 ---
   

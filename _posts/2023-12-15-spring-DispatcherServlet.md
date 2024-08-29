@@ -27,14 +27,10 @@ last_modified_at: 2023-12-15T08:00:00-10:00:00
 - 구조를 중요한 Field 기준으로 확인해보자
   
 ```java
-private List<HandlerMapping> handlerMappings; 
-{: .notice}  
-private List<HandlerAdapter> handlerAdapters; 
-{: .notice}  
-private List<ViewResolver> viewResolvers; 
-{: .notice}  
-private List<HandlerExceptionResolver> handlerExceptionResolvers; 
-{: .notice}  
+private List<HandlerMapping> handlerMappings;
+private List<HandlerAdapter> handlerAdapters;
+private List<ViewResolver> viewResolvers;
+private List<HandlerExceptionResolver> handlerExceptionResolvers;
 private MultipartResolver multipartResolver;
 private LocaleResolver localeResolver;
 private ThemeResolver themeResolver;

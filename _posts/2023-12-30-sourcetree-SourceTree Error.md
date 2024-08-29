@@ -14,8 +14,7 @@ last_modified_at: 2023-12-30T08:00:00-10:00:00
 ---
   
 ## 로그확인 방법
-- 로그파일 경로 : C:\\Users\\<사용자명>\\AppData\\Local\\Atlassian\\SourceTree 
-{: .notice}  
+- 로그파일 경로 : C:\\Users\\<사용자명>\\AppData\\Local\\Atlassian\\SourceTree
   
 ![image](../../assets/images/SourceTreeLogPath.png)
   
@@ -26,8 +25,7 @@ last_modified_at: 2023-12-30T08:00:00-10:00:00
   
 #### 캐시 삭제
 - 소스트리 구성에 필요한 cache 파일이 원인인 경우가 대부분이다.
-- C:\\Users\<사용자명>\AppData\\Local\\Atlassian\SourceTree.exe_Url_<식별자>\\3.3.8.3848\\Composition.cache **파일 삭제** 
-{: .notice}  
+- C:\\Users\<사용자명>\AppData\\Local\\Atlassian\SourceTree.exe_Url_<식별자>\\3.3.8.3848\\Composition.cache **파일 삭제**
   
 ![image](../../assets/images/SourceTreeCache.png)
   

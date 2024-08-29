@@ -116,8 +116,7 @@ public class User {
 }
 ```
 
- Class를 추가한 후 Gradle > other > compileQuerydsl 을 실행하면 Entity에 대응하는 QClass가 만들어진다. 
-{: .notice}  
+ Class를 추가한 후 Gradle > other > compileQuerydsl 을 실행하면 Entity에 대응하는 QClass가 만들어진다.
   
 ![image](../../assets/images/CompileQClass.png)
   
@@ -127,8 +126,7 @@ public class User {
 ![image](../../assets/images/CustomRepositoryStructure.png)
   
 ```java
-public interface UserRepository extends JpaRepository<User, Long>, CustomUserRepository {   
-{: .notice}  
+public interface UserRepository extends JpaRepository<User, Long>, CustomUserRepository {  
 }
 ```
   

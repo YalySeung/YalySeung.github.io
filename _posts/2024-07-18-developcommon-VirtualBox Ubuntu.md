@@ -72,8 +72,7 @@ sudo passwd root
  > **tip**
 > 
 {: .notice--info}  
- >  virtual box에 게스트 확장을 적용하여 기타 기능들을 사용할 수 있지만 MobaXterm이나 putty로 접속하여 사용하는 것이 건강에 이롭다. 
-{: .notice--info}  
+ >  virtual box에 게스트 확장을 적용하여 기타 기능들을 사용할 수 있지만 MobaXterm이나 putty로 접속하여 사용하는 것이 건강에 이롭다.
   
 ```bash
 ifconfig
@@ -92,7 +91,7 @@ sudo apt install net-tools
 > **포트 포워딩이란 ?**  
 >
 > 특정 포트 번호를 통해 하나의 IP 주소에서 다른 IP주소로 네트워크 트래픽을 전달하는 프로세스를 말한다. 
-{: .notice}  
+{: .notice--info}  
 
  가상 환경 구성이 완료되었지만 아직 할 일이 남아있다. 외부에서 내 PC의 특정 포트로 들어오는 요청을 가상 머신으로 전달하려면 [Port Forwarding](../../servercommon/servercommon-Port-Forwarding)이 필요하다. 
 

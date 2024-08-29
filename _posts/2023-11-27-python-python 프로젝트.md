@@ -28,8 +28,7 @@ pip install setuptools
 ## 패키지 다운로드
   
 ```bash
-python <셋업 파일명> install 
-{: .notice}  
+python <셋업 파일명> install
 ```
   
 ## 빌드 및 패키지 시작
@@ -67,8 +66,7 @@ pip install pyinstaller
 ### 실행파일 생성
   
 ```bash
-pyinstaller <setup 스크립트> 
-{: .notice}  
+pyinstaller <setup 스크립트>
 ```
 
 ---

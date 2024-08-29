@@ -32,29 +32,19 @@ last_modified_at: 2023-10-31T08:00:00-10:00:00
 #### App.vue
   
 ```javascript
-<header>   
-{: .notice}  
-  <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />   
-{: .notice}  
+<header>  
+  <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />  
   
-  <div class="wrapper">   
-{: .notice}  
-    <HelloWorld msg="You did it!" />   
-{: .notice}  
+  <div class="wrapper">  
+    <HelloWorld msg="You did it!" />  
   
-    <nav>      
-{: .notice}  
-     <RouterLink to="/">Home</RouterLink>   
-{: .notice}  
-      <RouterLink to="/about">About</RouterLink>   
-{: .notice}  
-      <RouterLink :to="{name : 'user'}">User</RouterLink> 
-{: .notice}  
-    </nav>  </div></header>   
-{: .notice}  
+    <nav>     
+     <RouterLink to="/">Home</RouterLink>  
+      <RouterLink to="/about">About</RouterLink>  
+      <RouterLink :to="{name : 'user'}">User</RouterLink>
+    </nav>  </div></header>  
   
-<RouterView /> 
-{: .notice}  
+<RouterView />
 ```
   
 #### index.js
@@ -72,20 +62,17 @@ const router = createRouter({
     {  
       path: '/about',  
       name: 'about',  
-      component: () => import('../views/AboutView.vue') 
-{: .notice}  
+      component: () => import('../views/AboutView.vue')
     },
 	{  
 	  path:'/user/:id',  
 	  name: 'user',  
-	  component: () => import('../views/UserView.vue')   
-{: .notice}  
+	  component: () => import('../views/UserView.vue')  
 	},  
 	{  
 	  path:'/:pathMatch(.*)*',  
 	  name: 'error',  
-	  component: () => import('../views/NotFoundView.vue')   
-{: .notice}  
+	  component: () => import('../views/NotFoundView.vue')  
 	}
   ]  
 })
@@ -154,8 +141,7 @@ router.go(1)
   
 ```javascript
 //index.js
-router.beforeEach((to, from) => {   
-{: .notice}  
+router.beforeEach((to, from) => {  
   console.log('to')  
   console.log(to)  
   console.log('from')  
@@ -173,10 +159,8 @@ router.beforeEach((to, from) => {
 {  
   path:'/user/:id',  
   name: 'user',  
-  component: () => import('../views/UserView.vue'),   
-{: .notice}  
-  beforeEnter: (to, from) => {   
-{: .notice}  
+  component: () => import('../views/UserView.vue'),  
+  beforeEnter: (to, from) => {  
     return {name : 'home'}  
   }  
 }
@@ -188,8 +172,7 @@ router.beforeEach((to, from) => {
 - 현재 라우트에서 다른 라우트로 이동 전에 실행
   
 ```javascript
-onBeforeRouteLeave((to, from) => {   
-{: .notice}  
+onBeforeRouteLeave((to, from) => {  
   const answer = window.confirm("정말 떠나실건가요?")  
   if (answer === false){  
     return false;  
@@ -207,8 +190,7 @@ onBeforeRouteLeave((to, from) => {
 {  
   path:'/:pathMatch(.*)*',  
   name: 'error',  
-  component: () => import('../views/NotFoundView.vue')   
-{: .notice}  
+  component: () => import('../views/NotFoundView.vue')  
 }
 ```
   
@@ -216,8 +198,7 @@ onBeforeRouteLeave((to, from) => {
 - 첫 빌드시 해당 컴포넌트를 로드하지 않고 해당 경로를 처음 방문할 때만 로드
   
 ```javascript
- component: () => import('../views/AboutView.vue') 
-{: .notice}  
+ component: () => import('../views/AboutView.vue')
 ```
 
 ---

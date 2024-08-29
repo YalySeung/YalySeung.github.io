@@ -50,10 +50,8 @@ public class Reactor {
         while (true) {  
             selector.select();  
   
-            Set<SelectionKey> selectedKeys = selector.selectedKeys();   
-{: .notice}  
-            Iterator<SelectionKey> keyIterator = selectedKeys.iterator();   
-{: .notice}  
+            Set<SelectionKey> selectedKeys = selector.selectedKeys();  
+            Iterator<SelectionKey> keyIterator = selectedKeys.iterator();  
   
             while (keyIterator.hasNext()) {  
                 SelectionKey key = keyIterator.next();  
@@ -95,14 +93,12 @@ public abstract class Selector implements Closeable {
 	protected Selector() { }  
 	
 	/**  
-	* Opens a selector.     *     * <p> The new selector is created  
-{: .notice}  
+	* Opens a selector.     *     * <p> The new selector is created 
 	*/    
 	public static Selector open() throws IOException {  
 		return SelectorProvider.provider().openSelector();  
 	}  	
-	public abstract Set<SelectionKey> selectedKeys();    
-{: .notice}  
+	public abstract Set<SelectionKey> selectedKeys();   
 	public abstract int select() throws IOException;  
 	... 
 }

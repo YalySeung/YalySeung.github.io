@@ -20,8 +20,7 @@ last_modified_at: 2023-10-17T08:00:00-10:00:00
   
 #### 옵션
 - -a : 모든 포트 표시
-- -n : <IP주소>:<포트> 형식으로 보여줌 
-{: .notice}  
+- -n : <IP주소>:<포트> 형식으로 보여줌
 -  -o :  프로세스 ID를 표시
   
 #### 포트의 상태
@@ -91,8 +90,7 @@ tasklist /V
 ### sc
 - 서비스 관련 CLI
   
-#### sc delete \<서비스명\> 
-{: .notice}  
+#### sc delete \<서비스명\>
 - 서비스 삭제
 - **관리자 콘솔로만 사용 가능**
   
@@ -107,8 +105,7 @@ tasklist /V
 | /a  | 그래픽 문자 대신 텍스트 문자를 사용   |  
   
 ```bash
-tree <경로> /f /a 
-{: .notice}  
+tree <경로> /f /a
 ```
   
 ![image](../../assets/images/TreeResult.png)

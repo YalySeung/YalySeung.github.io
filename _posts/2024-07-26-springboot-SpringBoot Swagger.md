@@ -57,8 +57,7 @@ public class SwaggerConfig {
 }
 ```
 
- 설정 적용이 완료되면 WAS 실행 후 **\<ip\>:\<port\>/swagger-ui.html** 페이지에 접속한다. 이 상태만으로도 API 정보를 확인 할 수 있지만, 각 API 별 부가 설명이나 Parameter, Response에 대한 설명을 보강 할 수 있다. 
-{: .notice}  
+ 설정 적용이 완료되면 WAS 실행 후 **\<ip\>:\<port\>/swagger-ui.html** 페이지에 접속한다. 이 상태만으로도 API 정보를 확인 할 수 있지만, 각 API 별 부가 설명이나 Parameter, Response에 대한 설명을 보강 할 수 있다.
   
 ```java
 @RestController  

@@ -33,29 +33,20 @@ function App() {
   }
 
   return (
-    <div className="App"> 
-{: .notice}  
-      <ListItem subtitle={subTitle[0]} datestr="2월 17일 발행"></ListItem> 
-{: .notice}  
-      <ListItem subtitle={subTitle[1]} datestr="2월 17일 발행"></ListItem> 
-{: .notice}  
-      <ListItem subtitle={subTitle[2]} datestr="2월 17일 발행"></ListItem> 
-{: .notice}  
-    </div> 
-{: .notice}  
+    <div className="App">
+      <ListItem subtitle={subTitle[0]} datestr="2월 17일 발행"></ListItem>
+      <ListItem subtitle={subTitle[1]} datestr="2월 17일 발행"></ListItem>
+      <ListItem subtitle={subTitle[2]} datestr="2월 17일 발행"></ListItem>
+    </div>
   );
 }
 
 function ListItem(props) {
   return (
-    <div className="list-item"> 
-{: .notice}  
-      <h4>{props.subtitle}</h4> 
-{: .notice}  
-      <p>{props.datestr}</p> 
-{: .notice}  
-    </div> 
-{: .notice}  
+    <div className="list-item">
+      <h4>{props.subtitle}</h4>
+      <p>{props.datestr}</p>
+    </div>
   );
 }
 ```

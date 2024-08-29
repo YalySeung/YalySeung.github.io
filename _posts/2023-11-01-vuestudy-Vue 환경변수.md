@@ -24,8 +24,7 @@ last_modified_at: 2023-11-01T08:00:00-10:00:00
 - **환경변수명은 VITE로 시작해야한다.**
   
 ```javascript
-onMounted(() => {   
-{: .notice}  
+onMounted(() => {  
   console.log(import.meta.env.VITE_TEST)  
 })
 ```
@@ -52,11 +51,9 @@ export default defineConfig({
 |파일명|사용처|
 |---|---|
 |.env|모든 상황에서 사용될 환경변수|
-|.env.\<mode\>|로컬 개발에서 사용할 환경변수| 
-{: .notice}  
+|.env.\<mode\>|로컬 개발에서 사용할 환경변수|
 |.env.local|특정 모드에서만 사용될 환경 변수|
-|.env.\<mode\>.local|특정 모드에서만 사용되나, 로컬 개발 환경에서만 사용될 환경 변수| 
-{: .notice}  
+|.env.\<mode\>.local|특정 모드에서만 사용되나, 로컬 개발 환경에서만 사용될 환경 변수|
 
 ---
   

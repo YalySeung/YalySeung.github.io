@@ -22,8 +22,7 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 ## 환경구성
   
 ### NSubstitude Nuget 설치
-- <https://www.nuget.org/downloads> 
-{: .notice}  
+- <https://www.nuget.org/downloads>
   
 ![image](../../assets/images/NugetDownloadLink.png){: width="60%" height="60%"}
   
@@ -50,8 +49,7 @@ nuget.exe Install NSubstitute.Analyzers.CSharp -Version 1.0.15
   
 ![image](../../assets/images/AssemblyReferenceInspector%201.png){: width="50%" height="50%"}
 
-Player TestRunner 생성 방법은 => [TestRunner](../../unity/unity-TestRunner) 참고   
-{: .notice}  
+Player TestRunner 생성 방법은 => [TestRunner](../../unity/unity-TestRunner) 참고  
   
 ## 테스트
   
@@ -75,8 +73,7 @@ public class TestTestObj
 	[SetUp]
 	public void SetUp()
 	{
-		testObj = Substitute.For<ITestObj>(); // Mock Instance 생성 
-{: .notice}  
+		testObj = Substitute.For<ITestObj>(); // Mock Instance 생성
 		testObj.AddOne(1).Returns(2); // 반환값이 있는 함수의 리턴값 정의
 		testObj.PropertyValue.Returns(2); // Property 반환값 정의
 	}

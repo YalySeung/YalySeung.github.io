@@ -104,14 +104,12 @@ channelFuture.channel().closeFuture().sync();
 - 주로 NioEventLoopGroup을 사용
   
 ```java
-// 클라이언트 -> 서버 설정 
-{: .notice}  
+// 클라이언트 -> 서버 설정
 Bootstrap bootstrap = new Bootstrap();
 EventLoopGroup eventLoop = new NioEventLoopGroup();
 bootstrap.group(eventLoop)
 
-// 서버 -> 클라이언트 설정 
-{: .notice}  
+// 서버 -> 클라이언트 설정
 ServerBootstrap sb = new ServerBootstrap();
 
 // 클라이언트 연결을 수락하는 부모 스레드 그룹
@@ -138,8 +136,7 @@ if (byteBuf.hasArray()) {
 	bytes = byteBuf.array();
 }
 
-if (length >= 4) { 
-{: .notice}  
+if (length >= 4) {
 	// 최종적으로 btLength 배열에 bytes배열의 0부터 btLength 길이의 값을 복사
 	System.arraycopy(bytes, 0, btLength, 0, 4);
 }
@@ -163,8 +160,7 @@ if (length >= 4) {
 		//Bootstrap
 public static final SendHandler sendHandler = new SendHandler();
 
-.handler(new ChannelInitializer<SocketChannel>() {//송수신 되는 데이터 가공 핸들러 
-{: .notice}  
+.handler(new ChannelInitializer<SocketChannel>() {//송수신 되는 데이터 가공 핸들러
 	@Override
 	protected void initChannel(SocketChannel ch) throws Exception {
 		ChannelPipeline pipeline = ch.pipeline();
@@ -177,8 +173,7 @@ public static final SendHandler sendHandler = new SendHandler();
 //ServerBootstrap
 private ReceiveHandler RECEIVE_HANDLER; // = new ReceiveHandler();
 
-.childHandler(new ChannelInitializer<SocketChannel>() { //송수신 되는 데이터 가공 핸들러 
-{: .notice}  
+.childHandler(new ChannelInitializer<SocketChannel>() { //송수신 되는 데이터 가공 핸들러
 	@Override
 	protected void initChannel(SocketChannel ch) throws Exception {
 		ChannelPipeline pipeline = ch.pipeline();
@@ -240,8 +235,7 @@ Channel channel = ...
 channel.writeAndFlush(message); 
 ```
   
-### 2. Channel -> Channel pipeline으로 전송 
-{: .notice}  
+### 2. Channel -> Channel pipeline으로 전송
 - ChannelPipeline은 기본적으로 TailContext 와 HeaderContext를 가진다
 - Tail과 Head 사이에 사용자가 등록한 ChannelHandlerContext가 Chane구조로 연결, 전달된 메시지가 체인을 따라 Outbound 방향으로 흐름
   

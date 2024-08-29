@@ -57,10 +57,8 @@ last_modified_at: 2023-12-12T08:00:00-10:00:00
  아래 쿼리문은 **테이블에 컬럼을 추가**하는 역할을 한다.
   
 ```sql
-ALTER TABLE <테이블명> 
-{: .notice}  
-ADD <컬럼명> <컬럼타입> DEFAULT <기본값>; 
-{: .notice}  
+ALTER TABLE <테이블명>
+ADD <컬럼명> <컬럼타입> DEFAULT <기본값>;
 ```
 
 ---

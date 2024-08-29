@@ -67,8 +67,7 @@ assertThat(list, allOf(not(empty()), hasItem("expectedValue")));
   
 ```java
 // 실패 시
-assertThat(value, is(5)); // Expected: is <5> but: was <4> 
-{: .notice}  
+assertThat(value, is(5)); // Expected: is <5> but: was <4>
 ```
 
  끝으로, Hamcrest는 테스트 코드에서 비교나 조건 검증을 매처로 캡슐화하여, 이후 리팩토링 시 테스트 코드가 더 안정적이고 유지보수하기 쉬워진다.

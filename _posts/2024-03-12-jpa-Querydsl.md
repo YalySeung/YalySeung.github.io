@@ -67,8 +67,7 @@ last_modified_at: 2024-03-12T08:00:00-10:00:00
 ```java
 String productName = "myProduct";
 
-List<Product> result = queryFactory 
-{: .notice}  
+List<Product> result = queryFactory
         .select(product)
         .from(product)
         .where(product.name.eq(productName), product.price.eq("1000"))

@@ -20,15 +20,13 @@ last_modified_at: 2023-11-08T08:00:00-10:00:00
 #### JVM heap 메모리 사용량 확인
   
 ```bash
-jmap -heap <pid> 
-{: .notice}  
+jmap -heap <pid>
 ```
   
 #### heap 덤프 파일 생성
   
 ```bash
-jmap -dump:live,file=<덤프파일경로> <프로세스ID> 
-{: .notice}  
+jmap -dump:live,file=<덤프파일경로> <프로세스ID>
 ```  
 - dump:live : 현재 heap 내의 액티브 메모리 레퍼런스가 있는 object만 캡처
   
@@ -113,8 +111,7 @@ chmod +x *.sh
 #### Symbolic link 생성
   
 ```bash
-ln -s <대상파일> <link 명> 
-{: .notice}  
+ln -s <대상파일> <link 명>
 ```
   
 ### alias
@@ -128,15 +125,13 @@ alias
 #### 별칭 등록
   
 ```bash
-alias <별칭>='<명령어>' 
-{: .notice}  
+alias <별칭>='<명령어>'
 ```
   
 #### 별칭 해제
   
 ```bash
-unalias <별칭> 
-{: .notice}  
+unalias <별칭>
 ```
   
 ## ip 확인
@@ -151,31 +146,24 @@ ifconfig
 ### adduser
   
 ```bash
-adduser <계정명> 
-{: .notice}  
+adduser <계정명>
 ```
   
 ### useradd
   
 ```bash
-useradd <계정명> 
-{: .notice}  
-passwd <비밀번호> 
-{: .notice}  
-groupadd <그룹명> 
-{: .notice}  
-usermod -G <그룹명> <계정명> 
-{: .notice}  
-usermod -s /bin/bash <계정명> 
-{: .notice}  
+useradd <계정명>
+passwd <비밀번호>
+groupadd <그룹명>
+usermod -G <그룹명> <계정명>
+usermod -s /bin/bash <계정명>
 grep /bin/bash /etc/passwd | cut -f1 -d:
 ```
   
 ### userdel
   
 ```bash
-userdel <계정명> 
-{: .notice}  
+userdel <계정명>
 ```
 
 ---

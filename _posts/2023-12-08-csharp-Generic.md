@@ -24,12 +24,10 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
  동일한 구조의 함수에 반환 형식이나 입력 형식만  다를 경우 여러 메서드를 오버로딩 해야하는데, Generic을 사용하면 **하나의 함수로 대체가 가능**하다. 따라서 **가독성**과 **형식 안정성**이 증가한다. 또한 생성 시점에 타입을 명시하기 때문에 **타입 검사가 불필요**하며, **InvalidCastingException 예외를 회피**할 수 있다. 또한 [boxing](../../csharp/csharp-boxing-unboxing#boxing은-무엇일까)을 피하여 메모리를 절약할 수 있다.
   
 ## Generic의 사용법
- class 선언에 **형식 매개변수인 \<T\>를 사용하여 선언**한다. 그리고 **생성자에서 모든 필드 값을 초기화** 해준다. 
-{: .notice}  
+ class 선언에 **형식 매개변수인 \<T\>를 사용하여 선언**한다. 그리고 **생성자에서 모든 필드 값을 초기화** 해준다.
   
 ```c#
-class Generic<T> 
-{: .notice}  
+class Generic<T>
 {
   public Generic()
   {
@@ -44,8 +42,7 @@ class Generic<T>
   
 ```c#
 main(){
-  Generic<int> generic = new Generic<int>(); 
-{: .notice}  
+  Generic<int> generic = new Generic<int>();
   Console.WriteLine(generic.One);
   ...
 }

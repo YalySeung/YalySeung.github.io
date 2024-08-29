@@ -40,8 +40,7 @@ last_modified_at: 2024-04-23T08:00:00-10:00:00
   
 ```java
 @Override  
-public List<FileLink> selectExpiredFileLink() {   
-{: .notice}  
+public List<FileLink> selectExpiredFileLink() {  
     return queryFactory.selectFrom(qFileLink)  
             .where(Expressions.stringTemplate("TO_DATE({0}, 'YYYY-MM-DD HH24MISS')",  
                     Expressions.stringTemplate("CONCAT({0}, '235959')",  

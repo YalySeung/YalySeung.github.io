@@ -45,8 +45,7 @@ const URL = "https://jsonplaceholder.typicode.com/todos";
   
 ```javascript
   <button
-	onClick={async () => { 
-{: .notice}  
+	onClick={async () => {
 	  try{
 		const response = await axios.get(URL);
 		setData(response.data);
@@ -59,8 +58,7 @@ const URL = "https://jsonplaceholder.typicode.com/todos";
 > 
 {: .notice}  
 	데이터패치
-  </button> 
-{: .notice}  
+  </button>
 ```
 
 ---

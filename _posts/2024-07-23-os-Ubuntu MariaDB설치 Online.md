@@ -80,13 +80,12 @@ sudo netstat -tulnp | grep 3309
   
 ![image](../../assets/images/MariaDBServiceResult.png)
 
- 접속 가능한 사용자 정보가 **0.0.0.0:\<mariadbPort\>** 일 경우에 외부에서 접속이 가능하다. 
-{: .notice--danger}  
+ 접속 가능한 사용자 정보가 **0.0.0.0:\<mariadbPort\>** 일 경우에 외부에서 접속이 가능하다.
 
 > **caution**
 >
 > Mariadb 서비스가 실행 중 일 때,  설정값 수정이 필요하면 꼭 재기동을 해주어야 한다. 
-{: .notice}  
+{: .notice--danger}  
   
 ```bash
 // 서비스 재기동
@@ -102,8 +101,7 @@ mysql -u root
   
 ```sql
 // 사용자 접속 권한 부여
-`GRANT ALL PRIVILEGES ON mydatabase.* TO <사용자명>@<ip> IDENTIFIED BY <비밀번호>; FLUSH PRIVILEGES;` 
-{: .notice}  
+`GRANT ALL PRIVILEGES ON mydatabase.* TO <사용자명>@<ip> IDENTIFIED BY <비밀번호>; FLUSH PRIVILEGES;`
 ```
 
  ip를 **%**로 설정할 경우 사용자 명만 체크한다.

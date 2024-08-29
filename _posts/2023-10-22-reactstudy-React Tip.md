@@ -27,32 +27,22 @@ export default function App() {
     { id: 3, text: "React 배우기", done: false },
   ];
   return (
-    <> 
-{: .notice}  
-      <ul> 
-{: .notice}  
+    <>
+      <ul>
         {todos
-          .filter((todo) => { 
-{: .notice}  
+          .filter((todo) => {
             console.log(hideCompleted);
             if (hideCompleted) return todo.done;
             else return todo;
           })
-          .map((todo) => ( 
-{: .notice}  
-            <li key={todo.id}> 
-{: .notice}  
-              <span>{todo.text}</span> 
-{: .notice}  
-            </li> 
-{: .notice}  
+          .map((todo) => (
+            <li key={todo.id}>
+              <span>{todo.text}</span>
+            </li>
           ))}
-      </ul> 
-{: .notice}  
-      <button onClick={() => setHideCompleted(!hideCompleted)}>토글</button> 
-{: .notice}  
-    </> 
-{: .notice}  
+      </ul>
+      <button onClick={() => setHideCompleted(!hideCompleted)}>토글</button>
+    </>
   );
 }
 ```

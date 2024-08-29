@@ -34,13 +34,12 @@ last_modified_at: 2024-03-26T08:00:00-10:00:00
 - [ProtoBuf 다운로드 링크](https://github.com/protocolbuffers/protobuf/tags)
   
 ### 컴파일러 경로로 이동하여 .proto 파일 실행
-- proto.exe --\<언어타입\>_out=\<output 경로\> \<.proto 파일 경로\> 
-{: .notice--info}  
+- proto.exe --\<언어타입\>_out=\<output 경로\> \<.proto 파일 경로\>
 
 > **example**
 >
 > protoc.exe --csharp_out=./ C:\WorkSpace\Server\Protoc\protoc-23.3-win64\include\MyProto.proto 
-{: .notice}  
+{: .notice--info}  
   
 ### output 경로에 생성된 파일 확인
 

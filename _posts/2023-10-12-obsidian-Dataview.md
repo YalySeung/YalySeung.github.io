@@ -88,31 +88,25 @@ TABLE drama as 드라마 FROM "/" WHERE file.name = "드라마"
 - 아웃링크 : outgoing{노트명}
   
 ## 기타함수
-- choice(<조건절>, <참일때 값>, <거짓일때 값>) : 조건문 
-{: .notice}  
+- choice(<조건절>, <참일때 값>, <거짓일때 값>) : 조건문
   
 ```sql
 choice(contains(file.tags, "#미완료"), "🚫", "⏩") as 진행상태
 ```  
-- contains(<리스트>, <값>) : 포함여부 확인 
-{: .notice}  
+- contains(<리스트>, <값>) : 포함여부 확인
   
 ```sql
 choice(contains(file.tags, "#미완료"), "🚫", "⏩") as 진행상태
 ```  
-- filter(<리스트>, <필터링 함수>) : 리스트 필터링 
-{: .notice}  
+- filter(<리스트>, <필터링 함수>) : 리스트 필터링
   
 ```sql
-filter(file.tasks, (x) => !x.completed) 
-{: .notice}  
+filter(file.tasks, (x) => !x.completed)
 ```  
-- map(<리스트>, <선택 함수>) : 요소 속성중 원하는 속성만 선택 
-{: .notice}  
+- map(<리스트>, <선택 함수>) : 요소 속성중 원하는 속성만 선택
   
 ```sql
-map(filter(file.tasks, (x) => !x.completed), (x) => x.text) 
-{: .notice}  
+map(filter(file.tasks, (x) => !x.completed), (x) => x.text)
 ```
 
 ---

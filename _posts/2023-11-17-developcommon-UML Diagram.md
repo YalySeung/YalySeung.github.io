@@ -182,8 +182,7 @@ public class Monster implements Attackable, Damagable {
 }
 
 public class MonsterAdministrator {  
-    private List<Monster> monsterList;   
-{: .notice}  
+    private List<Monster> monsterList;  
 }
 ```
   
@@ -197,8 +196,7 @@ public class MonsterAdministrator {
   
 ```java
 public class MonsterAdministrator {  
-    private List<Monster> monsterList;   
-{: .notice}  
+    private List<Monster> monsterList;  
 }
 
 public class GameManager {  

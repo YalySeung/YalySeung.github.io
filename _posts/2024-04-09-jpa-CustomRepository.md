@@ -31,8 +31,7 @@ last_modified_at: 2024-04-09T08:00:00-10:00:00
 ## Example
   
 ```java
-public interface UserRepository extends JpaRepository<User, Integer>, CustomUserRepository{   
-{: .notice--info}  
+public interface UserRepository extends JpaRepository<User, Integer>, CustomUserRepository{  
 //    UserSequenceRepository findUserSequenceByUserIdAndRemoveYn(String userId, String removeYn);  
 }
 ```
@@ -54,8 +53,7 @@ public class UserRepositoryImpl implements CustomUserRepository {
 
 	...
     @Override  
-    public List<String> selectDepartmentNameListInGroup(Integer groupSequence) {   
-{: .notice}  
+    public List<String> selectDepartmentNameListInGroup(Integer groupSequence) {  
         return queryFactory.select(qUser.departmentName)  
                 .from(qUser)  
 				.where(
@@ -66,15 +64,12 @@ public class UserRepositoryImpl implements CustomUserRepository {
     }
     
 	@Override  
-	public Integer initializePassword(List<Integer> usersequncelist, String password) {   
-{: .notice}  
-	    List<User> userList = queryFactory.selectFrom(qUser)   
-{: .notice}  
+	public Integer initializePassword(List<Integer> usersequncelist, String password) {  
+	    List<User> userList = queryFactory.selectFrom(qUser)  
 	            .where(qUser.userSequence.in(usersequncelist))  
 	            .fetch();  
 	  
-	    userList.forEach(user -> {   
-{: .notice}  
+	    userList.forEach(user -> {  
 	        user.setUserPassword(password);  
 	        user.setPasswordResetYn("Y");  
 	        user.setLastPasswordModifyDateTime(DateTime.now());  
@@ -90,14 +85,13 @@ public class UserRepositoryImpl implements CustomUserRepository {
 > **tip**
 >
 > CustomRepository Method 중 update의 경우 좀더 주의를 기울일 필요가 있다. queryFactory의 update 메서드를 사용하면, Persistence Context의 데이터가 갱신되지 않으므로 select 후 반환된 객체를 수정해야한다. 
-{: .notice}  
+{: .notice--info}  
   
 ### input값의 null 체크
   
 ```java
 private BooleanExpression getGroupIfExist(Integer groupSequence){  
-    if (groupSequence > 0) {     
-{: .notice}  
+    if (groupSequence > 0) {    
         return qUser.groupSequence.eq(groupSequence);
     } else {  
         return null;  

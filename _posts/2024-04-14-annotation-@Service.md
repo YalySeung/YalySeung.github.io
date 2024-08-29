@@ -33,8 +33,7 @@ public class BeanUtil implements ApplicationContextAware {
        context = applicationContext;  
     }  
   
-    public static <T> T getBean(Class<T> beanClass) {   
-{: .notice}  
+    public static <T> T getBean(Class<T> beanClass) {  
        return context.getBean(beanClass);  
     }  
   

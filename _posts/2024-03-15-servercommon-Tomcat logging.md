@@ -25,8 +25,7 @@ last_modified_at: 2024-03-15T08:00:00-10:00:00
 ...
 <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
                prefix="localhost_access_log" suffix=".txt"
-               pattern="%h %l %u %t &quot;%r&quot; %s %b" /> 
-{: .notice}  
+               pattern="%h %l %u %t &quot;%r&quot; %s %b" />
 ...
 ```
   
@@ -53,12 +52,10 @@ fi
 ```bash
   
 # Catalina.out 로그 날짜별로 분리
-cp /Tomcat 홈 경로/logs/catalina.out /Tomcat 홈 경로/logs/catalina.out.$(date +\%y-\%m-\%d).log 2>&1 
-{: .notice}  
+cp /Tomcat 홈 경로/logs/catalina.out /Tomcat 홈 경로/logs/catalina.out.$(date +\%y-\%m-\%d).log 2>&1
   
 # 기존의 catalina.out 로그 내용 제거
-cat /dev/null > /Tomcat 홈 경로/logs/catalina.out 
-{: .notice}  
+cat /dev/null > /Tomcat 홈 경로/logs/catalina.out
   
 # 생성 후 90일이 지난 파일 삭제
 find /Tomcat 홈 경로/logs -mtime +90 -name catalina* -exec rm {} \;

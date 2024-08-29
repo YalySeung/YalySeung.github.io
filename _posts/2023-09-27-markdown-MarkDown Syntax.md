@@ -123,21 +123,17 @@ last_modified_at: 2023-09-27T08:00:00-10:00:00
   
 ### 텍스트 밑줄
 ```
-<u>텍스트</u> 
-{: .notice}  
+<u>텍스트</u>
 ```
 
-<u>텍스트</u> 
-{: .notice}  
+<u>텍스트</u>
   
 ### 텍스트 글자색
 ```
-<span style="color:red">텍스트</span> 
-{: .notice}  
+<span style="color:red">텍스트</span>
 ```
 
-<span style="color:red">텍스트</span> 
-{: .notice}  
+<span style="color:red">텍스트</span>
   
 ### 텍스트 개행
 ```
@@ -150,8 +146,7 @@ last_modified_at: 2023-09-27T08:00:00-10:00:00
   
 ### 텍스트 공백, 들여쓰기
 ```
-전각 문자 사용! ==> (　) 
-{: .notice}  
+전각 문자 사용! ==> (　)
 ```
 
   들여쓰기
@@ -196,12 +191,10 @@ class Sample{
   
 ### 일반 링크
 ```
-<https://www.google.com> 
-{: .notice}  
+<https://www.google.com>
 ```
 
-  <https://www.google.com> 
-{: .notice}  
+  <https://www.google.com>
   
 ### 텍스트 링크
 ```
@@ -227,8 +220,7 @@ class Sample{
 - 방법
 1. 공백이 있을 경우 %20 으로 치환한다
 ```
-[<링크텍스트>](<파일경로>) 
-{: .notice}  
+[<링크텍스트>](<파일경로>)
 ```
 [링크텍스트입니다.](./MarkDown%20Syntax.md)
   
@@ -253,8 +245,7 @@ class Sample{
 ```
 >인용문 
 {: .notice}  
-  >>중첩 인용문 
-{: .notice}  
+  >>중첩 인용문
 ```
     
 > 인용문
@@ -263,12 +254,10 @@ class Sample{
   
 ### 주석
 ```
-<cite>google</cite> --- google-forum' Conference, 1997 
-{: .notice}  
+<cite>google</cite> --- google-forum' Conference, 1997
 ```
 
-<cite>google</cite> --- google-forum' Conference, 1997 
-{: .notice}  
+<cite>google</cite> --- google-forum' Conference, 1997
   
 ### 체크리스트
 ```  
@@ -293,56 +282,40 @@ class Sample{
 |:---|---: |:---: |
 |좌측정렬|우측정렬|가운데정렬|
 |좌측정렬|**우측정렬 진하게**|가운데정렬|
-|좌측정렬|<span style="color:red">우측정렬Red</span>|가운데정렬| 
-{: .notice}  
-|좌측정렬|개행하고싶어\<br>다음내용|개행성공| 
-{: .notice}  
+|좌측정렬|<span style="color:red">우측정렬Red</span>|가운데정렬|
+|좌측정렬|개행하고싶어\<br>다음내용|개행성공|
 ```
 
 |제목|내용|설명|
 |---|---|---|
 |좌측정렬|우측정렬|가운데정렬|
 |좌측정렬|**우측정렬 진하게**|가운데정렬|
-|좌측정렬|<span style="color:red">우측정렬Red</span>|가운데정렬| 
-{: .notice}  
-|좌측정렬|개행하고싶어<br>다음내용|개행성공| 
-{: .notice}  
+|좌측정렬|<span style="color:red">우측정렬Red</span>|가운데정렬|
+|좌측정렬|개행하고싶어<br>다음내용|개행성공|
   
 ### 접기 펼치기
 ```
-<details> 
-{: .notice}  
-<summary>클릭!</summary> 
-{: .notice}  
-<div markdown="1"> 
-{: .notice}  
+<details>
+<summary>클릭!</summary>
+<div markdown="1">
 까꿍
-</div> 
-{: .notice}  
-</details> 
-{: .notice}  
+</div>
+</details>
 ```
 
-<details> 
-{: .notice}  
-<summary>클릭!</summary> 
-{: .notice}  
-<div markdown="1"> 
-{: .notice}  
+<details>
+<summary>클릭!</summary>
+<div markdown="1">
 까꿍
-</div> 
-{: .notice}  
-</details> 
-{: .notice}  
+</div>
+</details>
   
 ### 버튼
 ```
-<a href="#" class="click_button">Button</a> 
-{: .notice}  
+<a href="#" class="click_button">Button</a>
 ```
 
-<a href="#" class="click_button">Button</a> 
-{: .notice}  
+<a href="#" class="click_button">Button</a>
   
 ### 각주
 ```
