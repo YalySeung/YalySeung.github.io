@@ -71,7 +71,20 @@ assertThat(value, is(5)); // Expected: is <5> but: was <4>
 ```
 
  끝으로, Hamcrest는 테스트 코드에서 비교나 조건 검증을 매처로 캡슐화하여, 이후 리팩토링 시 테스트 코드가 더 안정적이고 유지보수하기 쉬워진다.
+  
+> **error**
+>
+> java.lang.NoClassDefFoundError: com/jayway/jsonpath/Predicate
+>  
+{: .notice--info}  
 
+ 단위 테스트 실행시, 위와 같은 에러가 발생한다면, JSONPath 라이브러리가 누락된 것이므로 Gradle에 종속성을 추가해준다.
+  
+```groovy
+// JSONPath 라이브러리 추가 
+testImplementation 'com.jayway.jsonpath:json-path:2.8.0'
+```
+  
 ---
   
 # 연결문서

@@ -85,6 +85,11 @@ tasks.named('test') {
 
  **tasks**는 빌드, 테스트, 배포 등의 단계를 수행하는 작업단위를 의미한다. task 내부에서 doFirst, doLast를 통해 순서를 지정 할 수 있다.
 
+> **caution**
+>
+> gradle을 사용하다보면 디스크 용량이 점점 부족해진다. C:\WorkSpace\Server\Gradle\gradle-4.10.2\bin\daemon 경로에 daemon 로그 파일이 쌓이기 때문이다. 주기적으로 지워주자. 
+{: .notice--info}  
+
 ---
   
 # 연결문서
