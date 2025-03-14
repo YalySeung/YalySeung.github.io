@@ -7,7 +7,7 @@ toc_label : "CORS"
 categories:
 - ServerCommon
 tags:
-- [ServerCommon, 미완료]
+- [ServerCommon]
 last_modified_at: 2024-07-30T08:00:00-10:00:00
 ---
   

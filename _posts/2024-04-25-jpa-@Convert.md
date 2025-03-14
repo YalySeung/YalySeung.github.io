@@ -52,10 +52,10 @@ public class User {
 
     @GeneratedValue(strategy = GenerationType.AUTO)  
     @Column(name = "user_seq", length = 20, nullable = false)  
+  
     Integer userSeq;  
 	
 	...
-  
     @Column(name = "regist_time", nullable = false)  
     @Convert(converter = LocalDateAttributeConverter.class)  
     LocalDate registTime;  
@@ -78,6 +78,11 @@ public class User {
 	...
 }
 ```
+
+> **caution**
+>
+> @Convert Annotation은 @Id에는 적용할 수 없다.  
+{: .notice--danger}  
 
 ---
   

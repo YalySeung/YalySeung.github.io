@@ -7,105 +7,89 @@ toc_label : "Tomcat logging"
 categories:
 - ServerCommon
 tags:
-- [ServerCommon, 미완료]
+- [ServerCommon]
 last_modified_at: 2024-03-15T08:00:00-10:00:00
 ---
   
 ---
   
- 이 글에서는 Tomcat logging에 관해서 알아보도록 하겠다.
-
- Tomcat 설치 후 다른 작업을 하지 않았다면 default logging 경로는 Tomcat 폴더 내의 logs 폴더이다.
+  이 글에서는 Tomcat 에서 Logging하는 방법을 알아보겠다.
   
-### 경로설정
-- Tomcat/conf/server.xml
-- Valve의 directory 가 로그 root 폴더 경로를 의미한다.
+  Tomcat 설치 후 별도의 설정을 하지 않았다면 기본 로그 경로는 `Tomcat/logs` 폴더이다.
   
-```bash
-...
+## 경로 설정
+  Tomcat의 로그 설정은 `Tomcat/conf/server.xml`에서 관리된다.  
+  `Valve`의 `directory` 속성이 로그의 root 폴더 경로를 지정한다.
+  
+```xml
 <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
-               prefix="localhost_access_log" suffix=".txt"
-               pattern="%h %l %u %t &quot;%r&quot; %s %b" />
-...
+       prefix="localhost_access_log" suffix=".txt"
+       pattern="%h %l %u %t &quot;%r&quot; %s %b" />
 ```
   
 ## Catalina.out
-- 서버에서 발생한 모든 내용(기동, 정지 등)을 기록한 파일
-- 기본설정은 한 파일에 모든 로그가 쌓이도록 설정되어있어, 날짜별로 분리하러면 [Crontab](../../servercommon/servercommon-Crontab)을 사용해야한다.
+- **서버에서 발생한 모든 내용(기동, 정지 등)을 기록**  
+- 기본 설정은 하나의 파일에 로그가 계속 쌓이며, 날짜별로 분리하려면 [Crontab](../../servercommon/servercommon-Crontab)을 사용해야 한다.
   
 ### 경로 설정
-- Tomcat/bin/Catalina.out
+- `Tomcat/bin/Catalina.out`
   
 ```bash
-...
 if [ -z "$CATALINA_OUT" ] ; then
-  #경로설정
+  # 경로 설정
   CATALINA_OUT="$CATALINA_BASE"/logs/catalina.out
-  #로깅 안할경우
+  # 로깅 비활성화 설정
   CATALINA_OUT=/dev/null
 fi
-...
 ```
   
-### Crontab 스크립트 작성
+### Crontab을 활용한 로그 분리
   
 ```bash
   
 # Catalina.out 로그 날짜별로 분리
 cp /Tomcat 홈 경로/logs/catalina.out /Tomcat 홈 경로/logs/catalina.out.$(date +\%y-\%m-\%d).log 2>&1
   
-# 기존의 catalina.out 로그 내용 제거
+# 기존 catalina.out 로그 내용 제거
 cat /dev/null > /Tomcat 홈 경로/logs/catalina.out
   
-# 생성 후 90일이 지난 파일 삭제
+# 90일이 지난 파일 삭제
 find /Tomcat 홈 경로/logs -mtime +90 -name catalina* -exec rm {} \;
 ```
   
-## catalina.yyyy-mm-dd.log
-- 톰캣에서 생기는 로그만 기록
-- Standard output, Standard error 로그는 제외
+## 기타 로그 파일
   
-## host-manager.log
-- Tomcat Host Manager Web app 로그
+### catalina.yyyy-mm-dd.log
+- **Tomcat 내부 로깅을 기록**  
+- Standard output, Standard error 로그 제외
   
-## manager.log
-- Tomcat Manager Web App 로그
+### host-manager.log
+- **Tomcat Host Manager Web App 관련 로그**
   
-## localhost.log
-- host 한정 로그
+### manager.log
+- **Tomcat Manager Web App 관련 로그**
   
-### [catalina.yyyy-mm-dd.log](#catalinayyyy-mm-ddlog), [host-manager.log](#host-managerlog), [manager.log](#managerlog), [localhost.log](#localhostlog) 경로 설정
-- 모두  Tomcat/api/conf/logging.properties 파일에서 설정 가능하다
+### localhost.log
+- **개별 호스트의 로그 기록**
+  
+## 로그 설정 변경
+  위 파일들의 경로 및 로깅 수준은 `Tomcat/conf/logging.properties`에서 설정 가능하다.
   
 ```bash
-...
   
-# catalina.yyyy-mm-dd.log
+# catalina.yyyy-mm-dd.log 설정
 1catalina.org.apache.juli.AsyncFileHandler.level = FINE
 1catalina.org.apache.juli.AsyncFileHandler.directory = ${catalina.base}/logs
 1catalina.org.apache.juli.AsyncFileHandler.prefix = catalina.
 1catalina.org.apache.juli.AsyncFileHandler.encoding = UTF-8
   
-# localhost.log
+# localhost.log 설정
 2localhost.org.apache.juli.AsyncFileHandler.level = FINE
 2localhost.org.apache.juli.AsyncFileHandler.directory = ${catalina.base}/logs
 2localhost.org.apache.juli.AsyncFileHandler.prefix = localhost.
 2localhost.org.apache.juli.AsyncFileHandler.encoding = UTF-8
-  
-# manager.log
-3manager.org.apache.juli.AsyncFileHandler.level = FINE
-3manager.org.apache.juli.AsyncFileHandler.directory = ${catalina.base}/logs
-3manager.org.apache.juli.AsyncFileHandler.prefix = manager.
-3manager.org.apache.juli.AsyncFileHandler.encoding = UTF-8
-  
-# host-manager.log
-4host-manager.org.apache.juli.AsyncFileHandler.level = FINE
-4host-manager.org.apache.juli.AsyncFileHandler.directory = ${catalina.base}/logs
-4host-manager.org.apache.juli.AsyncFileHandler.prefix = host-manager.
-4host-manager.org.apache.juli.AsyncFileHandler.encoding = UTF-8
-...
 ```
-  
+
 ---
   
 # 연결문서

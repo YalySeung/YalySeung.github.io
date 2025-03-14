@@ -109,6 +109,11 @@ PUT http://localhost/worker/얄리{
 - 컨트롤 자원을 의미하는 URI에서는 동사 사용을 허용
 - URI에 자원의 행위를 표시하지 않는다.
 - 확장자 대신 Accept Header를 사용한다.
+  
+## REST API 설계 팁
+- 조회시, key가 되는 식별자는 PathVariable로 전달하고, 기타 데이터는 RequestParam 으로 전달한다.
+- 자원 조회시, param으로 개인정보를 넘겨야 하는 경우, GET 대신 POST를 사용한다.
+- 조회하는 POST와 삽입하는 POST 간 구분이 필요할때, URI로 구분한다.
 
 ---
   

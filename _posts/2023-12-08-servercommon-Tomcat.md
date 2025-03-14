@@ -52,8 +52,8 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
 ### Naming
 - JNDI를 사용하여 java Application의 리소스 검색 및 엑세스
   
-### WebSocket
-- Tomcat에서 WebSocket 프로토콜 지원
+### [WebSocket](../../통신/통신-WebSocket)
+- Tomcat에서 [WebSocket](../../통신/통신-WebSocket) 프로토콜 지원
 - 클라이언트와 서버간 양방향 통신 지원
   
 ### Manager

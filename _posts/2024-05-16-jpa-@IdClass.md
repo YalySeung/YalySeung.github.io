@@ -7,7 +7,7 @@ toc_label : "@IdClass"
 categories:
 - JPA
 tags:
-- [Spring, Annotation, 미완료, JPA, Querydsl]
+- [Spring, Annotation, JPA, Querydsl]
 last_modified_at: 2024-05-16T08:00:00-10:00:00
 ---
   
@@ -38,7 +38,7 @@ public class EquipmentCompositeKey implements Serializable {
 }
 ```
 
- 여기서 주의할 점은 java.io의 Serializable 인터페이스를 구현해야 하며, Equals 와 hashcode를 선언해주어야 한다는 점이다. 필자는 [@Data](../../annotation/annotation-@Data) Annotation 을 사용하였다. 
+ 여기서 주의할 점은 java.io의 **Serializable** 인터페이스를 구현해야 하며, Equals 와 hashcode를 선언해주어야 한다는 점이다. 필자는 [@Data](../../annotation/annotation-@Data) Annotation 을 사용하였다. 
 
  그리고 @IdClass를 사용한 Entity Class를 선언한다.
   
@@ -61,8 +61,12 @@ public class StatisticsProcessStatusInlineView {
     private String explanation;  
 }
 ```
-  
+
+ 이런 식으로 Entity를 정의하면 querydsl에서 복합키를 가독성 높게 불라와서 사용할 수 있다
+
 ---
   
 # 연결문서
+- [@Entity](../../jpa/jpa-@Entity)
 - [@EmbeddedId](../../jpa/jpa-@EmbeddedId)
+- [@Embeddable](../../jpa/jpa-@Embeddable)

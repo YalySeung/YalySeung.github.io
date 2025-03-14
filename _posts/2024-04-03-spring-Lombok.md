@@ -13,16 +13,14 @@ last_modified_at: 2024-04-03T08:00:00-10:00:00
   
 ---
   
-## 정의
+ 이 글에서는 Spring 개발에서 빼놓을 수 없는 Lombok 라이브러리에 대해서 알아보겠다.
+
 > **Lombok 이란?**  
 >
-> Java 라이브러리 중 하나로 반복되는 코드를 Annotation을 사용하여 자동으로 생성해주는 라이브러리 
+> Java 라이브러리 중 하나로 반복되는 코드를 Annotation을 사용하여 자동으로 생성해주는 라이브러리이다. 
 {: .notice--info}  
-  
-## 장점
-- Annotation 기반의 코드 자동 생성으로 생산성 향상
-- 코드 가독성 향상
-- 유지보수 편의성 향상
+
+ Lombok을 사용함으로써 얻을 수 있는 가장 큰 이점은 [Boiler Plate](../../cleancode/cleancode-Boiler-Plate) 를 줄여 **가독성**을 높이고 **유지보수 편의성을 향상**시킬 수 있으며, 간단한 Annotation만으로 코드 작성을 줄일 수 있다는 점이다.
   
 ## Lombok Annotation
 
@@ -37,11 +35,12 @@ last_modified_at: 2024-04-03T08:00:00-10:00:00
 | @EqualsAndHashCode       | Class     | equals 와 hashCode 함수 생성. callSuper(부모의 필드도 비교할지 여부)                         |
 | [@Data](../../annotation/annotation-@Data)                | Class     | Getter 메서드, Setter 메서드, RequiredArgsConstructor, toString, equals 모두 생성     |
 | @Builder                 | Class     | 해당 Class에 Builder 패턴 적용                                                     |
+| [@SuperBuilder](../../annotation/annotation-@SuperBuilder)        | Class     | @Builder + 상속 관계까지 반영                                                       |
   
 ## 프로젝트 설정
-- IDE에서 Annotation Processor 옵션을 활성화 해야 한다. [Intellij](../../ide/ide-Intellij#annotationprocessor)
-  
-### build.gradle
+ Lombok을 사용하기 위해서 IDE의 Annotation Processor 옵션을 활성화 해야 한다. [IntelliJ Annotation Processor 활성화](../../ide/ide-Intellij#annotationprocessor)
+
+ IDE 설정이 완료됐다면, Gradle 에 의존성을 설정해준다.
   
 ```groovy
 dependencies {  
@@ -52,8 +51,8 @@ dependencies {
 	...
 }
 ```
-  
-### Example
+
+ 아래는 @Data Annotation을 적용하여 getter, getter, equals, hashCode를 정의한 모습니다. 보다시피 소스코드가 굉장히 간소화 된 것을 볼 수 있다.
   
 ```java
 @Data  

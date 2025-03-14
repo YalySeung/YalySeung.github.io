@@ -51,5 +51,4 @@ export default Kakao
 ---
   
 # 연결문서
-- [외부API 연동](../../react/react-외부API-연동)
   

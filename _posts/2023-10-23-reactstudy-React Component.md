@@ -13,10 +13,16 @@ last_modified_at: 2023-10-23T08:00:00-10:00:00
   
 ---
   
-##  컴포넌트
-- 하나의 UI를 의미(버튼, 이미지, Grid 등등)
-- PascalCase로 작성
-- **컴포넌트 내 로직은 컴포넌트에 변경이 있을 때 마다 호출된다.**
+ 이 글에서는 React Component 에 대해서 알아볼 것이다.
+
+> **React Component란?**  
+>
+> 버튼, 이미지, Grid 등의 하나의 UI를 의미한다. 
+{: .notice--info}  
+
+ Component는 PascalCase로 작성하며, 컴포넌트의 **function 내의 로직은 컴포넌트에변경이 있을 때마다 호출**된다.
+
+ Component를 정의한 하나의 예시를 살펴보자.
   
 ```javascript
 export default function App() {
@@ -64,23 +70,17 @@ export default function App() {
   );
 }
 ```
+
+ 이런 Component는 UI 의 요소 **각각을 파일로 구분하여 유지보수가 용이하다**는 장점이 있다. 반면 **분리된 컴포넌트간 데이터 연동을 고려**해야 하며 구조를 잘못 잡으면 오히려 소스코드가 복잡해 질 수 있다.
   
-### 컴포넌트 분리의 장단점
-  
-#### 장점
-- html 페이지의 Item을 각각 파일로 구분하여 유지보수가 용이
-  
-#### 단점
-- 분리된 컴포넌트간 데이터 연동 고려 필요
-- 부모 컴포넌트가 자식 컴포넌트에 데이터 전달 방법 필요
-  
-### 컴포넌트 추가
-  
-#### components 폴더 하위에 jsx 생성
+# Component 추가
+ react 프로젝트에 신규 Component를 추가하는 방법을 살펴보자. 
+
+ 먼저 components 폴더 하위에 jsx 파일을 생헌다.
   
 ![image](../../assets/images/AppHeaderjsx.png)
-  
-#### jsx 파일 작성
+
+ fotter 컴포넌트를 작성해보자.
   
 ```javascript
 export default function AppFooter(){
@@ -91,8 +91,8 @@ export default function AppFooter(){
     )
 }
 ```
-  
-#### App.Jsx에 import 후 컴포넌트 추가
+
+ 이제 App.jsx에 Footer 를 import 하자.
   
 ```javascript
 import AppFooter from "./components/AppFooter";
@@ -106,7 +106,9 @@ export default function App(){
   );
 }
 ```
-  
+
+ 독자들이 추가한 아름다운 Footer Component를 확인 가능하다.
+
 ---
   
 # 연결문서

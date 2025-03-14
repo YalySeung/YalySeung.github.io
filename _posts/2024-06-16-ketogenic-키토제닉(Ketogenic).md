@@ -7,7 +7,7 @@ toc_label : "키토제닉(Ketogenic)"
 categories:
 - Ketogenic
 tags:
-- [Ketogenic, 미완료]
+- [Ketogenic]
 last_modified_at: 2024-06-16T08:00:00-10:00:00
 ---
   

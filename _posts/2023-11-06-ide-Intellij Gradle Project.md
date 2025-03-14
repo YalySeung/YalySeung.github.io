@@ -13,7 +13,7 @@ last_modified_at: 2023-11-06T08:00:00-10:00:00
   
 ---
   
-IntelliJ에서 Gradle Project를 생성해보도록 하겠다. new > Project에서 생성한 Gradle 기본 프로젝트 폴더 구조는 아래와 같다.
+[Intellij](../../ide/ide-Intellij)에서 Gradle Project를 생성해보도록 하겠다. new > Project에서 생성한 Gradle 기본 프로젝트 폴더 구조는 아래와 같다.
   
 ![image](../../assets/images/intelliJGradleProject.png)
   

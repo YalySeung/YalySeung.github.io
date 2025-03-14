@@ -52,7 +52,7 @@ public class TestController {
   
 ### Class 테스트
 
- 생성된 클래스에 사용할 중요한 Annotation은 MockMVC 환경을 구성해주는 **@WebMvcTest** 이다. 
+ 생성된 클래스에 사용할 중요한 Annotation은 [MockMVC](../../spring/spring-MockMVC) 환경을 구성해주는 **@WebMvcTest** 이다. 
   
 ```java
 @WebMvcTest(TestController.class)  
@@ -146,3 +146,4 @@ class EdocControllerTest {
 # 연결문서
 - [SpringBoot-Project](../../springboot/springboot-SpringBoot-Project)
 - [ObjectMapper](../../java/java-ObjectMapper)
+- [MockMVC](../../spring/spring-MockMVC)

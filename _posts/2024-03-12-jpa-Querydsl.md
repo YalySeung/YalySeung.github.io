@@ -14,17 +14,16 @@ last_modified_at: 2024-03-12T08:00:00-10:00:00
 ---
   
 ## 정의
+ 이 글에서는 Querydsl Framework 에 대해서 알아보겠다.
+
 > **Querydsl이란?**  
 >
-> Query Domain Specific Language
-> Hibernate Query Language를 타입에 맞게 안전하게 생성 및 관리해주는 Builder Opensource Framework 
+> Query Domain Specific Language의 약어로 Hibernate Query Language를 타입에 맞게 생성 및 관리해주는 Builder Opensource Framework이다. 
 {: .notice--info}  
-  
-## 장점
-- java 소스로 쿼리를 작성할 수 있어, 컴파일 시점에 Syntax Error 확인 가능
-- IDE의 자동완성 기능 사용 가능
-- 복잡한 Query와 동적 Query 작성이 용이함
-- Query 작성 시, 제약조건등을 메서드로 추출하여 재사용 가능
+
+ Mybatis로 작성된 Query를 보면, IDE에서 어느정도 정합성 체크를 해주지만 실제 쿼리가 잘 동작하는지는 Query를 호출해 봐야 결과를 알 수 있다. 
+ 
+ 반면, Querydsl은 **java 소스로 쿼리를 작성**할 수 있어, **컴파일 시점에 Syntax Error 확인** 가능하다. java 소스 기반이기에 **IDE의 자동완성 기능도 사용** 할 수 있다. 또한 **재사용이 가능하도록 프로그래밍** 할 수 있다. InlineView나 union 등의 기능은 사용이 안된다는 단점이 있지만, 이 또한 우회하여 처리할 수 있는 방법들이 있다. 
   
 ## Keyword
   
@@ -90,7 +89,7 @@ public class QuerydslConfiguration {
 ```
   
 ```java
-//build.gradle
+//build.gradle v1
 
 project(":rpa-view:view-core") {  
     apply plugin: "eclipse-wtp"  
@@ -124,6 +123,89 @@ project(":rpa-view:view-core") {
 }
 ```
   
+```groovy
+buildscript {  
+    ext {  
+        // QueryDSL 추가  
+        queryDslVersion = "5.0.0"  
+    }  
+}  
+  
+plugins {  
+    id 'war'  
+    id 'java'  
+    // QueryDSL  
+    id "com.ewerk.gradle.plugins.querydsl" version "1.0.10"  
+}  
+  
+dependencies {  
+    implementation 'org.springframework:spring-web:5.3.22'  
+    implementation 'javax.servlet:javax.servlet-api:4.0.1'  
+    implementation 'org.springframework:spring-webmvc:5.3.8'  
+    implementation 'org.springframework:spring-context:5.3.22'  
+    
+    // Hibernate 관련 의존성  
+    implementation 'org.hibernate:hibernate-core:5.5.7.Final'  
+    implementation 'org.hibernate:hibernate-entitymanager:5.4.32.Final'  
+  
+    // JPA 관련 의존성  
+    implementation 'javax.persistence:javax.persistence-api:2.2'  
+    implementation 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.2.Final'  
+    implementation 'org.springframework.data:spring-data-jpa:2.5.2'  
+    implementation 'org.springframework:spring-aspects:5.3.8'  
+  
+    // Spring Boot가 아닌 경우 Servlet API 및 JSP 관련 의존성 추가  
+    providedCompile 'javax.servlet:jstl:1.2'  
+  
+    // Querydsl 의존성 추가  
+    implementation 'com.querydsl:querydsl-jpa:5.0.0'  
+    annotationProcessor 'com.querydsl:querydsl-apt:5.0.0'  
+    implementation 'com.querydsl:querydsl-apt:5.0.0:jpa'  
+  
+    testImplementation 'org.mockito:mockito-core:3.12.4'  
+    testImplementation 'org.springframework:spring-test:5.3.8'  
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'  
+  
+    // json response 검증  
+    implementation 'com.jayway.jsonpath:json-path:2.7.0'  
+  ...
+}  
+  
+def querydslDir = "$buildDir/generated/querydsl"  
+  
+querydsl {  
+    jpa = true  
+    querydslSourcesDir = querydslDir  
+}  
+sourceSets {  
+    main.java.srcDir querydslDir  
+}  
+  
+configurations {  
+    querydsl.extendsFrom compileClasspath  
+}  
+  
+compileQuerydsl{  
+    options.annotationProcessorPath = configurations.querydsl  
+}  
+  
+compileJava.dependsOn compileQuerydsl  
+  
+task cleanQuerydslDir(type: Delete) {  
+    delete querydslDir  
+}  
+  
+test {  
+    dependsOn cleanQuerydslDir, compileQuerydsl  
+    useJUnitPlatform()  
+}
+```
+
+> **caution**
+>
+> 필자가 겪은 에러 상황중에 Querydsl 폴더에 QClass가 있는 상태에서 단위테스트를 진행하면 빌드가 실패하고, 없는 상태에서 단위테스트를 진행하면 성공하는 현상을 겪은 적이 있다. 그래서 test 전에는 꼭 Querydsl 폴더를 비우고 테스트를 진행하도록 Build.gradle에 설정하자. 
+{: .notice--info}  
+  
 ---
   
 # 연결문서
@@ -132,6 +214,3 @@ project(":rpa-view:view-core") {
 - [ORM](../../servercommon/servercommon-ORM)
 - [JPQL](../../jpa/jpa-JPQL)
 - [AnnotationProcessor](../../spring/spring-AnnotationProcessor)
-- [성능관련 주의사항](https://hyune-c.tistory.com/36)
-- [참고링크](https://kha0213.github.io/jpa/querydsl/)
-- [설정](https://www.devkuma.com/docs/spring-data-jpa/query-dsl/)

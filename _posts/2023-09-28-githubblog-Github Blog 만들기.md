@@ -64,11 +64,11 @@ last_modified_at: 2023-09-28T08:00:00-10:00:00
 ![image](../../assets/images/RubyInstall.png)
   
 ### Jekyll과 Bundler 설치
-- 아래부터 환경 셋팅은 VSCode를 사용하도록 하겠다.(VSCode 설치 과정은 생략)
+- 아래부터 환경 셋팅은 [vscode](../../ide/ide-vscode)를 사용하도록 하겠다.([vscode](../../ide/ide-vscode) 설치 과정은 생략)
   [VSCode 다운로드 링크](https://code.visualstudio.com/download);  
 
 - Bundler는 루비 프로젝트 필요한 gem의 올바른 버전을 추적하고 설치하는 도구이다.
-- vscode 터미널에 다음 명령어들을 차례로 수행한다. (설치 및 버전 확인)
+- [vscode](../../ide/ide-vscode) 터미널에 다음 명령어들을 차례로 수행한다. (설치 및 버전 확인)
   - <span style="color:red">gem install jekyll bundler</span>
   - <span style="color:red">bundle update</span>  
   - <span style="color:red">jekyll -v</span>  

@@ -7,7 +7,7 @@ toc_label : "View Table"
 categories:
 - Database
 tags:
-- [미완료, Database]
+- [Database]
 last_modified_at: 2024-05-10T08:00:00-10:00:00
 ---
   

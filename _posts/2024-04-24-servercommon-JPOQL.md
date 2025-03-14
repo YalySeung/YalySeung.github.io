@@ -14,6 +14,7 @@ last_modified_at: 2024-04-24T08:00:00-10:00:00
 ---
   
 ##  정의
+
  > **JPOQL이란?**  
 > 
 {: .notice--info}  

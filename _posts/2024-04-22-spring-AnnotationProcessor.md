@@ -32,7 +32,7 @@ last_modified_at: 2024-04-22T08:00:00-10:00:00
 - Annotation을 사용하여 코드의 유효성을 검증하고 오류를 발견
 - 특정한 규칙을 준수하지 않는 코드를 검출하여 경고나 오류 메시지를 출력
   
-## IntelliJ에서 설정
+## [Intellij](../../ide/ide-Intellij)에서 설정
 - [Intellij](../../ide/ide-Intellij#annotationprocessor)
 
 ---

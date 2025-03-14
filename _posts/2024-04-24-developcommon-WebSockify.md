@@ -22,10 +22,10 @@ last_modified_at: 2024-04-24T08:00:00-10:00:00
 ## 주요 기능
   
 ### Proxy 기능
-- TCP 또는 SSL 트래픽을 WebSocket으로 변환하여 다른 호스트 또는 포트로 전달
+- TCP 또는 SSL 트래픽을 [WebSocket](../../통신/통신-WebSocket)으로 변환하여 다른 호스트 또는 포트로 전달
 - 기존의 TCP 또는 SSL 서비스를 WebSocket을 지원하는 클라이언트와 통신할 수 있도록 만듦
   
-### WebSocket 지원
+### [WebSocket](../../통신/통신-WebSocket) 지원
 - TCP 또는 SSL 서비스를 웹 소켓을 지원하는 서비스로 변환하여 웹 애플리케이션과 통합
   
 ### SSL 확장

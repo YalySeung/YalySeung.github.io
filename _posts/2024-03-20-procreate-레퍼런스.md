@@ -7,7 +7,7 @@ toc_label : "레퍼런스"
 categories:
 - Procreate
 tags:
-- [Procreate]
+- [Procreate, Ipad]
 last_modified_at: 2024-03-20T08:00:00-10:00:00
 ---
   

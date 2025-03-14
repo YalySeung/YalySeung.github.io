@@ -7,7 +7,7 @@ toc_label : "MockMVC"
 categories:
 - Spring
 tags:
-- [Spring, BackEnd, TDD, 미완료]
+- [Spring, BackEnd, TDD]
 last_modified_at: 2023-12-14T08:00:00-10:00:00
 ---
   
@@ -15,18 +15,21 @@ last_modified_at: 2023-12-14T08:00:00-10:00:00
   
 > **MockMVC란?**  
 >
-> Spring 3.2 부터  Spring MVC를 모킹하여 웹 어플리케이션 테스트를 지원하는 라이브러리로 Web Application을 배포하지 않고 Spring MVC의 동작을 재현하여 테스트 할 수 있다 
+>  Spring 3.2부터 Spring MVC를 모킹하여 웹 애플리케이션 테스트를 지원하는 라이브러리로, Web Application을 배포하지 않고 Spring MVC의 동작을 재현하여 테스트할 수 있다. 
 {: .notice--info}  
 
- 먼저 Mock MVC 사용을 위한 의존성을 설정한다.
+  MockMVC를 사용하면 **실제 서버를 실행하지 않고도 컨트롤러 로직을 테스트할 수 있다.**
+  
+## Gradle 의존성 추가
   
 ```groovy
 testImplementation 'org.springframework:spring-test:5.3.8'
 ```
-
- 다음으로 Mock MVC를 초기화 하는 방법을 살펴보자. Web Application Context를 사용하여 테스트할 경우와 특정 Controller만 테스트 할 때 초기화 하는 방법이 다르다.
-
- **Web Application Context를 사용하여 테스트** 할 경우에는 아래와 같이 초기화 메서드에서 매개변수로 받아와 **MockMVC에 주입**한다.
+  
+## MockMVC 초기화 방법
+  
+### 1️⃣ Web Application Context를 사용하여 초기화
+  `MockMvcBuilders.webAppContextSetup(wac).build();`를 사용하여 `MockMvc`를 초기화할 수 있다.
   
 ```java
 MockMvc mockMvc;
@@ -36,27 +39,27 @@ void setUp(WebApplicationContext wac) {
     mockMvc = MockMvcBuilders.webAppContextSetup(wac).build(); 
 }
 ```
-
- **특정 Controller만 테스트**하고 싶을 경우에는 **MockMvcBuilders**에서 제공하는 standaloneSetup 메서드를 사용한다.
+  
+### 2️⃣ 특정 컨트롤러만 테스트할 경우
+  `MockMvcBuilders.standaloneSetup()`을 사용하여 개별 컨트롤러만 초기화할 수 있다.
   
 ```java
 MockMvc mockMvc;
 
 @BeforeEach 
 void setup() { 
-	mockMvc = MockMvcBuilders.standaloneSetup(new ApiController()).build(); 
+    mockMvc = MockMvcBuilders.standaloneSetup(new ApiController()).build(); 
 }
 ```
-
- 초기화를 마쳤다면 각 테스트에서 API 호출 테스트를 진행해보자. 우리가 사용할 API는 MockMvc가 제공하는 **perform API**이다. MockMvc에는 Application Context나 Controller 정보가 주입 되었으므로 **실제 컨트롤러를 호출하는 것과 동일한 테스트가 가능**하다. 
+  
+## API 호출 테스트
+  MockMVC의 `perform()` API를 사용하면 **실제 컨트롤러를 호출하는 것과 동일한 테스트가 가능**하다.
   
 ```java
 public ResultActions perform(RequestBuilder requestBuilder) throws Exception
 ```
-
- perform() API는 RequestBuilder를 Parameter로 받는데 [MockMvcRequestBuilders](#mockmvcrequestbuilders) 를 사용하여 손쉽게 MockHttpServletRequestBuilder를 생성하여 사용할 수 있다.
-
- MockHttpServletRequestBuilder에서 제공하는 static 메서드는 아래와 같다.
+  
+### 3️⃣ `MockMvcRequestBuilders`를 사용한 API 요청
   
 ```java
 public static MockHttpServletRequestBuilder get(String urlTemplate, Object... uriVars){...}
@@ -66,15 +69,12 @@ public static MockHttpServletRequestBuilder post(String urlTemplate, Object... u
 public static MockHttpServletRequestBuilder put(String urlTemplate, Object... uriVars){...}
 
 public static MockHttpServletRequestBuilder delete(String urlTemplate, Object... uriVars){...}
-...
 ```
   
-## assertion
+## 응답 검증 (Assertion)
   
-### methods
+### 4️⃣ `MockMvcResultMatchers`를 활용한 검증
   
-#### MockMvcResultMatchers
-
 | 메서드명                  | 검증 대상                               |
 | --------------------- | ----------------------------------- |
 | request               | session scope, request scope, async |
@@ -83,44 +83,31 @@ public static MockHttpServletRequestBuilder delete(String urlTemplate, Object...
 | view                  | controller가 반환한 view 명              |
 | flash                 |                                     |
 | forwardedUrl          | 이동 대상의 경로                           |
-| forwardedUrlTemplate  |                                     |
-| forwardedUrlPattern   |                                     |
-| redirectedUrl         |                                     |
-| redirectedUrlTemplate |                                     |
-| status                | status code                         |
-| header                | response header                     |
-| content               | response body                       |
-| jsonPath              | body의 특정 값                          |
-| xpath                 |                                     |
-| cookie                |                                     |
-
- 좀 더 다양한 검증을 위해서 [Hamcrest](../../tdd/tdd-Hamcrest) 라이브러리 의존성을 추가한다.
+| redirectedUrl         | 리다이렉트된 URL 확인                     |
+| status                | HTTP 상태 코드 검증                     |
+| header                | 응답 헤더 확인                         |
+| content               | 응답 본문 검증                         |
+| jsonPath              | JSON 응답 데이터 확인                     |
   
-```groovy
-testImplementation 'org.hamcrest:hamcrest:2.2'
-```
+### 5️⃣ JSON 응답 데이터 검증 예제
+  `Hamcrest`를 활용하여 JSON 값을 검증할 수 있다.
   
 ```java
 @Test  
 void TestTestController()  {  
-
 	mockMvc.perform(MockMvcRequestBuilders.get("/test"))  
             .andExpect(status().isOk())  
             .andExpect(jsonPath("$.error").value("false"))  
-	        .andExpect(jsonPath("$.count").value(matchesRegex("\\d+")))
-	        .andExpect(jsonPath("$.datalist").isArray())  
-	        .andExpect(jsonPath("$.datalist", hasSize(greaterThan(0))));
-			.andExpect(jsonPath("$.datalist[*].sequence", everyItem(matchesRegex("\\d+"))))  
-			.andExpect(jsonPath("$.datalist[*].processDateTime", everyItem(matchesRegex("\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}")))) // 예: "2024-07-30 15:00:00"  
-			.andExpect(jsonPath("$.datalist[*].userName", everyItem(matchesRegex("^[\\p{L} ]+$")))); // 이름이 문자와 공백만 포함하도록 정규 표현식 설정
+            .andExpect(jsonPath("$.count").value(matchesRegex("\d+")))
+            .andExpect(jsonPath("$.datalist").isArray())  
+            .andExpect(jsonPath("$.datalist", hasSize(greaterThan(0))))
+            .andExpect(jsonPath("$.datalist[*].sequence", everyItem(matchesRegex("\d+"))))  
+            .andExpect(jsonPath("$.datalist[*].processDateTime", everyItem(matchesRegex("\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}")))) // 예: "2024-07-30 15:00:00"  
+            .andExpect(jsonPath("$.datalist[*].userName", everyItem(matchesRegex("^[\p{L} ]+$")))); // 이름이 문자와 공백만 포함하도록 정규 표현식 설정
 }
 ```
-
- 위 예시는 reponse에 대한 Json 파라미터를 하나씩 검증하는 것을 보여준다.
   
-![image](../../assets/images/JsonPathError.png)
-
- 위와 같은 json path 에러가 발생한다면, 종속성을 추가해준다.
+### 6️⃣ JSON Path 오류 해결을 위한 의존성 추가
   
 ```groovy
 implementation 'com.jayway.jsonpath:json-path:2.7.0'

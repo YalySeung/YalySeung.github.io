@@ -7,16 +7,21 @@ toc_label : "BooleanBuilder"
 categories:
 - JPA
 tags:
-- [미완료, Spring, JPA, Querydsl]
+- [Spring, JPA, Querydsl]
 last_modified_at: 2024-04-22T08:00:00-10:00:00
 ---
   
 ---
   
- BooleanBuilder 는 QueryDSL에서 제공하는 class 중 하나로, 동적으로 조건을 구성하고 조합할 수 있는 기능을 제공한다.
+> **BooleanBuilder란?**  
+>
+>  QueryDSL에서 제공하는 클래스로, 동적으로 조건을 구성하고 조합할 수 있는 기능을 제공한다. 
+{: .notice--info}  
+
+  BooleanBuilder의 가장 큰 특징은 **빌더 패턴을 사용하여 조건을 동적으로 조합할 수 있으며, 최종적으로 `BooleanExpression`을 반환한다.**  
   
 ## 주요 메서드
-  
+
 | 메서드 명    | 기능                                   |
 | -------- | ------------------------------------ |
 | and      | AND 조건으로 조합한다.                       |
@@ -25,12 +30,12 @@ last_modified_at: 2024-04-22T08:00:00-10:00:00
 | andAnyOf | AND ( A OR B )                       |
 | orAllof  | OR ( A AND B )                       |
 | build    | 내부 조건을 조합하여 BooleanExpression을 반환한다. |
-
- BooleanBuilder의 특징은 build 반환값이 BooleanExpression이라는 것이다. 
   
 ## andAnyOf(), orAllOf()
- Querydsl은 or 조건보다 and의 우선순위가 높고, Java소스에서 괄호로 묶는다고 해도 우선순위가 변하지 않는다. Querydsl을 사용하다보면 and(A or B) 와 같은 조건이 필요할 경우가 있는데 이때, **andAnyOf** 를 사용한다
- 간단한 예시를 들어보자
+  Querydsl에서는 `or` 조건보다 `and`의 우선순위가 높으며, Java 코드에서 괄호로 묶어도 우선순위가 변하지 않는다.  
+  따라서 `and(A or B)`와 같은 조건을 처리하려면 `andAnyOf()`를 사용해야 한다.
+  
+### 1️⃣ 예제 - SQL 변환
   
 ```sql
 SELECT *   
@@ -47,16 +52,30 @@ WHERE
 	      )
 	  )
 ```
- 
- 복잡한 조건식이 들어있는 이 예시의 형태를 간단히 보면 **A and (B or (C and D))**의 구조이다. querydsl로 변환해보면
+  
+### 2️⃣ Querydsl로 변환
   
 ```java
 queryFactory.selectFrom(qUser)  
-        .where(  new BooleanBuilder().andAnyOf(qUser.reset.eq("N").orAllOf(qUser.reset.eq("Y"), qUser.modDate.loe(expireDatetime)))
-        .fetch();
+    .where(new BooleanBuilder()
+        .andAnyOf(
+            qUser.reset.eq("N").orAllOf(
+                qUser.reset.eq("Y"), 
+                qUser.modDate.loe(expireDatetime)
+            )
+        )
+    ).fetch();
 ```
-
- 이렇게 변환할 수 있다.
+  
+## 장점과 단점
+  
+### ✅ 장점
+- **SQL의 복잡한 논리 조건을 직관적인 코드로 변환 가능**  
+- **조건을 동적으로 추가할 수 있어 코드 재사용성이 높음**  
+  
+### ❌ 단점
+- **구조가 복잡해질 경우 가독성이 떨어질 수 있음**  
+- **Querydsl 전용 기능이므로 JPA 표준이 아님**  
 
 ---
   
