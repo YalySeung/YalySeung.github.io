@@ -23,13 +23,13 @@ last_modified_at: 2023-12-18T08:00:00-10:00:00
   
 ## 종류
   
-| Advice종류      | 설명                                                              |
-| --------------- |:----------------------------------------------------------------- |
-| [@Around](../../aop/aop-@Around)     | 메서드 호출 전후작업 조인포인트 실행여부 반환값 예외 등 설정 가능 |
-| [@Before](../../aop/aop-@Before)         | JoinPoint 이전에 실행                                             |
-| [@AfterReturning](../../aop/aop-@AfterReturning) | JoinPoint 정상 완료 후 실행                                       |
-| [@AfterThrowing](../../aop/aop-@AfterThrowing)  | 메서드에서 예외가 발생할 경우 실행                                |
-| [@After](../../aop/aop-@After)          | JoinPoint 정상, 예외 발생과 무관하게 실행                         |
+| Advice종류        | 설명                                    |
+| --------------- | :------------------------------------ |
+| @Around         | 메서드 호출 전후작업 조인포인트 실행여부 반환값 예외 등 설정 가능 |
+| @Before         | JoinPoint 이전에 실행                      |
+| @AfterReturning | JoinPoint 정상 완료 후 실행                  |
+| @AfterThrowing  | 메서드에서 예외가 발생할 경우 실행                   |
+| @After]]        | JoinPoint 정상, 예외 발생과 무관하게 실행          |
   
 ### Annotation 동작 순서
   
@@ -111,5 +111,4 @@ public class HelloController {
 # 연결문서
 - [Pointcut Designator](../../spring/spring-Pointcut-Designator)
 - [AOP](../../spring/spring-AOP)
-- [@Aspect](../../aop/aop-@Aspect)
 - [@Order](../../jpa/jpa-@Order)

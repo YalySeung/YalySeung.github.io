@@ -53,7 +53,28 @@ UPDATE mytable SET FILE_PATH = REPLACE(FILE_PATH, '\\', '\/')
 ```sql
 DECODE(JOB, 'Developer', 1, 'teacher', 2, student)
 ```
-
+  
+## 재귀
+  
+### 🎯 문법 구조
+ 오라클은 START WITH와 CONNECT BY를 사용하여 계층형 데이터를 간단히 조회할 수 있도록 지원한다.
+  
+```sql
+SELECT 컬럼명
+FROM 테이블명
+START WITH [최상위 조건]
+CONNECT BY PRIOR [부모 컬럼] = [자식 컬럼];
+```
+  
+#### 🎯 특정 직원(emp_id=1)의 하위 직원 조회하기
+  
+```sql
+SELECT emp_id, emp_name, manager_id
+FROM employee
+START WITH emp_id = 1
+CONNECT BY PRIOR emp_id = manager_id;
+```
+  
 - ---
   
 # 연결문서

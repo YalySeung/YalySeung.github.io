@@ -16,6 +16,12 @@ last_modified_at: 2024-04-27T08:00:00-10:00:00
  이 글에서는 [@Entity](../../jpa/jpa-@Entity)를 구성하는데 필수적인 @Column Annotation에 대해서 알아보겠다. 
 
  @Column Annotation은 [JPA](../../jpa/jpa-JPA) 에서 Entity 클래스의 **필드와 데이터베이스 테이블의 컬럼 간의 매핑을 정의**할때 사용한다. 주요한 기능은 **필드의 다양한 속성을 지정**하는 것이다.
+  
+## ✅ 결론부터
+> 🔹 **DDL 생성(`ddl-auto=create|update`) 시 Hibernate가 일부는 알아서 생성해주지만** 
+> 🔹 정확한 제약 조건(`nullable`, `length` 등)을 반영하려면  
+> 👉 `@Column` 속성들을 **명시적으로 설정하는 것이 가장 안전**하다 
+{: .notice}  
 
  @Column Annotation의 주요 속성을 살펴보자.
 

@@ -200,11 +200,6 @@ test {
     useJUnitPlatform()  
 }
 ```
-
-> **caution**
->
-> 필자가 겪은 에러 상황중에 Querydsl 폴더에 QClass가 있는 상태에서 단위테스트를 진행하면 빌드가 실패하고, 없는 상태에서 단위테스트를 진행하면 성공하는 현상을 겪은 적이 있다. 그래서 test 전에는 꼭 Querydsl 폴더를 비우고 테스트를 진행하도록 Build.gradle에 설정하자. 
-{: .notice--info}  
   
 ---
   

@@ -1,9 +1,9 @@
 ---
-title : "Spring Data Jpa"
-excerpt : "Spring Data Jpa"
+title : "Spring Data JPA"
+excerpt : "Spring Data JPA"
 toc : true
 toc_sticky : true
-toc_label : "Spring Data Jpa"
+toc_label : "Spring Data JPA"
 categories:
 - JPA
 tags:
