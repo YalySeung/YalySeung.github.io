@@ -13,37 +13,100 @@ last_modified_at: 2024-04-14T08:00:00-10:00:00
   
 ---
   
-> **Singleton이란?**  
+## 📌 Singleton 패턴이란?
+
+> **info**
 >
-> 객체의 인스턴스가 오직 1개만 생성되는 패턴을 뜻한다. 
+> Singleton 패턴은 **프로그램 내에서 하나의 인스턴스만 존재하도록 보장**하는 디자인 패턴이다.  
+> 주로 설정 객체나 공통 유틸리티 등에 사용되며, **전역 접근 지점(Global Access Point)**을 제공한다. 
 {: .notice--info}  
+
+---
+  
+## ✅ Singleton의 장점
+
+- 메모리 낭비 방지 (하나의 객체만 생성)
+- 전역 상태 공유 (모든 호출 지점에서 동일 객체 사용)
+- 객체 생성 비용이 큰 경우 재사용 가능
+
+---
+  
+## ✅ Singleton의 단점
+
+- **멀티스레드 환경에서 동기화 필요**
+- **단위 테스트 어려움** (상태가 공유되기 때문)
+- **클래스 간 결합도 증가 가능성**
+
+---
+  
+## ✅ Singleton 구현 예시 (Java - Double Checked Locking 방식)
   
 ```java
-public class DoubleCheckedLockingSingleton {  
-    private static volatile DoubleCheckedLockingSingleton instance;  
-  
-    private DoubleCheckedLockingSingleton() {  
-        // private constructor to prevent instantiation  
-    }  
-  
-    public static DoubleCheckedLockingSingleton getInstance() {  
-        if (instance ** null) {  
-            synchronized (DoubleCheckedLockingSingleton.class) {  
-                if (instance ** null) {  
-                    instance = new DoubleCheckedLockingSingleton();  
-                }  
-            }  
-        }  
-        return instance;  
-    }  
+public class DoubleCheckedLockingSingleton {
+    private static volatile DoubleCheckedLockingSingleton instance;
+
+    private DoubleCheckedLockingSingleton() {
+        // private constructor to prevent instantiation
+    }
+
+    public static DoubleCheckedLockingSingleton getInstance() {
+        if (instance ** null) {
+            synchronized (DoubleCheckedLockingSingleton.class) {
+                if (instance ** null) {
+                    instance = new DoubleCheckedLockingSingleton();
+                }
+            }
+        }
+        return instance;
+    }
 }
 ```
 
- **Singleton**은 최초 new 연산자로 생성된 객체를 계속해서 사용하기 때문에 **메모리 낭비를 방지** 할 수 있으며, 전역에서 접근이 가능한 static 메서드를 제공하여 **데이터 공유가 쉽다**. 
- 반면 여러 thread에서 동시에 접근할 경우 **동시성 문제**가 발생할 수 있으므로 **synchronized 키워드와 함께 사용**하는 것이 좋다. 그리고 위 코드블럭에서 보다시피 일반 class보다 **코드 자체가 많이 필요**하고, 자원을 공유하고 있어 **테스트하기 어렵다**
+> **tip**
+>
+> `volatile` 키워드와 `synchronized` 블록을 통해 **동시성 문제를 해결**하고 **지연 초기화(lazy initialization)**를 구현함. 
+{: .notice--info}  
 
- Singleton 패턴은 **설정파일**이나 연산을 도와주는 **Util Class**에 사용하는 것이 좋다.
+---
   
+## ✅ Singleton 패턴 사용 사례
+
+- 설정 파일 관리 객체
+- 로그 관리자 (Logger)
+- DB 연결 풀 (Connection Pool)
+- 공통 연산 유틸 클래스
+
+---
+  
+## ✅ 기타 Singleton 구현 방법
+  
+### 🔹 정적 초기화 방식
+  
+```java
+public class StaticSingleton {
+    private static final StaticSingleton instance = new StaticSingleton();
+    private StaticSingleton() {}
+    public static StaticSingleton getInstance() {
+        return instance;
+    }
+}
+```
+
+- 초기화가 빠르고 간단하지만 **lazy loading 불가능**
+
+---
+  
+### 🔹 Enum 방식 (가장 권장됨 - Effective Java)
+  
+```java
+public enum EnumSingleton {
+    INSTANCE;
+}
+```
+
+- **직렬화/역직렬화에도 안전**
+- Java에서 가장 간단하고 안전한 Singleton 구현
+
 ---
   
 # 연결문서

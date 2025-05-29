@@ -7,61 +7,90 @@ toc_label : "Thread"
 categories:
 - ServerCommon
 tags:
-- [ServerCommon, java]
+- [ServerCommon, Java]
 last_modified_at: 2023-11-24T08:00:00-10:00:00
 ---
   
 ---
   
-## 정의
-> **Thread란**  
+## 📌 Thread란?
+
+> **info**
 >
->프로세스 안에서 실질적으로 작업을 실행하는 흐름의 단위 
+> Thread는 프로세스 안에서 **실질적으로 작업을 실행하는 흐름의 최소 단위**이다.  
+> 하나의 프로세스 내에서 여러 스레드를 생성하여 **병렬 처리 및 자원 공유**가 가능하다. 
 {: .notice--info}  
+
+---
   
-## 종류
+## ✅ Thread 종류
   
-### Non-Daemon Thread
-- 끝까지 실행 됨
-- JVM은 사용자 스레드가 작업을 완료할 때까지 대기
-- 모든 사용자 스레드가 종료될 때까지 종료되지 않음
-- ex) Main Thread
+### 🔹 Non-Daemon Thread
+
+- 일반 사용자 스레드
+- 모든 Non-Daemon 스레드가 종료되어야 JVM이 종료됨
+- 예: `main()` 메서드를 실행하는 기본 스레드
   
-### Daemon Thread
-- Main Thread를 돕는 보조역할을 수행하는 Thread
-- Main Thread가 종료되면 함께 종료됨
-- ex) GC
+### 🔹 Daemon Thread
+
+- 보조 작업을 수행하는 스레드 (예: Garbage Collector)
+- Non-Daemon 스레드가 종료되면 자동 종료됨
+- 백그라운드에서 실행되며 사용자 요청 직접 처리 X
+
+---
   
-## LifeCycle
+## ✅ Thread 생명주기 (LifeCycle)
   
 ![image](../../assets/images/JavaThreadLifeCycle.png)
+
+1. **NEW**: 스레드 객체 생성 상태 (`new Thread()`)
+2. **RUNNABLE**: `start()` 호출 후 실행 대기
+3. **RUNNING**: `run()` 메서드 실행 중
+4. **BLOCKED**: 락을 획득하지 못하고 대기 중
+5. **WAITING**: 조건이 충족될 때까지 무기한 대기
+6. **TIMED_WAITING**: 지정된 시간 동안 대기 (`sleep()`, `join(timeout)`)
+7. **TERMINATED**: 실행 종료
+
+> **note**
+>
+> `sleep()`, `wait()`, `join()` 등은 상태 전이에 영향을 미친다. 
+{: .notice--info}  
+
+---
   
-## State
+## ✅ Thread 상태 요약
+
+| 상태 | 설명 |
+|------|------|
+| NEW | 스레드 객체 생성됨, 아직 실행되지 않음 |
+| RUNNABLE | 실행 가능 상태, 스케줄러 대기 중 |
+| RUNNING | 실제 CPU 자원을 받아 실행 중 |
+| BLOCKED | 다른 스레드가 락을 점유 중이라 대기 |
+| WAITING | 무기한 대기 (다른 스레드의 신호 필요) |
+| TIMED_WAITING | 제한 시간 동안 대기 |
+| TERMINATED | 실행 종료 상태 |
+
+---
   
-| 상태       | 설명                                                                        |
-| ---------- | --------------------------------------------------------------------------- |
-| NEW        | 처음 스레드가 생성된 상태                                                   |
-| RUNNABLE   | 실행 대기 상태, start가 호출된 상태                                         |
-| RUNNING    | 실행중인 상태,        run이 호출된 상태                                     |
-| WAITING    | 일시 정지 상태, 다른 스레드가 통지할 때까지 기다리는 상태                   |
-| TIMED_WAIT | 일시 정지 상태, 주어진 시간동안 기다리고 있는 상태                          |
-| BLOCKED    | 일시 정지 상태, 사용하려고 하는 객체의 Lock이 풀릴때까지 기다리고 있는 상태 |
-| TERMINATED | 종료 상태, 실행을 마친 상태                                                 |
-  
-## Priority
+## ✅ Thread 우선순위
   
 ```java
-/* The minimum priority that a thread can have.  */ 
-public final static int MIN_PRIORITY = 1;  
-  
-/* The default priority that is assigned to a thread.  */ 
-public final static int NORM_PRIORITY = 5;  
-  
-/* The maximum priority that a thread can have.  */ 
+public final static int MIN_PRIORITY = 1;
+public final static int NORM_PRIORITY = 5;
 public final static int MAX_PRIORITY = 10;
-```  
-- Thread 호출 순서에 영향을 주지만 절대적이지는 않다.
-- 실행 순서에 따라 영향이 있는 로직은 한 쓰레드로 처리하는게 바람직 하다.
+```
+
+- 스케줄링 순서에 힌트를 줄 뿐, **우선순위가 실행 순서를 보장하지 않음**
+- 동기화 및 순차성이 중요한 작업은 반드시 **단일 스레드** 또는 **락 제어**로 구성 필요
+
+---
+  
+## ✅ Thread 사용 시 주의사항
+
+- 동시성 문제 → `synchronized`, `Lock`, `volatile` 등 적절한 동기화 필수
+- Context Switching 비용 고려
+- 데드락, 라이브락, 우선순위 역전 현상 예방 필요
+- ThreadPoolExecutor 또는 Spring `@Async` 적극 활용
 
 ---
   

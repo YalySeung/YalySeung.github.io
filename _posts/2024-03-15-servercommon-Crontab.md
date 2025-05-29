@@ -13,37 +13,91 @@ last_modified_at: 2024-03-15T08:00:00-10:00:00
   
 ---
   
-> **Crontab이란**  
+## 📌 Crontab이란?
+
+> **info**
 >
-> Linux 운영체제에서 배치 작업을 스케쥴링 하기 위한 프로그램이다. 
+> Crontab은 Linux 운영체제에서 **정기적으로 명령어나 스크립트를 실행할 수 있도록 스케줄링하는 도구**이다.  
+> 시스템 백업, 로그 정리, 데이터 수집 등 자동화 작업에 주로 사용된다. 
 {: .notice--info}  
+
+---
   
-## 명령어
- Linux에서 사용하는 Crontab 명령어를 알아보자.
+## ✅ 주요 명령어 정리
 
-| Linux 명령어                 | 기능            |
-| ------------------------- | ------------- |
-| sudo apt install cron     | 설치            |
-| sudo service cron status  | 상태 조회         |
-| sudo service cron start   | 서비스 시작        |
-| sudo service cron restart | 재시작           |
-| crontab -l                | 할당된 작업 리스트 조회 |
-| crontab -e                | 스크립트 작성       |
+| 명령어 | 설명 |
+|--------|------|
+| `sudo apt install cron` | 크론 설치 (Debian 계열) |
+| `sudo service cron status` | 크론 서비스 상태 확인 |
+| `sudo service cron start` | 크론 서비스 시작 |
+| `sudo service cron restart` | 크론 서비스 재시작 |
+| `crontab -l` | 현재 사용자에 등록된 크론 작업 확인 |
+| `crontab -e` | 크론 편집기 열기 (작업 등록) |
 
- Crontab을 사용하여 스케쥴을 등록해보자. 먼저 스케쥴로 실행할 **파일에 실행 권한을 부여**해야한다.
+---
+  
+## ✅ Crontab 사용 전 준비
+
+- 실행할 **Shell 파일에 실행 권한 부여** 필요
   
 ```bash
 chmod 755 <shell 파일명>
 ```
 
- 파일 실행 권한을 부여했다면, **crontab <크론식> 파일경로** 형식으로 스케쥴을 등록한다. 아래 예시는 **매일 6시 30분마다 shell 파일을 실행**하는 예시이다.
+---
+  
+## ✅ Crontab 스케줄 등록 형식
   
 ```bash
   
-# 매일 06:30분에 sampleLog.sh 파일 실행
-$ crontab -e
+# crontab -e 편집기 내 입력 예시
+  
+# ┌──────── 분 (0 - 59)
+  
+# │ ┌────── 시 (0 - 23)
+  
+# │ │ ┌──── 일 (1 - 31)
+  
+# │ │ │ ┌── 월 (1 - 12)
+  
+# │ │ │ │ ┌─ 요일 (0 - 6) (일: 0 또는 7)
+  
+# │ │ │ │ │
+  
+# │ │ │ │ │
+  
+# * * * * * 명령어
+```
+
+---
+  
+## ✅ 예시: 매일 06:30에 스크립트 실행
+  
+```bash
 30 06 * * * /Tomcat 홈 경로/logs/sampleLog.sh
 ```
+
+> **tip**
+>
+> `crontab -e`는 현재 로그인된 사용자 기준으로 설정된다. 시스템 전체 작업은 `/etc/crontab` 또는 `/etc/cron.d/` 사용. 
+{: .notice--info}  
+
+---
+  
+## ✅ 로그 확인 방법
+  
+```bash
+cat /var/log/syslog | grep CRON  # Debian 계열
+cat /var/log/cron.log            # RHEL/CentOS 계열
+```
+
+---
+  
+## ✅ 주의 사항
+
+- **환경 변수 설정 필요할 수 있음** (`PATH`, `JAVA_HOME` 등)
+- **상대 경로보다는 절대 경로 사용 권장**
+- 실행 로그 확인 및 리디렉션 (`>> ~/cron.log 2>&1`) 설정 권장
 
 ---
   

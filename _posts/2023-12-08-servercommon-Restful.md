@@ -13,109 +13,111 @@ last_modified_at: 2023-12-08T08:00:00-10:00:00
   
 ---
   
-## 정의
-> **Restful 이란?**  
+## 📌 RESTful 이란?
+
+> **info**
 >
-> Respresentational State Transfer
-> 분산 하이퍼미디어 시스템을 위한 소프트웨어 아키텍처의 한 형식 
-{: .notice--info}  
-  
-## 특징
-  
-### Uniform Interface
-- URI로 지정한 리소스에 대한 조작을 통일성 있고 한정적인 인터페이스로 수행
-  
-### Stateless
-- 사용자나 클라이언트의 컨텍스트를 서버쪽으로 유지하지 않는다.
-- 세션이나 쿠키를 별도로 관리하지 않아, 구현이 단순하다.
-  
-### Cacheable
-- HTTP 웹 표준을 그대로 사용하기때문에 HTTP가 가진 캐싱 기능을 사용 가능
-  
-### Self-descriptiveness
-- REST API 메시지만으로 기능을 이해할 수 있다.
-  
-### Client-Server Architecture
-- REST 서버는 API를 제공하고, 비즈니스 로직 처리 및 저장을 책임진다.
-- 클라이언트는 사용자인증, 컨텍스트(세션, 로그인 정보)등을 직접 관리
-- 서로간의 의존성 감소
-  
-### 계층구조
-- 로드밸런싱, 암호화, 사용자 인증등을 추가하여 구조상의 유연성 제공
-  
-## RESTful 아키텍처
-- URI가 정보의 <span style="color:red">자원</span>을 표현
-- 자원에 대한 <span style="color:red">행위</span>는 [HTTP Method](../../servercommon/servercommon-HTTP-Method) (GET, POST, PUT, DELETE)로 표현
-- 특정 행위의 <span style="color:red">표현</span>은 body를 이용(XML, JSON)
-- 리소스 명은 명사를 사용
-> **format**  
->
-> POST http://localhost/{Collection}/{Document} 
+> RESTful은 Respresentational State Transfer의 개념을 **웹 기반 분산 시스템 아키텍처**에 적용한 것이다.  
+> 클라이언트-서버 구조의 HTTP 기반 시스템에서 **리소스를 URI로 표현하고, 상태 전이를 HTTP Method로 표현**하는 방식이다. 
 {: .notice--info}  
 
-```
+---
+  
+## ✅ RESTful 아키텍처 구성요소
 
-//직원정보 요청
-GET http://localhost/worker/얄리
+| 요소 | 설명 |
+|------|------|
+| Resource | URI로 명명되는 자원 (예: `/users/1`) |
+| Method | HTTP Method (GET, POST, PUT, DELETE 등) |
+| Representation | 요청/응답 본문에 포함된 데이터 표현 (JSON, XML 등) |
 
-//직원정보 등록
-POST http://localhost/worker
+---
+  
+## ✅ REST의 핵심 원칙
+  
+### 🔹 Uniform Interface
+- 리소스에 대한 인터페이스는 통일되어 있어야 함 (GET/POST/PUT/DELETE 등)
+  
+### 🔹 Stateless
+- 요청 간 클라이언트 상태를 서버가 유지하지 않음 → 확장성과 단순성 증가
+  
+### 🔹 Cacheable
+- HTTP의 캐싱 기능 사용 가능 → 트래픽 감소 및 응답 속도 향상
+  
+### 🔹 Self-descriptive Messages
+- 메시지 자체에 요청 정보를 충분히 담고 있어야 함
+  
+### 🔹 Client-Server 구조
+- 클라이언트는 UI 및 요청 처리, 서버는 비즈니스 로직 및 데이터 처리 담당
+  
+### 🔹 계층화 구조
+- 프록시, 로드 밸런서, 보안 계층 등을 중간에 추가 가능
+
+---
+  
+## ✅ RESTful URI 설계 원칙
+
+| 원칙 | 설명 |
+|------|------|
+| 명사형 URI | 리소스 중심 표현 (`/users`, `/orders/1`) |
+| 계층 표현 | `/users/1/orders` → 사용자 1의 주문 |
+| 소문자 사용 | 대소문자 혼용 지양 |
+| 하이픈(-) 사용 | 단어 구분은 하이픈 사용 |
+| 확장자 미포함 | `Accept` 헤더로 표현 형식 지정 |
+| 동사는 HTTP Method로 표현 | `/users/delete/1` ❌ → `DELETE /users/1` ✅
+
+---
+  
+## ✅ HTTP Method와 리소스 매핑
+
+| Method | 용도 |
+|--------|------|
+| GET | 리소스 조회 |
+| POST | 리소스 생성 |
+| PUT | 리소스 전체 수정 |
+| PATCH | 리소스 일부 수정 |
+| DELETE | 리소스 삭제 |
+
+---
+  
+## ✅ 예시: 직원 리소스 관리 API
+  
+```http
+GET /worker/얄리
+POST /worker
 {
-"name":"얄리",
-"team":"연구1팀"
+  "name": "얄리",
+  "team": "연구1팀"
 }
 
-//직원정보 변경
-PUT http://localhost/worker/얄리{
-"team":"Q서비스팀"
+PUT /worker/얄리
+{
+  "team": "Q서비스팀"
 }
 
-//직원정보 제거
-DELETE http://localhost/worker/얄리
-  
-## REST Resource(자원)
+DELETE /worker/얄리
 ```
+
+---
   
-### Collection
-- Document의 묶음
+## ✅ RESTful에서의 Resource 개념
+
+- **Collection**: 리소스들의 묶음 (예: `/users`)
+- **Document**: 단일 리소스 (예: `/users/1`)
+- **Store**: 파일 또는 바이너리 리소스를 저장하는 경우
+- **Controller**: 자원 자체가 아닌 동작을 제어하는 URI (예: `/auth/login`)
+
+---
   
-### Document
-- 1개의 객체
-- 일반적으로 리소스의 집합중 하나
-- Collection 뒤에 위치
-  
-### Method(행위)
-- [HTTP Method](../../servercommon/servercommon-HTTP-Method)
-- POST : 리소스 생성
-- GET : 리소스 조회
-- PUT : 리소스 수정
-- DELETE : 리소스 삭제
-  
-### Representation(표현)
-  
-```json
-PUT http://localhost/worker/얄리{
-//표현
-"team":"Q서비스팀"
-}
-```  
-- body 부분이 표현에 해당한다.
-  
-## RESTful URI 규칙
-- URI 마지막에 '/' 포함하지 않는다, 계층관계를 나타낼때만 사용
-- '_' 언더바 대신 '-' 하이픈 사용
-- 소문자 사용
-- Method는 URI에 포함하지 않는다.
-- 컨트롤 자원을 의미하는 URI에서는 동사 사용을 허용
-- URI에 자원의 행위를 표시하지 않는다.
-- 확장자 대신 Accept Header를 사용한다.
-  
-## REST API 설계 팁
-- 조회시, key가 되는 식별자는 PathVariable로 전달하고, 기타 데이터는 RequestParam 으로 전달한다.
-- 자원 조회시, param으로 개인정보를 넘겨야 하는 경우, GET 대신 POST를 사용한다.
-- 조회하는 POST와 삽입하는 POST 간 구분이 필요할때, URI로 구분한다.
+## ✅ 설계 팁
+
+- `PathVariable`은 고유 식별자 전달 시 사용
+- `RequestParam`은 필터링, 검색 등 조건 전달 시 사용
+- 민감 정보 포함된 조회는 POST 사용 고려
+- 삽입용 POST와 조회용 POST는 URI로 구분
 
 ---
   
 # 연결문서
 - [HTTP Method](../../servercommon/servercommon-HTTP-Method)
+- [REST API 설계](../../servercommon/servercommon-REST-API-설계)
