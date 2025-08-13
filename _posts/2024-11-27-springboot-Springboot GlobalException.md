@@ -49,6 +49,31 @@ public class GlobalExceptionHandler {
     public ResponseEntity<String> handleGeneralException(Exception ex) {
         return new ResponseEntity<>("Error: " + ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
     }
+
+	@ExceptionHandler(ApiException.class)
+	public ResponseEntity<BaseResponse> handleApiException(ApiException apiException,
+	    HttpServletResponse httpServletResponse) {
+	
+	    if (apiException.getElementIdList() != null) {
+	        for (int i = 0; i < apiException.getElementIdList().size(); i++) {
+	            xtormModule.delete(apiException.getElementIdList().get(i));
+	        }
+	    }
+	
+	    BaseResponse responseBody = BaseResponse.builder()
+	        .isSuccess(false)
+	        .errorCode(apiException.getErrorCode())
+	        .errorMessage(apiException.getMessage())
+	        .build();
+	
+	    try {
+	        httpServletResponse.getWriter().write(JsonParser.toJsonString(responseBody));
+	        httpServletResponse.getWriter().flush();
+	    } catch (IOException ex) {}
+	
+	    return ResponseEntity.ok(responseBody);
+	}
+
 }
 ```
   

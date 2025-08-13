@@ -7,7 +7,7 @@ toc_label : "Yarn"
 categories:
 - FrontEnd
 tags:
-- [Yarn, BuildManager]
+- [BuildManager]
 last_modified_at: 2024-05-02T08:00:00-10:00:00
 ---
   

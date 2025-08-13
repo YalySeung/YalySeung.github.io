@@ -37,6 +37,7 @@ dependencies {
     implementation "com.querydsl:querydsl-jpa:4.4.0"  
     implementation "com.querydsl:querydsl-apt:4.4.0"  
     compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'javax.persistence:javax.persistence-api:2.2'
     annotationProcessor 'org.projectlombok:lombok:1.18.34'
 }
 
