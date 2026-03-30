@@ -92,3 +92,4 @@ public class WebConfig implements WebMvcConfigurer {
 ---
   
 ## 📌 연결 문서
+[Springboot-CORS](../../developcommon/developcommon-Springboot-CORS)

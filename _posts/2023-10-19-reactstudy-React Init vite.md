@@ -38,7 +38,9 @@ node -v
  버전정보가 콘솔에 출력된다면 정상적으로 설치된 것이다. 이제 프로젝트를 생성한다. 
   
 ```bash
-npm init vite@latest
+npm init vite@latest // 하위 경로에 폴더 생성 후 프로젝트 초기화
+
+npm create vite@latest [상위폴더명] // 현재 폴더에 프로젝트 초기화 
 ```
   
 ![image](../../assets/images/NpmInitReact.png)
